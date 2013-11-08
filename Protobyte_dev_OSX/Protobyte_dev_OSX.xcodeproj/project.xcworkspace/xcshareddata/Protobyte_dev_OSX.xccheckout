@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1BA02F81-DE25-483A-8FDE-2EDEFEB2319F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Protobyte_dev_OSX</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0DCC8EBC-C0A0-4FC1-8753-61DBA58B6BAD</key>
+		<string>https://github.com/irajgreenberg/Protobtye-0.1.0-Quark.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Protobyte_dev_OSX/Protobyte_dev_OSX.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0DCC8EBC-C0A0-4FC1-8753-61DBA58B6BAD</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/irajgreenberg/Protobtye-0.1.0-Quark.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0DCC8EBC-C0A0-4FC1-8753-61DBA58B6BAD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0DCC8EBC-C0A0-4FC1-8753-61DBA58B6BAD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Protobyte 0.1</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -17,7 +17,7 @@
                BlueprintIdentifier = "72198DDC17BBDD68005AE9DA"
                BuildableName = "Protobyte_dev_v02"
                BlueprintName = "Protobyte_dev_v02"
-               ReferencedContainer = "container:Protobyte_dev_v02.xcodeproj">
+               ReferencedContainer = "container:Protobyte_dev_OSX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "72198DDC17BBDD68005AE9DA"
             BuildableName = "Protobyte_dev_v02"
             BlueprintName = "Protobyte_dev_v02"
-            ReferencedContainer = "container:Protobyte_dev_v02.xcodeproj">
+            ReferencedContainer = "container:Protobyte_dev_OSX.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -54,7 +54,7 @@
             BlueprintIdentifier = "72198DDC17BBDD68005AE9DA"
             BuildableName = "Protobyte_dev_v02"
             BlueprintName = "Protobyte_dev_v02"
-            ReferencedContainer = "container:Protobyte_dev_v02.xcodeproj">
+            ReferencedContainer = "container:Protobyte_dev_OSX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -72,7 +72,7 @@
             BlueprintIdentifier = "72198DDC17BBDD68005AE9DA"
             BuildableName = "Protobyte_dev_v02"
             BlueprintName = "Protobyte_dev_v02"
-            ReferencedContainer = "container:Protobyte_dev_v02.xcodeproj">
+            ReferencedContainer = "container:Protobyte_dev_OSX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
