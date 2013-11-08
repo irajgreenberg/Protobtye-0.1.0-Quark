@@ -48,6 +48,191 @@ c00000000527942BC00000000000001DB
 t1383678652
 s475
 
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/GLUT
+c00000000527942BE00000000000135D4
+t1383678654
+s79316
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+c00000000527942BF000000000000BB7C
+t1383678655
+s47996
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+c00000000527942BF00000000000211A0
+t1383678655
+s135584
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+c00000000527942BF0000000000005F00
+t1383678655
+s24320
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+c00000000527942C3000000000000681C
+t1383678659
+s26652
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+c00000000527942C3000000000006E8B0
+t1383678659
+s452784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+c00000000527942C30000000000004734
+t1383678659
+s18228
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+c00000000527942C3000000000000FC6C
+t1383678659
+s64620
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+c00000000527942C3000000000000F6A0
+t1383678659
+s63136
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+c00000000527942C30000000000006254
+t1383678659
+s25172
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+c00000000527942C3000000000000E0F8
+t1383678659
+s57592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+c00000000527942C3000000000000D6DC
+t1383678659
+s55004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+c00000000527942C30000000000006308
+t1383678659
+s25352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+c00000000527942C30000000000004050
+t1383678659
+s16464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+c00000000527942C30000000000008570
+t1383678659
+s34160
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+c00000000527942C30000000000005EA0
+t1383678659
+s24224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+c00000000527942C30000000000005FAC
+t1383678659
+s24492
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+c00000000527942C30000000000004440
+t1383678659
+s17472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+c00000000527942C3000000000000AA28
+t1383678659
+s43560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+c00000000527942C30000000000003E2C
+t1383678659
+s15916
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+c00000000527942C30000000000030A24
+t1383678659
+s199204
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+c00000000527942C30000000000005E54
+t1383678659
+s24148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+c00000000527942C30000000000006A90
+t1383678659
+s27280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+c00000000527942C300000000000178AC
+t1383678659
+s96428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+c00000000527942C3000000000001ADC8
+t1383678659
+s110024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+c00000000527942C3000000000001028C
+t1383678659
+s66188
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+c00000000527942C30000000000008800
+t1383678659
+s34816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+c00000000527942C30000000000011090
+t1383678659
+s69776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+c00000000527942C3000000000000882C
+t1383678659
+s34860
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+c00000000527942C300000000000067AC
+t1383678659
+s26540
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+c00000000527942C30000000000008DEC
+t1383678659
+s36332
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+c00000000527942C30000000000004C08
+t1383678659
+s19464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+c00000000527942C300000000000023C0
+t1383678659
+s9152
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+c00000000527942C3000000000000439C
+t1383678659
+s17308
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+c00000000527942C30000000000006768
+t1383678659
+s26472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+c00000000527942C300000000000172F4
+t1383678659
+s94964
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+c00000000527942E00000000000001750
+t1383678688
+s5968
+
 N/Library/Frameworks/sfml-audio.framework/sfml-audio
 c0000000051F385F2000000000002B3B8
 t1374914034
@@ -84,35 +269,35 @@ t1382556562
 s182624
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/App01.o
-t1383931107
+t1383932058
 s559832
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoAnimator.o
-t1383930754
+t1383932058
 s74116
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBaseApp.o
-t1383931107
+t1383932058
 s681580
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBlock.o
-t1383930972
+t1383932058
 s316264
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCamera.o
-t1383930972
+t1383932058
 s64612
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCurve3.o
-t1383930971
+t1383932058
 s130136
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFace3.o
-t1383930971
+t1383932058
 s87840
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFrenetFrame.o
-t1383930972
+t1383932058
 s81676
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeom.o
@@ -120,67 +305,67 @@ t2
 s0
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeom3.o
-t1383930971
+t1383932058
 s459772
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeomSet.o
-t1383930972
+t1383932058
 s1948
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoLight.o
-t1383930972
+t1383932058
 s19128
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMain.o
-t1383931107
+t1383932058
 s554960
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMath.o
-t1383930834
+t1383932058
 s4596
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoPlasm.o
-t1383931107
+t1383932058
 s546628
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoRenderer.o
-t1383930971
+t1383932058
 s193544
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShader.o
-t1383930754
+t1383932058
 s79488
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShape3.o
-t1383930971
+t1383932058
 s133144
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSphere.o
-t1383930971
+t1383932058
 s287468
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSpline3.o
-t1383930972
+t1383932058
 s207040
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTexture2.o
-t1383930754
+t1383932058
 s147064
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoToroid.o
-t1383930971
+t1383932058
 s276908
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTransformFunction.o
-t1383930971
+t1383932058
 s20304
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTube.o
-t1383930972
+t1383932058
 s622664
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoUtility.o
-t1383930835
+t1383932058
 s157936
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVector3.o
@@ -188,38 +373,43 @@ t2
 s0
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletBall.o
-t1383930971
+t1383932058
 s14916
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletStick.o
-t1383930971
+t1383932058
 s103868
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletSurface.o
-t1383930973
+t1383932058
 s775868
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVertex3.o
-t1383930971
+t1383932058
 s87948
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoWorld.o
-t1383930972
+t1383932058
 s726736
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/Protobyte_dev_v02.LinkFileList
-c00000000527D1C590000000000001460
-t1383930969
+c00000000527D209A0000000000001460
+t1383932058
 s5216
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/Build/Products/Debug/Protobyte_dev_v02
-t1383925678
-s705288
+t1383932058
+s706128
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/app/ProtoBaseApp.cpp
 c00000000527D07810000000000000C24
 t1383925633
 s3108
+
+N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/app/ProtoBaseApp.h
+c00000000527D209A0000000000000D2E
+t1383932058
+s3374
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/app/ProtoMain.cpp
 c00000000526A9B6F00000000000000B2
@@ -231,10 +421,20 @@ c00000000527D078100000000000020E0
 t1383925633
 s8416
 
+N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/app/ProtoPlasm.h
+c00000000527D07810000000000000522
+t1383925633
+s1314
+
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/src/App01.cpp
 c00000000527D1B640000000000001668
 t1383930724
 s5736
+
+N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_dev_OSX/src/App01.h
+c00000000527D0782000000000000038B
+t1383925634
+s907
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/libProtobyte/ProtoAnimator.cpp
 c000000005267FE4400000000000005A1
@@ -290,6 +490,11 @@ N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/libProtobyte/ProtoCurve3.h
 c00000000523A55A80000000000001812
 t1379554728
 s6162
+
+N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/libProtobyte/ProtoDimension2.h
+c00000000527D05C8000000000000188E
+t1383925192
+s6286
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/libProtobyte/ProtoDimension3.h
 c00000000520E485E00000000000019EA
@@ -365,6 +570,11 @@ N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/libProtobyte/ProtoMatrix3.h
 c00000000522700220000000000000D6A
 t1378287650
 s3434
+
+N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/libProtobyte/ProtoPoint2.h
+c00000000520E485E0000000000000DAF
+t1376667742
+s3503
 
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/libProtobyte/ProtoPoint3.h
 c00000000520E485E0000000000000E06
@@ -481,6 +691,11 @@ c00000000523A117900000000000005AF
 t1379537273
 s1455
 
+N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/libProtobyte/ProtoVector2.h
+c00000000522C9CE300000000000041C4
+t1378655459
+s16836
+
 N/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/libProtobyte/ProtoVector3.cpp
 c00000000520E485E000000000000263C
 t1376667742
@@ -546,10 +761,325 @@ c0000000051F3860600000000000012A9
 t1374914054
 s4777
 
+N/usr/local/include/SFML/Graphics.hpp
+c0000000051F386060000000000000959
+t1374914054
+s2393
+
+N/usr/local/include/SFML/Graphics/BlendMode.hpp
+c0000000051F386060000000000000670
+t1374914054
+s1648
+
+N/usr/local/include/SFML/Graphics/CircleShape.hpp
+c0000000051F38606000000000000144A
+t1374914054
+s5194
+
+N/usr/local/include/SFML/Graphics/Color.hpp
+c0000000051F3860600000000000020B3
+t1374914054
+s8371
+
+N/usr/local/include/SFML/Graphics/ConvexShape.hpp
+c0000000051F38606000000000000147B
+t1374914054
+s5243
+
+N/usr/local/include/SFML/Graphics/Drawable.hpp
+c0000000051F386060000000000000F71
+t1374914054
+s3953
+
+N/usr/local/include/SFML/Graphics/Export.hpp
+c0000000051F386060000000000000691
+t1374914054
+s1681
+
+N/usr/local/include/SFML/Graphics/Font.hpp
+c0000000051F386060000000000003979
+t1374914054
+s14713
+
+N/usr/local/include/SFML/Graphics/Glyph.hpp
+c0000000051F386060000000000000B0E
+t1374914054
+s2830
+
+N/usr/local/include/SFML/Graphics/Image.hpp
+c0000000051F38606000000000000302B
+t1374914054
+s12331
+
+N/usr/local/include/SFML/Graphics/PrimitiveType.hpp
+c0000000051F38606000000000000086B
+t1374914054
+s2155
+
+N/usr/local/include/SFML/Graphics/Rect.hpp
+c0000000051F386060000000000002335
+t1374914054
+s9013
+
+N/usr/local/include/SFML/Graphics/Rect.inl
+c0000000051F3860600000000000013CC
+t1374914054
+s5068
+
+N/usr/local/include/SFML/Graphics/RectangleShape.hpp
+c0000000051F3860600000000000010A8
+t1374914054
+s4264
+
+N/usr/local/include/SFML/Graphics/RenderStates.hpp
+c0000000051F38606000000000000197F
+t1374914054
+s6527
+
+N/usr/local/include/SFML/Graphics/RenderTarget.hpp
+c0000000051F38606000000000000463D
+t1374914054
+s17981
+
+N/usr/local/include/SFML/Graphics/RenderTexture.hpp
+c0000000051F3860600000000000028E7
+t1374914054
+s10471
+
+N/usr/local/include/SFML/Graphics/RenderWindow.hpp
+c0000000051F38606000000000000261F
+t1374914054
+s9759
+
+N/usr/local/include/SFML/Graphics/Shader.hpp
+c0000000051F386060000000000006437
+t1374914054
+s25655
+
+N/usr/local/include/SFML/Graphics/Shape.hpp
+c0000000051F3860600000000000034BC
+t1374914054
+s13500
+
+N/usr/local/include/SFML/Graphics/Sprite.hpp
+c0000000051F386060000000000002A7C
+t1374914054
+s10876
+
+N/usr/local/include/SFML/Graphics/Text.hpp
+c0000000051F3860600000000000032E3
+t1374914054
+s13027
+
+N/usr/local/include/SFML/Graphics/Texture.hpp
+c0000000051F386060000000000005BEF
+t1374914054
+s23535
+
+N/usr/local/include/SFML/Graphics/Transform.hpp
+c0000000051F386060000000000003EB1
+t1374914054
+s16049
+
+N/usr/local/include/SFML/Graphics/Transformable.hpp
+c0000000051F386060000000000003D06
+t1374914054
+s15622
+
+N/usr/local/include/SFML/Graphics/Vertex.hpp
+c0000000051F3860600000000000015F1
+t1374914054
+s5617
+
+N/usr/local/include/SFML/Graphics/VertexArray.hpp
+c0000000051F386060000000000001E5A
+t1374914054
+s7770
+
+N/usr/local/include/SFML/Graphics/View.hpp
+c0000000051F3860600000000000030FD
+t1374914054
+s12541
+
 N/usr/local/include/SFML/OpenGL.hpp
 c0000000051F38606000000000000082C
 t1374914054
 s2092
+
+N/usr/local/include/SFML/System.hpp
+c0000000051F38606000000000000088A
+t1374914054
+s2186
+
+N/usr/local/include/SFML/System/Clock.hpp
+c0000000051F386060000000000000EF9
+t1374914054
+s3833
+
+N/usr/local/include/SFML/System/Err.hpp
+c0000000051F386060000000000000A53
+t1374914054
+s2643
+
+N/usr/local/include/SFML/System/Export.hpp
+c0000000051F386060000000000000685
+t1374914054
+s1669
+
+N/usr/local/include/SFML/System/InputStream.hpp
+c0000000051F3860600000000000012D5
+t1374914054
+s4821
+
+N/usr/local/include/SFML/System/Lock.hpp
+c0000000051F38606000000000000112C
+t1374914054
+s4396
+
+N/usr/local/include/SFML/System/Mutex.hpp
+c0000000051F386060000000000001404
+t1374914054
+s5124
+
+N/usr/local/include/SFML/System/NonCopyable.hpp
+c0000000051F38606000000000000114A
+t1374914054
+s4426
+
+N/usr/local/include/SFML/System/Sleep.hpp
+c0000000051F386060000000000000752
+t1374914054
+s1874
+
+N/usr/local/include/SFML/System/String.hpp
+c0000000051F38606000000000000512D
+t1374914054
+s20781
+
+N/usr/local/include/SFML/System/Thread.hpp
+c0000000051F38606000000000000252B
+t1374914054
+s9515
+
+N/usr/local/include/SFML/System/Thread.inl
+c0000000051F386060000000000000B33
+t1374914054
+s2867
+
+N/usr/local/include/SFML/System/ThreadLocal.hpp
+c0000000051F386060000000000000DC0
+t1374914054
+s3520
+
+N/usr/local/include/SFML/System/ThreadLocalPtr.hpp
+c0000000051F3860600000000000013F6
+t1374914054
+s5110
+
+N/usr/local/include/SFML/System/ThreadLocalPtr.inl
+c0000000051F3860600000000000008F0
+t1374914054
+s2288
+
+N/usr/local/include/SFML/System/Time.hpp
+c0000000051F3860600000000000039F9
+t1374914054
+s14841
+
+N/usr/local/include/SFML/System/Utf.hpp
+c0000000051F386060000000000008DC7
+t1374914054
+s36295
+
+N/usr/local/include/SFML/System/Utf.inl
+c0000000051F3860600000000000056F9
+t1374914054
+s22265
+
+N/usr/local/include/SFML/System/Vector2.hpp
+c0000000051F38606000000000000275E
+t1374914054
+s10078
+
+N/usr/local/include/SFML/System/Vector2.inl
+c0000000051F3860600000000000010E0
+t1374914054
+s4320
+
+N/usr/local/include/SFML/System/Vector3.hpp
+c0000000051F386060000000000002766
+t1374914054
+s10086
+
+N/usr/local/include/SFML/System/Vector3.inl
+c0000000051F3860600000000000011F5
+t1374914054
+s4597
+
+N/usr/local/include/SFML/Window.hpp
+c0000000051F3860600000000000007C7
+t1374914054
+s1991
+
+N/usr/local/include/SFML/Window/Context.hpp
+c0000000051F38606000000000000125B
+t1374914054
+s4699
+
+N/usr/local/include/SFML/Window/ContextSettings.hpp
+c0000000051F3860600000000000010EA
+t1374914054
+s4330
+
+N/usr/local/include/SFML/Window/Event.hpp
+c0000000051F386060000000000002A0B
+t1374914054
+s10763
+
+N/usr/local/include/SFML/Window/Export.hpp
+c0000000051F386060000000000000685
+t1374914054
+s1669
+
+N/usr/local/include/SFML/Window/GlResource.hpp
+c0000000051F386060000000000000A68
+t1374914054
+s2664
+
+N/usr/local/include/SFML/Window/Joystick.hpp
+c0000000051F386060000000000001E46
+t1374914054
+s7750
+
+N/usr/local/include/SFML/Window/Keyboard.hpp
+c0000000051F386060000000000001DB7
+t1374914054
+s7607
+
+N/usr/local/include/SFML/Window/Mouse.hpp
+c0000000051F386060000000000001777
+t1374914054
+s6007
+
+N/usr/local/include/SFML/Window/VideoMode.hpp
+c0000000051F3860600000000000022D9
+t1374914054
+s8921
+
+N/usr/local/include/SFML/Window/Window.hpp
+c0000000051F386060000000000005461
+t1374914054
+s21601
+
+N/usr/local/include/SFML/Window/WindowHandle.hpp
+c0000000051F38606000000000000084A
+t1374914054
+s2122
+
+N/usr/local/include/SFML/Window/WindowStyle.hpp
+c0000000051F3860600000000000007DD
+t1374914054
+s2013
 
 CBuild AST from /Users/ira/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/Protobyte_dev_OSX/app/ProtoBaseApp.cpp
 r0
@@ -718,7 +1248,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd5770662542db841^944a0862542db841^-354"warning: no rule to process file '/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_v02/resources/defaultShader.vert' of type sourcecode.glsl for architecture x86_64warning: no rule to process file '/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_v02/resources/defaultShader.frag' of type sourcecode.glsl for architecture x86_642(21%IDEActivityLogMessage2@176"Warning: no rule to process file '/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_v02/resources/defaultShader.vert' of type sourcecode.glsl for architecture x86_64-405623906#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@176"Warning: no rule to process file '/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_v02/resources/defaultShader.frag' of type sourcecode.glsl for architecture x86_64-405623906#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#1#--18"Check dependencies36"37E3FE8E-AEED-4F22-99B6-2B60C419301F-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies13467f8b582db841^71c7b78b582db841^-354"warning: no rule to process file '/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_v02/resources/defaultShader.vert' of type sourcecode.glsl for architecture x86_64warning: no rule to process file '/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_v02/resources/defaultShader.frag' of type sourcecode.glsl for architecture x86_642(21%IDEActivityLogMessage2@176"Warning: no rule to process file '/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_v02/resources/defaultShader.vert' of type sourcecode.glsl for architecture x86_64-405624971#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@176"Warning: no rule to process file '/Users/ira/Dropbox/ira_dev/Protobyte 0.1.0 (Quark)/Protobyte_v02/resources/defaultShader.frag' of type sourcecode.glsl for architecture x86_64-405624971#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#1#--18"Check dependencies36"C7604056-179B-4280-9F66-4330DB06804D-
 
 CCompileC Build/Intermediates/Protobyte_dev_OSX.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/App01.o /Users/ira/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/Protobyte_dev_OSX/src/App01.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s405623906.031025
