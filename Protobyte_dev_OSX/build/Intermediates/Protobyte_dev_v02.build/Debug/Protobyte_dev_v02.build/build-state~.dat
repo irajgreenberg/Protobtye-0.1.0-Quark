@@ -1,0 +1,1509 @@
+TProtobyte_dev_v02
+v6
+r1
+cCheck dependencies
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBaseApp.o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletBall.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTransformFunction.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTube.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSphere.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoPlasm.o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletSurface.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBlock.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShader.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoRenderer.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/App01.o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/src/App01.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCurve3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVertex3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoUtility.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShape3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoWorld.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMath.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSpline3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoAnimator.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoAnimator.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFrenetFrame.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTexture2.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFace3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletStick.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoToroid.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoLight.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMain.o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoMain.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeom3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCamera.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/Protobyte_dev_v02 normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c000000005243E79F00000000000000AA
+t1380181919
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000052784A11000000000000044C
+t1383614993
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000052784A1100000000000001DB
+t1383614993
+s475
+
+N/Library/Frameworks/sfml-audio.framework/sfml-audio
+c0000000051F385F2000000000002B3B8
+t1374914034
+s177080
+
+N/Library/Frameworks/sfml-graphics.framework/sfml-graphics
+c0000000051F385F2000000000019DB34
+t1374914034
+s1694516
+
+N/Library/Frameworks/sfml-network.framework/sfml-network
+c0000000051F385F2000000000004D740
+t1374914034
+s317248
+
+N/Library/Frameworks/sfml-system.framework/sfml-system
+c0000000051F385F2000000000001C930
+t1374914034
+s117040
+
+N/Library/Frameworks/sfml-window.framework/sfml-window
+c0000000051F385F20000000000058330
+t1374914034
+s361264
+
+N/System/Library/Frameworks/GLUT.framework/GLUT
+c00000000526E759C00000000000F71B0
+t1382970780
+s1012144
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c00000000526E74FE000000000002C960
+t1382970622
+s182624
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/App01.o
+t1383872565
+s538316
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoAnimator.o
+t1383872565
+s74068
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBaseApp.o
+t1383872564
+s505976
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBlock.o
+t1383872564
+s316208
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCamera.o
+t1383872567
+s64556
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCurve3.o
+t1383872565
+s130088
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFace3.o
+t1383872566
+s87784
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFrenetFrame.o
+t1383872566
+s81628
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeom3.o
+t1383872567
+s459724
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoLight.o
+t1383872566
+s19080
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMain.o
+t1383872567
+s540736
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMath.o
+t1383872564
+s4544
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoPlasm.o
+t1383872564
+s532428
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoRenderer.o
+t1383872564
+s193496
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShader.o
+t1383872564
+s79432
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShape3.o
+t1383872565
+s133096
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSphere.o
+t1383872564
+s287420
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSpline3.o
+t1383872566
+s206984
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTexture2.o
+t1383872566
+s147016
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoToroid.o
+t1383872567
+s276860
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTransformFunction.o
+t1383872563
+s20256
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTube.o
+t1383872564
+s622616
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoUtility.o
+t1383872565
+s157888
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletBall.o
+t1383872563
+s14868
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletStick.o
+t1383872566
+s103820
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletSurface.o
+t1383872564
+s775812
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVertex3.o
+t1383872565
+s87900
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoWorld.o
+t1383872566
+s726672
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/Protobyte_dev_v02.LinkFileList
+c00000000527C38320000000000001208
+t1383872562
+s4616
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/Protobyte_dev_v02
+t2
+s0
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.cpp
+c00000000527C092F00000000000008D7
+t1383860527
+s2263
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoMain.cpp
+c00000000526897F800000000000000B2
+t1382586360
+s178
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.cpp
+c00000000527C094600000000000020E0
+t1383860550
+s8416
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/src/App01.cpp
+c00000000527C0ADA000000000000160C
+t1383860954
+s5644
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoAnimator.cpp
+c0000000051F6576700000000000005A1
+t1375098727
+s1441
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.cpp
+c00000000526C3023000000000000160E
+t1382821923
+s5646
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.cpp
+c00000000526E86500000000000001084
+t1382975056
+s4228
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.cpp
+c0000000052679D020000000000001115
+t1382522114
+s4373
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.cpp
+c000000005218F3050000000000000CF1
+t1377366789
+s3313
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.cpp
+c0000000052262E260000000000000880
+t1378233894
+s2176
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.cpp
+c00000000527A773E00000000000039A6
+t1383757630
+s14758
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.cpp
+c000000005233343700000000000007F9
+t1379087415
+s2041
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.cpp
+c0000000052386D950000000000000524
+t1379429781
+s1316
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.cpp
+c00000000526AB1C50000000000000E7D
+t1382724037
+s3709
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.cpp
+c00000000523DDAF00000000000000D69
+t1379785456
+s3433
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.cpp
+c0000000052190CA400000000000005B4
+t1377373348
+s1460
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.cpp
+c0000000052679DCA000000000000243E
+t1382522314
+s9278
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.cpp
+c0000000052679CDE00000000000031C7
+t1382522078
+s12743
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.cpp
+c0000000052785AEE000000000000228E
+t1383619310
+s8846
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.cpp
+c00000000527871590000000000000E29
+t1383625049
+s3625
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.cpp
+c00000000522A1A910000000000000784
+t1378491025
+s1924
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp
+c0000000052679ECC0000000000006291
+t1382522572
+s25233
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.cpp
+c0000000052679E4D0000000000000714
+t1382522445
+s1812
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.cpp
+c00000000527440BE000000000000055A
+t1383350462
+s1370
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.cpp
+c00000000527AB9210000000000000AE1
+t1383774497
+s2785
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp
+c00000000527C0B270000000000004C60
+t1383861031
+s19552
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.cpp
+c00000000521581D000000000000005DE
+t1377141200
+s1502
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp
+c00000000527BD5800000000000008095
+t1383847296
+s32917
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoMain.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/src/App01.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoAnimator.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.cpp
+r0
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa0a686b26f2cb841^b8cb96b26f2cb841^-316"warning: no rule to process file '/Users/33993405/Dropbox/ira_dev/Protobyte_v02/resources/defaultShader.vert' of type sourcecode.glsl for architecture x86_64warning: no rule to process file '/Users/33993405/Dropbox/ira_dev/Protobyte_v02/resources/defaultShader.frag' of type sourcecode.glsl for architecture x86_642(21%IDEActivityLogMessage2@157"Warning: no rule to process file '/Users/33993405/Dropbox/ira_dev/Protobyte_v02/resources/defaultShader.vert' of type sourcecode.glsl for architecture x86_64-405565362#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@157"Warning: no rule to process file '/Users/33993405/Dropbox/ira_dev/Protobyte_v02/resources/defaultShader.frag' of type sourcecode.glsl for architecture x86_64-405565362#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#1#--18"Check dependencies36"0F64E82B-6FFD-422A-AA21-1F785DEB4BB9-
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/App01.o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/src/App01.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565364.066382
+e405565365.801976
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/App01.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/src/App01.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/src/App01.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/src/App01.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.h
+d/usr/local/include/SFML/Window.hpp
+d/usr/local/include/SFML/System.hpp
+d/usr/local/include/SFML/Config.hpp
+d/usr/local/include/SFML/System/Clock.hpp
+d/usr/local/include/SFML/System/Export.hpp
+d/usr/local/include/SFML/System/Time.hpp
+d/usr/local/include/SFML/System/Err.hpp
+d/usr/local/include/SFML/System/InputStream.hpp
+d/usr/local/include/SFML/System/Lock.hpp
+d/usr/local/include/SFML/System/NonCopyable.hpp
+d/usr/local/include/SFML/System/Mutex.hpp
+d/usr/local/include/SFML/System/Sleep.hpp
+d/usr/local/include/SFML/System/String.hpp
+d/usr/local/include/SFML/System/Thread.hpp
+d/usr/local/include/SFML/System/Thread.inl
+d/usr/local/include/SFML/System/ThreadLocal.hpp
+d/usr/local/include/SFML/System/ThreadLocalPtr.hpp
+d/usr/local/include/SFML/System/ThreadLocalPtr.inl
+d/usr/local/include/SFML/System/Utf.hpp
+d/usr/local/include/SFML/System/Utf.inl
+d/usr/local/include/SFML/System/Vector2.hpp
+d/usr/local/include/SFML/System/Vector2.inl
+d/usr/local/include/SFML/System/Vector3.hpp
+d/usr/local/include/SFML/System/Vector3.inl
+d/usr/local/include/SFML/Window/Context.hpp
+d/usr/local/include/SFML/Window/Export.hpp
+d/usr/local/include/SFML/Window/GlResource.hpp
+d/usr/local/include/SFML/Window/ContextSettings.hpp
+d/usr/local/include/SFML/Window/Event.hpp
+d/usr/local/include/SFML/Window/Joystick.hpp
+d/usr/local/include/SFML/Window/Keyboard.hpp
+d/usr/local/include/SFML/Window/Mouse.hpp
+d/usr/local/include/SFML/Window/VideoMode.hpp
+d/usr/local/include/SFML/Window/Window.hpp
+d/usr/local/include/SFML/Window/WindowHandle.hpp
+d/usr/local/include/SFML/Window/WindowStyle.hpp
+d/usr/local/include/SFML/OpenGL.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBounds.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeomSet.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/src/App01.cpp188"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/App01.o src/App01.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler591911b46f2cb841^db50cdb56f2cb841^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/src/App01.cpp0000000000000000^2705"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/App01.o src/App01.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/App01.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/App01.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/src/App01.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/App01.o36"B7C395F5-5F54-4C7B-BE93-2C144D048580-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoAnimator.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoAnimator.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565364.938348
+e405565365.738767
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoAnimator.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoAnimator.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoAnimator.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoAnimator.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoAnimator.cpp246"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoAnimator.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoAnimator.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler4ddaf0b46f2cb841^4f23bdb56f2cb841^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoAnimator.cpp0000000000000000^2783"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoAnimator.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoAnimator.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoAnimator.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoAnimator.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoAnimator.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoAnimator.o36"B056D8A3-F9C4-4D06-B74B-334C468E832E-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBaseApp.o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565362.589476
+e405565364.460884
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBaseApp.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.h
+d/usr/local/include/SFML/Window.hpp
+d/usr/local/include/SFML/System.hpp
+d/usr/local/include/SFML/Config.hpp
+d/usr/local/include/SFML/System/Clock.hpp
+d/usr/local/include/SFML/System/Export.hpp
+d/usr/local/include/SFML/System/Time.hpp
+d/usr/local/include/SFML/System/Err.hpp
+d/usr/local/include/SFML/System/InputStream.hpp
+d/usr/local/include/SFML/System/Lock.hpp
+d/usr/local/include/SFML/System/NonCopyable.hpp
+d/usr/local/include/SFML/System/Mutex.hpp
+d/usr/local/include/SFML/System/Sleep.hpp
+d/usr/local/include/SFML/System/String.hpp
+d/usr/local/include/SFML/System/Thread.hpp
+d/usr/local/include/SFML/System/Thread.inl
+d/usr/local/include/SFML/System/ThreadLocal.hpp
+d/usr/local/include/SFML/System/ThreadLocalPtr.hpp
+d/usr/local/include/SFML/System/ThreadLocalPtr.inl
+d/usr/local/include/SFML/System/Utf.hpp
+d/usr/local/include/SFML/System/Utf.inl
+d/usr/local/include/SFML/System/Vector2.hpp
+d/usr/local/include/SFML/System/Vector2.inl
+d/usr/local/include/SFML/System/Vector3.hpp
+d/usr/local/include/SFML/System/Vector3.inl
+d/usr/local/include/SFML/Window/Context.hpp
+d/usr/local/include/SFML/Window/Export.hpp
+d/usr/local/include/SFML/Window/GlResource.hpp
+d/usr/local/include/SFML/Window/ContextSettings.hpp
+d/usr/local/include/SFML/Window/Event.hpp
+d/usr/local/include/SFML/Window/Joystick.hpp
+d/usr/local/include/SFML/Window/Keyboard.hpp
+d/usr/local/include/SFML/Window/Mouse.hpp
+d/usr/local/include/SFML/Window/VideoMode.hpp
+d/usr/local/include/SFML/Window/Window.hpp
+d/usr/local/include/SFML/Window/WindowHandle.hpp
+d/usr/local/include/SFML/Window/WindowStyle.hpp
+d/usr/local/include/SFML/OpenGL.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBounds.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeomSet.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.cpp202"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBaseApp.o app/ProtoBaseApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler23f996b26f2cb841^b1fc75b46f2cb841^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.cpp0000000000000000^2747"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBaseApp.o app/ProtoBaseApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBaseApp.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBaseApp.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBaseApp.o36"C26902B0-42AF-4979-BB85-774163356D02-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBlock.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565362.594824
+e405565364.126165
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBlock.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeomSet.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.cpp240"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBlock.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler9fe698b26f2cb841^f04c20b46f2cb841^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.cpp0000000000000000^2765"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBlock.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBlock.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBlock.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBlock.o36"B3ADB671-640C-4231-9868-763007394E22-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCamera.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565366.548333
+e405565367.408523
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCamera.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBounds.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.cpp242"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCamera.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compileree778cb66f2cb841^359668b76f2cb841^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.cpp0000000000000000^2771"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCamera.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCamera.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCamera.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCamera.o36"760F2CEA-2C2A-4F99-9EBB-6E27088C090D-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCurve3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565364.128293
+e405565365.286692
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCurve3.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.cpp242"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCurve3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compileredef20b46f2cb841^a88a49b56f2cb841^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.cpp0000000000000000^2771"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCurve3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCurve3.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCurve3.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCurve3.o36"D9D48B98-F84B-40B3-A00A-CB298F9E44FD-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFace3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565365.570619
+e405565366.607847
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFace3.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.cpp240"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFace3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerae2b92b56f2cb841^0f9c9bb66f2cb841^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.cpp0000000000000000^2765"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFace3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFace3.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFace3.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFace3.o36"6E498ACA-E6DD-4D49-8999-3D4F302AE64F-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFrenetFrame.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565365.287029
+e405565366.293769
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFrenetFrame.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.cpp252"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFrenetFrame.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler759249b56f2cb841^ccf14ab66f2cb841^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.cpp0000000000000000^2801"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFrenetFrame.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFrenetFrame.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFrenetFrame.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFrenetFrame.o36"C638790B-805D-4EF8-ADDC-D2D2AE04108C-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeom3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565366.294066
+e405565367.664710
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeom3.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeomSet.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.cpp240"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeom3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler9e604bb66f2cb841^802aaab76f2cb841^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.cpp0000000000000000^2765"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeom3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeom3.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeom3.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeom3.o36"61244D02-18A7-44E5-82EF-AE55A3CF5184-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoLight.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565365.803528
+e405565366.753764
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoLight.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.cpp240"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoLight.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerd8d4cdb56f2cb841^12f7c0b66f2cb841^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.cpp0000000000000000^2765"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoLight.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoLight.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoLight.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoLight.o36"B0AE4304-5530-4FC9-8AAB-08CD25812F1D-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMain.o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoMain.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565366.195865
+e405565367.640274
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMain.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoMain.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoMain.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.h
+d/usr/local/include/SFML/Window.hpp
+d/usr/local/include/SFML/System.hpp
+d/usr/local/include/SFML/Config.hpp
+d/usr/local/include/SFML/System/Clock.hpp
+d/usr/local/include/SFML/System/Export.hpp
+d/usr/local/include/SFML/System/Time.hpp
+d/usr/local/include/SFML/System/Err.hpp
+d/usr/local/include/SFML/System/InputStream.hpp
+d/usr/local/include/SFML/System/Lock.hpp
+d/usr/local/include/SFML/System/NonCopyable.hpp
+d/usr/local/include/SFML/System/Mutex.hpp
+d/usr/local/include/SFML/System/Sleep.hpp
+d/usr/local/include/SFML/System/String.hpp
+d/usr/local/include/SFML/System/Thread.hpp
+d/usr/local/include/SFML/System/Thread.inl
+d/usr/local/include/SFML/System/ThreadLocal.hpp
+d/usr/local/include/SFML/System/ThreadLocalPtr.hpp
+d/usr/local/include/SFML/System/ThreadLocalPtr.inl
+d/usr/local/include/SFML/System/Utf.hpp
+d/usr/local/include/SFML/System/Utf.inl
+d/usr/local/include/SFML/System/Vector2.hpp
+d/usr/local/include/SFML/System/Vector2.inl
+d/usr/local/include/SFML/System/Vector3.hpp
+d/usr/local/include/SFML/System/Vector3.inl
+d/usr/local/include/SFML/Window/Context.hpp
+d/usr/local/include/SFML/Window/Export.hpp
+d/usr/local/include/SFML/Window/GlResource.hpp
+d/usr/local/include/SFML/Window/ContextSettings.hpp
+d/usr/local/include/SFML/Window/Event.hpp
+d/usr/local/include/SFML/Window/Joystick.hpp
+d/usr/local/include/SFML/Window/Keyboard.hpp
+d/usr/local/include/SFML/Window/Mouse.hpp
+d/usr/local/include/SFML/Window/VideoMode.hpp
+d/usr/local/include/SFML/Window/Window.hpp
+d/usr/local/include/SFML/Window/WindowHandle.hpp
+d/usr/local/include/SFML/Window/WindowStyle.hpp
+d/usr/local/include/SFML/OpenGL.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBounds.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeomSet.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/src/App01.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoMain.cpp196"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMain.o app/ProtoMain.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilere57f32b66f2cb841^c9e9a3b76f2cb841^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoMain.cpp0000000000000000^2729"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMain.o app/ProtoMain.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMain.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMain.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoMain.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMain.o36"F45D2268-A1AA-4214-A9D2-28DF101C91DF-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMath.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565364.901316
+e405565364.938104
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMath.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.cpp238"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMath.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler601de7b46f2cb841^882af0b46f2cb841^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.cpp0000000000000000^2759"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMath.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMath.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMath.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMath.o36"5FCBD2B7-4856-4A6D-BF48-15F35D0B92C6-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoPlasm.o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565362.591976
+e405565364.533560
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoPlasm.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.h
+d/usr/local/include/SFML/Window.hpp
+d/usr/local/include/SFML/System.hpp
+d/usr/local/include/SFML/Config.hpp
+d/usr/local/include/SFML/System/Clock.hpp
+d/usr/local/include/SFML/System/Export.hpp
+d/usr/local/include/SFML/System/Time.hpp
+d/usr/local/include/SFML/System/Err.hpp
+d/usr/local/include/SFML/System/InputStream.hpp
+d/usr/local/include/SFML/System/Lock.hpp
+d/usr/local/include/SFML/System/NonCopyable.hpp
+d/usr/local/include/SFML/System/Mutex.hpp
+d/usr/local/include/SFML/System/Sleep.hpp
+d/usr/local/include/SFML/System/String.hpp
+d/usr/local/include/SFML/System/Thread.hpp
+d/usr/local/include/SFML/System/Thread.inl
+d/usr/local/include/SFML/System/ThreadLocal.hpp
+d/usr/local/include/SFML/System/ThreadLocalPtr.hpp
+d/usr/local/include/SFML/System/ThreadLocalPtr.inl
+d/usr/local/include/SFML/System/Utf.hpp
+d/usr/local/include/SFML/System/Utf.inl
+d/usr/local/include/SFML/System/Vector2.hpp
+d/usr/local/include/SFML/System/Vector2.inl
+d/usr/local/include/SFML/System/Vector3.hpp
+d/usr/local/include/SFML/System/Vector3.inl
+d/usr/local/include/SFML/Window/Context.hpp
+d/usr/local/include/SFML/Window/Export.hpp
+d/usr/local/include/SFML/Window/GlResource.hpp
+d/usr/local/include/SFML/Window/ContextSettings.hpp
+d/usr/local/include/SFML/Window/Event.hpp
+d/usr/local/include/SFML/Window/Joystick.hpp
+d/usr/local/include/SFML/Window/Keyboard.hpp
+d/usr/local/include/SFML/Window/Mouse.hpp
+d/usr/local/include/SFML/Window/VideoMode.hpp
+d/usr/local/include/SFML/Window/Window.hpp
+d/usr/local/include/SFML/Window/WindowHandle.hpp
+d/usr/local/include/SFML/Window/WindowStyle.hpp
+d/usr/local/include/SFML/OpenGL.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoBaseApp.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBounds.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeomSet.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.h
+o/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.cpp:182:18: warning: unused variable 'elapsed' [-Wunused-variable]
+o        sf::Time elapsed = clock.getElapsedTime();
+o                 ^
+o1 warning generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.cpp198"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoPlasm.o app/ProtoPlasm.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler779f97b26f2cb841^0f9788b46f2cb841^-227"/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.cpp:182:18: warning: unused variable 'elapsed' [-Wunused-variable]        sf::Time elapsed = clock.getElapsedTime();                 ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@25"Unused variable 'elapsed'-405565364#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@79"file:///Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.cpp0000000000000000^181#17#181#17#5969#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@79"file:///Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.cpp0000000000000000^2735"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoPlasm.o app/ProtoPlasm.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoPlasm.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoPlasm.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/app/ProtoPlasm.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoPlasm.o36"008813DC-9B4F-41C2-B6A9-EC525F9CEA87-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoRenderer.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565363.643377
+e405565364.900991
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoRenderer.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeomSet.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.cpp246"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoRenderer.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerfbc9a4b36f2cb841^f5bde6b46f2cb841^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.cpp0000000000000000^2783"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoRenderer.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoRenderer.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoRenderer.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoRenderer.o36"16B21515-FF37-4201-A89F-D8899A08F541-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShader.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565363.641044
+e405565364.571597
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShader.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.cpp242"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShader.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilera932a4b36f2cb841^ba1192b46f2cb841^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.cpp0000000000000000^2771"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShader.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShader.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShader.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShader.o36"4A0A5CF5-8D43-4F6D-B054-0818465179E4-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShape3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565364.571869
+e405565365.655522
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShape3.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.cpp242"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShape3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler36ca92b46f2cb841^23dda7b56f2cb841^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.cpp0000000000000000^2771"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShape3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShape3.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShape3.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShape3.o36"BD3C5F56-6EB4-42C8-AEF6-E1DEB2C8FB4B-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSphere.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565362.591474
+e405565364.064048
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSphere.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeomSet.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.cpp242"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSphere.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler310898b26f2cb841^c76510b46f2cb841^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.cpp0000000000000000^2771"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSphere.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSphere.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSphere.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSphere.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSphere.o36"CB616458-DA50-4C1F-875C-13B9399CED6E-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSpline3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565364.921927
+e405565366.195605
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSpline3.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMatrix3.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.cpp244"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSpline3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler611cecb46f2cb841^c21332b66f2cb841^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.cpp0000000000000000^2777"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSpline3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSpline3.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSpline3.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSpline3.o36"B5CC7D0B-91A0-490D-A8F0-50DD0088DBFE-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTexture2.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565365.479769
+e405565366.548064
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTexture2.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.cpp246"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTexture2.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler5d507bb56f2cb841^1e4e8cb66f2cb841^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.cpp0000000000000000^2783"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTexture2.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTexture2.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTexture2.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTexture2.o36"E033E459-A3C6-4FAB-BA0F-5E6BB0E12F34-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoToroid.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565365.740089
+e405565367.028236
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoToroid.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeomSet.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.cpp242"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoToroid.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilereb8ebdb56f2cb841^e52907b76f2cb841^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.cpp0000000000000000^2771"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoToroid.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoToroid.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoToroid.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoToroid.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoToroid.o36"07545652-D368-4702-AE2F-52DD4DE03883-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTransformFunction.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565362.590411
+e405565363.639742
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTransformFunction.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.cpp264"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTransformFunction.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler6b6097b26f2cb841^fed1a3b36f2cb841^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.cpp0000000000000000^2837"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTransformFunction.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTransformFunction.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTransformFunction.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTransformFunction.o36"1021D55E-0BC3-464C-A37A-0CA9E87CAEB3-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTube.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565362.590782
+e405565364.778576
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTube.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeomSet.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoSpline3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCurve3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFrenetFrame.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTransformFunction.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBlock.h
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp:411:19: warning: unused variable 'z' [-Wunused-variable]
+o            float z = ProtoMath::random(-perturbation.z, perturbation.z);
+o                  ^
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp:540:17: warning: unused variable 'i4' [-Wunused-variable]
+o            int i4 = j;
+o                ^
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp:542:17: warning: unused variable 'i6' [-Wunused-variable]
+o            int i6 = crossSectionDetail + j + 1;
+o                ^
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp:544:17: warning: unused variable 'i8' [-Wunused-variable]
+o            int i8 = j + 1;
+o                ^
+o4 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp238"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTube.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler857997b26f2cb841^41b6d0b46f2cb841^-742"/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp:411:19: warning: unused variable 'z' [-Wunused-variable]            float z = ProtoMath::random(-perturbation.z, perturbation.z);                  ^/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp:540:17: warning: unused variable 'i4' [-Wunused-variable]            int i4 = j;                ^/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp:542:17: warning: unused variable 'i6' [-Wunused-variable]            int i6 = crossSectionDetail + j + 1;                ^/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp:544:17: warning: unused variable 'i8' [-Wunused-variable]            int i8 = j + 1;                ^4 warnings generated.4(36%IDEClangDiagnosticActivityLogMessage2@19"Unused variable 'z'-405565364#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@66"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp0000000000000000^410#18#410#18#17189#0#19"Unused Entity Issue--2@20"Unused variable 'i4'-405565364#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp0000000000000000^539#16#539#16#22523#0#19"Unused Entity Issue--2@20"Unused variable 'i6'-405565364#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp0000000000000000^541#16#541#16#22590#0#19"Unused Entity Issue--2@20"Unused variable 'i8'-405565364#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp0000000000000000^543#16#543#16#22690#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@66"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp0000000000000000^2759"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTube.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTube.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTube.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTube.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTube.o36"4BB18414-C73F-4C21-9731-5CC4BE4F4A3C-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoUtility.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565364.534910
+e405565365.570304
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoUtility.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.cpp244"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoUtility.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler1f0f89b46f2cb841^dc1192b56f2cb841^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.cpp0000000000000000^2777"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoUtility.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoUtility.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoUtility.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoUtility.o36"D008259A-3153-4E8F-97CE-179B832649BB-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletBall.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565362.589899
+e405565363.639727
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletBall.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.cpp250"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletBall.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler221c97b26f2cb841^04c9a3b36f2cb841^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.cpp0000000000000000^2795"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletBall.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletBall.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletBall.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletBall.o36"BAB4617C-5E44-4CA5-B0F0-E9F942A8617D-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletStick.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565365.656870
+e405565366.736311
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletStick.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.cpp252"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletStick.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler2940a8b56f2cb841^457fbcb66f2cb841^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.cpp0000000000000000^2801"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletStick.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletStick.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletStick.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletStick.o36"4E81B4CE-9FCA-4550-B1EE-BD83992F01C4-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletSurface.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565362.593351
+e405565364.921677
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletSurface.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeomSet.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletStick.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletBall.h
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp:107:20: warning: 9 enumeration values not handled in switch: 'TOP_CORNER_LEFT', 'TOP_CORNER_RIGHT', 'BOTTOM_CORNER_LEFT'... [-Wswitch]
+o            switch(anchorMode){
+o                   ^
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp:237:9: warning: unused variable 'colOffset' [-Wunused-variable]
+o    int colOffset = 6;
+o        ^
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp256"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletSurface.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler65fc97b26f2cb841^87f8ebb46f2cb841^-445"/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp:107:20: warning: 9 enumeration values not handled in switch: 'TOP_CORNER_LEFT', 'TOP_CORNER_RIGHT', 'BOTTOM_CORNER_LEFT'... [-Wswitch]            switch(anchorMode){                   ^/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp:237:9: warning: unused variable 'colOffset' [-Wunused-variable]    int colOffset = 6;        ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@106"9 enumeration values not handled in switch: 'TOP_CORNER_LEFT', 'TOP_CORNER_RIGHT', 'BOTTOM_CORNER_LEFT'...-405565364#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@75"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp0000000000000000^106#19#106#19#3960#0#14"Semantic Issue--2@27"Unused variable 'colOffset'-405565364#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp0000000000000000^236#8#236#8#14137#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@75"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp0000000000000000^2813"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletSurface.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletSurface.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletSurface.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVerletSurface.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletSurface.o36"DA540596-5C9B-46A1-A021-BDFF4F99C88F-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVertex3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565364.462338
+e405565365.478459
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVertex3.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.cpp244"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVertex3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerfc7276b46f2cb841^09877ab56f2cb841^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.cpp0000000000000000^2777"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVertex3.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVertex3.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVertex3.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVertex3.o36"4D739A8A-62A6-4C34-9A53-BF14F534CA2F-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CCompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoWorld.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405565364.779979
+e405565366.894801
+r1
+xCompileC
+xBuild/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoWorld.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoBounds.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoCamera.h
+d/usr/local/include/SFML/OpenGL.hpp
+d/usr/local/include/SFML/Config.hpp
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoMath.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVector3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoPoint3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoLight.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoColor4.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShader.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoUtility.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoRenderer.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeom3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoFace3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoVertex3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTuple3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoDimension3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoTexture2.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoShape3.h
+d/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoGeomSet.h
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:316:15: warning: unused variable 'materialDiffuse' [-Wunused-variable]
+o        float materialDiffuse[4] = {
+o              ^
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:323:15: warning: unused variable 'materialSpecularity' [-Wunused-variable]
+o        float materialSpecularity[4] = {
+o              ^
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:345:17: warning: unused variable 'shininess' [-Wunused-variable]
+o        GLfloat shininess[] = {lights.at(lightCount)->getShinines()}; // max 128
+o                ^
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:337:15: warning: unused variable 'materialEmissive' [-Wunused-variable]
+o        float materialEmissive[4] = {
+o              ^
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:330:15: warning: unused variable 'materialAmbient' [-Wunused-variable]
+o        float materialAmbient[4] = {
+o              ^
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:465:15: warning: unused variable 'materialAmbient' [-Wunused-variable]
+o        float materialAmbient[4] = {
+o              ^
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:451:15: warning: unused variable 'materialDiffuse' [-Wunused-variable]
+o        float materialDiffuse[4] = {
+o              ^
+o/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:472:15: warning: unused variable 'materialEmissive' [-Wunused-variable]
+o        float materialEmissive[4] = {
+o              ^
+o8 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp240"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoWorld.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler60c7c7b46f2cb841^0054e5b66f2cb841^-1554"/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:316:15: warning: unused variable 'materialDiffuse' [-Wunused-variable]        float materialDiffuse[4] = {              ^/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:323:15: warning: unused variable 'materialSpecularity' [-Wunused-variable]        float materialSpecularity[4] = {              ^/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:345:17: warning: unused variable 'shininess' [-Wunused-variable]        GLfloat shininess[] = {lights.at(lightCount)->getShinines()}; // max 128                ^/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:337:15: warning: unused variable 'materialEmissive' [-Wunused-variable]        float materialEmissive[4] = {              ^/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:330:15: warning: unused variable 'materialAmbient' [-Wunused-variable]        float materialAmbient[4] = {              ^/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:465:15: warning: unused variable 'materialAmbient' [-Wunused-variable]        float materialAmbient[4] = {              ^/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:451:15: warning: unused variable 'materialDiffuse' [-Wunused-variable]        float materialDiffuse[4] = {              ^/Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp:472:15: warning: unused variable 'materialEmissive' [-Wunused-variable]        float materialEmissive[4] = {              ^8 warnings generated.8(36%IDEClangDiagnosticActivityLogMessage2@33"Unused variable 'materialDiffuse'-405565366#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp0000000000000000^315#14#315#14#9320#0#19"Unused Entity Issue--2@37"Unused variable 'materialSpecularity'-405565366#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp0000000000000000^322#14#322#14#9632#0#19"Unused Entity Issue--2@27"Unused variable 'shininess'-405565366#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp0000000000000000^344#16#344#16#10592#0#19"Unused Entity Issue--2@34"Unused variable 'materialEmissive'-405565366#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp0000000000000000^336#14#336#14#10264#0#19"Unused Entity Issue--2@33"Unused variable 'materialAmbient'-405565366#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp0000000000000000^329#14#329#14#9952#0#19"Unused Entity Issue--2@33"Unused variable 'materialAmbient'-405565366#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp0000000000000000^464#14#464#14#15078#0#19"Unused Entity Issue--2@33"Unused variable 'materialDiffuse'-405565366#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp0000000000000000^450#14#450#14#14438#0#19"Unused Entity Issue--2@34"Unused variable 'materialEmissive'-405565366#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp0000000000000000^471#14#471#14#15394#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@67"file:///Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp0000000000000000^2765"CompileC Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoWorld.o /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Protobyte_dev_v02.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/include -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoWorld.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoWorld.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_v02/ProtoWorld.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoWorld.o36"721B5335-F4C2-4E80-8714-74AE5544C653-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
+CLd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/Protobyte_dev_v02 normal x86_64
+s405565367.667021
+e405565367.787404
+r1
+xLd
+x/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/Protobyte_dev_v02
+xnormal
+xx86_64
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/Protobyte_dev_v02.LinkFileList
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBaseApp.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletBall.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTransformFunction.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTube.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSphere.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoPlasm.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletSurface.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoBlock.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShader.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoRenderer.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/App01.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCurve3.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVertex3.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoUtility.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoShape3.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoWorld.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMath.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoSpline3.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoAnimator.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFrenetFrame.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoTexture2.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoFace3.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoVerletStick.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoToroid.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoLight.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoMain.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoGeom3.o
+d/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/ProtoCamera.o
+d/Library/Frameworks/sfml-audio.framework/sfml-audio
+d/Library/Frameworks/sfml-graphics.framework/sfml-graphics
+d/Library/Frameworks/sfml-network.framework/sfml-network
+d/Library/Frameworks/sfml-system.framework/sfml-system
+d/Library/Frameworks/sfml-window.framework/sfml-window
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/GLUT
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Link /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/Protobyte_dev_v0255"Ld Build/Products/Debug/Protobyte_dev_v02 normal x86_6439d1aab76f2cb841^6799c9b76f2cb841^---0#0#1#--1408"Ld Build/Products/Debug/Protobyte_dev_v02 normal x86_64    cd /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX    setenv MACOSX_DEPLOYMENT_TARGET 10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -L/usr/local/lib -F/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug -F/Library/Frameworks -F/Library/Frameworks -filelist /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/Protobyte_dev_v02.LinkFileList -mmacosx-version-min=10.9 -frameworksfml-system -frameworksfml-window -frameworksfml-graphics -frameworksfml-audio -frameworksfml-network -stdlib=libc++ -framework sfml-audio -framework sfml-graphics -framework sfml-network -framework sfml-system -framework sfml-window -framework GLUT -framework OpenGL -Xlinker -dependency_info -Xlinker /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Intermediates/Protobyte_dev_v02.build/Debug/Protobyte_dev_v02.build/Objects-normal/x86_64/Protobyte_dev_v02_dependency_info.dat -o /Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/Build/Products/Debug/Protobyte_dev_v0236"77052CB3-5948-4066-914F-61A5B2645FC5-
+b3B2B3C4F-3381-4C1C-81F8-7D096AA70EEA
+
