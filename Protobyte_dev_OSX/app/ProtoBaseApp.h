@@ -11,18 +11,18 @@
 
 //#include <iostream>
 #include "ProtoPlasm.h"
-#include "../../Protobyte_v02/ProtoDimension2.h"
-#include "../../Protobyte_v02/ProtoWorld.h"
-#include "../../Protobyte_v02/ProtoColor3.h"
-#include "../../Protobyte_v02/ProtoColor4.h"
-#include "../../Protobyte_v02/ProtoMath.h"
-#include "../../Protobyte_v02/ProtoVector2.h"
-#include "../../Protobyte_v02/ProtoVector3.h"
-#include "../../Protobyte_v02/ProtoToroid.h"
-#include "../../Protobyte_v02/ProtoSpline3.h"
-#include "../../Protobyte_v02/ProtoSphere.h"
-#include "../../Protobyte_v02/ProtoTube.h"
-#include "../../Protobyte_v02/ProtoLight.h"
+#include "../../libProtobyte/ProtoDimension2.h"
+#include "../../libProtobyte/ProtoWorld.h"
+#include "../../libProtobyte/ProtoColor3.h"
+#include "../../libProtobyte/ProtoColor4.h"
+#include "../../libProtobyte/ProtoMath.h"
+#include "../../libProtobyte/ProtoVector2.h"
+#include "../../libProtobyte/ProtoVector3.h"
+#include "../../libProtobyte/ProtoToroid.h"
+#include "../../libProtobyte/ProtoSpline3.h"
+#include "../../libProtobyte/ProtoSphere.h"
+#include "../../libProtobyte/ProtoTube.h"
+#include "../../libProtobyte/ProtoLight.h"
 
 // preproc dir for relative resource loading
 // from http://stackoverflow.com/questions/143174/how-do-i-get-the-directory-that-a-program-is-running-from
