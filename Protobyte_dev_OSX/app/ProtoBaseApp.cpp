@@ -10,14 +10,43 @@
 
 using namespace ijg;
 
-// required call by subclass cstr
+// NOTE: called before GL context created
 ProtoBaseApp::ProtoBaseApp() {
-    //std::cout << "in base class cstr" << std::endl;
+   // std::cout << "in base class cstr" << std::endl;
 }
 
-// get handle to world
-void ProtoBaseApp::setWorld(std::unique_ptr<ProtoWorld> world){
-    this->world = std::move(world);
+// Get handle to world and init BaseApp
+// Note: this function does some work of cstr because
+// it is called after GL context has been created.
+void ProtoBaseApp::setWorld(std::shared_ptr<ProtoWorld> world){
+    this->world = world;
+    
+    //instantiate lights
+    light0 = std::shared_ptr<ProtoLight>(new ProtoLight());
+    light1 = std::shared_ptr<ProtoLight>(new ProtoLight());
+    light2 = std::shared_ptr<ProtoLight>(new ProtoLight());
+    light3 = std::shared_ptr<ProtoLight>(new ProtoLight());
+    light4 = std::shared_ptr<ProtoLight>(new ProtoLight());
+    light5 = std::shared_ptr<ProtoLight>(new ProtoLight());
+    light6 = std::shared_ptr<ProtoLight>(new ProtoLight());
+    light7 = std::shared_ptr<ProtoLight>(new ProtoLight());
+
+
+    // set default light on
+    world->add(light0);
+     world->add(light1);
+     world->add(light2);
+     world->add(light3);
+     world->add(light4);
+     world->add(light5);
+     world->add(light6);
+     world->add(light7);
+    light0->on();
+
+    
+    
+
+
 }
 
 // ownerhship was passed from Protoplasm to BaseApp, so BaseApp must start World rendering loop
@@ -30,9 +59,9 @@ void ProtoBaseApp::add(std::unique_ptr<ProtoGeom3> geom){
     world->add(std::move(geom));
 }
 
-void ProtoBaseApp::add(std::unique_ptr<ProtoLight> lt){
-     world->add(std::move(lt));
-}
+//void ProtoBaseApp::add(std::unique_ptr<ProtoLight> lt){
+//     world->add(std::move(lt));
+//}
 
 void ProtoBaseApp::add(std::unique_ptr<ProtoCamera> cam){
     world->add(std::move(cam));

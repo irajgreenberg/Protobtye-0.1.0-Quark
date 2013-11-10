@@ -1,0 +1,16 @@
+/home/ira/Desktop/SFML_Build/examples/X11/CMakeFiles/X11.dir
+/home/ira/Desktop/SFML_Build/doc/CMakeFiles/doc.dir
+/home/ira/Desktop/SFML_Build/examples/ftp/CMakeFiles/ftp.dir
+/home/ira/Desktop/SFML_Build/examples/opengl/CMakeFiles/opengl.dir
+/home/ira/Desktop/SFML_Build/examples/pong/CMakeFiles/pong.dir
+/home/ira/Desktop/SFML_Build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
+/home/ira/Desktop/SFML_Build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
+/home/ira/Desktop/SFML_Build/src/SFML/Network/CMakeFiles/sfml-network.dir
+/home/ira/Desktop/SFML_Build/src/SFML/System/CMakeFiles/sfml-system.dir
+/home/ira/Desktop/SFML_Build/src/SFML/Window/CMakeFiles/sfml-window.dir
+/home/ira/Desktop/SFML_Build/examples/shader/CMakeFiles/shader.dir
+/home/ira/Desktop/SFML_Build/examples/sockets/CMakeFiles/sockets.dir
+/home/ira/Desktop/SFML_Build/examples/sound/CMakeFiles/sound.dir
+/home/ira/Desktop/SFML_Build/examples/sound_capture/CMakeFiles/sound-capture.dir
+/home/ira/Desktop/SFML_Build/examples/voip/CMakeFiles/voip.dir
+/home/ira/Desktop/SFML_Build/examples/window/CMakeFiles/window.dir

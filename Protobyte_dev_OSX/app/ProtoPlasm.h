@@ -43,7 +43,7 @@ namespace ijg {
         sf::Window* window;
         
         // Master controller class, manages view, lighting and rendering
-        std::unique_ptr<ProtoWorld> world;
+        std::shared_ptr<ProtoWorld> world;
         
         // base app class for user defined app classes
         ProtoBaseApp* baseApp;

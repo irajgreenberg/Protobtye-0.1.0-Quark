@@ -70,6 +70,13 @@ namespace ijg {
         void setShininess(float shininess);
         float getShinines() const;
         
+        // user controls
+        void on();
+        void off();
+        
+        bool getIsOn() const;
+        
+        
     private:
         Vec3f position;
         
@@ -80,6 +87,8 @@ namespace ijg {
         ProtoColor4f diffuseMaterial, ambientMaterial, specularMaterial, emissiveMaterial;
         
         float shininess;
+        
+        bool isOn;
         
     };
     
@@ -152,6 +161,18 @@ namespace ijg {
     
     inline float ProtoLight::getShinines() const{
         return shininess;
+    }
+    
+    inline void ProtoLight::on(){
+        isOn = true;
+    }
+    
+    inline void ProtoLight::off(){
+        isOn = false;
+    }
+    
+    inline bool ProtoLight::getIsOn() const{
+        return isOn;
     }
 
 }

@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG    CMakeFiles/X11.dir/X11.cpp.o  -o X11 -rdynamic ../../lib/libsfml-window.so.2.1 ../../lib/libsfml-system.so.2.1 -lGLU -lGL -lSM -lICE -lX11 -lXext -lSM -lICE -lX11 -lXext -lpthread -lrt -lXrandr -lX11 

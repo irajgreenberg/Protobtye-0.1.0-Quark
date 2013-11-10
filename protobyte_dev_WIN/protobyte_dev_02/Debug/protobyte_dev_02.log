@@ -1,0 +1,64 @@
+﻿Build started 9/21/2013 10:11:39 PM.
+     1>Project "C:\Users\Ira\Dropbox\ira_dev\protobyte_dev_02_WIN\protobyte_dev_02\protobyte_dev_02.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Ira\code\glew-1.9.0\include" /I"C:\Users\Ira\code\SFML-2.1\include" /ZI /nologo /W3 /WX- /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_DEPRECATE /D SFML_STATIC /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt proto_main.cpp
+         proto_main.cpp
+     1>c:\users\ira\dropbox\ira_dev\protobyte_v02\protoworld.h(266): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(52): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(56): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(58): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(58): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(59): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(59): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(60): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(60): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(61): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(61): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(63): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(63): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(64): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(64): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(65): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(65): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(66): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(66): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(68): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(69): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(70): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(71): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(80): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(82): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(84): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(86): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(112): warning C4244: '+=' : conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(149): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(158): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(173): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(176): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\ira\dropbox\ira_dev\protobyte_dev_02_win\protobyte_dev_02\proto_main.cpp(202): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ira\Dropbox\ira_dev\protobyte_dev_02_WIN\Debug\protobyte_dev_02.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Ira\code\glew-1.9.0\lib" /LIBPATH:C:\Users\Ira\Dropbox\ira_dev\Protobyte_v02 /LIBPATH:"C:\Users\Ira\code\SFML-2.1\lib" glew32s.lib "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ira\Dropbox\ira_dev\protobyte_dev_02_WIN\Debug\protobyte_dev_02.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Ira\Dropbox\ira_dev\protobyte_dev_02_WIN\Debug\protobyte_dev_02.lib" /MACHINE:X86 Debug\ProtoCamera.obj
+         Debug\ProtoCurve3.obj
+         Debug\ProtoFace3.obj
+         Debug\ProtoFrenetFrame.obj
+         Debug\ProtoGeom3.obj
+         Debug\ProtoLight.obj
+         Debug\ProtoMath.obj
+         Debug\ProtoRenderer.obj
+         Debug\ProtoShader.obj
+         Debug\ProtoShape3.obj
+         Debug\ProtoSpline3.obj
+         Debug\ProtoTexture2.obj
+         Debug\ProtoToroid.obj
+         Debug\ProtoTransformFunction.obj
+         Debug\ProtoTube.obj
+         Debug\ProtoUtility.obj
+         Debug\ProtoVertex3.obj
+         Debug\ProtoWorld.obj
+         Debug\proto_main.obj
+         protobyte_dev_02.vcxproj -> C:\Users\Ira\Dropbox\ira_dev\protobyte_dev_02_WIN\Debug\protobyte_dev_02.exe
+     1>Done Building Project "C:\Users\Ira\Dropbox\ira_dev\protobyte_dev_02_WIN\protobyte_dev_02\protobyte_dev_02.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.18

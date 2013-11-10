@@ -6,8 +6,6 @@
 #include <SFML/Window.hpp>
 #include <SFML/OpenGL.hpp>
 
-#include <unistd.h> // for cCurrentPath
-#define GetCurrentDir getcwd
 
 //#include <iostream>
 #include "ProtoPlasm.h"
@@ -46,6 +44,7 @@ namespace ijg {
     
     class ProtoBaseApp {
         
+        // enable Protoplasm private access
         friend class ProtoPlasm;
         
     public:
@@ -56,7 +55,7 @@ namespace ijg {
         
     private:
         // only needed to be called by ProtoPlasm class - a friend
-        void setWorld(std::unique_ptr<ProtoWorld> world);
+        void setWorld(std::shared_ptr<ProtoWorld> world);
         void runWorld();
         // don't let users touch this after context is created
         void setWidth(int canvasWidth);
@@ -64,6 +63,34 @@ namespace ijg {
         void setSize(const Dim2i& canvasSize);
         
     protected:
+        /************************************
+         **********     FIELDS     **********
+         ***********************************/
+        std::shared_ptr<ProtoWorld> world;
+        int appWidth;
+        int appHeight;
+        std::string appTitle;
+        int canvasWidth;
+        int canvasHeight;
+        Dim2i canvasSize;
+        
+        // background color
+        Col3f bgColor;
+        
+        // CAMERAS
+        // 5 cameras (for now) accessible in world
+        ProtoCamera camera0, camera1, camera2, camera3, camera4;
+        
+        // LIGHTS
+        // per GL limits 8 lights accessible in world
+        // light0 enabled by default
+        std::shared_ptr<ProtoLight> light0, light1, light2, light3, light4, light5, light6, light7;
+        //std::shared_ptr<ProtoLight> lights[8];
+        
+        
+        /************************************
+         **********   FUNCTIONS   ***********
+         ***********************************/
         // pure virtual funcs require override
         virtual void init()=0;
         virtual void run()=0;
@@ -84,33 +111,30 @@ namespace ijg {
         
         // Add content to world
         void add(std::unique_ptr<ProtoGeom3> geom);
-        void add(std::unique_ptr<ProtoLight> lt);
+        //void add(std::unique_ptr<ProtoLight> lt);
+        //void add(std::shared_ptr<ProtoLight> lt);
         void add(std::unique_ptr<ProtoCamera> cam);
         //void initWorld();
 
         
-        std::unique_ptr<ProtoWorld> world;
-        int appWidth;
-        int appHeight;
-        std::string appTitle;
-        int canvasWidth;
-        int canvasHeight;
-        Dim2i canvasSize;
-        
-        // background color
-        Col3f bgColor;
+        // set background color
         void setBackground(float r, float g, float b);
         void setBackground(float c);
         void setBackground(const Col3f& col);
         void setBackground(const Col4f& col);
         
-        // window properties **READ ONLY**
+        // get window properties **READ ONLY**
         int getWidth()const;
         int getHeight()const;
         Dim2i getSize()const;
         
         // image loading using SFML
         void loadImage(std::string url);
+        
+        // LIGHTS
+        
+        
+        // CAMERAS
        
         
     

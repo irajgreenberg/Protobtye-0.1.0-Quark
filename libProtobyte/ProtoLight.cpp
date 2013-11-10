@@ -27,7 +27,7 @@ using namespace ijg;
 
 // default cstr
 ProtoLight::ProtoLight():
-position(Vec3f(-2, 2, 2)), diffuse(ProtoColor4f(.8, .5, .1, 1.0)), ambient(ProtoColor4f(.5, .5, .5, 1.0)), specular(ProtoColor4f(1.0, 1.0, 1.0, 1.0)), shininess(25), diffuseMaterial(ProtoColor4f(1.0, 1.0, 1.0, 1.0)), ambientMaterial(ProtoColor4f(.25, .25, .25, 1)), specularMaterial(ProtoColor4f(1.0, 1.0, 1.0, 1.0)), emissiveMaterial(ProtoColor4f(0, 0, 0, 1.0)){
+position(Vec3f(-2, 2, 2)), diffuse(ProtoColor4f(.8, .5, .1, 1.0)), ambient(ProtoColor4f(.8, .5, .9, 1.0)), specular(ProtoColor4f(1.0, 1.0, 1.0, 1.0)), shininess(25), diffuseMaterial(ProtoColor4f(1.0, 1.0, 1.0, 1.0)), ambientMaterial(ProtoColor4f(.25, .25, .25, 1)), specularMaterial(ProtoColor4f(1.0, 1.0, 1.0, 1.0)), emissiveMaterial(ProtoColor4f(0, 0, 0, 1.0)){
 }
 
 // cstr

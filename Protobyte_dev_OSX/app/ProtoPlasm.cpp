@@ -21,26 +21,25 @@ baseApp(baseApp), appWidth(1024), appHeight(764), appTitle("Protobyte App")
     // instantiate world
     //world = std::unique_ptr<ProtoWorld>(new ProtoWorld(appWidth, appHeight));
     
-    // init app and call init() and run() to activate functions in user derived class
+    // init app and call init() and run() to activate functions in user defined BaseApp derived class
     initSFMLInit();
     initSFMLRun();
 }
 
-ProtoPlasm:: ProtoPlasm(int appWidth, int appHeight, std::string appTitle, ProtoBaseApp* baseApp){
-   // std::cout << " baseApp = " << baseApp << std::endl;
-   // std::cout << " this->baseApp = " << this->baseApp << std::endl;
-    this->baseApp = baseApp;
+ProtoPlasm:: ProtoPlasm(int appWidth, int appHeight, std::string appTitle, ProtoBaseApp* baseApp):
+appWidth(appWidth), appHeight(appHeight), appTitle(appTitle), baseApp(baseApp){
+   // this->baseApp = baseApp;
     baseApp->setWidth(appWidth);
     baseApp->setHeight(appHeight);
     baseApp->setSize(Dim2i(appWidth, appHeight));
     
-    this->appWidth = appWidth;
-    this->appHeight = appHeight;
-    this->appTitle = appTitle;
+   // this->appWidth = appWidth;
+   // this->appHeight = appHeight;
+   // this->appTitle = appTitle;
     
     
     
-    // init app and call init() and run() to activate functions in user derived class
+    // Create GL context and call init() and run() to activate functions in user defined BaseApp derived class
     initSFMLInit();
     initSFMLRun();
 }
@@ -56,20 +55,26 @@ void ProtoPlasm::initSFMLInit(){
     
    
     
-    // create the window and GL context
+    // create window and GL context
     window = new sf::Window(sf::VideoMode(appWidth, appHeight), appTitle, sf::Style::Default, settings);
+    // set framerate to refresh rate, ~60fps
     window->setVerticalSyncEnabled(true);
     
     // set gl states
     //glClearColor(1.0f, 1.0, .25, 1.0f);
     glEnable(GL_NORMALIZE);
+    
+    // enable specualrity on textures
     glLightModelf(GL_LIGHT_MODEL_COLOR_CONTROL,GL_SEPARATE_SPECULAR_COLOR);
     
     
-    // World
-    // instantiate world
-    world = std::unique_ptr<ProtoWorld>(new ProtoWorld(appWidth, appHeight));
+    // World manages lighting and views (cameras)
+    // instantiate singleton world
+    world = std::shared_ptr<ProtoWorld>(new ProtoWorld(appWidth, appHeight));
+    
+    // set default single world view
     world->setWorldView(ProtoWorld::SINGLE_VIEW);
+    
     world->setWorldRotSpeed(Vec3f(1.3, 0, 0));
     
     std::unique_ptr<ijg::ProtoCamera> camera1(new ijg::ProtoCamera(Vec3f(0, 0, 4.9), Vec3f(0, 0, 0), ProtoBoundsf(0, 0,appWidth, appHeight)));
@@ -98,36 +103,39 @@ void ProtoPlasm::initSFMLInit(){
 
     // Lights
     // Light 1
-    std::unique_ptr<ijg::ProtoLight> lt0_ptr = std::unique_ptr<ijg::ProtoLight>(new ProtoLight());
-    lt0_ptr->setShininess(128.0);
-    lt0_ptr->setDiffuse(ProtoColor4f(1.0, .5, 0, 1.0));
-    lt0_ptr->setSpecular(ProtoColor4f(1.0, 1.0, 1.0, 1.0));
-    lt0_ptr->setAmbient(ProtoColor4f(.4, .4, .4, 1.0));
-    lt0_ptr->setPosition(Vec3f(0, 0, -2.0));
-    world->add(std::move(lt0_ptr));
-    
-    // Light 2
-    std::unique_ptr<ijg::ProtoLight> lt1_ptr = std::unique_ptr<ijg::ProtoLight>(new ProtoLight());
-    lt1_ptr->setShininess(128.0);
-    lt1_ptr->setDiffuse(ProtoColor4f(1.0, .5, 0, 1.0));
-    lt1_ptr->setSpecular(ProtoColor4f(1.0, 1.0, 1.0, 1.0));
-    lt1_ptr->setAmbient(ProtoColor4f(.4, .4, .4, 1.0));
-    lt1_ptr->setPosition(Vec3f(-2, 2, 2.0));
-    world->add(std::move(lt1_ptr));
-    
-    
-    world->setLights();
+//    std::unique_ptr<ijg::ProtoLight> lt0_ptr = std::unique_ptr<ijg::ProtoLight>(new ProtoLight());
+//    lt0_ptr->setShininess(128.0);
+//    lt0_ptr->setDiffuse(ProtoColor4f(1.0, .5, 0, 1.0));
+//    lt0_ptr->setSpecular(ProtoColor4f(1.0, 1.0, 1.0, 1.0));
+//    lt0_ptr->setAmbient(ProtoColor4f(.4, .4, .4, 1.0));
+//    lt0_ptr->setPosition(Vec3f(0, 0, -2.0));
+//    world->add(std::move(lt0_ptr));
+//    
+//    // Light 2
+//    std::unique_ptr<ijg::ProtoLight> lt1_ptr = std::unique_ptr<ijg::ProtoLight>(new ProtoLight());
+//    lt1_ptr->setShininess(128.0);
+//    lt1_ptr->setDiffuse(ProtoColor4f(1.0, .5, 0, 1.0));
+//    lt1_ptr->setSpecular(ProtoColor4f(1.0, 1.0, 1.0, 1.0));
+//    lt1_ptr->setAmbient(ProtoColor4f(.4, .4, .4, 1.0));
+//    lt1_ptr->setPosition(Vec3f(-2, 2, 2.0));
+//    world->add(std::move(lt1_ptr));
+//    
+//    
+//    world->setLights();
 
     
     
-    baseApp->setWorld(std::move(world));
+    // pass world to baseApp enabling user defined BaseApp derived class access
+    // setWorld also initializes some baseApp states
+    //std::cout << "world->fovAngle = " << world->fovAngle << std::endl;
+    baseApp->setWorld(world);
+   // std::cout << "baseApp->world->fovAngle = " << baseApp->world->fovAngle << std::endl;
     
-    
-    
-    // Activate derived user class implementation.
+    // Activate init function in user derived class.n.
     baseApp->init();
     }
 
+// activate animation thread and run() function in user defined BaseApp derived class
 void ProtoPlasm::initSFMLRun(){
     
     // Activate derived user class implementations of events:
@@ -196,7 +204,7 @@ void ProtoPlasm::initSFMLRun(){
         while (window->pollEvent(event))
         {
             if (event.mouseButton.button == sf::Mouse::Left) {
-//                std::cout << "event.size = " << event.size.width << std::endl;
+                //std::cout << "event.size = " << event.size.width << std::endl;
 //                std::cout << "event.size = " << event.size.height << std::endl;
 //                std::cout << "event.mouseButton.x = " << event.mouseButton.x << std::endl;
 //                std::cout << "event.mouseButton.y = " << event.mouseButton.y << std::endl;

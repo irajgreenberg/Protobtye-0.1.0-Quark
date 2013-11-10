@@ -40,7 +40,7 @@ public:
     void onResized();
     void onClosed();
 
-
+    bool isClicked;
     
     
 };

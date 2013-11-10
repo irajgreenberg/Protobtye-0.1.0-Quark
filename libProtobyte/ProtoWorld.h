@@ -77,6 +77,7 @@ namespace ijg {
     
     //+++++ LIGHTS +++++
     void add(std::unique_ptr<ProtoLight> light);
+
     
     void add(ProtoLight* light);
     
@@ -89,7 +90,6 @@ namespace ijg {
     class ProtoWorld {
         
     private:
-        
         
         float canvasWidth, canvasHeight;
         
@@ -107,8 +107,10 @@ namespace ijg {
         static const unsigned char CAMERA_COUNT_MAX; // 4
         
         // Lights
-        std::vector< std::unique_ptr<ProtoLight> > lights; // holds up to 8 lights
-        std::vector<ProtoLight* > lights2; // holds up to 8 lights
+        bool isOn[8];
+        std::vector< std::shared_ptr<ProtoLight> > lights; // holds up to 8
+   
+        //std::vector<ProtoLight* > lights; // holds up to 8 lights
         static unsigned char lightCount; // 1-8
         static const unsigned char LIGHT_COUNT_MAX; // 8
         
@@ -254,9 +256,10 @@ namespace ijg {
       
         
         //+++++ LIGHTS +++++
-         void add(std::unique_ptr<ProtoLight> light);
+        //void add(std::unique_ptr<ProtoLight> light);
+        void add(std::shared_ptr<ProtoLight> light);
         
-        void add(ProtoLight* light);
+        //void add(ProtoLight* light);
         
         
         //        // cleans up containers but NOT memory

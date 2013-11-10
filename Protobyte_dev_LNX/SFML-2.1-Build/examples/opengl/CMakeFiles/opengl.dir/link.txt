@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG    CMakeFiles/opengl.dir/OpenGL.cpp.o  -o opengl -rdynamic ../../lib/libsfml-graphics.so.2.1 ../../lib/libsfml-window.so.2.1 ../../lib/libsfml-system.so.2.1 -lGLU -lGL -lSM -lICE -lX11 -lXext -lXrandr -lpthread -lrt -lfreetype -lGLEW -ljpeg -lGL -lSM -lICE -lX11 -lXext 
