@@ -62,8 +62,13 @@ void ProtoGeom3::init() {
 	calcVertexNorms();
 	calcPrimitives();
 	fillDisplayLists(); // just in case we want to render with display Lists: Data can't be changed though
-
-
+    
+    // set object material default settings
+    // mid shiny, white specular highlights, no emission
+    setShininess();
+    setSpecularMaterialColor();
+    setEmissionMaterialColor();
+    
 // initialize glew for Windows
 #if defined(_WIN32) || defined(__linux__)
 	GLenum err = glewInit();
@@ -230,6 +235,12 @@ void ProtoGeom3::fillDisplayLists() {
 world type class, to enable aggregate face sorting and 
 and primitive processing*/
 void ProtoGeom3::display(displayMode mode, renderMode render, float pointSize) {
+    
+    // set materials colors not controlled by glColor
+    glMaterialfv(GL_FRONT, GL_SPECULAR, specularMaterialColor);
+    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
+    glMaterialfv(GL_FRONT, GL_EMISSION, emissionMaterialColor);
+    
 	switch (render) {
 	case POINT_CLOUD:
 		glDisable(GL_CULL_FACE);

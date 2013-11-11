@@ -188,33 +188,26 @@ canvasWidth(canvasWidth), canvasHeight(canvasHeight){
 //}
 
 void ProtoWorld::init(){;
-    glEnable(GL_LIGHTING);
-    //lights.push_back(std::shared_ptr<ProtoLight>(new ProtoLight()));
-    // std::cout << "lights.size() = " << lights.size() << std::endl;
-    //setLights();
-    glFrontFace(GL_CCW); // default
-    glEnable(GL_CULL_FACE);
-    //glCullFace(GL_BACK);
-    //glDisable(GL_CULL_FACE);
-    glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
-    //glShadeModel(GL_SMOOTH); // smooth by default
-    //glShadeModel(GL_FLAT);
-    glEnable(GL_COLOR_MATERIAL); // incorporates per vertex color with lights
-    glColorMaterial ( GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE ) ;
-    //glColorMaterial(GL_FRONT_AND_BACK, GL_EMISSION);
-    //    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT);
-    //    glColorMaterial(GL_FRONT_AND_BACK, GL_DIFFUSE);
-    //glColorMaterial(GL_FRONT, GL_SPECULAR);
-    
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    glEnable(GL_BLEND);
-    glEnable(GL_DEPTH_TEST);
-    glEnable(GL_NORMALIZE); //  good for uniform scaling
-    
-    
-    glClearStencil(0); // clear stencil buffer
-    glClearDepth(1.0f); // 0 is near, 1 is far
-    glDepthFunc(GL_LEQUAL);
+//    glEnable(GL_LIGHTING);
+//    glFrontFace(GL_CCW); // default
+//    glEnable(GL_CULL_FACE);
+//    //glCullFace(GL_BACK);
+//    //glDisable(GL_CULL_FACE);
+//    glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
+//    //glShadeModel(GL_FLAT); // option
+//    glEnable(GL_COLOR_MATERIAL); // incorporates per vertex color with lights
+//    // let glColor contorl diffues and ambient material values
+//    glColorMaterial ( GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE );
+//    
+//    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+//    glEnable(GL_BLEND);
+//    glEnable(GL_DEPTH_TEST);
+//    glEnable(GL_NORMALIZE); //  good for uniform scaling
+//    
+//    
+//    glClearStencil(0); // clear stencil buffer
+//    glClearDepth(1.0f); // 0 is near, 1 is far
+//    glDepthFunc(GL_LEQUAL);
     
     
     // CREATE DEFAULT CAMERA
@@ -329,9 +322,7 @@ void ProtoWorld::run() {
     /**************************************************
      *                   LIGHTING                     *
      *************************************************/
-    
-    for(int i=0; i<static_cast<int>(lights.size()); ++i){
-       
+    for(std::size_t i=0; i<lights.size(); ++i){
         switch(i){
             case 0:
                 if(lights.at(i)->getIsOn()){
@@ -368,38 +359,38 @@ void ProtoWorld::run() {
                     
                     
                     // materials
-                    float materialDiffuse[4] = {
-                        lights.at(i)->getDiffuseMaterial().getR(),
-                        lights.at(i)->getDiffuseMaterial().getG(),
-                        lights.at(i)->getDiffuseMaterial().getB(),
-                        lights.at(i)->getDiffuseMaterial().getA()
-                    };
+//                    float materialDiffuse[4] = {
+//                        lights.at(i)->getDiffuseMaterial().getR(),
+//                        lights.at(i)->getDiffuseMaterial().getG(),
+//                        lights.at(i)->getDiffuseMaterial().getB(),
+//                        lights.at(i)->getDiffuseMaterial().getA()
+//                    };
+//                    
+//                    float materialSpecularity[4] = {
+//                        lights.at(i)->getSpecularMaterial().getR(),
+//                        lights.at(i)->getSpecularMaterial().getG(),
+//                        lights.at(i)->getSpecularMaterial().getB(),
+//                        lights.at(i)->getSpecularMaterial().getA()
+//                    };
+//                    
+//                    float materialAmbient[4] = {
+//                        lights.at(i)->getAmbientMaterial().getR(),
+//                        lights.at(i)->getAmbientMaterial().getG(),
+//                        lights.at(i)->getAmbientMaterial().getB(),
+//                        lights.at(i)->getAmbientMaterial().getA()
+//                    };
+//                    
+//                    float materialEmissive[4] = {
+//                        lights.at(i)->getEmissiveMaterial().getR(),
+//                        lights.at(i)->getEmissiveMaterial().getG(),
+//                        lights.at(i)->getEmissiveMaterial().getB(),
+//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    };
                     
-                    float materialSpecularity[4] = {
-                        lights.at(i)->getSpecularMaterial().getR(),
-                        lights.at(i)->getSpecularMaterial().getG(),
-                        lights.at(i)->getSpecularMaterial().getB(),
-                        lights.at(i)->getSpecularMaterial().getA()
-                    };
+                    //GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
                     
-                    float materialAmbient[4] = {
-                        lights.at(i)->getAmbientMaterial().getR(),
-                        lights.at(i)->getAmbientMaterial().getG(),
-                        lights.at(i)->getAmbientMaterial().getB(),
-                        lights.at(i)->getAmbientMaterial().getA()
-                    };
-                    
-                    float materialEmissive[4] = {
-                        lights.at(i)->getEmissiveMaterial().getR(),
-                        lights.at(i)->getEmissiveMaterial().getG(),
-                        lights.at(i)->getEmissiveMaterial().getB(),
-                        lights.at(i)->getEmissiveMaterial().getA()
-                    };
-                    
-                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-                    
-                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
+                    //glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
+                    //glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
                     glLightfv(GL_LIGHT0, GL_POSITION, position);
                     glLightfv(GL_LIGHT0, GL_AMBIENT, ambient);
                     glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuse);
@@ -443,38 +434,38 @@ void ProtoWorld::run() {
                     
                     
                     // materials
-                    float materialDiffuse[4] = {
-                        lights.at(i)->getDiffuseMaterial().getR(),
-                        lights.at(i)->getDiffuseMaterial().getG(),
-                        lights.at(i)->getDiffuseMaterial().getB(),
-                        lights.at(i)->getDiffuseMaterial().getA()
-                    };
+//                    float materialDiffuse[4] = {
+//                        lights.at(i)->getDiffuseMaterial().getR(),
+//                        lights.at(i)->getDiffuseMaterial().getG(),
+//                        lights.at(i)->getDiffuseMaterial().getB(),
+//                        lights.at(i)->getDiffuseMaterial().getA()
+//                    };
+//                    
+//                    float materialSpecularity[4] = {
+//                        lights.at(i)->getSpecularMaterial().getR(),
+//                        lights.at(i)->getSpecularMaterial().getG(),
+//                        lights.at(i)->getSpecularMaterial().getB(),
+//                        lights.at(i)->getSpecularMaterial().getA()
+//                    };
+//                    
+//                    float materialAmbient[4] = {
+//                        lights.at(i)->getAmbientMaterial().getR(),
+//                        lights.at(i)->getAmbientMaterial().getG(),
+//                        lights.at(i)->getAmbientMaterial().getB(),
+//                        lights.at(i)->getAmbientMaterial().getA()
+//                    };
+//                    
+//                    float materialEmissive[4] = {
+//                        lights.at(i)->getEmissiveMaterial().getR(),
+//                        lights.at(i)->getEmissiveMaterial().getG(),
+//                        lights.at(i)->getEmissiveMaterial().getB(),
+//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    };
                     
-                    float materialSpecularity[4] = {
-                        lights.at(i)->getSpecularMaterial().getR(),
-                        lights.at(i)->getSpecularMaterial().getG(),
-                        lights.at(i)->getSpecularMaterial().getB(),
-                        lights.at(i)->getSpecularMaterial().getA()
-                    };
+                    //GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
                     
-                    float materialAmbient[4] = {
-                        lights.at(i)->getAmbientMaterial().getR(),
-                        lights.at(i)->getAmbientMaterial().getG(),
-                        lights.at(i)->getAmbientMaterial().getB(),
-                        lights.at(i)->getAmbientMaterial().getA()
-                    };
-                    
-                    float materialEmissive[4] = {
-                        lights.at(i)->getEmissiveMaterial().getR(),
-                        lights.at(i)->getEmissiveMaterial().getG(),
-                        lights.at(i)->getEmissiveMaterial().getB(),
-                        lights.at(i)->getEmissiveMaterial().getA()
-                    };
-                    
-                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-                    
-                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
+                    //glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
+                    //glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
                     glLightfv(GL_LIGHT1, GL_POSITION, position);
                     glLightfv(GL_LIGHT1, GL_AMBIENT, ambient);
                     glLightfv(GL_LIGHT1, GL_DIFFUSE, diffuse);
@@ -519,38 +510,38 @@ void ProtoWorld::run() {
                     
                     
                     // materials
-                    float materialDiffuse[4] = {
-                        lights.at(i)->getDiffuseMaterial().getR(),
-                        lights.at(i)->getDiffuseMaterial().getG(),
-                        lights.at(i)->getDiffuseMaterial().getB(),
-                        lights.at(i)->getDiffuseMaterial().getA()
-                    };
+//                    float materialDiffuse[4] = {
+//                        lights.at(i)->getDiffuseMaterial().getR(),
+//                        lights.at(i)->getDiffuseMaterial().getG(),
+//                        lights.at(i)->getDiffuseMaterial().getB(),
+//                        lights.at(i)->getDiffuseMaterial().getA()
+//                    };
+//                    
+//                    float materialSpecularity[4] = {
+//                        lights.at(i)->getSpecularMaterial().getR(),
+//                        lights.at(i)->getSpecularMaterial().getG(),
+//                        lights.at(i)->getSpecularMaterial().getB(),
+//                        lights.at(i)->getSpecularMaterial().getA()
+//                    };
+//                    
+//                    float materialAmbient[4] = {
+//                        lights.at(i)->getAmbientMaterial().getR(),
+//                        lights.at(i)->getAmbientMaterial().getG(),
+//                        lights.at(i)->getAmbientMaterial().getB(),
+//                        lights.at(i)->getAmbientMaterial().getA()
+//                    };
+//                    
+//                    float materialEmissive[4] = {
+//                        lights.at(i)->getEmissiveMaterial().getR(),
+//                        lights.at(i)->getEmissiveMaterial().getG(),
+//                        lights.at(i)->getEmissiveMaterial().getB(),
+//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    };
                     
-                    float materialSpecularity[4] = {
-                        lights.at(i)->getSpecularMaterial().getR(),
-                        lights.at(i)->getSpecularMaterial().getG(),
-                        lights.at(i)->getSpecularMaterial().getB(),
-                        lights.at(i)->getSpecularMaterial().getA()
-                    };
+//                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
                     
-                    float materialAmbient[4] = {
-                        lights.at(i)->getAmbientMaterial().getR(),
-                        lights.at(i)->getAmbientMaterial().getG(),
-                        lights.at(i)->getAmbientMaterial().getB(),
-                        lights.at(i)->getAmbientMaterial().getA()
-                    };
-                    
-                    float materialEmissive[4] = {
-                        lights.at(i)->getEmissiveMaterial().getR(),
-                        lights.at(i)->getEmissiveMaterial().getG(),
-                        lights.at(i)->getEmissiveMaterial().getB(),
-                        lights.at(i)->getEmissiveMaterial().getA()
-                    };
-                    
-                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-                    
-                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
+//                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
+//                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
                     glLightfv(GL_LIGHT2, GL_POSITION, position);
                     glLightfv(GL_LIGHT2, GL_AMBIENT, ambient);
                     glLightfv(GL_LIGHT2, GL_DIFFUSE, diffuse);
@@ -596,38 +587,38 @@ void ProtoWorld::run() {
                     
                     
                     // materials
-                    float materialDiffuse[4] = {
-                        lights.at(i)->getDiffuseMaterial().getR(),
-                        lights.at(i)->getDiffuseMaterial().getG(),
-                        lights.at(i)->getDiffuseMaterial().getB(),
-                        lights.at(i)->getDiffuseMaterial().getA()
-                    };
+//                    float materialDiffuse[4] = {
+//                        lights.at(i)->getDiffuseMaterial().getR(),
+//                        lights.at(i)->getDiffuseMaterial().getG(),
+//                        lights.at(i)->getDiffuseMaterial().getB(),
+//                        lights.at(i)->getDiffuseMaterial().getA()
+//                    };
+//                    
+//                    float materialSpecularity[4] = {
+//                        lights.at(i)->getSpecularMaterial().getR(),
+//                        lights.at(i)->getSpecularMaterial().getG(),
+//                        lights.at(i)->getSpecularMaterial().getB(),
+//                        lights.at(i)->getSpecularMaterial().getA()
+//                    };
+//                    
+//                    float materialAmbient[4] = {
+//                        lights.at(i)->getAmbientMaterial().getR(),
+//                        lights.at(i)->getAmbientMaterial().getG(),
+//                        lights.at(i)->getAmbientMaterial().getB(),
+//                        lights.at(i)->getAmbientMaterial().getA()
+//                    };
+//                    
+//                    float materialEmissive[4] = {
+//                        lights.at(i)->getEmissiveMaterial().getR(),
+//                        lights.at(i)->getEmissiveMaterial().getG(),
+//                        lights.at(i)->getEmissiveMaterial().getB(),
+//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    };
                     
-                    float materialSpecularity[4] = {
-                        lights.at(i)->getSpecularMaterial().getR(),
-                        lights.at(i)->getSpecularMaterial().getG(),
-                        lights.at(i)->getSpecularMaterial().getB(),
-                        lights.at(i)->getSpecularMaterial().getA()
-                    };
-                    
-                    float materialAmbient[4] = {
-                        lights.at(i)->getAmbientMaterial().getR(),
-                        lights.at(i)->getAmbientMaterial().getG(),
-                        lights.at(i)->getAmbientMaterial().getB(),
-                        lights.at(i)->getAmbientMaterial().getA()
-                    };
-                    
-                    float materialEmissive[4] = {
-                        lights.at(i)->getEmissiveMaterial().getR(),
-                        lights.at(i)->getEmissiveMaterial().getG(),
-                        lights.at(i)->getEmissiveMaterial().getB(),
-                        lights.at(i)->getEmissiveMaterial().getA()
-                    };
-                    
-                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-                    
-                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
+//                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
+//                    
+//                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
+//                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
                     glLightfv(GL_LIGHT3, GL_POSITION, position);
                     glLightfv(GL_LIGHT3, GL_AMBIENT, ambient);
                     glLightfv(GL_LIGHT3, GL_DIFFUSE, diffuse);
@@ -673,38 +664,38 @@ void ProtoWorld::run() {
                     
                     
                     // materials
-                    float materialDiffuse[4] = {
-                        lights.at(i)->getDiffuseMaterial().getR(),
-                        lights.at(i)->getDiffuseMaterial().getG(),
-                        lights.at(i)->getDiffuseMaterial().getB(),
-                        lights.at(i)->getDiffuseMaterial().getA()
-                    };
-                    
-                    float materialSpecularity[4] = {
-                        lights.at(i)->getSpecularMaterial().getR(),
-                        lights.at(i)->getSpecularMaterial().getG(),
-                        lights.at(i)->getSpecularMaterial().getB(),
-                        lights.at(i)->getSpecularMaterial().getA()
-                    };
-                    
-                    float materialAmbient[4] = {
-                        lights.at(i)->getAmbientMaterial().getR(),
-                        lights.at(i)->getAmbientMaterial().getG(),
-                        lights.at(i)->getAmbientMaterial().getB(),
-                        lights.at(i)->getAmbientMaterial().getA()
-                    };
-                    
-                    float materialEmissive[4] = {
-                        lights.at(i)->getEmissiveMaterial().getR(),
-                        lights.at(i)->getEmissiveMaterial().getG(),
-                        lights.at(i)->getEmissiveMaterial().getB(),
-                        lights.at(i)->getEmissiveMaterial().getA()
-                    };
-                    
-                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-                    
-                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
+//                    float materialDiffuse[4] = {
+//                        lights.at(i)->getDiffuseMaterial().getR(),
+//                        lights.at(i)->getDiffuseMaterial().getG(),
+//                        lights.at(i)->getDiffuseMaterial().getB(),
+//                        lights.at(i)->getDiffuseMaterial().getA()
+//                    };
+//                    
+//                    float materialSpecularity[4] = {
+//                        lights.at(i)->getSpecularMaterial().getR(),
+//                        lights.at(i)->getSpecularMaterial().getG(),
+//                        lights.at(i)->getSpecularMaterial().getB(),
+//                        lights.at(i)->getSpecularMaterial().getA()
+//                    };
+//                    
+//                    float materialAmbient[4] = {
+//                        lights.at(i)->getAmbientMaterial().getR(),
+//                        lights.at(i)->getAmbientMaterial().getG(),
+//                        lights.at(i)->getAmbientMaterial().getB(),
+//                        lights.at(i)->getAmbientMaterial().getA()
+//                    };
+//                    
+//                    float materialEmissive[4] = {
+//                        lights.at(i)->getEmissiveMaterial().getR(),
+//                        lights.at(i)->getEmissiveMaterial().getG(),
+//                        lights.at(i)->getEmissiveMaterial().getB(),
+//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    };
+//                    
+//                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
+//                    
+//                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
+//                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
                     glLightfv(GL_LIGHT4, GL_POSITION, position);
                     glLightfv(GL_LIGHT4, GL_AMBIENT, ambient);
                     glLightfv(GL_LIGHT4, GL_DIFFUSE, diffuse);
@@ -749,39 +740,39 @@ void ProtoWorld::run() {
                     };
                     
                     
-                    // materials
-                    float materialDiffuse[4] = {
-                        lights.at(i)->getDiffuseMaterial().getR(),
-                        lights.at(i)->getDiffuseMaterial().getG(),
-                        lights.at(i)->getDiffuseMaterial().getB(),
-                        lights.at(i)->getDiffuseMaterial().getA()
-                    };
-                    
-                    float materialSpecularity[4] = {
-                        lights.at(i)->getSpecularMaterial().getR(),
-                        lights.at(i)->getSpecularMaterial().getG(),
-                        lights.at(i)->getSpecularMaterial().getB(),
-                        lights.at(i)->getSpecularMaterial().getA()
-                    };
-                    
-                    float materialAmbient[4] = {
-                        lights.at(i)->getAmbientMaterial().getR(),
-                        lights.at(i)->getAmbientMaterial().getG(),
-                        lights.at(i)->getAmbientMaterial().getB(),
-                        lights.at(i)->getAmbientMaterial().getA()
-                    };
-                    
-                    float materialEmissive[4] = {
-                        lights.at(i)->getEmissiveMaterial().getR(),
-                        lights.at(i)->getEmissiveMaterial().getG(),
-                        lights.at(i)->getEmissiveMaterial().getB(),
-                        lights.at(i)->getEmissiveMaterial().getA()
-                    };
-                    
-                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-                    
-                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
+//                    // materials
+//                    float materialDiffuse[4] = {
+//                        lights.at(i)->getDiffuseMaterial().getR(),
+//                        lights.at(i)->getDiffuseMaterial().getG(),
+//                        lights.at(i)->getDiffuseMaterial().getB(),
+//                        lights.at(i)->getDiffuseMaterial().getA()
+//                    };
+//                    
+//                    float materialSpecularity[4] = {
+//                        lights.at(i)->getSpecularMaterial().getR(),
+//                        lights.at(i)->getSpecularMaterial().getG(),
+//                        lights.at(i)->getSpecularMaterial().getB(),
+//                        lights.at(i)->getSpecularMaterial().getA()
+//                    };
+//                    
+//                    float materialAmbient[4] = {
+//                        lights.at(i)->getAmbientMaterial().getR(),
+//                        lights.at(i)->getAmbientMaterial().getG(),
+//                        lights.at(i)->getAmbientMaterial().getB(),
+//                        lights.at(i)->getAmbientMaterial().getA()
+//                    };
+//                    
+//                    float materialEmissive[4] = {
+//                        lights.at(i)->getEmissiveMaterial().getR(),
+//                        lights.at(i)->getEmissiveMaterial().getG(),
+//                        lights.at(i)->getEmissiveMaterial().getB(),
+//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    };
+//                    
+//                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
+//                    
+//                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
+//                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
                     glLightfv(GL_LIGHT5, GL_POSITION, position);
                     glLightfv(GL_LIGHT5, GL_AMBIENT, ambient);
                     glLightfv(GL_LIGHT5, GL_DIFFUSE, diffuse);
@@ -828,38 +819,38 @@ void ProtoWorld::run() {
                     
                     
                     // materials
-                    float materialDiffuse[4] = {
-                        lights.at(i)->getDiffuseMaterial().getR(),
-                        lights.at(i)->getDiffuseMaterial().getG(),
-                        lights.at(i)->getDiffuseMaterial().getB(),
-                        lights.at(i)->getDiffuseMaterial().getA()
-                    };
-                    
-                    float materialSpecularity[4] = {
-                        lights.at(i)->getSpecularMaterial().getR(),
-                        lights.at(i)->getSpecularMaterial().getG(),
-                        lights.at(i)->getSpecularMaterial().getB(),
-                        lights.at(i)->getSpecularMaterial().getA()
-                    };
-                    
-                    float materialAmbient[4] = {
-                        lights.at(i)->getAmbientMaterial().getR(),
-                        lights.at(i)->getAmbientMaterial().getG(),
-                        lights.at(i)->getAmbientMaterial().getB(),
-                        lights.at(i)->getAmbientMaterial().getA()
-                    };
-                    
-                    float materialEmissive[4] = {
-                        lights.at(i)->getEmissiveMaterial().getR(),
-                        lights.at(i)->getEmissiveMaterial().getG(),
-                        lights.at(i)->getEmissiveMaterial().getB(),
-                        lights.at(i)->getEmissiveMaterial().getA()
-                    };
-                    
-                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-                    
-                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
+//                    float materialDiffuse[4] = {
+//                        lights.at(i)->getDiffuseMaterial().getR(),
+//                        lights.at(i)->getDiffuseMaterial().getG(),
+//                        lights.at(i)->getDiffuseMaterial().getB(),
+//                        lights.at(i)->getDiffuseMaterial().getA()
+//                    };
+//                    
+//                    float materialSpecularity[4] = {
+//                        lights.at(i)->getSpecularMaterial().getR(),
+//                        lights.at(i)->getSpecularMaterial().getG(),
+//                        lights.at(i)->getSpecularMaterial().getB(),
+//                        lights.at(i)->getSpecularMaterial().getA()
+//                    };
+//                    
+//                    float materialAmbient[4] = {
+//                        lights.at(i)->getAmbientMaterial().getR(),
+//                        lights.at(i)->getAmbientMaterial().getG(),
+//                        lights.at(i)->getAmbientMaterial().getB(),
+//                        lights.at(i)->getAmbientMaterial().getA()
+//                    };
+//                    
+//                    float materialEmissive[4] = {
+//                        lights.at(i)->getEmissiveMaterial().getR(),
+//                        lights.at(i)->getEmissiveMaterial().getG(),
+//                        lights.at(i)->getEmissiveMaterial().getB(),
+//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    };
+//                    
+//                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
+//                    
+//                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
+//                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
                     glLightfv(GL_LIGHT6, GL_POSITION, position);
                     glLightfv(GL_LIGHT6, GL_AMBIENT, ambient);
                     glLightfv(GL_LIGHT6, GL_DIFFUSE, diffuse);
@@ -905,38 +896,38 @@ void ProtoWorld::run() {
                     
                     
                     // materials
-                    float materialDiffuse[4] = {
-                        lights.at(i)->getDiffuseMaterial().getR(),
-                        lights.at(i)->getDiffuseMaterial().getG(),
-                        lights.at(i)->getDiffuseMaterial().getB(),
-                        lights.at(i)->getDiffuseMaterial().getA()
-                    };
-                    
-                    float materialSpecularity[4] = {
-                        lights.at(i)->getSpecularMaterial().getR(),
-                        lights.at(i)->getSpecularMaterial().getG(),
-                        lights.at(i)->getSpecularMaterial().getB(),
-                        lights.at(i)->getSpecularMaterial().getA()
-                    };
-                    
-                    float materialAmbient[4] = {
-                        lights.at(i)->getAmbientMaterial().getR(),
-                        lights.at(i)->getAmbientMaterial().getG(),
-                        lights.at(i)->getAmbientMaterial().getB(),
-                        lights.at(i)->getAmbientMaterial().getA()
-                    };
-                    
-                    float materialEmissive[4] = {
-                        lights.at(i)->getEmissiveMaterial().getR(),
-                        lights.at(i)->getEmissiveMaterial().getG(),
-                        lights.at(i)->getEmissiveMaterial().getB(),
-                        lights.at(i)->getEmissiveMaterial().getA()
-                    };
-                    
-                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-                    
-                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
+//                    float materialDiffuse[4] = {
+//                        lights.at(i)->getDiffuseMaterial().getR(),
+//                        lights.at(i)->getDiffuseMaterial().getG(),
+//                        lights.at(i)->getDiffuseMaterial().getB(),
+//                        lights.at(i)->getDiffuseMaterial().getA()
+//                    };
+//                    
+//                    float materialSpecularity[4] = {
+//                        lights.at(i)->getSpecularMaterial().getR(),
+//                        lights.at(i)->getSpecularMaterial().getG(),
+//                        lights.at(i)->getSpecularMaterial().getB(),
+//                        lights.at(i)->getSpecularMaterial().getA()
+//                    };
+//                    
+//                    float materialAmbient[4] = {
+//                        lights.at(i)->getAmbientMaterial().getR(),
+//                        lights.at(i)->getAmbientMaterial().getG(),
+//                        lights.at(i)->getAmbientMaterial().getB(),
+//                        lights.at(i)->getAmbientMaterial().getA()
+//                    };
+//                    
+//                    float materialEmissive[4] = {
+//                        lights.at(i)->getEmissiveMaterial().getR(),
+//                        lights.at(i)->getEmissiveMaterial().getG(),
+//                        lights.at(i)->getEmissiveMaterial().getB(),
+//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    };
+//                    
+//                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
+//                    
+//                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
+//                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
                     glLightfv(GL_LIGHT7, GL_POSITION, position);
                     glLightfv(GL_LIGHT7, GL_AMBIENT, ambient);
                     glLightfv(GL_LIGHT7, GL_DIFFUSE, diffuse);

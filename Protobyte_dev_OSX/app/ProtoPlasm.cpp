@@ -28,14 +28,14 @@ baseApp(baseApp), appWidth(1024), appHeight(764), appTitle("Protobyte App")
 
 ProtoPlasm:: ProtoPlasm(int appWidth, int appHeight, std::string appTitle, ProtoBaseApp* baseApp):
 appWidth(appWidth), appHeight(appHeight), appTitle(appTitle), baseApp(baseApp){
-   // this->baseApp = baseApp;
+    // this->baseApp = baseApp;
     baseApp->setWidth(appWidth);
     baseApp->setHeight(appHeight);
     baseApp->setSize(Dim2i(appWidth, appHeight));
     
-   // this->appWidth = appWidth;
-   // this->appHeight = appHeight;
-   // this->appTitle = appTitle;
+    // this->appWidth = appWidth;
+    // this->appHeight = appHeight;
+    // this->appTitle = appTitle;
     
     
     
@@ -53,7 +53,7 @@ void ProtoPlasm::initSFMLInit(){
     settings.majorVersion = 3;
     settings.minorVersion = 0;
     
-   
+    
     
     // create window and GL context
     window = new sf::Window(sf::VideoMode(appWidth, appHeight), appTitle, sf::Style::Default, settings);
@@ -61,11 +61,31 @@ void ProtoPlasm::initSFMLInit(){
     window->setVerticalSyncEnabled(true);
     
     // set gl states
-    //glClearColor(1.0f, 1.0, .25, 1.0f);
-    glEnable(GL_NORMALIZE);
+    glClearColor(0, 0, 0, 1.0f);
     
     // enable specualrity on textures
     glLightModelf(GL_LIGHT_MODEL_COLOR_CONTROL,GL_SEPARATE_SPECULAR_COLOR);
+    glEnable(GL_LIGHTING);
+    glFrontFace(GL_CCW); // default
+    glEnable(GL_CULL_FACE);
+    glCullFace(GL_BACK);
+    //glDisable(GL_CULL_FACE);
+    glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
+    //glShadeModel(GL_FLAT); // option
+    glEnable(GL_COLOR_MATERIAL); // incorporates per vertex color with lights
+    // let glColor contorl diffues and ambient material values
+    glColorMaterial ( GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE );
+    
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glEnable(GL_BLEND);
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_NORMALIZE); //  good for uniform scaling
+    
+    
+    glClearStencil(0); // clear stencil buffer
+    glClearDepth(1.0f); // 0 is near, 1 is far
+    glDepthFunc(GL_LEQUAL);
+
     
     
     // World manages lighting and views (cameras)
@@ -88,52 +108,52 @@ void ProtoPlasm::initSFMLInit(){
     camera3->setProjection(110.0f, appWidth/appHeight, .1, 1000);
     camera4->setProjection(60.0f, appWidth/appHeight, .1, 1000);
     
-//camera1->setViewPort(0, 0, window.getSize().x/2, window.getSize().y/2);
-//    camera2->setViewPort(0, window.getSize().y/2, window.getSize().x/2, window.getSize().y/2);
-//    camera3->setViewPort(window.getSize().x/2, window.getSize().y/2, window.getSize().x/2, window.getSize().y/2);
-//    camera4->setViewPort(window.getSize().x/2, 0, window.getSize().x/2, window.getSize().y/2);
-//
+    //camera1->setViewPort(0, 0, window.getSize().x/2, window.getSize().y/2);
+    //    camera2->setViewPort(0, window.getSize().y/2, window.getSize().x/2, window.getSize().y/2);
+    //    camera3->setViewPort(window.getSize().x/2, window.getSize().y/2, window.getSize().x/2, window.getSize().y/2);
+    //    camera4->setViewPort(window.getSize().x/2, 0, window.getSize().x/2, window.getSize().y/2);
+    //
     world->add(std::move(camera1));
-//    world->add(std::move(camera2));
-//    world->add(std::move(camera3));
-//    world->add(std::move(camera4));
+    //    world->add(std::move(camera2));
+    //    world->add(std::move(camera3));
+    //    world->add(std::move(camera4));
     
-   // camera1->setViewPort(0, 0, appWidth, appHeight);
-   // world->add(std::move(camera1));
-
+    // camera1->setViewPort(0, 0, appWidth, appHeight);
+    // world->add(std::move(camera1));
+    
     // Lights
     // Light 1
-//    std::unique_ptr<ijg::ProtoLight> lt0_ptr = std::unique_ptr<ijg::ProtoLight>(new ProtoLight());
-//    lt0_ptr->setShininess(128.0);
-//    lt0_ptr->setDiffuse(ProtoColor4f(1.0, .5, 0, 1.0));
-//    lt0_ptr->setSpecular(ProtoColor4f(1.0, 1.0, 1.0, 1.0));
-//    lt0_ptr->setAmbient(ProtoColor4f(.4, .4, .4, 1.0));
-//    lt0_ptr->setPosition(Vec3f(0, 0, -2.0));
-//    world->add(std::move(lt0_ptr));
-//    
-//    // Light 2
-//    std::unique_ptr<ijg::ProtoLight> lt1_ptr = std::unique_ptr<ijg::ProtoLight>(new ProtoLight());
-//    lt1_ptr->setShininess(128.0);
-//    lt1_ptr->setDiffuse(ProtoColor4f(1.0, .5, 0, 1.0));
-//    lt1_ptr->setSpecular(ProtoColor4f(1.0, 1.0, 1.0, 1.0));
-//    lt1_ptr->setAmbient(ProtoColor4f(.4, .4, .4, 1.0));
-//    lt1_ptr->setPosition(Vec3f(-2, 2, 2.0));
-//    world->add(std::move(lt1_ptr));
-//    
-//    
-//    world->setLights();
-
+    //    std::unique_ptr<ijg::ProtoLight> lt0_ptr = std::unique_ptr<ijg::ProtoLight>(new ProtoLight());
+    //    lt0_ptr->setShininess(128.0);
+    //    lt0_ptr->setDiffuse(ProtoColor4f(1.0, .5, 0, 1.0));
+    //    lt0_ptr->setSpecular(ProtoColor4f(1.0, 1.0, 1.0, 1.0));
+    //    lt0_ptr->setAmbient(ProtoColor4f(.4, .4, .4, 1.0));
+    //    lt0_ptr->setPosition(Vec3f(0, 0, -2.0));
+    //    world->add(std::move(lt0_ptr));
+    //
+    //    // Light 2
+    //    std::unique_ptr<ijg::ProtoLight> lt1_ptr = std::unique_ptr<ijg::ProtoLight>(new ProtoLight());
+    //    lt1_ptr->setShininess(128.0);
+    //    lt1_ptr->setDiffuse(ProtoColor4f(1.0, .5, 0, 1.0));
+    //    lt1_ptr->setSpecular(ProtoColor4f(1.0, 1.0, 1.0, 1.0));
+    //    lt1_ptr->setAmbient(ProtoColor4f(.4, .4, .4, 1.0));
+    //    lt1_ptr->setPosition(Vec3f(-2, 2, 2.0));
+    //    world->add(std::move(lt1_ptr));
+    //
+    //
+    //    world->setLights();
+    
     
     
     // pass world to baseApp enabling user defined BaseApp derived class access
     // setWorld also initializes some baseApp states
     //std::cout << "world->fovAngle = " << world->fovAngle << std::endl;
     baseApp->setWorld(world);
-   // std::cout << "baseApp->world->fovAngle = " << baseApp->world->fovAngle << std::endl;
+    // std::cout << "baseApp->world->fovAngle = " << baseApp->world->fovAngle << std::endl;
     
     // Activate init function in user derived class.n.
     baseApp->init();
-    }
+}
 
 // activate animation thread and run() function in user defined BaseApp derived class
 void ProtoPlasm::initSFMLRun(){
@@ -156,7 +176,7 @@ void ProtoPlasm::initSFMLRun(){
     while (running)
     {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-         //glMatrixMode(GL_MODELVIEW);
+        //glMatrixMode(GL_MODELVIEW);
         /*
          TO DO – fix timing issues with control for users:
          From: http://stackoverflow.com/questions/2182675/how-do-you-make-sure-the-speed-of-opengl-animation-is-consistent-on-different-ma
@@ -178,7 +198,7 @@ void ProtoPlasm::initSFMLRun(){
          process_animation((t - t_prev)*GAME_SPEED/1000.0);
          t_prev = t;
          }
-
+         
          
          */
         
@@ -203,17 +223,21 @@ void ProtoPlasm::initSFMLRun(){
         sf::Event event;
         while (window->pollEvent(event))
         {
-            if (event.mouseButton.button == sf::Mouse::Left) {
-                //std::cout << "event.size = " << event.size.width << std::endl;
-//                std::cout << "event.size = " << event.size.height << std::endl;
-//                std::cout << "event.mouseButton.x = " << event.mouseButton.x << std::endl;
-//                std::cout << "event.mouseButton.y = " << event.mouseButton.y << std::endl;
-                
-                // Activate derived user class implementation.
-                baseApp->mousePressed();
+            if (event.type == sf::Event::MouseButtonPressed)
+            {
+                if (event.mouseButton.button == sf::Mouse::Left) {
+//                    std::cout << "event.size = " << event.size.width << std::endl;
+//                    std::cout << "event.size = " << event.size.height << std::endl;
+//                    
+//                    std::cout << "event.mouseButton.x = " << event.mouseButton.x << std::endl;
+//                    std::cout << "event.mouseButton.y = " << event.mouseButton.y << std::endl;
+//                    
+                    // Activate derived user class implementation.
+                    baseApp->mousePressed();
+                }
             }
             
-            if (event.type == sf::Event::Closed)
+            else if (event.type == sf::Event::Closed)
             {
                 // Activate derived user class implementation.
                 baseApp->onClosed();
@@ -231,7 +255,7 @@ void ProtoPlasm::initSFMLRun(){
                 //                    std::cout << event.size.height  << std::endl;
             }else if (event.type == sf::Event::KeyPressed)
             {
-                 // Activate derived user class implementation.
+                // Activate derived user class implementation.
                 baseApp->keyPressed();
                 
                 if (event.key.code == sf::Keyboard::Q || event.key.code == sf::Keyboard::Escape) {
@@ -244,7 +268,7 @@ void ProtoPlasm::initSFMLRun(){
         
         // clear the buffers
         //glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-       
+        
         
         // end the current frame (internally swaps the front and back buffers)
         window->display();

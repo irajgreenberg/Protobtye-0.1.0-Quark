@@ -96,10 +96,16 @@ namespace ijg {
         
         std::vector<ProtoGeomSet> geomSets;
         
+        // material properties
+        // diffuse and ambient materials are controlled by glColor
+        GLfloat shininess[1]; // 0-128
+        GLfloat specularMaterialColor[4];
+        GLfloat emissionMaterialColor[4];
+        
 
 
     public:
-
+        
         /**********************************
          *    Display Modes for testing   *
          *********************************/
@@ -172,6 +178,13 @@ namespace ijg {
         GLuint getVboID() const;
         GLuint getIndexVboID() const;
         int getIndicesSize() const;
+        
+        // material setters
+        void setShininess(float shininess = 45);
+        void setSpecularMaterialColor(const Col4f& specularMaterialColor = Col4f(1, 1, 1, 1));
+        void setEmissionMaterialColor(const Col4f&  emissionMaterialColor= Col4f(0, 0, 0, 1));
+        
+       
         
 
 
@@ -246,7 +259,27 @@ namespace ijg {
     inline int ProtoGeom3::getIndicesSize() const{
         return static_cast<int>(inds.size());
     }
-     
+    
+    // materials
+    inline void ProtoGeom3::setShininess(float shininess){
+        this->shininess[0]=shininess;
+    }
+    inline void ProtoGeom3::setSpecularMaterialColor(const Col4f& specularMaterialColor){
+         this->specularMaterialColor[0] = specularMaterialColor.getR();
+         this->specularMaterialColor[1] = specularMaterialColor.getG();
+         this->specularMaterialColor[2] = specularMaterialColor.getB();
+         this->specularMaterialColor[3] = specularMaterialColor.getA();
+        
+    }
+    inline void ProtoGeom3::setEmissionMaterialColor(const Col4f&  emissionMaterialColor){
+        this->emissionMaterialColor[0] = emissionMaterialColor.getR();
+        this->emissionMaterialColor[1] = emissionMaterialColor.getG();
+        this->emissionMaterialColor[2] = emissionMaterialColor.getB();
+        this->emissionMaterialColor[3] = emissionMaterialColor.getA();
+        
+    }
+
+    
 
 }
 #endif /* defined(PROTO_GEOM3_H) */

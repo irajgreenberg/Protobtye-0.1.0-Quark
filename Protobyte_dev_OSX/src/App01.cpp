@@ -27,27 +27,25 @@ void App01::init(){
     isClicked = false;
     
     // light0
-    light0->setPosition(Vec3f(-6, -5, 10));
-    light0->setDiffuse(Col4f(.9, .2, .2, 1.0));
-    light0->setAmbient(Col4f(.1, .1, .1, 1.0));
-    light0->setShininess(128);
-    light0->setSpecular(Col4f(.9, .2, .2, 1.0));
+    //light0->off();
+    light0->setPosition(Vec3f(100,100,-100));
+    light0->setDiffuse(Col4f(.3, .3, .3, 1.0));
+    light0->setAmbient(Col4f(0,0,0, 1.0));
+    light0->setSpecular(Col4f(1, 1, 0, 1.0));
     
     // light1
     light1->on();
-    light1->setPosition(Vec3f(6, 5, 10));
-    light1->setAmbient(Col4f(.1, .1, .1, 1.0));
-    light1->setShininess(20);
-    light1->setSpecular(Col4f(.1, .1, 1, 1.0));
-    light1->setDiffuse(Col4f(.2, .2, .9, 1.0));
+    light1->setPosition(Vec3f(0, 0, 50));
+    light1->setSpecular(Col4f(.5, .5, 1, 1.0));
+     light1->setAmbient(Col4f(0,0,0, 1.0));
+    light1->setDiffuse(Col4f(.3, .3, .3, 1.0));
     
     // light2
     light2->on();
-    light2->setPosition(Vec3f(0, 0, 10));
+    light2->setPosition(Vec3f(-60, 0, -100));
     light2->setAmbient(Col4f(.1, .1, .1, 1.0));
-    light2->setShininess(20);
-    light2->setSpecular(Col4f(0, 1, 0, 1.0));
-    light2->setDiffuse(Col4f(.2, .2, .9, 1.0));
+    light2->setSpecular(Col4f(0, 1, 1, 1.0));
+    light2->setDiffuse(Col4f(.3, .3, .3, 1.0));
     
     
     
@@ -85,14 +83,16 @@ void App01::init(){
     
     for(int i=0; i<6; ++i) {
         verletSurfs[i] = std::unique_ptr<ProtoVerletSurface> (new ProtoVerletSurface(Vec3f(0,0,0),
-                                                                                     Vec3f(0,0,0), Dim3f(40, 40, 1), ProtoColor4f(ProtoMath::random(.7, 1.0), 1.0, 1.0, .8), 37, 37, /*ProtoMath::random(.3, .8)*/ProtoMath::random(.02, .2), textureImgs[i], ProtoVerletSurface::ALL_CORNERS)); // 91, 91
+                                                                                     Vec3f(0,0,0), Dim3f(40, 40, 1), ProtoColor4f(ProtoMath::random(.7, 1.0), 1.0, 1.0, .8), 37, 37, /*ProtoMath::random(.3, .8)*/ProtoMath::random(.02, .2), textureImgs[i], ProtoVerletSurface::ALL_EDGES)); // 91, 91
     }
-    toroid2 = std::unique_ptr<ProtoToroid> (new ProtoToroid(Vec3f(0, 0, 0), Vec3f(0, ProtoMath::PI/3.0,0), Dim3f(20, 20, 20),ProtoColor4f(.3, .3, .3, 1.0), 75, 75, .9, .2));
+    toroid2 = std::unique_ptr<ProtoToroid> (new ProtoToroid(Vec3f(0, 0, 0), Vec3f(0, ProtoMath::PI/3.0,0), Dim3f(20, 20, 20),ProtoColor4f(.2, .2, .2, 1.0), 75, 75, .9, .2));
+    toroid2->setShininess(6);
+    //toroid2->setEmissionMaterialColor(Col4f(0,0,0,1));
     glDepthMask(true);
     glEnable(GL_DEPTH_TEST);
-    glDisable(GL_CULL_FACE);
+    //glDisable(GL_CULL_FACE);
     //    glEnable(GL_FLAT);
-    //    glShadeModel(GL_FLAT);
+    //glShadeModel(GL_FLAT);
     
     
     /* api ideas
@@ -115,17 +115,22 @@ void App01::run(){
         //std::cout << "frameCount = " << frameCount << std::endl;
         //std::cout << "frameRate = " << frameRate << std::endl;
         //std::cout << "ind = " << ind << std::endl;
-        glPushMatrix();
+        //glPushMatrix();
         glTranslatef(0, 0, -100+tx);
-        //tx+=.05;
+        tx+=.05;
+        glPushMatrix();
         glRotatef(x+=.2, 1, .75, .3);
+        //light2->setPosition(Vec3f(x*.1, 0, 10));
+        //light2->setShininess(24);
+        //light7->setShininess(128);
+        //glPopMatrix();
         //glRotatef(90, 0, 1, 0);
         glDisable(GL_TEXTURE_2D);
         toroid2->display();
         
         
         for(int i=0; i<6; ++i) {
-            verletSurfs[i]->flow();
+           verletSurfs[i]->flow();
         }
         // left face
         glPushMatrix();
@@ -199,12 +204,13 @@ void App01::run(){
 }
 
 void App01::keyPressed(){
-    isClicked = true;
+   
 }
 
 
 void App01::mousePressed(){
-   
+    std::cout << "in MousePressed" << std::endl;
+     isClicked = true;
     
 }
 void App01::mouseRightPressed(){
