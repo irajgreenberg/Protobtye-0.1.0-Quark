@@ -35,7 +35,7 @@ namespace ijg {
     public:
         ProtoLight();
         ProtoLight(const Vec3f& position, const ProtoColor4f& diffuse);
-        ProtoLight(const Vec3f& position, const ProtoColor4f& diffuse, const ProtoColor4f& ambient, const ProtoColor4f& specular, float shininess);
+        ProtoLight(const Vec3f& position, const ProtoColor4f& diffuse, const ProtoColor4f& ambient, const ProtoColor4f& specular);
         virtual ~ProtoLight();
         
         enum lightPosMode{
@@ -55,20 +55,6 @@ namespace ijg {
         void setSpecular(const ProtoColor4f& specular);
         const ProtoColor4f& getSpecular() const;
         
-        void setDiffuseMaterial(const ProtoColor4f& diffuseMaterial);
-        const ProtoColor4f& getDiffuseMaterial() const;
-        
-        void setAmbientMaterial(const ProtoColor4f& ambientMaterial);
-        const ProtoColor4f& getAmbientMaterial() const;
-        
-        void setSpecularMaterial(const ProtoColor4f& specularMaterial);
-        const ProtoColor4f& getSpecularMaterial() const;
-        
-        void setEmissiveMaterial(const ProtoColor4f& emissiveMaterial);
-        const ProtoColor4f& getEmissiveMaterial() const;
-        
-        void setShininess(float shininess);
-        float getShinines() const;
         
         // user controls
         void on();
@@ -83,12 +69,9 @@ namespace ijg {
         // light properties
         ProtoColor4f diffuse, ambient, specular;
         
-        //material properties
-        ProtoColor4f diffuseMaterial, ambientMaterial, specularMaterial, emissiveMaterial;
-        
-        float shininess;
-        
         bool isOn;
+        
+        void init();
         
     };
     
@@ -122,45 +105,6 @@ namespace ijg {
     }
     inline const ProtoColor4f& ProtoLight::getSpecular() const{
         return specular;
-    }
-    
-    //materials
-    inline void ProtoLight::setDiffuseMaterial(const ProtoColor4f& diffuseMaterial){
-        this->diffuseMaterial = diffuseMaterial;
-    }
-    
-    inline const ProtoColor4f& ProtoLight::getDiffuseMaterial() const{
-        return diffuseMaterial;
-    }
-    
-    inline void ProtoLight::setAmbientMaterial(const ProtoColor4f& ambientMaterial){
-        this->ambientMaterial = ambientMaterial;
-    }
-    
-    inline const ProtoColor4f& ProtoLight::getAmbientMaterial() const{
-        return ambientMaterial;
-    }
-
-    inline void ProtoLight::setSpecularMaterial(const ProtoColor4f& specularMaterial){
-        this->specularMaterial = specularMaterial;
-    }
-    inline const ProtoColor4f& ProtoLight::getSpecularMaterial() const{
-        return specularMaterial;
-    }
-    
-    inline void ProtoLight::setEmissiveMaterial(const ProtoColor4f& emissiveMaterial){
-        this->emissiveMaterial = emissiveMaterial;
-    }
-    inline const ProtoColor4f& ProtoLight::getEmissiveMaterial() const{
-        return emissiveMaterial;
-    }
-    
-    inline void ProtoLight::setShininess(float shininess){
-        this->shininess = shininess;
-    }
-    
-    inline float ProtoLight::getShinines() const{
-        return shininess;
     }
     
     inline void ProtoLight::on(){

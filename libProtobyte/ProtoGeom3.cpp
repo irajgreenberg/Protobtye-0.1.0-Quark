@@ -31,32 +31,47 @@ ProtoGeom3::ProtoGeom3() {
 }
 
 
-// pass array of colors
 
 ProtoGeom3::ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size, const ProtoColor4f col4) :
-	ProtoShape3(pos, rot, size, col4) {
+	ProtoShape3(pos, rot, size, col4), textureImageURL("") {
 }
 
 ProtoGeom3::ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size, const std::vector< ProtoColor4f > col4s) :
-	ProtoShape3(pos, rot, size, col4s) {
+	ProtoShape3(pos, rot, size, col4s), textureImageURL("") {
 }
 
-ProtoGeom3::ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size, const ProtoColor4f col4, float textureScale) :
-	ProtoShape3(pos, rot, size, col4), textureScale(textureScale) {
+
+// with textures
+ProtoGeom3::ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size, const ProtoColor4f col4, const std::string& textureImageURL) :
+ProtoShape3(pos, rot, size, col4), textureImageURL(textureImageURL) {
+}
+
+ProtoGeom3::ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size, const std::vector< ProtoColor4f > col4s, const std::string& textureImageURL) :
+ProtoShape3(pos, rot, size, col4s), textureImageURL(textureImageURL) {
+}
+
+ProtoGeom3::ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size, const ProtoColor4f col4, const std::string& textureImageURL, float textureScale) :
+ProtoShape3(pos, rot, size, col4), textureImageURL(textureImageURL), textureScale(textureScale) {
 }
 
 ProtoGeom3::ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size,
-					   const std::vector< ProtoColor4f > col4s, float textureScale) :
-ProtoShape3(pos, rot, size, col4s), textureScale(textureScale) {
+					   const std::vector< ProtoColor4f > col4s, const std::string& textureImageURL, float textureScale) :
+ProtoShape3(pos, rot, size, col4s), textureImageURL(textureImageURL), textureScale(textureScale) {
 }
 
 ProtoGeom3::~ProtoGeom3() {
 	// glDeleteLists(displayListIndex, 1);
+    
+    // call this ONLY when linking with FreeImage as a static library
+    #ifdef FREEIMAGE_LIB
+        FreeImage_DeInitialise();
+    #endif
 }
 
 
 void ProtoGeom3::init() {
-	calcVerts();
+	createTexture();
+    calcVerts();
 	calcInds();
 	calcFaces();
 	calcVertexNorms();
@@ -222,6 +237,39 @@ void ProtoGeom3::calcPrimitives() {
 	}
 }
 
+void ProtoGeom3::createTexture(){
+    // only buld texture if an image url was passed in
+    if(textureImageURL != ""){
+        
+        // 1. ensure path is to resources directory
+        char cCurrentPath[FILENAME_MAX];
+        
+        if (!GetCurrentDir(cCurrentPath, sizeof(cCurrentPath)))
+        {
+            std::cout << "error loading from relative directory" << std::endl;
+            //return errno;
+        }
+        // NOTE - make workspace project relative instead of using default derivedData path in Library
+        //std::cout << "cCurrentPath = " << cCurrentPath << std::endl;
+        cCurrentPath[sizeof(cCurrentPath) - 1] = '\0'; /* not really required */
+        std::string cp = cCurrentPath; //cast char[] to string
+        std::cout << "current path = " << cp << std::endl;
+        std::string pathExtension = "/resources/imgs/";
+        //std::string imgName = "/shipPlate.raw";
+        std::string url = cp+pathExtension+textureImageURL;
+        
+        // 2. create texture
+        // call this ONLY when linking with FreeImage as a static library
+        #ifdef FREEIMAGE_LIB
+                FreeImage_Initialise();
+        #endif
+        texture = ProtoTexture(url, GL_RGB, GL_RGB, 0, 0);
+        
+        std::cout << "texture.getTextureID() = " << texture.getTextureID() << std::endl;
+
+    }
+}
+
 void ProtoGeom3::fillDisplayLists() {
 	glNewList(displayListIndex, GL_COMPILE);
 	for (int i = 0; i < faces.size(); ++i) {
@@ -236,9 +284,9 @@ world type class, to enable aggregate face sorting and
 and primitive processing*/
 void ProtoGeom3::display(displayMode mode, renderMode render, float pointSize) {
     
-    // set materials colors not controlled by glColor
-    glMaterialfv(GL_FRONT, GL_SPECULAR, specularMaterialColor);
-    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
+    // set materials not controlled by glColor
+    glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, specularMaterialColor);
+    glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, shininess);
     glMaterialfv(GL_FRONT, GL_EMISSION, emissionMaterialColor);
     
 	switch (render) {
@@ -410,8 +458,8 @@ void ProtoGeom3::display(displayMode mode, renderMode render, float pointSize) {
 	glPopMatrix();
 
 	// reset fill and lighting
-	glEnable(GL_LIGHTING);
-	glPolygonMode(GL_FRONT, GL_FILL);
+//	glEnable(GL_LIGHTING);
+//	glPolygonMode(GL_FRONT, GL_FILL);
 
 }
 

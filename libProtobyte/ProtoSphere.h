@@ -35,7 +35,7 @@ namespace ijg {
                 const ProtoColor4f col4, int spines, int spineNodes);
 
         ProtoSphere(const Vec3f& pos, const Vec3f& rot, const Dim3f size,
-                const ProtoColor4f col4, float textureScale, int spines, int spineNodes);
+                const ProtoColor4f col4, const std::string& textureImageURL, float textureScale, int spines, int spineNodes);
 
 //        void init(); // temp override
         void calcVerts();

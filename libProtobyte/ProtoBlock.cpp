@@ -48,8 +48,8 @@ ProtoGeom3(pos, rot, size, col4) {
 }
 
 ProtoBlock::ProtoBlock(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3f& size,
-        const Col4f& col4, float textureScale) :
-ProtoGeom3(pos, rot, size, col4, textureScale) {
+        const Col4f& col4, const std::string& textureImageURL, float textureScale) :
+ProtoGeom3(pos, rot, size, col4, textureImageURL, textureScale) {
     init();
 }
 

@@ -29,6 +29,10 @@
 #include <GL/glew.h>
 #endif
 
+// for image path to texture
+#include <unistd.h>
+#define GetCurrentDir getcwd
+
 #include <SFML/OpenGL.hpp>
 #include <iostream>
 #include <vector>
@@ -37,7 +41,7 @@
 #include "ProtoTuple3.h"
 #include "ProtoDimension3.h"
 #include "ProtoColor4.h"
-#include "ProtoTexture2.h"
+#include "ProtoTexture.h"
 //#include "ProtoGLInfo.h"
 #include <fstream>
 #include <sys/stat.h>
@@ -55,7 +59,9 @@ namespace ijg {
     class ProtoGeom3: public ProtoShape3{
     protected:
        
-        ProtoTexture2 bumpMap;
+        std::string textureImageURL;
+        ProtoTexture bumpMap; //?
+        ProtoTexture texture;
         float textureScale;
 
        
@@ -65,6 +71,7 @@ namespace ijg {
         virtual void calcFaces(); // probably not necessary to override
         virtual void calcVertexNorms();
         virtual void calcPrimitives();
+        virtual void createTexture();
 
         void fillDisplayLists();
 
@@ -131,11 +138,18 @@ namespace ijg {
         ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size,
                 const std::vector< ProtoColor4f > col4s);
 
+        
+        // with textureImageURL
+        ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size, const ProtoColor4f col4, const std::string& textureImageURL);
+        
+        ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size, const std::vector< ProtoColor4f > col4s, const std::string& textureImageURL);
+        
+        ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size, const ProtoColor4f col4, const std::string& textureImageURL, float textureScale);
+        
         ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size,
-                const ProtoColor4f col4, float textureScale);
+                               const std::vector< ProtoColor4f > col4s, const std::string& textureImageURL, float textureScale);
+        
 
-        ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size,
-                const std::vector< ProtoColor4f > col4s, float textureScale);
 
        virtual ~ProtoGeom3();
 
@@ -168,8 +182,8 @@ namespace ijg {
         void setTextureScale(float textureScale);
         float getTextureScale() const;
         
-        void setBumpMap(ProtoTexture2 bumpMap);
-        ProtoTexture2 getBumpMap() const;
+        void setBumpMap(ProtoTexture bumpMap);
+        ProtoTexture getBumpMap() const;
         
         // stl exporter
 //        void exportSTL();
@@ -240,11 +254,11 @@ namespace ijg {
         return textureScale;
     }
 
-    inline void ProtoGeom3::setBumpMap(ProtoTexture2 bumpMap) {
+    inline void ProtoGeom3::setBumpMap(ProtoTexture bumpMap) {
         this->bumpMap = bumpMap;
     }
 
-    inline ProtoTexture2 ProtoGeom3::getBumpMap() const {
+    inline ProtoTexture ProtoGeom3::getBumpMap() const {
         return bumpMap;
     }
     

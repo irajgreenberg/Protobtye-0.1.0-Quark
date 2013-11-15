@@ -8,8 +8,6 @@
 
 #include "App01.h"
 
-#include <unistd.h>
-#define GetCurrentDir getcwd
 
 using namespace ijg;
 float x = 0;
@@ -27,66 +25,35 @@ void App01::init(){
     isClicked = false;
     
     // light0
-    //light0->off();
-    light0->setPosition(Vec3f(100,100,-100));
-    light0->setDiffuse(Col4f(.3, .3, .3, 1.0));
-    light0->setAmbient(Col4f(0,0,0, 1.0));
-    light0->setSpecular(Col4f(1, 1, 0, 1.0));
+
+    light0->setPosition(Vec3f(0, 0, 30));
+    light0->setDiffuse(Col4f(1, 1, 1, 1.0));
+    light0->setAmbient(Col4f(.1, .1, .1, 1.0));
+    light0->setSpecular(Col4f(1, 1, 1, 1.0));
+    light0->on();
     
     // light1
+    light1->setPosition(Vec3f(-30, 0, -60));
+    light1->setSpecular(Col4f(.8, .8, 0, 1.0));
+    light1->setAmbient(Col4f(.1, .1, .1, 0));
+    light1->setDiffuse(Col4f(1, 1, 1, 1.0));
     light1->on();
-    light1->setPosition(Vec3f(0, 0, 50));
-    light1->setSpecular(Col4f(.5, .5, 1, 1.0));
-     light1->setAmbient(Col4f(0,0,0, 1.0));
-    light1->setDiffuse(Col4f(.3, .3, .3, 1.0));
     
     // light2
-    light2->on();
-    light2->setPosition(Vec3f(-60, 0, -100));
+    light2->setPosition(Vec3f(0, 0, -90));
     light2->setAmbient(Col4f(.1, .1, .1, 1.0));
-    light2->setSpecular(Col4f(0, 1, 1, 1.0));
-    light2->setDiffuse(Col4f(.3, .3, .3, 1.0));
-    
-    
-    
-    
-    
-    
-    //window size is read only
-    //    std::cout << "window width = " << getWidth() << std::endl;
-    //    std::cout << "window height = " << getHeight() << std::endl;
-    //    std::cout << "window size = " << getSize() << std::endl;
-    //
-    // START for relative resource loading
-    char cCurrentPath[FILENAME_MAX];
-    
-    if (!GetCurrentDir(cCurrentPath, sizeof(cCurrentPath)))
-    {
-        std::cout << "error loading from relative directory" << std::endl;
-        //return errno;
-    }
-    // NOTE - make workspace project relative instead of using default derivedData path in Library
-    //std::cout << "cCurrentPath = " << cCurrentPath << std::endl;
-    cCurrentPath[sizeof(cCurrentPath) - 1] = '\0'; /* not really required */
-    std::string cp = cCurrentPath; //cast char[] to string
-    std::cout << "current path = " << cp << std::endl;
-    std::string pathExtension = "/resources/imgs";
-    std::string imgName = "/shipPlate.raw";
-    std::string url = cp+pathExtension+imgName;
-    //std::cout << "url = " << url << std::endl;
-    //std::string url = "/Users/33993405/Dropbox/ira_dev/Protobyte_dev_v02_OSX/build/resources/stiller.raw";
-    
-    // END for relative resource loading
-    
-    std::string textureImgs[6] = {url, url, url, url, url, url};
-    
+    light2->setSpecular(Col4f(1, 1, 1, 1.0));
+    light2->setDiffuse(Col4f(1, 1, 1, 1.0));
+   // light2->on();
     
     for(int i=0; i<6; ++i) {
-        verletSurfs[i] = std::unique_ptr<ProtoVerletSurface> (new ProtoVerletSurface(Vec3f(0,0,0),
-                                                                                     Vec3f(0,0,0), Dim3f(40, 40, 1), ProtoColor4f(ProtoMath::random(.7, 1.0), 1.0, 1.0, .8), 37, 37, /*ProtoMath::random(.3, .8)*/ProtoMath::random(.02, .2), textureImgs[i], ProtoVerletSurface::ALL_EDGES)); // 91, 91
+        verletSurfs[i] = std::unique_ptr<ProtoVerletSurface> (new ProtoVerletSurface(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(40, 40, 1), ProtoColor4f(ProtoMath::random(.7, 1.0), 1.0, 1.0, .8), "Papua_New_Guinea.png", 37, 37, /*ProtoMath::random(.3, .8)*/ProtoMath::random(.02, .2), ProtoVerletSurface::ALL_EDGES)); // 91, 91
     }
-    toroid2 = std::unique_ptr<ProtoToroid> (new ProtoToroid(Vec3f(0, 0, 0), Vec3f(0, ProtoMath::PI/3.0,0), Dim3f(20, 20, 20),ProtoColor4f(.2, .2, .2, 1.0), 75, 75, .9, .2));
-    toroid2->setShininess(6);
+
+    
+    
+    toroid2 = std::unique_ptr<ProtoToroid> (new ProtoToroid(Vec3f(0, 0, 0), Vec3f(0, ProtoMath::PI/3.0,0), Dim3f(20, 20, 20),ProtoColor4f(.7, .5, .7, 1.0), 75, 75, .9, .2));
+    toroid2->setShininess(65);
     //toroid2->setEmissionMaterialColor(Col4f(0,0,0,1));
     glDepthMask(true);
     glEnable(GL_DEPTH_TEST);
@@ -111,18 +78,21 @@ void App01::init(){
 // event thread runs continuously
 //ProtoWorld draw independently
 void App01::run(){
-    if(isClicked){
+   // if(isClicked){
         //std::cout << "frameCount = " << frameCount << std::endl;
         //std::cout << "frameRate = " << frameRate << std::endl;
         //std::cout << "ind = " << ind << std::endl;
-        //glPushMatrix();
-        glTranslatef(0, 0, -100+tx);
-        tx+=.05;
+         glPushMatrix();
+        glTranslatef(0, 0, -65);
+         glRotatef(-30, 1, 0, 0);
         glPushMatrix();
+        glTranslatef(0, 0, tx);
+         //light1->setPosition(Vec3f(0, 0, 100-tx));
+        glPopMatrix();
+        tx+=.5;
+       
         glRotatef(x+=.2, 1, .75, .3);
-        //light2->setPosition(Vec3f(x*.1, 0, 10));
-        //light2->setShininess(24);
-        //light7->setShininess(128);
+       
         //glPopMatrix();
         //glRotatef(90, 0, 1, 0);
         glDisable(GL_TEXTURE_2D);
@@ -199,7 +169,7 @@ void App01::run(){
         //    verletSurf->setMeshColor(Col4f(.4, .4, .4, .2));
         //    verletSurf->display(ProtoGeom3::VERTEX_BUFFER_OBJECT, ProtoGeom3::WIREFRAME, .01);
         glPopMatrix();
-    }
+  //  }
     
 }
 
@@ -223,7 +193,8 @@ void App01::mouseReleased(){
 void App01::mouseRightReleased(){
     
 }
-void App01::mouseMoved(){
+void App01::mouseMoved(int mx, int my){
+    light1->setPosition(Vec3f(0, 0, mx));
     
 }
 void App01::mouseDragged(){

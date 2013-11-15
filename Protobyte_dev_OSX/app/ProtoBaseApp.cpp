@@ -32,7 +32,7 @@ void ProtoBaseApp::setWorld(std::shared_ptr<ProtoWorld> world){
     light7 = std::shared_ptr<ProtoLight>(new ProtoLight());
 
 
-    // set default light on
+    
     world->add(light0);
      world->add(light1);
      world->add(light2);
@@ -41,15 +41,14 @@ void ProtoBaseApp::setWorld(std::shared_ptr<ProtoWorld> world){
      world->add(light5);
      world->add(light6);
      world->add(light7);
-    light0->on();
-
     
-    
+    // set default light on
+   // light0->on();
 
 
 }
 
-// ownerhship was passed from Protoplasm to BaseApp, so BaseApp must start World rendering loop
+// start World rendering loop
 void ProtoBaseApp::runWorld() {
     world->run();
 }
@@ -149,7 +148,7 @@ void ProtoBaseApp::mousePressed(){}
 void ProtoBaseApp::mouseRightPressed(){}
 void ProtoBaseApp::mouseReleased(){}
 void ProtoBaseApp::mouseRightReleased(){}
-void ProtoBaseApp::mouseMoved(){}
+void ProtoBaseApp::mouseMoved(int mx, int my){}
 void ProtoBaseApp::mouseDragged(){}
 
 // window events

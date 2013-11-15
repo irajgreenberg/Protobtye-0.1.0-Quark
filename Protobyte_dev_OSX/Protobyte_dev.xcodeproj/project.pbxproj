@@ -12,6 +12,7 @@
 		2A2D426B181599E900D5E907 /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2D4266181599E900D5E907 /* sfml-network.framework */; };
 		2A2D426C181599E900D5E907 /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2D4267181599E900D5E907 /* sfml-system.framework */; };
 		2A2D426D181599E900D5E907 /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2D4268181599E900D5E907 /* sfml-window.framework */; };
+		2A7CDB4118343996003E8FD3 /* ProtoImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A7CDB4018343996003E8FD3 /* ProtoImage.cpp */; };
 		2A820D28181714AC00AEEE95 /* ProtoBaseApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A820D24181714AC00AEEE95 /* ProtoBaseApp.cpp */; };
 		2A820D2D181714F300AEEE95 /* ProtoPlasm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A820D2B181714F300AEEE95 /* ProtoPlasm.cpp */; };
 		2A990B801818359A005DD10E /* defaultShader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 2A990B6718183599005DD10E /* defaultShader.frag */; };
@@ -32,7 +33,7 @@
 		2AD3797F182D52C600A4C541 /* ProtoShape3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37951182D52C600A4C541 /* ProtoShape3.cpp */; };
 		2AD37980182D52C600A4C541 /* ProtoSphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37953182D52C600A4C541 /* ProtoSphere.cpp */; };
 		2AD37981182D52C600A4C541 /* ProtoSpline3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37955182D52C600A4C541 /* ProtoSpline3.cpp */; };
-		2AD37982182D52C600A4C541 /* ProtoTexture2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37957182D52C600A4C541 /* ProtoTexture2.cpp */; };
+		2AD37982182D52C600A4C541 /* ProtoTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37957182D52C600A4C541 /* ProtoTexture.cpp */; };
 		2AD37983182D52C600A4C541 /* ProtoToroid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37959182D52C600A4C541 /* ProtoToroid.cpp */; };
 		2AD37984182D52C600A4C541 /* ProtoTransformFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3795B182D52C600A4C541 /* ProtoTransformFunction.cpp */; };
 		2AD37985182D52C600A4C541 /* ProtoTube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3795D182D52C600A4C541 /* ProtoTube.cpp */; };
@@ -45,6 +46,8 @@
 		722DB7761817D76200A5A716 /* ProtoMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 722DB7751817D76200A5A716 /* ProtoMain.cpp */; };
 		7241A87C17BD63A300DBF38C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7241A87B17BD63A300DBF38C /* OpenGL.framework */; };
 		7241A87E17BD63AA00DBF38C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7241A87D17BD63AA00DBF38C /* GLUT.framework */; };
+		724B59AB1831D1F90098E5A1 /* ProtoVerletCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */; };
+		72E372F91835A77F001AE1B8 /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E372F81835A77F001AE1B8 /* libfreeimage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,8 @@
 		2A2D4266181599E900D5E907 /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "/Library/Frameworks/sfml-network.framework"; sourceTree = "<absolute>"; };
 		2A2D4267181599E900D5E907 /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "/Library/Frameworks/sfml-system.framework"; sourceTree = "<absolute>"; };
 		2A2D4268181599E900D5E907 /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "/Library/Frameworks/sfml-window.framework"; sourceTree = "<absolute>"; };
+		2A7CDB3F18343996003E8FD3 /* ProtoImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoImage.h; path = ../libProtobyte/ProtoImage.h; sourceTree = "<group>"; };
+		2A7CDB4018343996003E8FD3 /* ProtoImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoImage.cpp; path = ../libProtobyte/ProtoImage.cpp; sourceTree = "<group>"; };
 		2A820D24181714AC00AEEE95 /* ProtoBaseApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoBaseApp.cpp; path = app/ProtoBaseApp.cpp; sourceTree = "<group>"; };
 		2A820D26181714AC00AEEE95 /* ProtoBaseApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoBaseApp.h; path = app/ProtoBaseApp.h; sourceTree = "<group>"; };
 		2A820D2B181714F300AEEE95 /* ProtoPlasm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoPlasm.cpp; path = app/ProtoPlasm.cpp; sourceTree = "<group>"; };
@@ -103,8 +108,8 @@
 		2AD37954182D52C600A4C541 /* ProtoSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoSphere.h; path = ../libProtobyte/ProtoSphere.h; sourceTree = "<group>"; };
 		2AD37955182D52C600A4C541 /* ProtoSpline3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoSpline3.cpp; path = ../libProtobyte/ProtoSpline3.cpp; sourceTree = "<group>"; };
 		2AD37956182D52C600A4C541 /* ProtoSpline3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoSpline3.h; path = ../libProtobyte/ProtoSpline3.h; sourceTree = "<group>"; };
-		2AD37957182D52C600A4C541 /* ProtoTexture2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoTexture2.cpp; path = ../libProtobyte/ProtoTexture2.cpp; sourceTree = "<group>"; };
-		2AD37958182D52C600A4C541 /* ProtoTexture2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoTexture2.h; path = ../libProtobyte/ProtoTexture2.h; sourceTree = "<group>"; };
+		2AD37957182D52C600A4C541 /* ProtoTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoTexture.cpp; path = ../libProtobyte/ProtoTexture.cpp; sourceTree = "<group>"; };
+		2AD37958182D52C600A4C541 /* ProtoTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoTexture.h; path = ../libProtobyte/ProtoTexture.h; sourceTree = "<group>"; };
 		2AD37959182D52C600A4C541 /* ProtoToroid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoToroid.cpp; path = ../libProtobyte/ProtoToroid.cpp; sourceTree = "<group>"; };
 		2AD3795A182D52C600A4C541 /* ProtoToroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoToroid.h; path = ../libProtobyte/ProtoToroid.h; sourceTree = "<group>"; };
 		2AD3795B182D52C600A4C541 /* ProtoTransformFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoTransformFunction.cpp; path = ../libProtobyte/ProtoTransformFunction.cpp; sourceTree = "<group>"; };
@@ -133,7 +138,11 @@
 		722DB7751817D76200A5A716 /* ProtoMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoMain.cpp; path = app/ProtoMain.cpp; sourceTree = "<group>"; };
 		7241A87B17BD63A300DBF38C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		7241A87D17BD63AA00DBF38C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
+		724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoVerletCube.cpp; path = ../libProtobyte/ProtoVerletCube.cpp; sourceTree = "<group>"; };
+		724B59AA1831D1F90098E5A1 /* ProtoVerletCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVerletCube.h; path = ../libProtobyte/ProtoVerletCube.h; sourceTree = "<group>"; };
 		725D47F11821FD2200C6F14B /* stiller.raw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stiller.raw; path = resources/stiller.raw; sourceTree = SOURCE_ROOT; };
+		72E372F81835A77F001AE1B8 /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = ../other_libs/FreeImage/libfreeimage.a; sourceTree = "<group>"; };
+		72E372FA1835A799001AE1B8 /* FreeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FreeImage.h; path = ../other_libs/FreeImage/FreeImage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E372F91835A77F001AE1B8 /* libfreeimage.a in Frameworks */,
 				2A2D4269181599E900D5E907 /* sfml-audio.framework in Frameworks */,
 				2A2D426A181599E900D5E907 /* sfml-graphics.framework in Frameworks */,
 				2A2D426B181599E900D5E907 /* sfml-network.framework in Frameworks */,
@@ -191,6 +201,8 @@
 				2AD37941182D52C600A4C541 /* ProtoGeomSet.cpp */,
 				2AD37942182D52C600A4C541 /* ProtoGeomSet.h */,
 				2AD37943182D52C600A4C541 /* ProtoGLInfo.h */,
+				2A7CDB4018343996003E8FD3 /* ProtoImage.cpp */,
+				2A7CDB3F18343996003E8FD3 /* ProtoImage.h */,
 				2AD37944182D52C600A4C541 /* ProtoLight.cpp */,
 				2AD37945182D52C600A4C541 /* ProtoLight.h */,
 				2AD37946182D52C600A4C541 /* ProtoMath.cpp */,
@@ -210,8 +222,8 @@
 				2AD37954182D52C600A4C541 /* ProtoSphere.h */,
 				2AD37955182D52C600A4C541 /* ProtoSpline3.cpp */,
 				2AD37956182D52C600A4C541 /* ProtoSpline3.h */,
-				2AD37957182D52C600A4C541 /* ProtoTexture2.cpp */,
-				2AD37958182D52C600A4C541 /* ProtoTexture2.h */,
+				2AD37957182D52C600A4C541 /* ProtoTexture.cpp */,
+				2AD37958182D52C600A4C541 /* ProtoTexture.h */,
 				2AD37959182D52C600A4C541 /* ProtoToroid.cpp */,
 				2AD3795A182D52C600A4C541 /* ProtoToroid.h */,
 				2AD3795B182D52C600A4C541 /* ProtoTransformFunction.cpp */,
@@ -228,6 +240,8 @@
 				2AD37967182D52C600A4C541 /* ProtoVector4.h */,
 				2AD37968182D52C600A4C541 /* ProtoVerletBall.cpp */,
 				2AD37969182D52C600A4C541 /* ProtoVerletBall.h */,
+				724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */,
+				724B59AA1831D1F90098E5A1 /* ProtoVerletCube.h */,
 				2AD3796A182D52C600A4C541 /* ProtoVerletStick.cpp */,
 				2AD3796B182D52C600A4C541 /* ProtoVerletStick.h */,
 				2AD3796C182D52C600A4C541 /* ProtoVerletSurface.cpp */,
@@ -243,6 +257,7 @@
 		72198DD517BBDD68005AE9DA = {
 			isa = PBXGroup;
 			children = (
+				72E372F81835A77F001AE1B8 /* libfreeimage.a */,
 				2A9EA5F31818332800168827 /* App01.cpp */,
 				2A9EA5F41818332800168827 /* App01.h */,
 				72C18D8E1817D280003263D2 /* App */,
@@ -264,6 +279,7 @@
 		722DB7771817D90600A5A716 /* Other Libs */ = {
 			isa = PBXGroup;
 			children = (
+				72E372FA1835A799001AE1B8 /* FreeImage.h */,
 				2A2D4264181599E900D5E907 /* sfml-audio.framework */,
 				2A2D4265181599E900D5E907 /* sfml-graphics.framework */,
 				2A2D4266181599E900D5E907 /* sfml-network.framework */,
@@ -346,8 +362,9 @@
 				2AD37980182D52C600A4C541 /* ProtoSphere.cpp in Sources */,
 				2A820D28181714AC00AEEE95 /* ProtoBaseApp.cpp in Sources */,
 				2AD3798C182D52C600A4C541 /* ProtoWorld.cpp in Sources */,
+				724B59AB1831D1F90098E5A1 /* ProtoVerletCube.cpp in Sources */,
 				2AD37984182D52C600A4C541 /* ProtoTransformFunction.cpp in Sources */,
-				2AD37982182D52C600A4C541 /* ProtoTexture2.cpp in Sources */,
+				2AD37982182D52C600A4C541 /* ProtoTexture.cpp in Sources */,
 				2A820D2D181714F300AEEE95 /* ProtoPlasm.cpp in Sources */,
 				2AD37972182D52C600A4C541 /* ProtoAnimator.cpp in Sources */,
 				2A990B811818359A005DD10E /* defaultShader.vert in Sources */,
@@ -361,6 +378,7 @@
 				2AD37977182D52C600A4C541 /* ProtoFrenetFrame.cpp in Sources */,
 				2AD37986182D52C600A4C541 /* ProtoUtility.cpp in Sources */,
 				2AD3797B182D52C600A4C541 /* ProtoLight.cpp in Sources */,
+				2A7CDB4118343996003E8FD3 /* ProtoImage.cpp in Sources */,
 				2AD3797A182D52C600A4C541 /* ProtoGeomSet.cpp in Sources */,
 				2AD37981182D52C600A4C541 /* ProtoSpline3.cpp in Sources */,
 				2AD3798A182D52C600A4C541 /* ProtoVerletSurface.cpp in Sources */,
@@ -432,6 +450,7 @@
 				SFML_SYSTEM = "$(SFML_LINK_PREFIX)sfml-system$(SFML_LINK_SUFFIX)";
 				SFML_WINDOW = "$(SFML_LINK_PREFIX)sfml-window$(SFML_LINK_SUFFIX)";
 				SUPPORTED_PLATFORMS = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -489,30 +508,67 @@
 				SFML_SYSTEM = "$(SFML_LINK_PREFIX)sfml-system$(SFML_LINK_SUFFIX)";
 				SFML_WINDOW = "$(SFML_LINK_PREFIX)sfml-window$(SFML_LINK_SUFFIX)";
 				SUPPORTED_PLATFORMS = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
 		72198DEA17BBDD68005AE9DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/33993405/Dropbox/ira_dev/Protobyte\\ 0.1.0\\ (Quark)/other_libs/FreeImage",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+					"/usr/lib/libstdc++.dylib",
+				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/include/ /Users/33993405/Dropbox/ira_dev/Protobyte\\ 0.1.0\\ (Quark)/other_libs/FreeImage";
 			};
 			name = Debug;
 		};
 		72198DEB17BBDD68005AE9DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/33993405/Dropbox/ira_dev/Protobyte\\ 0.1.0\\ (Quark)/other_libs/FreeImage",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+					"/usr/lib/libstdc++.dylib",
+				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/include/ /Users/33993405/Dropbox/ira_dev/Protobyte\\ 0.1.0\\ (Quark)/other_libs/FreeImage";
 			};
 			name = Release;
 		};

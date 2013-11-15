@@ -19,6 +19,9 @@
  \ingroup common
  This class is part of the group common (update)
  \sa NO LINK
+ 
+ http://www.avid-insight.co.uk/2009/11/opengl-gotcha-remember-gl_light0/ nice blog about 
+ order of ops with camera/lights
  */
 
 #include "ProtoWorld.h"
@@ -187,7 +190,15 @@ canvasWidth(canvasWidth), canvasHeight(canvasHeight){
 //    }
 //}
 
-void ProtoWorld::init(){;
+void ProtoWorld::init(){
+    glLights[0] = GL_LIGHT0;
+    glLights[1] = GL_LIGHT1;
+    glLights[2] = GL_LIGHT2;
+    glLights[3] = GL_LIGHT3;
+    glLights[4] = GL_LIGHT4;
+    glLights[5] = GL_LIGHT5;
+    glLights[6] = GL_LIGHT6;
+    glLights[7] = GL_LIGHT7;
 //    glEnable(GL_LIGHTING);
 //    glFrontFace(GL_CCW); // default
 //    glEnable(GL_CULL_FACE);
@@ -314,636 +325,368 @@ void ProtoWorld::run() {
     
     //std::cout << "in ProtoWorld.run()" << std::endl;
     // if animated
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
     glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
     
-    float globalAmbient[4] = {.2, .2, .2, 1};
-    glLightModelfv(GL_LIGHT_MODEL_AMBIENT,  globalAmbient);
-    /**************************************************
-     *                   LIGHTING                     *
-     *************************************************/
-    for(std::size_t i=0; i<lights.size(); ++i){
-        switch(i){
-            case 0:
-                if(lights.at(i)->getIsOn()){
-                    glEnable(GL_LIGHT0);
-                    
-                    // set Lights
-                    float position[4] = {
-                        lights.at(i)->getPosition().x,
-                        lights.at(i)->getPosition().y,
-                        lights.at(i)->getPosition().z,
-                        1
-                    };
-                    
-                    float diffuse[4] = {
-                        lights.at(i)->getDiffuse().getR(),
-                        lights.at(i)->getDiffuse().getG(),
-                        lights.at(i)->getDiffuse().getB(),
-                        lights.at(i)->getDiffuse().getA()
-                    };
-                    
-                    float ambient[4] = {
-                        lights.at(i)->getAmbient().getR(),
-                        lights.at(i)->getAmbient().getG(),
-                        lights.at(i)->getAmbient().getB(),
-                        lights.at(i)->getAmbient().getA()
-                    };
-                    
-                    float specular[4] = {
-                        lights.at(i)->getSpecular().getR(),
-                        lights.at(i)->getSpecular().getG(),
-                        lights.at(i)->getSpecular().getB(),
-                        lights.at(i)->getSpecular().getA()
-                    };
-                    
-                    
-                    // materials
-//                    float materialDiffuse[4] = {
-//                        lights.at(i)->getDiffuseMaterial().getR(),
-//                        lights.at(i)->getDiffuseMaterial().getG(),
-//                        lights.at(i)->getDiffuseMaterial().getB(),
-//                        lights.at(i)->getDiffuseMaterial().getA()
+   
+    
+    
+    
+    
+//    for(std::size_t i=0; i<lights.size(); ++i){
+//        // for each light position transform
+//        glPushMatrix();
+//        
+//        switch(i){
+//            case 0:
+//                if(lights.at(i)->getIsOn()){
+//                    glEnable(GL_LIGHT0);
+//                    
+//                    // set Lights
+//                    float position[4] = {
+//                        lights.at(i)->getPosition().x,
+//                        lights.at(i)->getPosition().y,
+//                        lights.at(i)->getPosition().z,
+//                        1
 //                    };
 //                    
-//                    float materialSpecularity[4] = {
-//                        lights.at(i)->getSpecularMaterial().getR(),
-//                        lights.at(i)->getSpecularMaterial().getG(),
-//                        lights.at(i)->getSpecularMaterial().getB(),
-//                        lights.at(i)->getSpecularMaterial().getA()
+//                    float diffuse[4] = {
+//                        lights.at(i)->getDiffuse().getR(),
+//                        lights.at(i)->getDiffuse().getG(),
+//                        lights.at(i)->getDiffuse().getB(),
+//                        lights.at(i)->getDiffuse().getA()
 //                    };
 //                    
-//                    float materialAmbient[4] = {
-//                        lights.at(i)->getAmbientMaterial().getR(),
-//                        lights.at(i)->getAmbientMaterial().getG(),
-//                        lights.at(i)->getAmbientMaterial().getB(),
-//                        lights.at(i)->getAmbientMaterial().getA()
+//                    float ambient[4] = {
+//                        lights.at(i)->getAmbient().getR(),
+//                        lights.at(i)->getAmbient().getG(),
+//                        lights.at(i)->getAmbient().getB(),
+//                        lights.at(i)->getAmbient().getA()
 //                    };
 //                    
-//                    float materialEmissive[4] = {
-//                        lights.at(i)->getEmissiveMaterial().getR(),
-//                        lights.at(i)->getEmissiveMaterial().getG(),
-//                        lights.at(i)->getEmissiveMaterial().getB(),
-//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    float specular[4] = {
+//                        lights.at(i)->getSpecular().getR(),
+//                        lights.at(i)->getSpecular().getG(),
+//                        lights.at(i)->getSpecular().getB(),
+//                        lights.at(i)->getSpecular().getA()
 //                    };
-                    
-                    //GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-                    
-                    //glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-                    //glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
-                    glLightfv(GL_LIGHT0, GL_POSITION, position);
-                    glLightfv(GL_LIGHT0, GL_AMBIENT, ambient);
-                    glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuse);
-                    glLightfv(GL_LIGHT0, GL_SPECULAR, specular);
-                    
-                } else {
-                    glDisable(GL_LIGHT0);
-                }
-                break;
-            case 1:
-                if(lights.at(i)->getIsOn()){
-                    glEnable(GL_LIGHT1);
-                    // set Lights
-                    float position[4] = {
-                        lights.at(i)->getPosition().x,
-                        lights.at(i)->getPosition().y,
-                        lights.at(i)->getPosition().z,
-                        1
-                    };
-                    
-                    float diffuse[4] = {
-                        lights.at(i)->getDiffuse().getR(),
-                        lights.at(i)->getDiffuse().getG(),
-                        lights.at(i)->getDiffuse().getB(),
-                        lights.at(i)->getDiffuse().getA()
-                    };
-                    
-                    float ambient[4] = {
-                        lights.at(i)->getAmbient().getR(),
-                        lights.at(i)->getAmbient().getG(),
-                        lights.at(i)->getAmbient().getB(),
-                        lights.at(i)->getAmbient().getA()
-                    };
-                    
-                    float specular[4] = {
-                        lights.at(i)->getSpecular().getR(),
-                        lights.at(i)->getSpecular().getG(),
-                        lights.at(i)->getSpecular().getB(),
-                        lights.at(i)->getSpecular().getA()
-                    };
-                    
-                    
-                    // materials
-//                    float materialDiffuse[4] = {
-//                        lights.at(i)->getDiffuseMaterial().getR(),
-//                        lights.at(i)->getDiffuseMaterial().getG(),
-//                        lights.at(i)->getDiffuseMaterial().getB(),
-//                        lights.at(i)->getDiffuseMaterial().getA()
+//                
+//                    glLightfv(GL_LIGHT0, GL_POSITION, position);
+//                    glLightfv(GL_LIGHT0, GL_AMBIENT, ambient);
+//                    glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuse);
+//                    glLightfv(GL_LIGHT0, GL_SPECULAR, specular);
+//                    
+//                } else {
+//                    glDisable(GL_LIGHT0);
+//                }
+//                break;
+//            case 1:
+//                if(lights.at(i)->getIsOn()){
+//                    glEnable(GL_LIGHT1);
+//                    // set Lights
+//                    float position[4] = {
+//                        lights.at(i)->getPosition().x,
+//                        lights.at(i)->getPosition().y,
+//                        lights.at(i)->getPosition().z,
+//                        1
 //                    };
 //                    
-//                    float materialSpecularity[4] = {
-//                        lights.at(i)->getSpecularMaterial().getR(),
-//                        lights.at(i)->getSpecularMaterial().getG(),
-//                        lights.at(i)->getSpecularMaterial().getB(),
-//                        lights.at(i)->getSpecularMaterial().getA()
+//                    float diffuse[4] = {
+//                        lights.at(i)->getDiffuse().getR(),
+//                        lights.at(i)->getDiffuse().getG(),
+//                        lights.at(i)->getDiffuse().getB(),
+//                        lights.at(i)->getDiffuse().getA()
 //                    };
 //                    
-//                    float materialAmbient[4] = {
-//                        lights.at(i)->getAmbientMaterial().getR(),
-//                        lights.at(i)->getAmbientMaterial().getG(),
-//                        lights.at(i)->getAmbientMaterial().getB(),
-//                        lights.at(i)->getAmbientMaterial().getA()
+//                    float ambient[4] = {
+//                        lights.at(i)->getAmbient().getR(),
+//                        lights.at(i)->getAmbient().getG(),
+//                        lights.at(i)->getAmbient().getB(),
+//                        lights.at(i)->getAmbient().getA()
 //                    };
 //                    
-//                    float materialEmissive[4] = {
-//                        lights.at(i)->getEmissiveMaterial().getR(),
-//                        lights.at(i)->getEmissiveMaterial().getG(),
-//                        lights.at(i)->getEmissiveMaterial().getB(),
-//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    float specular[4] = {
+//                        lights.at(i)->getSpecular().getR(),
+//                        lights.at(i)->getSpecular().getG(),
+//                        lights.at(i)->getSpecular().getB(),
+//                        lights.at(i)->getSpecular().getA()
 //                    };
-                    
-                    //GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-                    
-                    //glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-                    //glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
-                    glLightfv(GL_LIGHT1, GL_POSITION, position);
-                    glLightfv(GL_LIGHT1, GL_AMBIENT, ambient);
-                    glLightfv(GL_LIGHT1, GL_DIFFUSE, diffuse);
-                    glLightfv(GL_LIGHT1, GL_SPECULAR, specular);
-                    
-                } else {
-                    glDisable(GL_LIGHT1);
-                }
-                
-                break;
-            case 2:
-                if(lights.at(i)->getIsOn()){
-                    glEnable(GL_LIGHT2);
-                    // set Lights
-                    float position[4] = {
-                        lights.at(i)->getPosition().x,
-                        lights.at(i)->getPosition().y,
-                        lights.at(i)->getPosition().z,
-                        1
-                    };
-                    
-                    float diffuse[4] = {
-                        lights.at(i)->getDiffuse().getR(),
-                        lights.at(i)->getDiffuse().getG(),
-                        lights.at(i)->getDiffuse().getB(),
-                        lights.at(i)->getDiffuse().getA()
-                    };
-                    
-                    float ambient[4] = {
-                        lights.at(i)->getAmbient().getR(),
-                        lights.at(i)->getAmbient().getG(),
-                        lights.at(i)->getAmbient().getB(),
-                        lights.at(i)->getAmbient().getA()
-                    };
-                    
-                    float specular[4] = {
-                        lights.at(i)->getSpecular().getR(),
-                        lights.at(i)->getSpecular().getG(),
-                        lights.at(i)->getSpecular().getB(),
-                        lights.at(i)->getSpecular().getA()
-                    };
-                    
-                    
-                    // materials
-//                    float materialDiffuse[4] = {
-//                        lights.at(i)->getDiffuseMaterial().getR(),
-//                        lights.at(i)->getDiffuseMaterial().getG(),
-//                        lights.at(i)->getDiffuseMaterial().getB(),
-//                        lights.at(i)->getDiffuseMaterial().getA()
+//                
+//                    glLightfv(GL_LIGHT1, GL_POSITION, position);
+//                    glLightfv(GL_LIGHT1, GL_AMBIENT, ambient);
+//                    glLightfv(GL_LIGHT1, GL_DIFFUSE, diffuse);
+//                    glLightfv(GL_LIGHT1, GL_SPECULAR, specular);
+//                    
+//                } else {
+//                    glDisable(GL_LIGHT1);
+//                }
+//                
+//                break;
+//            case 2:
+//                if(lights.at(i)->getIsOn()){
+//                    glEnable(GL_LIGHT2);
+//                    // set Lights
+//                    float position[4] = {
+//                        lights.at(i)->getPosition().x,
+//                        lights.at(i)->getPosition().y,
+//                        lights.at(i)->getPosition().z,
+//                        1
 //                    };
 //                    
-//                    float materialSpecularity[4] = {
-//                        lights.at(i)->getSpecularMaterial().getR(),
-//                        lights.at(i)->getSpecularMaterial().getG(),
-//                        lights.at(i)->getSpecularMaterial().getB(),
-//                        lights.at(i)->getSpecularMaterial().getA()
+//                    float diffuse[4] = {
+//                        lights.at(i)->getDiffuse().getR(),
+//                        lights.at(i)->getDiffuse().getG(),
+//                        lights.at(i)->getDiffuse().getB(),
+//                        lights.at(i)->getDiffuse().getA()
 //                    };
 //                    
-//                    float materialAmbient[4] = {
-//                        lights.at(i)->getAmbientMaterial().getR(),
-//                        lights.at(i)->getAmbientMaterial().getG(),
-//                        lights.at(i)->getAmbientMaterial().getB(),
-//                        lights.at(i)->getAmbientMaterial().getA()
+//                    float ambient[4] = {
+//                        lights.at(i)->getAmbient().getR(),
+//                        lights.at(i)->getAmbient().getG(),
+//                        lights.at(i)->getAmbient().getB(),
+//                        lights.at(i)->getAmbient().getA()
 //                    };
 //                    
-//                    float materialEmissive[4] = {
-//                        lights.at(i)->getEmissiveMaterial().getR(),
-//                        lights.at(i)->getEmissiveMaterial().getG(),
-//                        lights.at(i)->getEmissiveMaterial().getB(),
-//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    float specular[4] = {
+//                        lights.at(i)->getSpecular().getR(),
+//                        lights.at(i)->getSpecular().getG(),
+//                        lights.at(i)->getSpecular().getB(),
+//                        lights.at(i)->getSpecular().getA()
 //                    };
-                    
-//                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-                    
-//                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-//                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
-                    glLightfv(GL_LIGHT2, GL_POSITION, position);
-                    glLightfv(GL_LIGHT2, GL_AMBIENT, ambient);
-                    glLightfv(GL_LIGHT2, GL_DIFFUSE, diffuse);
-                    glLightfv(GL_LIGHT2, GL_SPECULAR, specular);
-                    
-                } else {
-                    glDisable(GL_LIGHT2);
-                }
-                
-                break;
-                
-            case 3:
-                if(lights.at(i)->getIsOn()){
-                    glEnable(GL_LIGHT3);
-                    // set Lights
-                    float position[4] = {
-                        lights.at(i)->getPosition().x,
-                        lights.at(i)->getPosition().y,
-                        lights.at(i)->getPosition().z,
-                        1
-                    };
-                    
-                    float diffuse[4] = {
-                        lights.at(i)->getDiffuse().getR(),
-                        lights.at(i)->getDiffuse().getG(),
-                        lights.at(i)->getDiffuse().getB(),
-                        lights.at(i)->getDiffuse().getA()
-                    };
-                    
-                    float ambient[4] = {
-                        lights.at(i)->getAmbient().getR(),
-                        lights.at(i)->getAmbient().getG(),
-                        lights.at(i)->getAmbient().getB(),
-                        lights.at(i)->getAmbient().getA()
-                    };
-                    
-                    float specular[4] = {
-                        lights.at(i)->getSpecular().getR(),
-                        lights.at(i)->getSpecular().getG(),
-                        lights.at(i)->getSpecular().getB(),
-                        lights.at(i)->getSpecular().getA()
-                    };
-                    
-                    
-                    // materials
-//                    float materialDiffuse[4] = {
-//                        lights.at(i)->getDiffuseMaterial().getR(),
-//                        lights.at(i)->getDiffuseMaterial().getG(),
-//                        lights.at(i)->getDiffuseMaterial().getB(),
-//                        lights.at(i)->getDiffuseMaterial().getA()
+//
+//                    glLightfv(GL_LIGHT2, GL_POSITION, position);
+//                    glLightfv(GL_LIGHT2, GL_AMBIENT, ambient);
+//                    glLightfv(GL_LIGHT2, GL_DIFFUSE, diffuse);
+//                    glLightfv(GL_LIGHT2, GL_SPECULAR, specular);
+//                    
+//                } else {
+//                    glDisable(GL_LIGHT2);
+//                }
+//                
+//                break;
+//                
+//            case 3:
+//                if(lights.at(i)->getIsOn()){
+//                    glEnable(GL_LIGHT3);
+//                    // set Lights
+//                    float position[4] = {
+//                        lights.at(i)->getPosition().x,
+//                        lights.at(i)->getPosition().y,
+//                        lights.at(i)->getPosition().z,
+//                        1
 //                    };
 //                    
-//                    float materialSpecularity[4] = {
-//                        lights.at(i)->getSpecularMaterial().getR(),
-//                        lights.at(i)->getSpecularMaterial().getG(),
-//                        lights.at(i)->getSpecularMaterial().getB(),
-//                        lights.at(i)->getSpecularMaterial().getA()
+//                    float diffuse[4] = {
+//                        lights.at(i)->getDiffuse().getR(),
+//                        lights.at(i)->getDiffuse().getG(),
+//                        lights.at(i)->getDiffuse().getB(),
+//                        lights.at(i)->getDiffuse().getA()
 //                    };
 //                    
-//                    float materialAmbient[4] = {
-//                        lights.at(i)->getAmbientMaterial().getR(),
-//                        lights.at(i)->getAmbientMaterial().getG(),
-//                        lights.at(i)->getAmbientMaterial().getB(),
-//                        lights.at(i)->getAmbientMaterial().getA()
+//                    float ambient[4] = {
+//                        lights.at(i)->getAmbient().getR(),
+//                        lights.at(i)->getAmbient().getG(),
+//                        lights.at(i)->getAmbient().getB(),
+//                        lights.at(i)->getAmbient().getA()
 //                    };
 //                    
-//                    float materialEmissive[4] = {
-//                        lights.at(i)->getEmissiveMaterial().getR(),
-//                        lights.at(i)->getEmissiveMaterial().getG(),
-//                        lights.at(i)->getEmissiveMaterial().getB(),
-//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    float specular[4] = {
+//                        lights.at(i)->getSpecular().getR(),
+//                        lights.at(i)->getSpecular().getG(),
+//                        lights.at(i)->getSpecular().getB(),
+//                        lights.at(i)->getSpecular().getA()
 //                    };
-                    
-//                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
+//
+//                    glLightfv(GL_LIGHT3, GL_POSITION, position);
+//                    glLightfv(GL_LIGHT3, GL_AMBIENT, ambient);
+//                    glLightfv(GL_LIGHT3, GL_DIFFUSE, diffuse);
+//                    glLightfv(GL_LIGHT3, GL_SPECULAR, specular);
 //                    
-//                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-//                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
-                    glLightfv(GL_LIGHT3, GL_POSITION, position);
-                    glLightfv(GL_LIGHT3, GL_AMBIENT, ambient);
-                    glLightfv(GL_LIGHT3, GL_DIFFUSE, diffuse);
-                    glLightfv(GL_LIGHT3, GL_SPECULAR, specular);
-                    
-                } else {
-                    glDisable(GL_LIGHT3);
-                }
-                
-                break;
-                
-            case 4:
-                if(lights.at(i)->getIsOn()){
-                    glEnable(GL_LIGHT4);
-                    // set Lights
-                    float position[4] = {
-                        lights.at(i)->getPosition().x,
-                        lights.at(i)->getPosition().y,
-                        lights.at(i)->getPosition().z,
-                        1
-                    };
-                    
-                    float diffuse[4] = {
-                        lights.at(i)->getDiffuse().getR(),
-                        lights.at(i)->getDiffuse().getG(),
-                        lights.at(i)->getDiffuse().getB(),
-                        lights.at(i)->getDiffuse().getA()
-                    };
-                    
-                    float ambient[4] = {
-                        lights.at(i)->getAmbient().getR(),
-                        lights.at(i)->getAmbient().getG(),
-                        lights.at(i)->getAmbient().getB(),
-                        lights.at(i)->getAmbient().getA()
-                    };
-                    
-                    float specular[4] = {
-                        lights.at(i)->getSpecular().getR(),
-                        lights.at(i)->getSpecular().getG(),
-                        lights.at(i)->getSpecular().getB(),
-                        lights.at(i)->getSpecular().getA()
-                    };
-                    
-                    
-                    // materials
-//                    float materialDiffuse[4] = {
-//                        lights.at(i)->getDiffuseMaterial().getR(),
-//                        lights.at(i)->getDiffuseMaterial().getG(),
-//                        lights.at(i)->getDiffuseMaterial().getB(),
-//                        lights.at(i)->getDiffuseMaterial().getA()
+//                } else {
+//                    glDisable(GL_LIGHT3);
+//                }
+//                
+//                break;
+//                
+//            case 4:
+//                if(lights.at(i)->getIsOn()){
+//                    glEnable(GL_LIGHT4);
+//                    // set Lights
+//                    float position[4] = {
+//                        lights.at(i)->getPosition().x,
+//                        lights.at(i)->getPosition().y,
+//                        lights.at(i)->getPosition().z,
+//                        1
 //                    };
 //                    
-//                    float materialSpecularity[4] = {
-//                        lights.at(i)->getSpecularMaterial().getR(),
-//                        lights.at(i)->getSpecularMaterial().getG(),
-//                        lights.at(i)->getSpecularMaterial().getB(),
-//                        lights.at(i)->getSpecularMaterial().getA()
+//                    float diffuse[4] = {
+//                        lights.at(i)->getDiffuse().getR(),
+//                        lights.at(i)->getDiffuse().getG(),
+//                        lights.at(i)->getDiffuse().getB(),
+//                        lights.at(i)->getDiffuse().getA()
 //                    };
 //                    
-//                    float materialAmbient[4] = {
-//                        lights.at(i)->getAmbientMaterial().getR(),
-//                        lights.at(i)->getAmbientMaterial().getG(),
-//                        lights.at(i)->getAmbientMaterial().getB(),
-//                        lights.at(i)->getAmbientMaterial().getA()
+//                    float ambient[4] = {
+//                        lights.at(i)->getAmbient().getR(),
+//                        lights.at(i)->getAmbient().getG(),
+//                        lights.at(i)->getAmbient().getB(),
+//                        lights.at(i)->getAmbient().getA()
 //                    };
 //                    
-//                    float materialEmissive[4] = {
-//                        lights.at(i)->getEmissiveMaterial().getR(),
-//                        lights.at(i)->getEmissiveMaterial().getG(),
-//                        lights.at(i)->getEmissiveMaterial().getB(),
-//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    float specular[4] = {
+//                        lights.at(i)->getSpecular().getR(),
+//                        lights.at(i)->getSpecular().getG(),
+//                        lights.at(i)->getSpecular().getB(),
+//                        lights.at(i)->getSpecular().getA()
+//                    };
+//
+//                    glLightfv(GL_LIGHT4, GL_POSITION, position);
+//                    glLightfv(GL_LIGHT4, GL_AMBIENT, ambient);
+//                    glLightfv(GL_LIGHT4, GL_DIFFUSE, diffuse);
+//                    glLightfv(GL_LIGHT4, GL_SPECULAR, specular);
+//                    
+//                } else {
+//                    glDisable(GL_LIGHT4);
+//                }
+//                
+//                break;
+//                
+//            case 5:
+//                if(lights.at(i)->getIsOn()){
+//                    glEnable(GL_LIGHT5);
+//                    // set Lights
+//                    float position[4] = {
+//                        lights.at(i)->getPosition().x,
+//                        lights.at(i)->getPosition().y,
+//                        lights.at(i)->getPosition().z,
+//                        1
 //                    };
 //                    
-//                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-//                    
-//                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-//                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
-                    glLightfv(GL_LIGHT4, GL_POSITION, position);
-                    glLightfv(GL_LIGHT4, GL_AMBIENT, ambient);
-                    glLightfv(GL_LIGHT4, GL_DIFFUSE, diffuse);
-                    glLightfv(GL_LIGHT4, GL_SPECULAR, specular);
-                    
-                } else {
-                    glDisable(GL_LIGHT4);
-                }
-                
-                break;
-                
-            case 5:
-                if(lights.at(i)->getIsOn()){
-                    glEnable(GL_LIGHT5);
-                    // set Lights
-                    float position[4] = {
-                        lights.at(i)->getPosition().x,
-                        lights.at(i)->getPosition().y,
-                        lights.at(i)->getPosition().z,
-                        1
-                    };
-                    
-                    float diffuse[4] = {
-                        lights.at(i)->getDiffuse().getR(),
-                        lights.at(i)->getDiffuse().getG(),
-                        lights.at(i)->getDiffuse().getB(),
-                        lights.at(i)->getDiffuse().getA()
-                    };
-                    
-                    float ambient[4] = {
-                        lights.at(i)->getAmbient().getR(),
-                        lights.at(i)->getAmbient().getG(),
-                        lights.at(i)->getAmbient().getB(),
-                        lights.at(i)->getAmbient().getA()
-                    };
-                    
-                    float specular[4] = {
-                        lights.at(i)->getSpecular().getR(),
-                        lights.at(i)->getSpecular().getG(),
-                        lights.at(i)->getSpecular().getB(),
-                        lights.at(i)->getSpecular().getA()
-                    };
-                    
-                    
-//                    // materials
-//                    float materialDiffuse[4] = {
-//                        lights.at(i)->getDiffuseMaterial().getR(),
-//                        lights.at(i)->getDiffuseMaterial().getG(),
-//                        lights.at(i)->getDiffuseMaterial().getB(),
-//                        lights.at(i)->getDiffuseMaterial().getA()
+//                    float diffuse[4] = {
+//                        lights.at(i)->getDiffuse().getR(),
+//                        lights.at(i)->getDiffuse().getG(),
+//                        lights.at(i)->getDiffuse().getB(),
+//                        lights.at(i)->getDiffuse().getA()
 //                    };
 //                    
-//                    float materialSpecularity[4] = {
-//                        lights.at(i)->getSpecularMaterial().getR(),
-//                        lights.at(i)->getSpecularMaterial().getG(),
-//                        lights.at(i)->getSpecularMaterial().getB(),
-//                        lights.at(i)->getSpecularMaterial().getA()
+//                    float ambient[4] = {
+//                        lights.at(i)->getAmbient().getR(),
+//                        lights.at(i)->getAmbient().getG(),
+//                        lights.at(i)->getAmbient().getB(),
+//                        lights.at(i)->getAmbient().getA()
 //                    };
 //                    
-//                    float materialAmbient[4] = {
-//                        lights.at(i)->getAmbientMaterial().getR(),
-//                        lights.at(i)->getAmbientMaterial().getG(),
-//                        lights.at(i)->getAmbientMaterial().getB(),
-//                        lights.at(i)->getAmbientMaterial().getA()
+//                    float specular[4] = {
+//                        lights.at(i)->getSpecular().getR(),
+//                        lights.at(i)->getSpecular().getG(),
+//                        lights.at(i)->getSpecular().getB(),
+//                        lights.at(i)->getSpecular().getA()
 //                    };
 //                    
-//                    float materialEmissive[4] = {
-//                        lights.at(i)->getEmissiveMaterial().getR(),
-//                        lights.at(i)->getEmissiveMaterial().getG(),
-//                        lights.at(i)->getEmissiveMaterial().getB(),
-//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    glLightfv(GL_LIGHT5, GL_POSITION, position);
+//                    glLightfv(GL_LIGHT5, GL_AMBIENT, ambient);
+//                    glLightfv(GL_LIGHT5, GL_DIFFUSE, diffuse);
+//                    glLightfv(GL_LIGHT5, GL_SPECULAR, specular);
+//                    
+//                } else {
+//                    glDisable(GL_LIGHT5);
+//                }
+//
+//                
+//                break;
+//                
+//            case 6:
+//                if(lights.at(i)->getIsOn()){
+//                    glEnable(GL_LIGHT6);
+//                    // set Lights
+//                    float position[4] = {
+//                        lights.at(i)->getPosition().x,
+//                        lights.at(i)->getPosition().y,
+//                        lights.at(i)->getPosition().z,
+//                        1
 //                    };
 //                    
-//                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-//                    
-//                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-//                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
-                    glLightfv(GL_LIGHT5, GL_POSITION, position);
-                    glLightfv(GL_LIGHT5, GL_AMBIENT, ambient);
-                    glLightfv(GL_LIGHT5, GL_DIFFUSE, diffuse);
-                    glLightfv(GL_LIGHT5, GL_SPECULAR, specular);
-                    
-                } else {
-                    glDisable(GL_LIGHT5);
-                }
-
-                
-                break;
-                
-            case 6:
-                if(lights.at(i)->getIsOn()){
-                    glEnable(GL_LIGHT6);
-                    // set Lights
-                    float position[4] = {
-                        lights.at(i)->getPosition().x,
-                        lights.at(i)->getPosition().y,
-                        lights.at(i)->getPosition().z,
-                        1
-                    };
-                    
-                    float diffuse[4] = {
-                        lights.at(i)->getDiffuse().getR(),
-                        lights.at(i)->getDiffuse().getG(),
-                        lights.at(i)->getDiffuse().getB(),
-                        lights.at(i)->getDiffuse().getA()
-                    };
-                    
-                    float ambient[4] = {
-                        lights.at(i)->getAmbient().getR(),
-                        lights.at(i)->getAmbient().getG(),
-                        lights.at(i)->getAmbient().getB(),
-                        lights.at(i)->getAmbient().getA()
-                    };
-                    
-                    float specular[4] = {
-                        lights.at(i)->getSpecular().getR(),
-                        lights.at(i)->getSpecular().getG(),
-                        lights.at(i)->getSpecular().getB(),
-                        lights.at(i)->getSpecular().getA()
-                    };
-                    
-                    
-                    // materials
-//                    float materialDiffuse[4] = {
-//                        lights.at(i)->getDiffuseMaterial().getR(),
-//                        lights.at(i)->getDiffuseMaterial().getG(),
-//                        lights.at(i)->getDiffuseMaterial().getB(),
-//                        lights.at(i)->getDiffuseMaterial().getA()
+//                    float diffuse[4] = {
+//                        lights.at(i)->getDiffuse().getR(),
+//                        lights.at(i)->getDiffuse().getG(),
+//                        lights.at(i)->getDiffuse().getB(),
+//                        lights.at(i)->getDiffuse().getA()
 //                    };
 //                    
-//                    float materialSpecularity[4] = {
-//                        lights.at(i)->getSpecularMaterial().getR(),
-//                        lights.at(i)->getSpecularMaterial().getG(),
-//                        lights.at(i)->getSpecularMaterial().getB(),
-//                        lights.at(i)->getSpecularMaterial().getA()
+//                    float ambient[4] = {
+//                        lights.at(i)->getAmbient().getR(),
+//                        lights.at(i)->getAmbient().getG(),
+//                        lights.at(i)->getAmbient().getB(),
+//                        lights.at(i)->getAmbient().getA()
 //                    };
 //                    
-//                    float materialAmbient[4] = {
-//                        lights.at(i)->getAmbientMaterial().getR(),
-//                        lights.at(i)->getAmbientMaterial().getG(),
-//                        lights.at(i)->getAmbientMaterial().getB(),
-//                        lights.at(i)->getAmbientMaterial().getA()
+//                    float specular[4] = {
+//                        lights.at(i)->getSpecular().getR(),
+//                        lights.at(i)->getSpecular().getG(),
+//                        lights.at(i)->getSpecular().getB(),
+//                        lights.at(i)->getSpecular().getA()
 //                    };
 //                    
-//                    float materialEmissive[4] = {
-//                        lights.at(i)->getEmissiveMaterial().getR(),
-//                        lights.at(i)->getEmissiveMaterial().getG(),
-//                        lights.at(i)->getEmissiveMaterial().getB(),
-//                        lights.at(i)->getEmissiveMaterial().getA()
+//                    glLightfv(GL_LIGHT6, GL_POSITION, position);
+//                    glLightfv(GL_LIGHT6, GL_AMBIENT, ambient);
+//                    glLightfv(GL_LIGHT6, GL_DIFFUSE, diffuse);
+//                    glLightfv(GL_LIGHT6, GL_SPECULAR, specular);
+//                    
+//                } else {
+//                    glDisable(GL_LIGHT6);
+//                }
+//                
+//                break;
+//                
+//            case 7:
+//                if(lights.at(i)->getIsOn()){
+//                    glEnable(GL_LIGHT7);
+//                    // set Lights
+//                    float position[4] = {
+//                        lights.at(i)->getPosition().x,
+//                        lights.at(i)->getPosition().y,
+//                        lights.at(i)->getPosition().z,
+//                        1
 //                    };
 //                    
-//                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-//                    
-//                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-//                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
-                    glLightfv(GL_LIGHT6, GL_POSITION, position);
-                    glLightfv(GL_LIGHT6, GL_AMBIENT, ambient);
-                    glLightfv(GL_LIGHT6, GL_DIFFUSE, diffuse);
-                    glLightfv(GL_LIGHT6, GL_SPECULAR, specular);
-                    
-                } else {
-                    glDisable(GL_LIGHT6);
-                }
-                
-                break;
-                
-            case 7:
-                if(lights.at(i)->getIsOn()){
-                    glEnable(GL_LIGHT7);
-                    // set Lights
-                    float position[4] = {
-                        lights.at(i)->getPosition().x,
-                        lights.at(i)->getPosition().y,
-                        lights.at(i)->getPosition().z,
-                        1
-                    };
-                    
-                    float diffuse[4] = {
-                        lights.at(i)->getDiffuse().getR(),
-                        lights.at(i)->getDiffuse().getG(),
-                        lights.at(i)->getDiffuse().getB(),
-                        lights.at(i)->getDiffuse().getA()
-                    };
-                    
-                    float ambient[4] = {
-                        lights.at(i)->getAmbient().getR(),
-                        lights.at(i)->getAmbient().getG(),
-                        lights.at(i)->getAmbient().getB(),
-                        lights.at(i)->getAmbient().getA()
-                    };
-                    
-                    float specular[4] = {
-                        lights.at(i)->getSpecular().getR(),
-                        lights.at(i)->getSpecular().getG(),
-                        lights.at(i)->getSpecular().getB(),
-                        lights.at(i)->getSpecular().getA()
-                    };
-                    
-                    
-                    // materials
-//                    float materialDiffuse[4] = {
-//                        lights.at(i)->getDiffuseMaterial().getR(),
-//                        lights.at(i)->getDiffuseMaterial().getG(),
-//                        lights.at(i)->getDiffuseMaterial().getB(),
-//                        lights.at(i)->getDiffuseMaterial().getA()
+//                    float diffuse[4] = {
+//                        lights.at(i)->getDiffuse().getR(),
+//                        lights.at(i)->getDiffuse().getG(),
+//                        lights.at(i)->getDiffuse().getB(),
+//                        lights.at(i)->getDiffuse().getA()
 //                    };
 //                    
-//                    float materialSpecularity[4] = {
-//                        lights.at(i)->getSpecularMaterial().getR(),
-//                        lights.at(i)->getSpecularMaterial().getG(),
-//                        lights.at(i)->getSpecularMaterial().getB(),
-//                        lights.at(i)->getSpecularMaterial().getA()
+//                    float ambient[4] = {
+//                        lights.at(i)->getAmbient().getR(),
+//                        lights.at(i)->getAmbient().getG(),
+//                        lights.at(i)->getAmbient().getB(),
+//                        lights.at(i)->getAmbient().getA()
 //                    };
 //                    
-//                    float materialAmbient[4] = {
-//                        lights.at(i)->getAmbientMaterial().getR(),
-//                        lights.at(i)->getAmbientMaterial().getG(),
-//                        lights.at(i)->getAmbientMaterial().getB(),
-//                        lights.at(i)->getAmbientMaterial().getA()
+//                    float specular[4] = {
+//                        lights.at(i)->getSpecular().getR(),
+//                        lights.at(i)->getSpecular().getG(),
+//                        lights.at(i)->getSpecular().getB(),
+//                        lights.at(i)->getSpecular().getA()
 //                    };
+//
+//                    glLightfv(GL_LIGHT7, GL_POSITION, position);
+//                    glLightfv(GL_LIGHT7, GL_AMBIENT, ambient);
+//                    glLightfv(GL_LIGHT7, GL_DIFFUSE, diffuse);
+//                    glLightfv(GL_LIGHT7, GL_SPECULAR, specular);
 //                    
-//                    float materialEmissive[4] = {
-//                        lights.at(i)->getEmissiveMaterial().getR(),
-//                        lights.at(i)->getEmissiveMaterial().getG(),
-//                        lights.at(i)->getEmissiveMaterial().getB(),
-//                        lights.at(i)->getEmissiveMaterial().getA()
-//                    };
-//                    
-//                    GLfloat shininess[] = {lights.at(i)->getShinines()}; // max 128
-//                    
-//                    glMaterialfv(GL_FRONT, GL_SPECULAR, materialSpecularity);
-//                    glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
-                    glLightfv(GL_LIGHT7, GL_POSITION, position);
-                    glLightfv(GL_LIGHT7, GL_AMBIENT, ambient);
-                    glLightfv(GL_LIGHT7, GL_DIFFUSE, diffuse);
-                    glLightfv(GL_LIGHT7, GL_SPECULAR, specular);
-                    
-                } else {
-                    glDisable(GL_LIGHT7);
-                }
-                
-                break;
-        }
-        
-        
-        
-        
-    }
+//                } else {
+//                    glDisable(GL_LIGHT7);
+//                }
+//                
+//                break;
+//        }
+//        
+//        // for each light position transform
+//        glPopMatrix();
+//        
+//    }
     
     //std::cout << "geoms = " << &geoms << std::endl;
     
@@ -1174,6 +917,61 @@ void ProtoWorld::run() {
             
     }
     
+    /**************************************************
+     *                   LIGHTING                     *
+     *************************************************/
+    
+    //test
+    for(std::size_t i=0; i<lights.size(); ++i){
+        
+        if(lights.at(i)->getIsOn()){
+           // std::cout << "light " << i << "is on" << std::endl;
+            glEnable(glLights[i]);
+            
+            // set Lights
+            float position[4] = {
+                lights.at(i)->getPosition().x,
+                lights.at(i)->getPosition().y,
+                lights.at(i)->getPosition().z,
+                1
+            };
+            
+            float diffuse[4] = {
+                lights.at(i)->getDiffuse().getR(),
+                lights.at(i)->getDiffuse().getG(),
+                lights.at(i)->getDiffuse().getB(),
+                lights.at(i)->getDiffuse().getA()
+            };
+            
+            float ambient[4] = {
+                lights.at(i)->getAmbient().getR(),
+                lights.at(i)->getAmbient().getG(),
+                lights.at(i)->getAmbient().getB(),
+                lights.at(i)->getAmbient().getA()
+            };
+            
+            float specular[4] = {
+                lights.at(i)->getSpecular().getR(),
+                lights.at(i)->getSpecular().getG(),
+                lights.at(i)->getSpecular().getB(),
+                lights.at(i)->getSpecular().getA()
+            };
+            
+            glPushMatrix();
+            glLightfv(glLights[i], GL_POSITION, position);
+            glPopMatrix();
+            
+            glLightfv(glLights[i], GL_AMBIENT, ambient);
+            glLightfv(glLights[i], GL_DIFFUSE, diffuse);
+            glLightfv(glLights[i], GL_SPECULAR, specular);
+            
+            
+        } else {
+            glDisable(glLights[i]);
+        }
+    }
+    
+
     
 }
 
@@ -1191,7 +989,7 @@ void ProtoWorld::draw() {
     //shader.bind();
     for(int i=0; i<geoms.size(); ++i){
         //std::cout << "geoms.size() = " << geoms.size() << std::endl;
-        renderer->draw(geoms.at(i));
+        //renderer->draw(geoms.at(i));
         //geoms.at(i)->display(ProtoGeom3::VERTEX_BUFFER_OBJECT, ProtoGeom3::SURFACE);
     }
     
@@ -1231,35 +1029,35 @@ void ProtoWorld::setActiveCamera(int activeCamera){
 //   // this->renderMode = renderMode;
 //}
 
-void ProtoWorld::setLights() {
-    
-    /**********************************
-     *           LIGHTING             *
-     *********************************/
-    // Light01
-    GLfloat light01_ambient[] = {0.2, 0.2, 0.2, 1.0};
-    GLfloat light01_diffuse[] = {.65, .65, .65, 1.0};
-    GLfloat light01_specular[] = {.8, .8, .8, 1.0};
-    GLfloat light01_position[] = {-20, 10, 5.0, 0.0};
-    
-    //materials
-    GLfloat light01_mat_specular[] = {.85, .8, .92, 1.0};
-    GLfloat light01_mat_shininess[] = {18}; // max 128
-    
-    
-    // light 01
-    glMaterialfv(GL_FRONT, GL_SPECULAR, light01_mat_specular);
-    glMaterialfv(GL_FRONT, GL_SHININESS, light01_mat_shininess);
-    
-    glLightfv(GL_LIGHT0, GL_AMBIENT, light01_ambient);
-    glLightfv(GL_LIGHT0, GL_DIFFUSE, light01_diffuse);
-    glLightfv(GL_LIGHT0, GL_SPECULAR, light01_specular);
-    glLightfv(GL_LIGHT0, GL_POSITION, light01_position);
-    
-    
-    glEnable(GL_LIGHTING);
-    glEnable(GL_LIGHT0);
-}
+//void ProtoWorld::setLights() {
+//    
+//    /**********************************
+//     *           LIGHTING             *
+//     *********************************/
+//    // Light01
+//    GLfloat light01_ambient[] = {0.2, 0.2, 0.2, 1.0};
+//    GLfloat light01_diffuse[] = {.65, .65, .65, 1.0};
+//    GLfloat light01_specular[] = {.8, .8, .8, 1.0};
+//    GLfloat light01_position[] = {-20, 10, 5.0, 0.0};
+//    
+//    //materials
+//    GLfloat light01_mat_specular[] = {.85, .8, .92, 1.0};
+//    GLfloat light01_mat_shininess[] = {18}; // max 128
+//    
+//    
+//    // light 01
+//    glMaterialfv(GL_FRONT, GL_SPECULAR, light01_mat_specular);
+//    glMaterialfv(GL_FRONT, GL_SHININESS, light01_mat_shininess);
+//    
+//    glLightfv(GL_LIGHT0, GL_AMBIENT, light01_ambient);
+//    glLightfv(GL_LIGHT0, GL_DIFFUSE, light01_diffuse);
+//    glLightfv(GL_LIGHT0, GL_SPECULAR, light01_specular);
+//    glLightfv(GL_LIGHT0, GL_POSITION, light01_position);
+//    
+//    
+//    glEnable(GL_LIGHTING);
+//    glEnable(GL_LIGHT0);
+//}
 
 void ProtoWorld::updateCanvasSize(float canvasWidth, float canvasHeight){
     this->canvasWidth = canvasWidth;

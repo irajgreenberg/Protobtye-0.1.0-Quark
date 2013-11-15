@@ -25,8 +25,9 @@
 #define	PROTO_VERLETSURFACE_H
 
 #include "ProtoGeom3.h"
+#include "ProtoImage.h"
 #include "ProtoVerletStick.h"
-#include "ProtoTexture2.h"
+#include "ProtoTexture.h"
 
 namespace ijg {
     
@@ -57,7 +58,9 @@ namespace ijg {
         ProtoVerletSurface();
         ProtoVerletSurface(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3<float>& size, const ProtoColor4<float>& col4, int rowCount, int columnCount, float tension, AnchorModeEnum anchorMode=ALL_CORNERS);
         
-        ProtoVerletSurface(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3<float>& size, const ProtoColor4<float>& col4, int rowCount, int columnCount, float tension, std::string imageMap, AnchorModeEnum anchorMode=ALL_CORNERS);
+        ProtoVerletSurface(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3<float>& size, const ProtoColor4<float>& col4, const std::string& textureImageURL, int rowCount, int columnCount, float tension, AnchorModeEnum anchorMode=ALL_CORNERS);
+        
+        
         
         void nudge(int index);
     
@@ -85,7 +88,7 @@ namespace ijg {
         int centroidIndex;
         float pulseTheta;
         
-        std::string imageMap;
+        std::string textureImageURL;
         
         /* vector of balls (1d will store 2d data)
          shared_ptrs because balls are
@@ -98,7 +101,8 @@ namespace ijg {
         void calcVerts(); // overrides virtual method in base class
         void calcInds(); // overrides virtual method in base class
         
-        ProtoTexture2 texture;
+        ProtoTexture texture;
+        ProtoImage textureImage;
         Col4f meshColor;
         
         AnchorModeEnum anchorMode;

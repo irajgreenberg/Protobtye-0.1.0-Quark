@@ -73,6 +73,11 @@ void ProtoPlasm::initSFMLInit(){
     glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
     //glShadeModel(GL_FLAT); // option
     glEnable(GL_COLOR_MATERIAL); // incorporates per vertex color with lights
+
+    // global ambinet unrelated to lights
+    float globalAmbient[4] = {.2, .2, .2, 1};
+    glLightModelfv(GL_LIGHT_MODEL_AMBIENT,  globalAmbient);
+    
     // let glColor contorl diffues and ambient material values
     glColorMaterial ( GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE );
     
@@ -175,8 +180,6 @@ void ProtoPlasm::initSFMLRun(){
     
     while (running)
     {
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        //glMatrixMode(GL_MODELVIEW);
         /*
          TO DO – fix timing issues with control for users:
          From: http://stackoverflow.com/questions/2182675/how-do-you-make-sure-the-speed-of-opengl-animation-is-consistent-on-different-ma
@@ -235,6 +238,11 @@ void ProtoPlasm::initSFMLRun(){
                     // Activate derived user class implementation.
                     baseApp->mousePressed();
                 }
+            }
+            
+            else if (event.type == sf::Event::MouseMoved)
+            {
+                baseApp->mouseMoved(event.mouseMove.x,event.mouseMove.y);
             }
             
             else if (event.type == sf::Event::Closed)

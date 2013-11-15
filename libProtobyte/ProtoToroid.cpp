@@ -55,9 +55,23 @@ void ProtoToroid::calcVerts() {
             float z2 = float(z * sin(phi) + x * cos(phi));
 
 
-                    // fill vertices with floats
+//            toroid calc (**TO DO**)
+//            http://www.siggraph.org/education/materials/HyperGraph/mapping/torustx.htm
+//            [Note: p = Pi = 3.141592. Define q as the angle from the X axis (0 <= q <= 2p) and
+//            f as the angle from the Z axis (0.0 <= f <= p).]
+//            Then, with R as the inner radius and r as the outer radius:
+//            X = (R + r cos (2 pv)) cos (2 pu)
+//            Y = r sin (2 pv)
+//            Z = (R + r cos (2 pv)) sin (2 pu)
+//        Then:
+//            // toroid uv map coord
+//            v = arccos (Y/R)/2p
+//            u = [arccos ((X/(R + r*cos(2 pv))]2p
+            
+                          
+                          // fill vertices with floats
             verts.push_back( ProtoVertex3(Vec3f(x2, y, z2), 
-                        ProtoColor4f(col4.getR(), col4.getG(), col4.getB(), col4.getA()), ProtoTuple2f(x2*.5, z2*.5)));
+                        ProtoColor4f(col4.getR(), col4.getG(), col4.getB(), col4.getA()), ProtoTuple2f(z2/(size.h/2), x2/(size.w/2))));
              //std::cout << "Vec3f(x2, y, z2) = " << Vec3f(x2, y, z2) << std::endl;
 
             theta += float(ProtoMath::PI * 2 / ringDetail);

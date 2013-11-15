@@ -66,6 +66,7 @@ namespace ijg {
         /************************************
          **********     FIELDS     **********
          ***********************************/
+        
         std::shared_ptr<ProtoWorld> world;
         int appWidth;
         int appHeight;
@@ -91,6 +92,9 @@ namespace ijg {
         /************************************
          **********   FUNCTIONS   ***********
          ***********************************/
+        
+        
+        
         // pure virtual funcs require override
         virtual void init()=0;
         virtual void run()=0;
@@ -101,7 +105,7 @@ namespace ijg {
         virtual void mouseRightPressed();
         virtual void mouseReleased();
         virtual void mouseRightReleased();
-        virtual void mouseMoved();
+        virtual void mouseMoved(int mx, int my);
         virtual void mouseDragged();
         
         // window events

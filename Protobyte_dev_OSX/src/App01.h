@@ -13,6 +13,7 @@
 #include <iostream>
 
 #include "ProtoVerletSurface.h"
+#include "ProtoImage.h"
 
 using namespace ijg;
 
@@ -33,7 +34,7 @@ public:
     void mouseRightPressed();
     void mouseReleased();
     void mouseRightReleased();
-    void mouseMoved();
+    void mouseMoved(int mx, int my);
     void mouseDragged();
     
     // window events

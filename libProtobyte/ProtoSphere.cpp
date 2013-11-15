@@ -30,8 +30,8 @@ ProtoSphere::ProtoSphere() {
 }
 
 ProtoSphere::ProtoSphere(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3f size,
-                         const ProtoColor4f col4, float textureScale, int spines, int spineNodes) :
-ProtoGeom3(pos, rot, size, col4, textureScale), spines(spines), spineNodes(spineNodes) {
+                         const ProtoColor4f col4, const std::string& textureImageURL, float textureScale, int spines, int spineNodes) :
+ProtoGeom3(pos, rot, size, col4, textureImageURL, textureScale), spines(spines), spineNodes(spineNodes) {
     init();
 }
 

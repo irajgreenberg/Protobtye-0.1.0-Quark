@@ -155,7 +155,8 @@ namespace ijg {
         int activeCamera;
         
         
-
+        // references to GL_LIGHT#
+        GLint glLights[8];
         
     public:
         

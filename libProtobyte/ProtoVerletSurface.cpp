@@ -43,8 +43,8 @@ ProtoGeom3(pos, rot, size, col4), rowCount(rowCount), columnCount(columnCount), 
     init(); // calls calcVertices/calcIndices/calcFaces/etc
 }
 
-ProtoVerletSurface::ProtoVerletSurface(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3<float>& size, const ProtoColor4<float>& col4, int rowCount, int columnCount, float tension, std::string imageMap, AnchorModeEnum anchorMode):
-ProtoGeom3(pos, rot, size, col4), rowCount(rowCount), columnCount(columnCount), tension(tension), imageMap(imageMap), anchorMode(anchorMode)
+ProtoVerletSurface::ProtoVerletSurface(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3<float>& size, const ProtoColor4<float>& col4, const std::string& textureImageURL, int rowCount, int columnCount, float tension, AnchorModeEnum anchorMode):
+ProtoGeom3(pos, rot, size, col4, textureImageURL), rowCount(rowCount), columnCount(columnCount), tension(tension), anchorMode(anchorMode)
 {
     
     // ensure even cols and rows
@@ -53,19 +53,11 @@ ProtoGeom3(pos, rot, size, col4), rowCount(rowCount), columnCount(columnCount), 
     //std::cout << "rowCount = " << rowCount << std::endl;
     //std::cout << "columnCount = " << columnCount << std::endl;
     
-    // hard code texture for testing
-    texture = ProtoTexture2(imageMap, 300, 300, 0);
-    GLuint texID = texture.getTextureID();
-    
-    glEnable(GL_TEXTURE_2D);
-    glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
-    glBindTexture(GL_TEXTURE_2D, texID);
-    
-    
     centroidIndex = (rowCount/2-1)*(columnCount-1) + (columnCount-1)/2;
     pulseTheta = 0;
     init(); // calls calcVertices/calcIndices/calcFaces/etc
 }
+
 
 // calculate verlet geoemetry
 void ProtoVerletSurface::calcVerts(){
