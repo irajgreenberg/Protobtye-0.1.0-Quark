@@ -47,7 +47,7 @@ void App01::init(){
    // light2->on();
     
     for(int i=0; i<6; ++i) {
-        verletSurfs[i] = std::unique_ptr<ProtoVerletSurface> (new ProtoVerletSurface(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(40, 40, 1), ProtoColor4f(ProtoMath::random(.7, 1.0), 1.0, 1.0, .8), "Papua_New_Guinea.png", 37, 37, /*ProtoMath::random(.3, .8)*/ProtoMath::random(.02, .2), ProtoVerletSurface::ALL_EDGES)); // 91, 91
+        verletSurfs[i] = std::unique_ptr<ProtoVerletSurface> (new ProtoVerletSurface(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(40, 40, 1), ProtoColor4f(ProtoMath::random(.7, 1.0), 1.0, 1.0, .8), "Papua_New_Guinea.png", 37, 37, /*ProtoMath::random(.3, .8)*/ProtoMath::random(.02, .2), ProtoVerletSurface::ALL_CORNERS)); // 91, 91
     }
 
     

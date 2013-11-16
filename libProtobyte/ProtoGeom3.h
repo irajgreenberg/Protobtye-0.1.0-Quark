@@ -51,20 +51,20 @@
 
 
 namespace ijg {
-
-
+    
+    
     // for offset into the FBO interleaved buffer (ugly I know!)
-#define BUFFER_OFFSET(i) ((void*)(i)) 
-
+#define BUFFER_OFFSET(i) ((void*)(i))
+    
     class ProtoGeom3: public ProtoShape3{
     protected:
-       
+        
         std::string textureImageURL;
         ProtoTexture bumpMap; //?
         ProtoTexture texture;
         float textureScale;
-
-       
+        
+        
         virtual void init();
         virtual void calcVerts() = 0;
         virtual void calcInds() = 0;
@@ -72,15 +72,15 @@ namespace ijg {
         virtual void calcVertexNorms();
         virtual void calcPrimitives();
         virtual void createTexture();
-
+        
         void fillDisplayLists();
-
+        
         // composite guts
         std::vector<ProtoVertex3> verts;
         //std::vector<ProtoVertex3*> verts;
         std::vector<ProtoFace3> faces;
         std::vector< ProtoTuple3<int> > inds;
-
+        
         //primitive guts
         std::vector<float> vertPrims;
         std::vector<unsigned int> indPrims;
@@ -88,18 +88,18 @@ namespace ijg {
         std::vector<float> colorPrims;
         std::vector<float> texturePrims;
         std::vector<float> interleavedPrims;
-
+        
         // Display List var
         GLuint displayListIndex;
-
+        
         // VBO stuff
         GLuint vboID, indexVboID;
         
         //shared memory pointer for dynamic VBO's
         float* sharedMemPointer;
-
+        
         // Utility for extension support
-       // ProtoGLInfo glInfo;
+        // ProtoGLInfo glInfo;
         
         std::vector<ProtoGeomSet> geomSets;
         
@@ -109,35 +109,35 @@ namespace ijg {
         GLfloat specularMaterialColor[4];
         GLfloat emissionMaterialColor[4];
         
-
-
+        
+        
     public:
         
         /**********************************
          *    Display Modes for testing   *
          *********************************/
-      enum displayMode {
+        enum displayMode {
             IMMEDIATE, // begin at 0
             VERTEX_ARRAY,
             VERTEX_ARRAY_INTERLEAVED,
             DISPLAY_LIST,
             VERTEX_BUFFER_OBJECT
         };
-
+        
         enum renderMode {
             POINT_CLOUD,
             WIREFRAME, // begin at 0
             SURFACE
         };
-
+        
         ProtoGeom3();
-
+        
         ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size,
-                const ProtoColor4f col4);
-
+                   const ProtoColor4f col4);
+        
         ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size,
-                const std::vector< ProtoColor4f > col4s);
-
+                   const std::vector< ProtoColor4f > col4s);
+        
         
         // with textureImageURL
         ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size, const ProtoColor4f col4, const std::string& textureImageURL);
@@ -147,38 +147,38 @@ namespace ijg {
         ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size, const ProtoColor4f col4, const std::string& textureImageURL, float textureScale);
         
         ProtoGeom3(const Vec3f& pos, const Vec3f& rot, const Dim3f size,
-                               const std::vector< ProtoColor4f > col4s, const std::string& textureImageURL, float textureScale);
+                   const std::vector< ProtoColor4f > col4s, const std::string& textureImageURL, float textureScale);
         
-
-
-       virtual ~ProtoGeom3();
-
+        
+        
+        virtual ~ProtoGeom3();
+        
         virtual void move(const Vec3f& v);
         virtual void rotate(const Vec3f& r);
         virtual void scale(const ProtoDimension3f& s);
-
+        
         // vertex arrays are implemented by default
         virtual void display(displayMode mode = VERTEX_BUFFER_OBJECT, renderMode render = SURFACE, float pointSize = 3.5f);
-
+        
         // setters/getters
         virtual void setPosition(const Vec3f& pos);
         virtual void setRotation(const Vec3f& rot);
         virtual void setSize(const ProtoDimension3f size);
         virtual void setColor(const ProtoColor4f col4);
-
+        
         virtual Vec3f& getPosition();
         virtual Vec3f& getRotation();
         virtual ProtoDimension3f& getSize();
         virtual ProtoColor4f& getColor();
-
+        
         // a bit dangerous to return references, so be careful
         // justification, you got no 3d if you delete this stuff
-
+        
         std::vector<ProtoFace3>& getFaces();
         std::vector<ProtoVertex3>& getVertices();
-
-        virtual void sortFaces();   
-
+        
+        virtual void sortFaces();
+        
         void setTextureScale(float textureScale);
         float getTextureScale() const;
         
@@ -186,7 +186,7 @@ namespace ijg {
         ProtoTexture getBumpMap() const;
         
         // stl exporter
-//        void exportSTL();
+        //        void exportSTL();
         
         // required by ProtobteRenderer
         GLuint getVboID() const;
@@ -198,66 +198,69 @@ namespace ijg {
         void setSpecularMaterialColor(const Col4f& specularMaterialColor = Col4f(1, 1, 1, 1));
         void setEmissionMaterialColor(const Col4f&  emissionMaterialColor= Col4f(0, 0, 0, 1));
         
-       
+        // maybe
+        //        void textureOn();
+        //        void textureOff();
         
-
-
+        
+        
+        
     };
-
     
-     // setters/getters
+    
+    // setters/getters
     inline void ProtoGeom3::setPosition(const Vec3f& pos) {
         this->pos = pos;
     }
-
+    
     inline void ProtoGeom3::setRotation(const Vec3f& rot) {
         this->rot = rot;
     }
-
+    
     inline void ProtoGeom3::setSize(const ProtoDimension3f size) {
         this->size = size;
     }
-
+    
     inline void ProtoGeom3::setColor(const ProtoColor4f col4) {
         this->col4 = col4;
     }
-
+    
     inline Vec3f& ProtoGeom3::getPosition() {
         return pos;
     }
-
+    
     inline Vec3f& ProtoGeom3::getRotation() {
         return rot;
     }
-
+    
     inline ProtoDimension3f& ProtoGeom3::getSize() {
         return size;
     }
-
+    
     inline ProtoColor4f& ProtoGeom3::getColor() {
         return col4;
     }
-
+    
     inline std::vector<ProtoFace3>& ProtoGeom3::getFaces() {
         return faces;
     }
-
+    
     inline std::vector<ProtoVertex3>& ProtoGeom3::getVertices() {
         return verts;
     }
-
+    
     inline void ProtoGeom3::setTextureScale(float textureScale) {
         this->textureScale = textureScale;
     }
-
+    
     inline float ProtoGeom3::getTextureScale() const {
         return textureScale;
     }
-
+    
     inline void ProtoGeom3::setBumpMap(ProtoTexture bumpMap) {
         this->bumpMap = bumpMap;
     }
-
+    
     inline ProtoTexture ProtoGeom3::getBumpMap() const {
         return bumpMap;
     }
@@ -279,10 +282,10 @@ namespace ijg {
         this->shininess[0]=shininess;
     }
     inline void ProtoGeom3::setSpecularMaterialColor(const Col4f& specularMaterialColor){
-         this->specularMaterialColor[0] = specularMaterialColor.getR();
-         this->specularMaterialColor[1] = specularMaterialColor.getG();
-         this->specularMaterialColor[2] = specularMaterialColor.getB();
-         this->specularMaterialColor[3] = specularMaterialColor.getA();
+        this->specularMaterialColor[0] = specularMaterialColor.getR();
+        this->specularMaterialColor[1] = specularMaterialColor.getG();
+        this->specularMaterialColor[2] = specularMaterialColor.getB();
+        this->specularMaterialColor[3] = specularMaterialColor.getA();
         
     }
     inline void ProtoGeom3::setEmissionMaterialColor(const Col4f&  emissionMaterialColor){
@@ -292,8 +295,8 @@ namespace ijg {
         this->emissionMaterialColor[3] = emissionMaterialColor.getA();
         
     }
-
     
-
+    
+    
 }
 #endif /* defined(PROTO_GEOM3_H) */
