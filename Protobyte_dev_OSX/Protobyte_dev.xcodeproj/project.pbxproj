@@ -25,7 +25,6 @@
 		2AD37976182D52C600A4C541 /* ProtoFace3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3793A182D52C600A4C541 /* ProtoFace3.cpp */; };
 		2AD37977182D52C600A4C541 /* ProtoFrenetFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3793C182D52C600A4C541 /* ProtoFrenetFrame.cpp */; };
 		2AD37979182D52C600A4C541 /* ProtoGeom3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3793F182D52C600A4C541 /* ProtoGeom3.cpp */; };
-		2AD3797A182D52C600A4C541 /* ProtoGeomSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37941182D52C600A4C541 /* ProtoGeomSet.cpp */; };
 		2AD3797B182D52C600A4C541 /* ProtoLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37944182D52C600A4C541 /* ProtoLight.cpp */; };
 		2AD3797C182D52C600A4C541 /* ProtoMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37946182D52C600A4C541 /* ProtoMath.cpp */; };
 		2AD3797D182D52C600A4C541 /* ProtoRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3794D182D52C600A4C541 /* ProtoRenderer.cpp */; };
@@ -86,7 +85,6 @@
 		2AD3793D182D52C600A4C541 /* ProtoFrenetFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoFrenetFrame.h; path = ../libProtobyte/ProtoFrenetFrame.h; sourceTree = "<group>"; };
 		2AD3793F182D52C600A4C541 /* ProtoGeom3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoGeom3.cpp; path = ../libProtobyte/ProtoGeom3.cpp; sourceTree = "<group>"; };
 		2AD37940182D52C600A4C541 /* ProtoGeom3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoGeom3.h; path = ../libProtobyte/ProtoGeom3.h; sourceTree = "<group>"; };
-		2AD37941182D52C600A4C541 /* ProtoGeomSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoGeomSet.cpp; path = ../libProtobyte/ProtoGeomSet.cpp; sourceTree = "<group>"; };
 		2AD37942182D52C600A4C541 /* ProtoGeomSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoGeomSet.h; path = ../libProtobyte/ProtoGeomSet.h; sourceTree = "<group>"; };
 		2AD37943182D52C600A4C541 /* ProtoGLInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoGLInfo.h; path = ../libProtobyte/ProtoGLInfo.h; sourceTree = "<group>"; };
 		2AD37944182D52C600A4C541 /* ProtoLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoLight.cpp; path = ../libProtobyte/ProtoLight.cpp; sourceTree = "<group>"; };
@@ -198,7 +196,6 @@
 				2AD3793D182D52C600A4C541 /* ProtoFrenetFrame.h */,
 				2AD3793F182D52C600A4C541 /* ProtoGeom3.cpp */,
 				2AD37940182D52C600A4C541 /* ProtoGeom3.h */,
-				2AD37941182D52C600A4C541 /* ProtoGeomSet.cpp */,
 				2AD37942182D52C600A4C541 /* ProtoGeomSet.h */,
 				2AD37943182D52C600A4C541 /* ProtoGLInfo.h */,
 				2A7CDB4018343996003E8FD3 /* ProtoImage.cpp */,
@@ -379,7 +376,6 @@
 				2AD37986182D52C600A4C541 /* ProtoUtility.cpp in Sources */,
 				2AD3797B182D52C600A4C541 /* ProtoLight.cpp in Sources */,
 				2A7CDB4118343996003E8FD3 /* ProtoImage.cpp in Sources */,
-				2AD3797A182D52C600A4C541 /* ProtoGeomSet.cpp in Sources */,
 				2AD37981182D52C600A4C541 /* ProtoSpline3.cpp in Sources */,
 				2AD3798A182D52C600A4C541 /* ProtoVerletSurface.cpp in Sources */,
 				2AD3797C182D52C600A4C541 /* ProtoMath.cpp in Sources */,

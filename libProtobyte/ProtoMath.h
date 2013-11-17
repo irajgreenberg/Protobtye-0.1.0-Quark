@@ -72,6 +72,8 @@ namespace ijg {
         
     }
 
+    #define Math ProtoMath
+
 }
 
 #endif	// PROTO_MATH_H

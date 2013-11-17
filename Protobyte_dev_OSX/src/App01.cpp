@@ -47,8 +47,10 @@ void App01::init(){
    // light2->on();
     
     for(int i=0; i<6; ++i) {
-        verletSurfs[i] = std::unique_ptr<ProtoVerletSurface> (new ProtoVerletSurface(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(40, 40, 1), ProtoColor4f(ProtoMath::random(.7, 1.0), 1.0, 1.0, .8), "Papua_New_Guinea.png", 37, 37, /*ProtoMath::random(.3, .8)*/ProtoMath::random(.02, .2), ProtoVerletSurface::ALL_CORNERS)); // 91, 91
+       // verletSurfs[i] = std::unique_ptr<ProtoVerletSurface> (new ProtoVerletSurface(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(40, 40, 1), ProtoColor4f(ProtoMath::random(.7, 1.0), 1.0, 1.0, .8), "Papua_New_Guinea.png", 37, 37, /*ProtoMath::random(.3, .8)*/ProtoMath::random(.02, .2), ALL_EDGES)); // 91, 91
     }
+    
+    verletCube = std::unique_ptr<ProtoVerletCube> (new ProtoVerletCube(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(40, 40, 40), ProtoColor4f(ProtoMath::random(.7, 1.0), 1.0, 1.0, 1.0), Tup2i(37, 37), ProtoMath::random(.02, .2), "pebbles.jpg"));
 
     
     
@@ -96,10 +98,14 @@ void App01::run(){
         //glPopMatrix();
         //glRotatef(90, 0, 1, 0);
         glDisable(GL_TEXTURE_2D);
-        toroid2->display();
+        toroid2->display(ProtoGeom3::POINT_CLOUD, .02);
+    
+        glEnable(GL_TEXTURE_2D);
+        verletCube->flow();
+        verletCube->display();
         
-        
-        for(int i=0; i<6; ++i) {
+        /*
+         for(int i=0; i<6; ++i) {
            verletSurfs[i]->flow();
         }
         // left face
@@ -131,7 +137,7 @@ void App01::run(){
         glRotatef(180, 0, 1, 0);
         glEnable(GL_TEXTURE_2D);
         //verletSurfs[3]->display();
-        verletSurfs[3]->display(ProtoGeom3::VERTEX_BUFFER_OBJECT, ProtoGeom3::WIREFRAME, .01);
+        verletSurfs[3]->display(WIREFRAME);
         glPopMatrix();
         
         // top face
@@ -140,7 +146,7 @@ void App01::run(){
         glRotatef(90, 1, 0, 0);
         glEnable(GL_TEXTURE_2D);
         //verletSurfs[4]->display();
-        verletSurfs[4]->display(ProtoGeom3::VERTEX_BUFFER_OBJECT, ProtoGeom3::WIREFRAME, .01);
+        verletSurfs[4]->display(POINTS, .2);
         glPopMatrix();
         
         // bottom face
@@ -151,13 +157,14 @@ void App01::run(){
             
             glEnable(GL_TEXTURE_2D);
             verletSurfs[5]->setMeshColor(Col4f(1.0, 1.0, 1.0, 1.0));
-            //verletSurfs[5]->display(ProtoGeom3::VERTEX_BUFFER_OBJECT, ProtoGeom3::SURFACE, .1);
+            //verletSurfs[5]->display(SURFACE, .1);
             
             //glDisable(GL_TEXTURE_2D);
             verletSurfs[5]->setMeshColor(Col4f(1.0, .4, .4, .3));
-            verletSurfs[5]->display(ProtoGeom3::VERTEX_BUFFER_OBJECT, ProtoGeom3::WIREFRAME, .01);
+            verletSurfs[5]->display(WIREFRAME);
         }
         glPopMatrix();
+         */
         
         
         //     verletSurf->flow();

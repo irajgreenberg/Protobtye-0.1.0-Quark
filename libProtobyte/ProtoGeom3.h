@@ -57,6 +57,9 @@ namespace ijg {
 #define BUFFER_OFFSET(i) ((void*)(i))
     
     class ProtoGeom3: public ProtoShape3{
+        
+        friend class ProtoVertex3;
+    
     protected:
         
         std::string textureImageURL;
@@ -74,6 +77,8 @@ namespace ijg {
         virtual void createTexture();
         
         void fillDisplayLists();
+        
+
         
         // composite guts
         std::vector<ProtoVertex3> verts;
@@ -113,17 +118,6 @@ namespace ijg {
         
     public:
         
-        /**********************************
-         *    Display Modes for testing   *
-         *********************************/
-        enum displayMode {
-            IMMEDIATE, // begin at 0
-            VERTEX_ARRAY,
-            VERTEX_ARRAY_INTERLEAVED,
-            DISPLAY_LIST,
-            VERTEX_BUFFER_OBJECT
-        };
-        
         enum renderMode {
             POINT_CLOUD,
             WIREFRAME, // begin at 0
@@ -158,7 +152,7 @@ namespace ijg {
         virtual void scale(const ProtoDimension3f& s);
         
         // vertex arrays are implemented by default
-        virtual void display(displayMode mode = VERTEX_BUFFER_OBJECT, renderMode render = SURFACE, float pointSize = 3.5f);
+        virtual void display(renderMode render = SURFACE, float pointSize = 3.5f);
         
         // setters/getters
         virtual void setPosition(const Vec3f& pos);
@@ -201,8 +195,6 @@ namespace ijg {
         // maybe
         //        void textureOn();
         //        void textureOff();
-        
-        
         
         
     };
@@ -295,7 +287,7 @@ namespace ijg {
         this->emissionMaterialColor[3] = emissionMaterialColor.getA();
         
     }
-    
+
     
     
 }

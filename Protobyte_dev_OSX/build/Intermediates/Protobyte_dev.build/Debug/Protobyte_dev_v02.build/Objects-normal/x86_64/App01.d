@@ -99,7 +99,8 @@ dependencies: \
   /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/Protobyte_dev_OSX/app/../../libProtobyte/ProtoSphere.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/Protobyte_dev_OSX/app/../../libProtobyte/ProtoTube.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/Protobyte_dev_OSX/app/../../libProtobyte/ProtoTransformFunction.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/libProtobyte/ProtoVerletSurface.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/libProtobyte/ProtoVerletCube.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVerletSurface.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/Protobyte_dev_OSX/app/../../libProtobyte/ProtoImage.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVerletStick.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVerletBall.h

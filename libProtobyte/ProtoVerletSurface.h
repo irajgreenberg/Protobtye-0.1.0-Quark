@@ -133,6 +133,10 @@ namespace ijg {
     }
 
 
+
+    #define ALL_EDGES ProtoVerletSurface::ALL_EDGES
+    #define ALL_CORNERS ProtoVerletSurface::ALL_CORNERS
+
 }
 
 #endif	/* PROTO_VERLETSURFACE_H */

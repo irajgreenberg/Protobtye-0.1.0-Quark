@@ -141,14 +141,9 @@ namespace ijg {
         // CAMERAS
        
         
-    
+
         
-        
-       
-        
-        
-    };
-    
+    };    
 }
 
 #endif /* defined(PROTO_BASEAPP_H) */

@@ -75,7 +75,22 @@ void ProtoVerletSurface::calcVerts(){
             float x = -size.w/2 + cellW*j;
             float y = size.h/2 - cellH*i;
             float z = ProtoMath::random(-.02, .02);
-           
+            
+            // rot verts
+            Vec3f temp(x, y, z);
+            temp.rotateX(rot.x);
+            temp.rotateY(rot.y);
+            temp.rotateZ(rot.z);
+            x = temp.x;
+            y = temp.y;
+            z = temp.z;
+            
+            // trans verts
+            x += pos.x;
+            y += pos.y;
+            z += pos.z;
+            
+           // add rotation
             verts.push_back(ProtoVertex3(Vec3f(x, y, z),
                                          ProtoColor4f(col4.getR(), col4.getG(), col4.getB(), col4.getA()), ProtoTuple2f(cellW/size.w*j, cellH/size.h*i)));
         }
