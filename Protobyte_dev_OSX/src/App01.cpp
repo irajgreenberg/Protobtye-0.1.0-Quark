@@ -10,60 +10,15 @@
 
 
 using namespace ijg;
+
 float x = 0;
 float tx = 0;
-float theta = 0;
-int ind = 0;
-int ind2 = 0;
-
 
 void App01::init(){
     
+    // set world state
     // set window background color
-    setBackground(.1);
-    
-    isClicked = false;
-    
-    // light0
-
-    light0->setPosition(Vec3f(0, 0, 30));
-    light0->setDiffuse(Col4f(1, 1, 1, 1.0));
-    light0->setAmbient(Col4f(.1, .1, .1, 1.0));
-    light0->setSpecular(Col4f(1, 1, 1, 1.0));
-    light0->on();
-    
-    // light1
-    light1->setPosition(Vec3f(-30, 0, -60));
-    light1->setSpecular(Col4f(.8, .8, 0, 1.0));
-    light1->setAmbient(Col4f(.1, .1, .1, 0));
-    light1->setDiffuse(Col4f(1, 1, 1, 1.0));
-    light1->on();
-    
-    // light2
-    light2->setPosition(Vec3f(0, 0, -90));
-    light2->setAmbient(Col4f(.1, .1, .1, 1.0));
-    light2->setSpecular(Col4f(1, 1, 1, 1.0));
-    light2->setDiffuse(Col4f(1, 1, 1, 1.0));
-   // light2->on();
-    
-    for(int i=0; i<6; ++i) {
-       // verletSurfs[i] = std::unique_ptr<ProtoVerletSurface> (new ProtoVerletSurface(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(40, 40, 1), ProtoColor4f(ProtoMath::random(.7, 1.0), 1.0, 1.0, .8), "Papua_New_Guinea.png", 37, 37, /*ProtoMath::random(.3, .8)*/ProtoMath::random(.02, .2), ALL_EDGES)); // 91, 91
-    }
-    
-    verletCube = std::unique_ptr<ProtoVerletCube> (new ProtoVerletCube(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(40, 40, 40), ProtoColor4f(ProtoMath::random(.7, 1.0), 1.0, 1.0, 1.0), Tup2i(37, 37), ProtoMath::random(.02, .2), "pebbles.jpg"));
-
-    
-    
-    toroid2 = std::unique_ptr<ProtoToroid> (new ProtoToroid(Vec3f(0, 0, 0), Vec3f(0, ProtoMath::PI/3.0,0), Dim3f(20, 20, 20),ProtoColor4f(.7, .5, .7, 1.0), 75, 75, .9, .2));
-    toroid2->setShininess(65);
-    //toroid2->setEmissionMaterialColor(Col4f(0,0,0,1));
-    glDepthMask(true);
-    glEnable(GL_DEPTH_TEST);
-    //glDisable(GL_CULL_FACE);
-    //    glEnable(GL_FLAT);
-    //glShadeModel(GL_FLAT);
-    
-    
+    setBackground(.2, .4, .45);
     /* api ideas
      setGravity(-1 - 1);
      setWind(ProtoVector3);
@@ -73,121 +28,76 @@ void App01::init(){
      setLighting();
      */
     
-    //setshininess("light0", 23);
+    isClicked = false;
+    
+    // light0
+    light0->setPosition(Vec3f(30, 0, 30));
+    light0->setDiffuse(Col4f(1, 1, 1, 1.0));
+    light0->setAmbient(Col4f(.1, .1, .1, 1.0));
+    light0->setSpecular(Col4f(1, 0, 0, 1.0));
+    light0->on();
+    
+    // light1
+    light1->setPosition(Vec3f(-30, 0, -30));
+    light1->setSpecular(Col4f(.8, .8, 0, 1.0));
+    light1->setAmbient(Col4f(.1, .1, .1, 0));
+    light1->setDiffuse(Col4f(1, 1, 1, 1.0));
+    light1->on();
+    
+    // light2
+    light2->setPosition(Vec3f(0, 30, 0));
+    light2->setAmbient(Col4f(.1, .1, .1, 1.0));
+    light2->setSpecular(Col4f(0, 0, 1, 1.0));
+    light2->setDiffuse(Col4f(1, 1, 1, 1.0));
+    light2->on();
+    
+    
+    std::string imgs[6] = {"pebbles.jpg", "shipPlate.jpg", "lentils.jpg", "fabric.JPG", "leather.jpg" , "leather2.jpg" };
+    verletCube = std::unique_ptr<ProtoVerletCube> (new ProtoVerletCube(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(40, 40, 40), ProtoColor4f(ProtoMath::random(.7, 1.0), ProtoMath::random(.7, 1.0), ProtoMath::random(.7, 1.0), .75), Tup2i(27, 27), ProtoMath::random(.02, .2), "water.jpg", ProtoVerletSurface::ALL_CORNERS));
+    
+    
+    
+    toroid2 = std::unique_ptr<ProtoToroid> (new ProtoToroid(Vec3f(0, 0, 0), Vec3f(0, ProtoMath::PI/3.0,0), Dim3f(20, 20, 20),ProtoColor4f(.7, .5, .7, 1.0), 75, 75, .9, .2));
+    toroid2->setShininess(65);
     
 }
 
 // event thread runs continuously
 //ProtoWorld draw independently
 void App01::run(){
-   // if(isClicked){
-        //std::cout << "frameCount = " << frameCount << std::endl;
-        //std::cout << "frameRate = " << frameRate << std::endl;
-        //std::cout << "ind = " << ind << std::endl;
-         glPushMatrix();
-        glTranslatef(0, 0, -65);
-         glRotatef(-30, 1, 0, 0);
-        glPushMatrix();
-        glTranslatef(0, 0, tx);
-         //light1->setPosition(Vec3f(0, 0, 100-tx));
-        glPopMatrix();
-        tx+=.5;
-       
-        glRotatef(x+=.2, 1, .75, .3);
-       
-        //glPopMatrix();
-        //glRotatef(90, 0, 1, 0);
-        glDisable(GL_TEXTURE_2D);
-        toroid2->display(ProtoGeom3::POINT_CLOUD, .02);
+    // if(isClicked){
+    //std::cout << "frameCount = " << frameCount << std::endl;
+    //std::cout << "frameRate = " << frameRate << std::endl;
+    //std::cout << "ind = " << ind << std::endl;
+    //light1->setPosition(Vec3f(0, 0, 100));
     
-        glEnable(GL_TEXTURE_2D);
-        verletCube->flow();
-        verletCube->display();
-        
-        /*
-         for(int i=0; i<6; ++i) {
-           verletSurfs[i]->flow();
-        }
-        // left face
-        glPushMatrix();
-        glTranslatef(-verletSurfs[0]->getSize().w/2, 0, 0);
-        glRotatef(90, 0, 1, 0);
-        glEnable(GL_TEXTURE_2D);
-        verletSurfs[0]->display();
-        glPopMatrix();
-        
-        // right face
-        glPushMatrix();
-        glTranslatef(verletSurfs[1]->getSize().w/2, 0, 0);
-        glRotatef(-90, 0, 1, 0);
-        glEnable(GL_TEXTURE_2D);
-        verletSurfs[1]->display();
-        glPopMatrix();
-        
-        // front face
-        glPushMatrix();
-        glTranslatef(0, 0, verletSurfs[2]->getSize().w/2);
-        glEnable(GL_TEXTURE_2D);
-        verletSurfs[2]->display();
-        glPopMatrix();
-        
-        // back face
-        glPushMatrix();
-        glTranslatef(0, 0, -verletSurfs[3]->getSize().w/2);
-        glRotatef(180, 0, 1, 0);
-        glEnable(GL_TEXTURE_2D);
-        //verletSurfs[3]->display();
-        verletSurfs[3]->display(WIREFRAME);
-        glPopMatrix();
-        
-        // top face
-        glPushMatrix();
-        glTranslatef(0, verletSurfs[4]->getSize().h/2, 0);
-        glRotatef(90, 1, 0, 0);
-        glEnable(GL_TEXTURE_2D);
-        //verletSurfs[4]->display();
-        verletSurfs[4]->display(POINTS, .2);
-        glPopMatrix();
-        
-        // bottom face
-        glPushMatrix();
-        {
-            glTranslatef(0, -verletSurfs[5]->getSize().h/2, 0);
-            glRotatef(-90, 1, 0, 0);
-            
-            glEnable(GL_TEXTURE_2D);
-            verletSurfs[5]->setMeshColor(Col4f(1.0, 1.0, 1.0, 1.0));
-            //verletSurfs[5]->display(SURFACE, .1);
-            
-            //glDisable(GL_TEXTURE_2D);
-            verletSurfs[5]->setMeshColor(Col4f(1.0, .4, .4, .3));
-            verletSurfs[5]->display(WIREFRAME);
-        }
-        glPopMatrix();
-         */
-        
-        
-        //     verletSurf->flow();
-        //    verletSurf->setMeshColor(Col4f(1.0, 1.0, 1.0, 1.0)); // not really working at present
-        //
-        //    glEnable(GL_TEXTURE_2D);
-        //    verletSurf->display(ProtoGeom3::VERTEX_BUFFER_OBJECT, ProtoGeom3::SURFACE, .1);
-        //    glDisable(GL_TEXTURE_2D);
-        //    verletSurf->setMeshColor(Col4f(.4, .4, .4, .2));
-        //    verletSurf->display(ProtoGeom3::VERTEX_BUFFER_OBJECT, ProtoGeom3::WIREFRAME, .01);
-        glPopMatrix();
-  //  }
+    pushMatrix();
+    translate(0, 0, -65);
+    toroid2->display(POINTS, .02);
+    popMatrix();
+    
+    pushMatrix();
+    translate(0, 0, -65);
+    rotate(x+=.5, 1, .75, .3);
+    verletCube->textureOn();
+    verletCube->pulse();
+    ProtoGeom3::renderMode modes[] = {SURFACE, POINTS, WIREFRAME, POINTS, SURFACE, POINTS};
+    float pointSizes[] = {.2, .8, 1.2, 3, 5, .02, .02};
+    //verletCube->display(modes, pointSizes);
+    verletCube->display();
+    popMatrix();
+    
     
 }
 
 void App01::keyPressed(){
-   
+    
 }
 
 
 void App01::mousePressed(){
     std::cout << "in MousePressed" << std::endl;
-     isClicked = true;
+    isClicked = true;
     
 }
 void App01::mouseRightPressed(){
@@ -195,13 +105,13 @@ void App01::mouseRightPressed(){
     
 }
 void App01::mouseReleased(){
-   
+    
 }
 void App01::mouseRightReleased(){
     
 }
 void App01::mouseMoved(int mx, int my){
-    light1->setPosition(Vec3f(0, 0, mx));
+    //light1->setPosition(Vec3f(0, 0, mx));
     
 }
 void App01::mouseDragged(){

@@ -27,7 +27,6 @@
 		2AD37979182D52C600A4C541 /* ProtoGeom3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3793F182D52C600A4C541 /* ProtoGeom3.cpp */; };
 		2AD3797B182D52C600A4C541 /* ProtoLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37944182D52C600A4C541 /* ProtoLight.cpp */; };
 		2AD3797C182D52C600A4C541 /* ProtoMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37946182D52C600A4C541 /* ProtoMath.cpp */; };
-		2AD3797D182D52C600A4C541 /* ProtoRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3794D182D52C600A4C541 /* ProtoRenderer.cpp */; };
 		2AD3797E182D52C600A4C541 /* ProtoShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3794F182D52C600A4C541 /* ProtoShader.cpp */; };
 		2AD3797F182D52C600A4C541 /* ProtoShape3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37951182D52C600A4C541 /* ProtoShape3.cpp */; };
 		2AD37980182D52C600A4C541 /* ProtoSphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37953182D52C600A4C541 /* ProtoSphere.cpp */; };
@@ -96,8 +95,6 @@
 		2AD3794A182D52C600A4C541 /* ProtoPoint2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoPoint2.h; path = ../libProtobyte/ProtoPoint2.h; sourceTree = "<group>"; };
 		2AD3794B182D52C600A4C541 /* ProtoPoint3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoPoint3.h; path = ../libProtobyte/ProtoPoint3.h; sourceTree = "<group>"; };
 		2AD3794C182D52C600A4C541 /* ProtoProtoUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoProtoUtils.h; path = ../libProtobyte/ProtoProtoUtils.h; sourceTree = "<group>"; };
-		2AD3794D182D52C600A4C541 /* ProtoRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoRenderer.cpp; path = ../libProtobyte/ProtoRenderer.cpp; sourceTree = "<group>"; };
-		2AD3794E182D52C600A4C541 /* ProtoRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoRenderer.h; path = ../libProtobyte/ProtoRenderer.h; sourceTree = "<group>"; };
 		2AD3794F182D52C600A4C541 /* ProtoShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoShader.cpp; path = ../libProtobyte/ProtoShader.cpp; sourceTree = "<group>"; };
 		2AD37950182D52C600A4C541 /* ProtoShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoShader.h; path = ../libProtobyte/ProtoShader.h; sourceTree = "<group>"; };
 		2AD37951182D52C600A4C541 /* ProtoShape3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoShape3.cpp; path = ../libProtobyte/ProtoShape3.cpp; sourceTree = "<group>"; };
@@ -173,7 +170,7 @@
 			path = ../Protobyte_v02/resources;
 			sourceTree = "<group>";
 		};
-		2A990B82181835A3005DD10E /* Protobyte */ = {
+		2A990B82181835A3005DD10E /* libProtobyte */ = {
 			isa = PBXGroup;
 			children = (
 				2AD3792C182D52C600A4C541 /* ProtoAnimator.cpp */,
@@ -209,8 +206,6 @@
 				2AD3794A182D52C600A4C541 /* ProtoPoint2.h */,
 				2AD3794B182D52C600A4C541 /* ProtoPoint3.h */,
 				2AD3794C182D52C600A4C541 /* ProtoProtoUtils.h */,
-				2AD3794D182D52C600A4C541 /* ProtoRenderer.cpp */,
-				2AD3794E182D52C600A4C541 /* ProtoRenderer.h */,
 				2AD3794F182D52C600A4C541 /* ProtoShader.cpp */,
 				2AD37950182D52C600A4C541 /* ProtoShader.h */,
 				2AD37951182D52C600A4C541 /* ProtoShape3.cpp */,
@@ -248,7 +243,7 @@
 				2AD37970182D52C600A4C541 /* ProtoWorld.cpp */,
 				2AD37971182D52C600A4C541 /* ProtoWorld.h */,
 			);
-			name = Protobyte;
+			name = libProtobyte;
 			sourceTree = "<group>";
 		};
 		72198DD517BBDD68005AE9DA = {
@@ -258,7 +253,7 @@
 				2A9EA5F31818332800168827 /* App01.cpp */,
 				2A9EA5F41818332800168827 /* App01.h */,
 				72C18D8E1817D280003263D2 /* App */,
-				2A990B82181835A3005DD10E /* Protobyte */,
+				2A990B82181835A3005DD10E /* libProtobyte */,
 				722DB7771817D90600A5A716 /* Other Libs */,
 				2A990B6618183599005DD10E /* Resources */,
 				72198DDE17BBDD68005AE9DA /* Products */,
@@ -365,7 +360,6 @@
 				2A820D2D181714F300AEEE95 /* ProtoPlasm.cpp in Sources */,
 				2AD37972182D52C600A4C541 /* ProtoAnimator.cpp in Sources */,
 				2A990B811818359A005DD10E /* defaultShader.vert in Sources */,
-				2AD3797D182D52C600A4C541 /* ProtoRenderer.cpp in Sources */,
 				2AD37975182D52C600A4C541 /* ProtoCurve3.cpp in Sources */,
 				2AD37989182D52C600A4C541 /* ProtoVerletStick.cpp in Sources */,
 				2AD37979182D52C600A4C541 /* ProtoGeom3.cpp in Sources */,

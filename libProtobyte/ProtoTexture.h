@@ -43,6 +43,8 @@ namespace ijg {
     class ProtoTexture {
     public:
 
+        friend class ProtoGeom3;
+        
         friend std::ostream& operator<<(std::ostream& output, const ProtoTexture& texture);
 
         ProtoTexture();

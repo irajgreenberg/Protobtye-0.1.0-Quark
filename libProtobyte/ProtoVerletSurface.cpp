@@ -236,7 +236,7 @@ void ProtoVerletSurface::nudge(int index){
 
 
 // interleavedPrims stride = 12;
-void ProtoVerletSurface::flow() {
+void ProtoVerletSurface::pulse(Orientation face, float amp, float freq) {
     
        // packed vertex data
     // stride is 12 : (x, y, z, nx, ny, nz, r, g, b, a, u, v)
@@ -293,8 +293,27 @@ void ProtoVerletSurface::flow() {
     int rowMax = (rowCount-1)/2;
     int randIndex = static_cast<int>(centroidIndex + columnCount * static_cast<int>(ProtoMath::random(-colMax,colMax))+ static_cast<int>(ProtoMath::random(-rowMax,rowMax)));
     //balls.at(randIndex)->getPos_ptr()->z += ProtoMath::random(-6, 6);
-    *(balls.at(randIndex)->getPos_ptr()) += Vec3f(sin(pulseTheta)*2.8, cos(-pulseTheta)*2.4, abs(sin(pulseTheta)*1.5));
-   
+    //std::cout << "verts.at(randIndex).getNormal() = " << verts.at(randIndex).getNormal() << std::endl;
+    switch(face){
+        case FRONT:
+            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(0, 0, sin(pulseTheta)*.5);
+            break;
+        case LEFT:
+            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(-sin(pulseTheta)*.5, 0, 0);
+            break;
+        case BACK:
+            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(0, 0, -sin(pulseTheta)*.5);
+            break;
+        case RIGHT:
+            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(sin(pulseTheta)*.5, 0, 0);
+            break;
+        case TOP:
+            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(0, sin(pulseTheta)*.5, 0);
+            break;
+        case BOTTOM:
+            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(0, -sin(pulseTheta)*.5, 0);
+            break;
+   }
     
     // update vertex normals
 //    Vec3f vn;

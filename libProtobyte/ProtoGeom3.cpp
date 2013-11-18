@@ -253,7 +253,7 @@ void ProtoGeom3::createTexture(){
         //std::cout << "cCurrentPath = " << cCurrentPath << std::endl;
         cCurrentPath[sizeof(cCurrentPath) - 1] = '\0'; /* not really required */
         std::string cp = cCurrentPath; //cast char[] to string
-        std::cout << "current path = " << cp << std::endl;
+        //std::cout << "current path = " << cp << std::endl;
         std::string pathExtension = "/resources/imgs/";
         //std::string imgName = "/shipPlate.raw";
         std::string url = cp+pathExtension+textureImageURL;
@@ -265,11 +265,18 @@ void ProtoGeom3::createTexture(){
 #endif
         texture = ProtoTexture(url, GL_RGB, GL_RGB, 0, 0);
         
-        std::cout << "texture.getTextureID() = " << texture.getTextureID() << std::endl;
+        //std::cout << "texture.getTextureID() = " << texture.getTextureID() << std::endl;
         
     }
 }
 
+void ProtoGeom3::textureOn(){
+    glEnable(GL_TEXTURE_2D);
+}
+
+void ProtoGeom3::textureOff(){
+    glDisable(GL_TEXTURE_2D);
+}
 
 void ProtoGeom3::fillDisplayLists() {
 	glNewList(displayListIndex, GL_COMPILE);
@@ -285,13 +292,14 @@ void ProtoGeom3::fillDisplayLists() {
  and primitive processing*/
 void ProtoGeom3::display(renderMode render, float pointSize) {
     
+    glBindTexture(GL_TEXTURE_2D,texture.textureID);
     // set materials not controlled by glColor
     glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, specularMaterialColor);
     glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, shininess);
     glMaterialfv(GL_FRONT, GL_EMISSION, emissionMaterialColor);
     
 	switch (render) {
-        case POINT_CLOUD:
+        case POINTS:
             glDisable(GL_CULL_FACE);
             glDisable(GL_LIGHTING);
             glPointSize(pointSize);
@@ -357,7 +365,7 @@ void ProtoGeom3::display(renderMode render, float pointSize) {
     glColorPointer(4, GL_FLOAT, 12 * sizeof (GLfloat), BUFFER_OFFSET(24)); // step over 6 bytes
     glTexCoordPointer(2, GL_FLOAT, 12 * sizeof (GLfloat), BUFFER_OFFSET(40)); // step over 10 bytes
     
-    if (render == POINT_CLOUD) {
+    if (render == POINTS) {
         glDrawElements(GL_POINTS, static_cast<int>(inds.size())*3, GL_UNSIGNED_INT, BUFFER_OFFSET(0));
     } else {
         glDrawElements(GL_TRIANGLES, static_cast<int>(inds.size())*3, GL_UNSIGNED_INT, BUFFER_OFFSET(0));

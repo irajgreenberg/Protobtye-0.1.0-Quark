@@ -277,8 +277,8 @@ bool ProtoTexture::init() {
         //get the image width and height
         width = FreeImage_GetWidth(dib);
         height = FreeImage_GetHeight(dib);
-        std::cout << "image width = " << width << std::endl;
-        std::cout << "image height = " << height << std::endl;
+        //std::cout << "image width = " << width << std::endl;
+        //std::cout << "image height = " << height << std::endl;
         //if this somehow one of these failed (they shouldn't), return failure
         if((imageData == 0) || (width == 0) || (height == 0))
             return false;

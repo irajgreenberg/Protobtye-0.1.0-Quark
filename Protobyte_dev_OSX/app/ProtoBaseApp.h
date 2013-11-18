@@ -50,7 +50,7 @@ namespace ijg {
     public:
         ProtoBaseApp();
         
-       // void setAppWindowDetails(int appWidth, int appHeight, std::string appTitle);
+        // void setAppWindowDetails(int appWidth, int appHeight, std::string appTitle);
         
         
     private:
@@ -119,7 +119,7 @@ namespace ijg {
         //void add(std::shared_ptr<ProtoLight> lt);
         void add(std::unique_ptr<ProtoCamera> cam);
         //void initWorld();
-
+        
         
         // set background color
         void setBackground(float r, float g, float b);
@@ -139,11 +139,21 @@ namespace ijg {
         
         
         // CAMERAS
-       
         
-
         
-    };    
+        
+        
+    };
+#define POINTS ProtoGeom3::POINTS
+#define WIREFRAME ProtoGeom3::WIREFRAME
+#define SURFACE ProtoGeom3::SURFACE
+    
+#define pushMatrix glPushMatrix
+#define popMatrix glPopMatrix
+    
+#define translate glTranslatef
+#define rotate glRotatef
+    
 }
 
 #endif /* defined(PROTO_BASEAPP_H) */

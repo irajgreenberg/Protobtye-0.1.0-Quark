@@ -119,7 +119,7 @@ namespace ijg {
     public:
         
         enum renderMode {
-            POINT_CLOUD,
+            POINTS,
             WIREFRAME, // begin at 0
             SURFACE
         };
@@ -152,7 +152,7 @@ namespace ijg {
         virtual void scale(const ProtoDimension3f& s);
         
         // vertex arrays are implemented by default
-        virtual void display(renderMode render = SURFACE, float pointSize = 3.5f);
+        virtual void display(renderMode render = SURFACE, float pointSize = .5f);
         
         // setters/getters
         virtual void setPosition(const Vec3f& pos);
@@ -193,8 +193,8 @@ namespace ijg {
         void setEmissionMaterialColor(const Col4f&  emissionMaterialColor= Col4f(0, 0, 0, 1));
         
         // maybe
-        //        void textureOn();
-        //        void textureOff();
+        void textureOn();
+        void textureOff();
         
         
     };
@@ -287,6 +287,8 @@ namespace ijg {
         this->emissionMaterialColor[3] = emissionMaterialColor.getA();
         
     }
+
+
 
     
     

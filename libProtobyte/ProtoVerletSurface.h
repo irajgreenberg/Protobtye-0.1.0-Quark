@@ -52,6 +52,16 @@ namespace ijg {
             NO_ANCHORS
         };
         
+        enum Orientation {
+            FRONT,
+            LEFT,
+            BACK,
+            RIGHT,
+            TOP,
+            BOTTOM
+        };
+
+        
         
         
         // cstrs
@@ -76,7 +86,7 @@ namespace ijg {
         float getTension() const;
         
         // TEST
-        void flow();
+        void pulse(Orientation face=FRONT, float amp=1, float freq = Math::PI/180.0);
         void setMeshColor(const Col4f& meshCol);
         
     private:

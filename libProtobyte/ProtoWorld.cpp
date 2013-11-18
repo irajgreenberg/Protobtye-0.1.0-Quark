@@ -228,7 +228,7 @@ void ProtoWorld::init(){
     
     // CREATE DEFAULT RENDERER
     // enable renderer and animator
-    renderer = ProtoRenderer::getInstance();
+    //renderer = ProtoRenderer::getInstance();
     
     // CREATE DEFAULT ANIMATOR
     //    animator = ProtoAnimator::getInstance();
