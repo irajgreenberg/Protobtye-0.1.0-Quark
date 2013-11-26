@@ -78,7 +78,7 @@ void ProtoSphere::calcVerts2() {
             Vec3f tmp(tempX, y, tempZ);
             tmp.normalize();
             u = .5 + atan2(tmp.z, tmp.x) / (2 * M_PI);
-            v = .5 - 2.0 * asin(tmp.y) / (2 *M_PI);
+            v = .5 - 2.0 * asin(tmp.y) / (2 * M_PI);
             
             // top vertex
             if (i == 0 && j == 0) {
@@ -194,8 +194,8 @@ void ProtoSphere::calcVerts() {
     // always 1 more segment than points along spline
     for (int i = 0; i < spineNodes; i++) {
         // z rotation
-        x = cos(theta) * radiusX;
-        y = sin(theta) * radiusY;
+        x = cos(theta) * size.w/2;
+        y = sin(theta) * size.h/2;
         z = 0.0;
         phi = 0.0;
         for (int j = 0; j < spines; j++) {

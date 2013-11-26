@@ -146,6 +146,8 @@ namespace ijg {
 
     #define ALL_EDGES ProtoVerletSurface::ALL_EDGES
     #define ALL_CORNERS ProtoVerletSurface::ALL_CORNERS
+    #define TOP_EDGE ProtoVerletSurface::TOP_EDGE
+    #define BOTTOM_EDGE ProtoVerletSurface::BOTTOM_EDGE
 
 }
 

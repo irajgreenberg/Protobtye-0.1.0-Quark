@@ -29,6 +29,24 @@ using namespace ijg;
 
 // static function implementations
 
+std::string ProtoUtility::getBuildPath(){
+    
+    // 1. ensure path is to resources directory
+    char cCurrentPath[FILENAME_MAX];
+    
+    if (!GetCurrentDir(cCurrentPath, sizeof(cCurrentPath)))
+    {
+        std::cout << "error loading from relative directory" << std::endl;
+        //return errno;
+    }
+    // NOTE - make workspace project relative instead of using default derivedData path in Library
+    //std::cout << "cCurrentPath = " << cCurrentPath << std::endl;
+    cCurrentPath[sizeof(cCurrentPath) - 1] = '\0'; /* not really required */
+    std::string cp = cCurrentPath; //cast char[] to string
+    
+    return cp;
+}
+
 // get string from file (char* URL input)
 std::string ProtoUtility::load(const char* data) {
     std::ifstream file(data);
@@ -48,6 +66,10 @@ std::string ProtoUtility::load(const char* data) {
     // never reached - added to squelch ide warning
     return 0;
 }
+
+
+
+
 
 // get string from file (string URL input)
 const std::string ProtoUtility::load(std::string data){

@@ -89,6 +89,16 @@ void ProtoBaseApp::setBackground(const Col4f& col){
 
 // END background
 
+//LIGHTS
+void ProtoBaseApp::lightsOn(){
+    glEnable(GL_LIGHTING);
+    
+}
+void ProtoBaseApp::lightsOff(){
+     glDisable(GL_LIGHTING);
+}
+//END LIGHTS
+
 // window details
 void ProtoBaseApp::setWidth(int canvasWidth){
     this->canvasWidth = canvasWidth;
@@ -140,6 +150,21 @@ void ProtoBaseApp::loadImage(std::string imageName){
 }
 
 // END window details
+
+void ProtoBaseApp::printMatrix(Matrix m){
+    GLfloat matrix[16];
+    if(m==MODEL_VIEW) {
+        glGetFloatv (GL_MODELVIEW_MATRIX, matrix);
+        std::cout << "\nGL ModelView Matrix" << std::endl;
+    } else {
+        glGetFloatv (GL_PROJECTION_MATRIX, matrix);
+        std::cout << "\nGL Projection Matrix" << std::endl;
+    }
+    std::cout << matrix[0] << " | " << matrix[4] << " | " << matrix[8] << " | "  << matrix[12] << "\n";
+    std::cout << matrix[1] << " | " << matrix[5] << " | " << matrix[9] << " | " << matrix[13] << "\n";
+    std::cout << matrix[2] << " | " << matrix[6] << " | " << matrix[10] << " | "  << matrix[14] << "\n";
+    std::cout << matrix[3] << " | " << matrix[7] << " | " << matrix[11] << " | "  << matrix[15] << std::endl;
+}
 
 
 // EVENTS

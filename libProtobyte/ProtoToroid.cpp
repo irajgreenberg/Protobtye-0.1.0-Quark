@@ -34,6 +34,12 @@ ProtoGeom3(pos, rot, size, col4), ringCount(ringCount), ringDetail(ringDetail), 
     init();
 }
 
+ProtoToroid::ProtoToroid(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3<float>& size, const ProtoColor4<float>& col4,
+            int ringCount, int ringDetail, float ringRadius, float ringThickness, const std::string& textureImageURL):
+ProtoGeom3(pos, rot, size, col4, textureImageURL), ringCount(ringCount), ringDetail(ringDetail), ringRadius(ringRadius), ringThickness(ringThickness) {
+    init();
+}
+
 
 
 void ProtoToroid::calcVerts() {

@@ -89,6 +89,12 @@ namespace ijg {
         //std::shared_ptr<ProtoLight> lights[8];
         
         
+        enum Matrix {
+            MODEL_VIEW,
+            PROJECTION
+        };
+        
+        
         /************************************
          **********   FUNCTIONS   ***********
          ***********************************/
@@ -136,9 +142,14 @@ namespace ijg {
         void loadImage(std::string url);
         
         // LIGHTS
+        void lightsOn();
+        void lightsOff();
         
         
         // CAMERAS
+        
+        // WORLD
+        void printMatrix(Matrix m=MODEL_VIEW);
         
         
         

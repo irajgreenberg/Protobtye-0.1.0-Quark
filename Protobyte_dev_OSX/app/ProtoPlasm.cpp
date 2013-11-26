@@ -62,14 +62,14 @@ void ProtoPlasm::initSFMLInit(){
     
     // set gl states
     glClearColor(0, 0, 0, 1.0f);
-    
+    glShadeModel(GL_SMOOTH);
     // enable specualrity on textures
     glLightModelf(GL_LIGHT_MODEL_COLOR_CONTROL,GL_SEPARATE_SPECULAR_COLOR);
     glEnable(GL_LIGHTING);
     glFrontFace(GL_CCW); // default
     glEnable(GL_CULL_FACE);
     glCullFace(GL_BACK);
-    //glDisable(GL_CULL_FACE);
+    glDisable(GL_CULL_FACE);
     glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
     //glShadeModel(GL_FLAT); // option
     glEnable(GL_COLOR_MATERIAL); // incorporates per vertex color with lights
@@ -81,8 +81,19 @@ void ProtoPlasm::initSFMLInit(){
     // let glColor contorl diffues and ambient material values
     glColorMaterial ( GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE );
     
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    //
     glEnable(GL_BLEND);
+    //glBlendFunc(GL_DST_COLOR,GL_ZERO);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    //glBlendFunc(GL_DST_COLOR,GL_ZERO);
+    //glBlendFunc (GL_ONE, GL_ONE);
+    
+    //glEnable(GL_ALPHA_TEST);
+    //glAlphaFunc(GL_GREATER,0.0f);
+
+   
+    
+    
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_NORMALIZE); //  good for uniform scaling
     
@@ -216,6 +227,9 @@ void ProtoPlasm::initSFMLRun(){
         }
         
         //std::cout << " elapsed.asSeconds() = " <<  elapsed.asSeconds()<<std::endl;
+        
+
+        
         
         // Activate derived user class implementation.
         baseApp->runWorld();

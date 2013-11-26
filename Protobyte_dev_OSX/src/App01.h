@@ -15,6 +15,7 @@
 #include "ProtoVerletCube.h"
 #include "ProtoVerletSurface.h"
 #include "ProtoImage.h"
+#include "ProtoShader.h"
 
 using namespace ijg;
 
@@ -24,6 +25,15 @@ private:
     std::unique_ptr<ProtoToroid> toroid2;
     std::unique_ptr<ProtoVerletSurface> verletSurf;
     std::unique_ptr<ProtoVerletCube> verletCube;
+    std::unique_ptr<ProtoVerletCube> verletCube2;
+    std::unique_ptr<ProtoVerletCube> verletCube3;
+    std::unique_ptr<ProtoSphere> sphere;
+    
+    ProtoShader shader;
+   
+    
+    
+    
 
 public:
     void init();

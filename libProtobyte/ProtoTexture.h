@@ -48,13 +48,12 @@ namespace ijg {
         friend std::ostream& operator<<(std::ostream& output, const ProtoTexture& texture);
 
         ProtoTexture();
-        ProtoTexture(const std::string& textureURL);
-        ProtoTexture(const std::string& textureURL, GLenum image_format= GL_RGB, GLint internal_format=GL_RGB, GLint level=0, GLint border=0);
+        ProtoTexture(const std::string& textureURL, GLenum image_format=GL_RGB, GLint internal_format=GL_RGB, GLint level=0, GLint border=0, GLuint textureID=0);
     
-        ProtoTexture(const std::string& textureURL, GLuint w, GLuint h, bool isWrap);
-        ProtoTexture(unsigned char*& data, GLuint w, GLuint h, bool isWrap);
-        ProtoTexture(std::vector<unsigned char>& data, GLuint w, GLuint h, bool isWrap);
-        ProtoTexture(const int* packedData32, GLuint w, GLuint h, bool isWrap);
+//        ProtoTexture(const std::string& textureURL, GLuint w, GLuint h, bool isWrap);
+//        ProtoTexture(unsigned char*& data, GLuint w, GLuint h, bool isWrap);
+//        ProtoTexture(std::vector<unsigned char>& data, GLuint w, GLuint h, bool isWrap);
+//        ProtoTexture(const int* packedData32, GLuint w, GLuint h, bool isWrap);
 
         // getters/setters
         void setH(GLuint h);

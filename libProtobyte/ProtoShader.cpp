@@ -32,19 +32,12 @@ using namespace ijg;
 ProtoShader::ProtoShader() {
 }
 
-ProtoShader::ProtoShader(const char *vsFile, const char *fsFile) {
-	init(vsFile, fsFile);
+ProtoShader::ProtoShader(const std::string& vShader, const std::string& fShader):
+vShader(vShader), fShader(fShader){
+	init();
 }
 
-void ProtoShader::init(const char *vsFile, const char *fsFile) {
-
-	// set uniform variables for shaders
-	GLint loc1, loc2, loc3, loc4;
-	float BrickColor[4] = {0.9, 0.3, 0.1, 1.0};
-	float MortarColor[4] = {0.7, 0.7, 0.6, 1.0};
-	float BrickSize[2] = {0.3, 0.15};
-	float BrickPct[2] = {0.9, 0.85};
-
+void ProtoShader::init() {
 
 	// initialize glew for Windows
 #if defined(_WIN32) || defined(__linux__)
@@ -54,30 +47,77 @@ void ProtoShader::init(const char *vsFile, const char *fsFile) {
 		/* Problem: glewInit failed, something is seriously wrong. */
 		fprintf(stderr, "Error: %s\n", glewGetErrorString(err));
 	}
-	fprintf(stdout, "Status: Using GLEW %s\n", glewGetString(GLEW_VERSION));
+    fprintf(stdout, "Status: Using GLEW %s\n", glewGetString(GLEW_VERSION));
 #endif
-
-	shader_vp = glCreateShader(GL_VERTEX_SHADER);
-	shader_fp = glCreateShader(GL_FRAGMENT_SHADER);
-
-	std::string vText = ProtoUtility::load(vsFile);
-	std::string fText = ProtoUtility::load(fsFile);
-
-	const char* vsText = vText.c_str();
-	const char* fsText = fText.c_str();
-	std::cout << "vsText = " << vsText << std::endl;
-	std::cout << "fsText = " << fsText << std::endl;
-
-	if (vsText == NULL || fsText == NULL) {
+	
+    
+    std::string url = ProtoUtility::getBuildPath();
+    std::string vShaderURL = url+"/resources/shaders/"+vShader;
+    std::string fShaderURL = url+"/resources/shaders/"+fShader;
+    //std::cout << "vShaderURL = " << vShaderURL << std::endl;
+    //std::cout << "fShaderURL = " << fShaderURL << std::endl;
+    //std::string vShaderCodeStr = ProtoUtility::load(vShaderURL);
+	std::string fShaderCodeStr = ProtoUtility::load(fShaderURL);
+    
+    
+    std::string vShaderCodeStr = "#version 400 in vec3 VertexPosition; in vec3 VertexColor; out vec3 Color; void main() { Color = VertexColor; GL_Position = vec4(VertexPosition, 1.0); }";
+    
+	const GLchar* vShaderCode = vShaderCodeStr.c_str();
+	const GLchar* fShaderCode = fShaderCodeStr.c_str();
+	//std::cout << "vShaderCode = " << vShaderCode << std::endl;
+	//std::cout << "fShaderCode = " << fShaderCode << std::endl;
+    
+	if (vShaderCode == NULL || fShaderCode == NULL) {
 		std::cerr << "Either vertex shader or fragment shader file not found." << std::endl;
 		return;
 	}
+    
+    
+    const char* vShaderCode2 = "uniform mat4 u_mvpMatrix;attribute vec4 a_position;attribute vec4 a_color;varying vec4 v_color;void main(){   gl_Position = u_mvpMatrix * a_position;   v_color = a_color;}";
+    
+    const char* fShaderCode2 = "varying vec4 v_color;void main() {	gl_FragColor = v_color;}";
+    
 
-	glShaderSource(shader_vp, 1, &vsText, 0);
-	glShaderSource(shader_fp, 1, &fsText, 0);
+	shader_vp = glCreateShader(GL_VERTEX_SHADER);
+    if(0==shader_vp){
+        std::cerr << "Error creating vertex shader"<< std::endl;
+        return;
+    }
+    
+	shader_fp = glCreateShader(GL_FRAGMENT_SHADER);
+    if(0==shader_fp){
+        std::cerr << "Error creating fragment shader"<< std::endl;
+        return;
+    }
+    
+    glShaderSource(shader_vp, 1, (const GLchar**)&vShaderCode2, 0);
+	glShaderSource(shader_fp, 1, (const GLchar**)&fShaderCode2, 0);
 
 	glCompileShader(shader_vp);
 	glCompileShader(shader_fp);
+    
+    //Check shader for errors
+    GLint shaderCompiled = GL_FALSE;
+    glGetShaderiv( shader_vp, GL_COMPILE_STATUS, &shaderCompiled );
+    if( shaderCompiled != GL_TRUE )
+    {
+        printf( "Unable to compile Vertex shader %d!\n\nSource:\n%s\n", shader_vp, vShaderCode );
+        //printShaderLog( shader_vp );
+        glDeleteShader( shader_vp );
+        shader_vp = 0;
+    }
+
+    glGetShaderiv( shader_fp, GL_COMPILE_STATUS, &shaderCompiled );
+    if( shaderCompiled != GL_TRUE )
+    {
+        printf( "Unable to compile fragment shader %d!\n\nSource:\n%s\n", shader_fp, fShaderCode );
+        //printShaderLog( shader_vp );
+        glDeleteShader( shader_fp );
+        shader_fp = 0;
+    }
+
+    
+    
 
 	shader_id = glCreateProgram();
 	glAttachShader(shader_id, shader_vp);
@@ -85,26 +125,6 @@ void ProtoShader::init(const char *vsFile, const char *fsFile) {
 
 	glLinkProgram(shader_id);
 
-
-
-	// added for uniform shader
-	loc1 = glGetUniformLocation(shader_id, "BrickColor");
-
-	glUniform4fv(loc1, 1, BrickColor);
-
-	loc2 = glGetUniformLocation(shader_id, "MortarColor");
-	glUniform4fv(loc2, 1, MortarColor);
-
-	loc3 = glGetUniformLocation(shader_id, "BrickSize");
-	glUniform2fv(loc3, 1, BrickSize);
-
-	loc4 = glGetUniformLocation(shader_id, "BrickPct");
-	glUniform2fv(loc4, 1, BrickPct);
-
-	//    std::cout << "loc1 = " << loc1 << std::endl;
-	//    std::cout << "loc2 = " << loc2 << std::endl;
-	//    std::cout << "loc3 = " << loc3 << std::endl;
-	//    std::cout << "loc4 = " << loc4 << std::endl;
 }
 
 ProtoShader::~ProtoShader() {
@@ -116,7 +136,7 @@ ProtoShader::~ProtoShader() {
 	glDeleteProgram(shader_id);
 }
 
-unsigned int ProtoShader::id() {
+unsigned int ProtoShader::getID() {
 	return shader_id;
 }
 

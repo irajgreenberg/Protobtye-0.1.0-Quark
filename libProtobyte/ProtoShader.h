@@ -39,20 +39,20 @@ namespace ijg {
     class ProtoShader {
     public:
         ProtoShader();
-        ProtoShader(const char *vsFile, const char *fsFile);
+        ProtoShader(const std::string& vShader, const std::string& fShader);
         ~ProtoShader();
 
-        void init(const char *vsFile, const char *fsFile);
+        void init();
 
         void bind();
         void unbind();
 
-        unsigned int id();
-        unsigned int shader_id;
+        GLuint getID();
+        GLuint shader_id;
     private:
-        //unsigned int shader_id;
-        unsigned int shader_vp;
-        unsigned int shader_fp;
+        std::string vShader, fShader;
+        GLuint shader_vp;
+        GLuint shader_fp;
 
     };
 

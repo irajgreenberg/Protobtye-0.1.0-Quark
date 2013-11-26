@@ -115,6 +115,8 @@ namespace ijg {
         GLfloat emissionMaterialColor[4];
         
         
+        bool isTextureEnabled;
+        
         
     public:
         
@@ -192,7 +194,9 @@ namespace ijg {
         void setSpecularMaterialColor(const Col4f& specularMaterialColor = Col4f(1, 1, 1, 1));
         void setEmissionMaterialColor(const Col4f&  emissionMaterialColor= Col4f(0, 0, 0, 1));
         
-        // maybe
+        // ensure unquie id for each texture per geom obj - this needs to be rethought eventually.
+        static GLuint textureID;
+        ProtoTexture getTexture()const;
         void textureOn();
         void textureOff();
         
@@ -287,10 +291,11 @@ namespace ijg {
         this->emissionMaterialColor[3] = emissionMaterialColor.getA();
         
     }
-
-
-
     
+    inline ProtoTexture ProtoGeom3::getTexture()const{
+        return texture;
+    }
+
     
 }
 #endif /* defined(PROTO_GEOM3_H) */

@@ -28,7 +28,7 @@ namespace ijg {
         // 6 subdivisions, 1 texture, 1 tension
         ProtoVerletCube(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3<float>& size, const ProtoColor4<float>& col4, Tup2i subdivisions[6], float springTension, const std::string& textureImageURL, ProtoVerletSurface::AnchorModeEnum anchorMode=ProtoVerletSurface::ALL_EDGES);
         
-         // 1 subdivisions, 6 textures, 1 tension
+        // 1 subdivisions, 6 textures, 1 tension
         ProtoVerletCube(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3<float>& size, const ProtoColor4<float>& col4, Tup2i subdivision, float springTension, const std::string textureImageURLs[6], ProtoVerletSurface::AnchorModeEnum anchorMode=ProtoVerletSurface::ALL_EDGES);
         
         // 6 subdivisions, 6 textures, 1 tension
@@ -53,12 +53,15 @@ namespace ijg {
         void display(ProtoGeom3::renderMode mode0, ProtoGeom3::renderMode mode1, ProtoGeom3::renderMode mode2, ProtoGeom3::renderMode mode3, ProtoGeom3::renderMode mode4, ProtoGeom3::renderMode mode5, float pointSize = .5);
         void display(ProtoGeom3::renderMode modes[6], float pointSize = .5);
         void display(ProtoGeom3::renderMode modes[6], float pointSizes[6]);
-
+        
         
         void textureOn();
         void textureOff();
-
-    
+        
+        void setShininess(int shininess);
+        void setShininess(int shininesses[6]);
+        
+        
     private:
         
         void init();
@@ -72,11 +75,32 @@ namespace ijg {
         const std::string textureImageURL;
         const std::string textureImageURLs[6];
         ProtoVerletSurface::AnchorModeEnum anchorMode;
+        int shininesses[6];
+        int shininess;
         
-
         
         
     };
+    
+    inline void ProtoVerletCube::setShininess(int shininess){
+        this->shininess = shininess;
+        for(unsigned int i=0; i<6; ++i){
+            verletSurfs[i]->setShininess(shininess);
+        }
+    }
+    
+    
+    inline void ProtoVerletCube::setShininess(int shininesses[6]){
+        this->shininesses[0] = shininesses[0];
+        this->shininesses[1] = shininesses[1];
+        this->shininesses[2] = shininesses[2];
+        this->shininesses[3] = shininesses[3];
+        this->shininesses[4] = shininesses[4];
+        this->shininesses[5] = shininesses[5];
+        for(unsigned int i=0; i<6; ++i){
+            verletSurfs[i]->setShininess(shininesses[i]);
+        }
+    }
 }
 
 #endif /* defined(PROTO_VERLETCUBE_H) */

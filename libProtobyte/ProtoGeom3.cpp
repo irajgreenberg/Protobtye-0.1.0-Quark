@@ -27,6 +27,8 @@
 
 using namespace ijg;
 
+GLuint ProtoGeom3::textureID = 0;
+
 ProtoGeom3::ProtoGeom3() {
 }
 
@@ -115,6 +117,9 @@ void ProtoGeom3::init() {
 	//    if (glMapBuffer && glUnmapBuffer) {
 	//        //std::cout << "glMapBuffer is supported" << std::endl;
 	//    }
+    
+    // set default texture enabled state
+    isTextureEnabled = false;
 }
 
 void ProtoGeom3::calcFaces() {
@@ -253,9 +258,7 @@ void ProtoGeom3::createTexture(){
         //std::cout << "cCurrentPath = " << cCurrentPath << std::endl;
         cCurrentPath[sizeof(cCurrentPath) - 1] = '\0'; /* not really required */
         std::string cp = cCurrentPath; //cast char[] to string
-        //std::cout << "current path = " << cp << std::endl;
         std::string pathExtension = "/resources/imgs/";
-        //std::string imgName = "/shipPlate.raw";
         std::string url = cp+pathExtension+textureImageURL;
         
         // 2. create texture
@@ -263,7 +266,7 @@ void ProtoGeom3::createTexture(){
 #ifdef FREEIMAGE_LIB
         FreeImage_Initialise();
 #endif
-        texture = ProtoTexture(url, GL_RGB, GL_RGB, 0, 0);
+        texture = ProtoTexture(url, GL_RGB, GL_RGB, 0, 0, textureID++);
         
         //std::cout << "texture.getTextureID() = " << texture.getTextureID() << std::endl;
         
@@ -271,11 +274,13 @@ void ProtoGeom3::createTexture(){
 }
 
 void ProtoGeom3::textureOn(){
-    glEnable(GL_TEXTURE_2D);
+    //glEnable(GL_TEXTURE_2D);
+    isTextureEnabled = true;
 }
 
 void ProtoGeom3::textureOff(){
-    glDisable(GL_TEXTURE_2D);
+     isTextureEnabled = false;
+   
 }
 
 void ProtoGeom3::fillDisplayLists() {
@@ -292,7 +297,16 @@ void ProtoGeom3::fillDisplayLists() {
  and primitive processing*/
 void ProtoGeom3::display(renderMode render, float pointSize) {
     
-    glBindTexture(GL_TEXTURE_2D,texture.textureID);
+    if(isTextureEnabled) {
+         glEnable(GL_TEXTURE_2D);
+        glBindTexture(GL_TEXTURE_2D,texture.textureID);
+    } else {
+        glDisable(GL_TEXTURE_2D);
+    }
+    
+    
+    //glBindTexture(GL_TEXTURE_2D,texture.textureID); // added to conditional above
+    
     // set materials not controlled by glColor
     glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, specularMaterialColor);
     glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, shininess);
@@ -300,22 +314,22 @@ void ProtoGeom3::display(renderMode render, float pointSize) {
     
 	switch (render) {
         case POINTS:
-            glDisable(GL_CULL_FACE);
-            glDisable(GL_LIGHTING);
+            //glDisable(GL_CULL_FACE);
+            //glDisable(GL_LIGHTING);
             glPointSize(pointSize);
             glPolygonMode(GL_FRONT_AND_BACK, GL_POINT);
             break;
             
         case WIREFRAME:
-            glDisable(GL_CULL_FACE);
-            glDisable(GL_LIGHTING);
-            glLineWidth(1.0f);
+            //glDisable(GL_CULL_FACE);
+            //glDisable(GL_LIGHTING);
+            glLineWidth(pointSize);
             glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
             break;
             
         case SURFACE:
-            glDisable(GL_CULL_FACE);
-            glEnable(GL_LIGHTING);
+            //glDisable(GL_CULL_FACE);
+            //glEnable(GL_LIGHTING);
             glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
             //glPolygonMode(GL_FRONT, GL_FILL);
             break;
@@ -385,7 +399,6 @@ void ProtoGeom3::display(renderMode render, float pointSize) {
 	// reset fill and lighting
     //	glEnable(GL_LIGHTING);
     //	glPolygonMode(GL_FRONT, GL_FILL);
-    
 }
 
 void ProtoGeom3::move(const Vec3f& v) {

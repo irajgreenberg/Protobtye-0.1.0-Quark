@@ -26,7 +26,7 @@ ProtoShape3(pos, rot, size, col4), subdivision(subdivision), springTension(sprin
                 break;
             case 1: // LEFT
                 facePos = Vec3f(-size.w/2, 0, 0);
-                faceRot = Vec3f(0, Math::HALF_PI, 0);
+                faceRot = Vec3f(0, -Math::HALF_PI, 0);
                 break;
             case 2: // BACK
                 facePos = Vec3f(0, 0, -size.d/2);
@@ -34,7 +34,7 @@ ProtoShape3(pos, rot, size, col4), subdivision(subdivision), springTension(sprin
                 break;
             case 3: // RIGHT
                 facePos = Vec3f(size.w/2, 0, 0);
-                faceRot = Vec3f(0, -Math::HALF_PI, 0);
+                faceRot = Vec3f(0, Math::HALF_PI, 0);
                 break;
             case 4: // TOP
                 facePos = Vec3f(0, size.h/2, 0);
@@ -46,9 +46,9 @@ ProtoShape3(pos, rot, size, col4), subdivision(subdivision), springTension(sprin
                 break;
         }
         verletSurfs[i] = std::unique_ptr<ProtoVerletSurface> (new ProtoVerletSurface(facePos, faceRot, size, col4, textureImageURL, subdivision.elem0, subdivision.elem1, springTension, anchorMode));
-        verletSurfs[i]->setShininess(3);
+        verletSurfs[i]->setShininess(35);
     }
-    // init();
+     init();
 }
 
 // 6 subdivisions, 1 texture, 1 tension
@@ -72,7 +72,7 @@ ProtoVerletCube::ProtoVerletCube(const Vec3f& pos, const Vec3f& rot, const Proto
                 break;
             case 1: // LEFT
                 facePos = Vec3f(-size.w/2, 0, 0);
-                faceRot = Vec3f(0, Math::HALF_PI, 0);
+                faceRot = Vec3f(0, -Math::HALF_PI, 0);
                 break;
             case 2: // BACK
                 facePos = Vec3f(0, 0, -size.d/2);
@@ -80,7 +80,7 @@ ProtoVerletCube::ProtoVerletCube(const Vec3f& pos, const Vec3f& rot, const Proto
                 break;
             case 3: // RIGHT
                 facePos = Vec3f(size.w/2, 0, 0);
-                faceRot = Vec3f(0, -Math::HALF_PI, 0);
+                faceRot = Vec3f(0, Math::HALF_PI, 0);
                 break;
             case 4: // TOP
                 facePos = Vec3f(0, size.h/2, 0);
@@ -93,8 +93,9 @@ ProtoVerletCube::ProtoVerletCube(const Vec3f& pos, const Vec3f& rot, const Proto
         }
         
         verletSurfs[i] = std::unique_ptr<ProtoVerletSurface> (new ProtoVerletSurface(facePos, faceRot, size, col4, textureImageURLs[i], subdivision.elem0, subdivision.elem1, springTension, anchorMode));
-        verletSurfs[i]->setShininess(3);
+        verletSurfs[i]->setShininess(75);
     }
+    init();
 }
 
 // 6 subdivisions, 6 textures, 1 tension
@@ -144,6 +145,10 @@ ProtoVerletCube::ProtoVerletCube(const Vec3f& pos, const Vec3f& rot, const Proto
 }
 
 void ProtoVerletCube::init(){
+    // ensure textures are off
+    for(int i=0; i<6; ++i) {
+        verletSurfs[i]->textureOff();
+    }
 }
 
 

@@ -204,6 +204,47 @@ void ProtoVerletSurface::calcVerts(){
                         sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(k), balls.at(m), tension, Tup2f(.5, .5))));
                     }
                     break;
+                case TOP_EDGE:
+                    // Top
+                    if (i==0){
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(k), balls.at(l), tension, Tup2f(0, 1))));
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(l), balls.at(m), tension, Tup2f(.5, .5))));
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(m), balls.at(n), tension, Tup2f(1, 0))));
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(n), balls.at(k), tension, Tup2f(0, 0))));
+                        // diag
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(k), balls.at(m), tension, Tup2f(0, 1))));
+                        //sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(k), balls.at(m), tension, Tup2f(.5, .5))));
+                      // all other verts
+                    } else {
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(k), balls.at(l), tension, Tup2f(.5, .5))));
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(l), balls.at(m), tension, Tup2f(.5, .5))));
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(m), balls.at(n), tension, Tup2f(.5, .5))));
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(n), balls.at(k), tension, Tup2f(.5, .5))));
+                        // diag
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(k), balls.at(m), tension, Tup2f(.5, .5))));
+                    }
+                    break;
+                case BOTTOM_EDGE:
+                    if (i==rowCount-2){
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(k), balls.at(l), tension, Tup2f(1, 0))));
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(l), balls.at(m), tension, Tup2f(0, 0))));
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(m), balls.at(n), tension, Tup2f(0, 1))));
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(n), balls.at(k), tension, Tup2f(1, 0))));
+                        // diag
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(k), balls.at(m), tension, Tup2f(1, 0))));
+                        //sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(k), balls.at(m), tension, Tup2f(.5, .5))));
+                        // all other verts
+                    } else {
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(k), balls.at(l), tension, Tup2f(.5, .5))));
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(l), balls.at(m), tension, Tup2f(.5, .5))));
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(m), balls.at(n), tension, Tup2f(.5, .5))));
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(n), balls.at(k), tension, Tup2f(.5, .5))));
+                        // diag
+                        sticks.push_back(std::unique_ptr<ProtoVerletStick>(new ProtoVerletStick(balls.at(k), balls.at(m), tension, Tup2f(.5, .5))));
+                    }
+                    break;
+
+
             }
             
         }
@@ -294,24 +335,25 @@ void ProtoVerletSurface::pulse(Orientation face, float amp, float freq) {
     int randIndex = static_cast<int>(centroidIndex + columnCount * static_cast<int>(ProtoMath::random(-colMax,colMax))+ static_cast<int>(ProtoMath::random(-rowMax,rowMax)));
     //balls.at(randIndex)->getPos_ptr()->z += ProtoMath::random(-6, 6);
     //std::cout << "verts.at(randIndex).getNormal() = " << verts.at(randIndex).getNormal() << std::endl;
+    
     switch(face){
         case FRONT:
-            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(0, 0, sin(pulseTheta)*.5);
+            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(0, 0, sin(pulseTheta)*2.5);
             break;
         case LEFT:
-            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(-sin(pulseTheta)*.5, 0, 0);
+            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(-sin(pulseTheta)*3.5, 0, 0);
             break;
         case BACK:
-            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(0, 0, -sin(pulseTheta)*.5);
+            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(0, 0, -sin(pulseTheta)*1.5);
             break;
         case RIGHT:
-            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(sin(pulseTheta)*.5, 0, 0);
+            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(sin(pulseTheta)*3.5, 0, 0);
             break;
         case TOP:
-            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(0, sin(pulseTheta)*.5, 0);
+            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(0, sin(pulseTheta)*2.5, 0);
             break;
         case BOTTOM:
-            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(0, -sin(pulseTheta)*.5, 0);
+            *(balls.at(randIndex)->getPos_ptr()) += Vec3f(0, -sin(pulseTheta)*1.5, 0);
             break;
    }
     

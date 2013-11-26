@@ -32,11 +32,17 @@
 #include <iostream>
 #include <fstream>
 
+// for image path to file
+#include <unistd.h>
+#define GetCurrentDir getcwd
+
 namespace ijg {
 
     class ProtoUtility {
     public:
 
+        static std::string getBuildPath();
+        
         /** string handling **/
         // load char*
         static std::string load(const char* data);
