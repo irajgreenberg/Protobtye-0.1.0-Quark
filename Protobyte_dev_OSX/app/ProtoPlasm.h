@@ -11,6 +11,7 @@
 #ifndef __Protobyte_dev_v02__ProtoPlasm__
 #define __Protobyte_dev_v02__ProtoPlasm__
 
+// about to switch to GLFW
 #ifdef _WIN32
 #include <GL/glew.h>
 #endif
