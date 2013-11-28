@@ -338,7 +338,7 @@ void ProtoGeom3::display(renderMode render, float pointSize) {
 	//static float rx = .02;
 	//static float ry = .03;
 	//static float rz = .04;
-	glPushMatrix();
+	//glPushMatrix();
 	//glLoadIdentity();
     
     //	glTranslatef(pos.x, pos.y, pos.z);
@@ -394,7 +394,7 @@ void ProtoGeom3::display(renderMode render, float pointSize) {
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
     
-	glPopMatrix();
+	//glPopMatrix();
     
 	// reset fill and lighting
     //	glEnable(GL_LIGHTING);

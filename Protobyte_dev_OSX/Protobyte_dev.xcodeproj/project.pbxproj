@@ -42,6 +42,8 @@
 		2AFD5BDB183D36ED009110AB /* ProtoVerletDome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD5BDA183D36ED009110AB /* ProtoVerletDome.cpp */; };
 		72135A34183B021500B45E63 /* phong.frag in Sources */ = {isa = PBXBuildFile; fileRef = 72135A32183B021500B45E63 /* phong.frag */; };
 		72135A35183B021500B45E63 /* phong.vert in Sources */ = {isa = PBXBuildFile; fileRef = 72135A33183B021500B45E63 /* phong.vert */; };
+		72275D1918464F15000519E9 /* toon1.frag in Sources */ = {isa = PBXBuildFile; fileRef = 72275D1718464F15000519E9 /* toon1.frag */; };
+		72275D1A18464F15000519E9 /* toon1.vert in Sources */ = {isa = PBXBuildFile; fileRef = 72275D1818464F15000519E9 /* toon1.vert */; };
 		722DB7761817D76200A5A716 /* ProtoMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 722DB7751817D76200A5A716 /* ProtoMain.cpp */; };
 		7241A87C17BD63A300DBF38C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7241A87B17BD63A300DBF38C /* OpenGL.framework */; };
 		7241A87E17BD63AA00DBF38C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7241A87D17BD63AA00DBF38C /* GLUT.framework */; };
@@ -132,6 +134,8 @@
 		72135A32183B021500B45E63 /* phong.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = phong.frag; path = build/Products/Debug/resources/shaders/phong.frag; sourceTree = SOURCE_ROOT; };
 		72135A33183B021500B45E63 /* phong.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = phong.vert; path = build/Products/Debug/resources/shaders/phong.vert; sourceTree = SOURCE_ROOT; };
 		72198DDD17BBDD68005AE9DA /* Protobyte_dev_v02 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Protobyte_dev_v02; sourceTree = BUILT_PRODUCTS_DIR; };
+		72275D1718464F15000519E9 /* toon1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = toon1.frag; path = build/Products/Debug/resources/shaders/toon1.frag; sourceTree = SOURCE_ROOT; };
+		72275D1818464F15000519E9 /* toon1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = toon1.vert; path = build/Products/Debug/resources/shaders/toon1.vert; sourceTree = SOURCE_ROOT; };
 		722DB7751817D76200A5A716 /* ProtoMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoMain.cpp; path = app/ProtoMain.cpp; sourceTree = "<group>"; };
 		7241A87B17BD63A300DBF38C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		7241A87D17BD63AA00DBF38C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
@@ -163,6 +167,8 @@
 		2A990B6618183599005DD10E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				72275D1718464F15000519E9 /* toon1.frag */,
+				72275D1818464F15000519E9 /* toon1.vert */,
 				72135A32183B021500B45E63 /* phong.frag */,
 				72135A33183B021500B45E63 /* phong.vert */,
 			);
@@ -226,10 +232,10 @@
 				2AD37960182D52C600A4C541 /* ProtoTuple3.h */,
 				2AD37961182D52C600A4C541 /* ProtoUtility.cpp */,
 				2AD37962182D52C600A4C541 /* ProtoUtility.h */,
-				2AD37964182D52C600A4C541 /* ProtoVector2.h */,
 				2AD37966182D52C600A4C541 /* ProtoVector3.h */,
 				2AD37967182D52C600A4C541 /* ProtoVector4.h */,
 				2AD37968182D52C600A4C541 /* ProtoVerletBall.cpp */,
+				2AD37964182D52C600A4C541 /* ProtoVector2.h */,
 				2AD37969182D52C600A4C541 /* ProtoVerletBall.h */,
 				724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */,
 				724B59AA1831D1F90098E5A1 /* ProtoVerletCube.h */,
@@ -368,10 +374,12 @@
 				2AD37984182D52C600A4C541 /* ProtoTransformFunction.cpp in Sources */,
 				2AD37982182D52C600A4C541 /* ProtoTexture.cpp in Sources */,
 				2A820D2D181714F300AEEE95 /* ProtoPlasm.cpp in Sources */,
+				72275D1A18464F15000519E9 /* toon1.vert in Sources */,
 				2AD37972182D52C600A4C541 /* ProtoAnimator.cpp in Sources */,
 				2AFD5BDB183D36ED009110AB /* ProtoVerletDome.cpp in Sources */,
 				2AD37975182D52C600A4C541 /* ProtoCurve3.cpp in Sources */,
 				72135A35183B021500B45E63 /* phong.vert in Sources */,
+				72275D1918464F15000519E9 /* toon1.frag in Sources */,
 				2AD37989182D52C600A4C541 /* ProtoVerletStick.cpp in Sources */,
 				2AD37979182D52C600A4C541 /* ProtoGeom3.cpp in Sources */,
 				2A9EA5F51818332800168827 /* App01.cpp in Sources */,

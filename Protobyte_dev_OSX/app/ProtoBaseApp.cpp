@@ -12,14 +12,14 @@ using namespace ijg;
 
 // NOTE: called before GL context created
 ProtoBaseApp::ProtoBaseApp() {
-   // std::cout << "in base class cstr" << std::endl;
+    // std::cout << "in base class cstr" << std::endl;
 }
 
 // Get handle to world and init BaseApp
 // Note: this function does some work of cstr because
 // it is called after GL context has been created.
-void ProtoBaseApp::setWorld(std::shared_ptr<ProtoWorld> world){
-    this->world = world;
+void ProtoBaseApp::setWorld(std::unique_ptr<ProtoWorld> world){
+    this->world = std::move(world);
     
     //instantiate lights
     light0 = std::shared_ptr<ProtoLight>(new ProtoLight());
@@ -30,22 +30,22 @@ void ProtoBaseApp::setWorld(std::shared_ptr<ProtoWorld> world){
     light5 = std::shared_ptr<ProtoLight>(new ProtoLight());
     light6 = std::shared_ptr<ProtoLight>(new ProtoLight());
     light7 = std::shared_ptr<ProtoLight>(new ProtoLight());
-
-
     
-    world->add(light0);
-     world->add(light1);
-     world->add(light2);
-     world->add(light3);
-     world->add(light4);
-     world->add(light5);
-     world->add(light6);
-     world->add(light7);
+    
+    
+    this->world->add(light0);
+    this->world->add(light1);
+    this->world->add(light2);
+    this->world->add(light3);
+    this->world->add(light4);
+    this->world->add(light5);
+    this->world->add(light6);
+    this->world->add(light7);
     
     // set default light on
-   // light0->on();
-
-
+    // light0->on();
+    
+    
 }
 
 // start World rendering loop
@@ -95,7 +95,7 @@ void ProtoBaseApp::lightsOn(){
     
 }
 void ProtoBaseApp::lightsOff(){
-     glDisable(GL_LIGHTING);
+    glDisable(GL_LIGHTING);
 }
 //END LIGHTS
 
@@ -118,11 +118,11 @@ int ProtoBaseApp::getWidth() const{
 }
 
 int ProtoBaseApp::getHeight() const{
-     return canvasHeight;
+    return canvasHeight;
 }
 
- Dim2i ProtoBaseApp::getSize()const {
-     return canvasSize;
+Dim2i ProtoBaseApp::getSize()const {
+    return canvasSize;
 }
 
 // Load Image

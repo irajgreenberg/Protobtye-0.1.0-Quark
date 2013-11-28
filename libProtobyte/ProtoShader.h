@@ -33,6 +33,9 @@
 #include <string>
 #include "ProtoUtility.h"
 
+#include <sstream>
+#include <fstream>
+
 
 namespace ijg {
 
@@ -50,6 +53,7 @@ namespace ijg {
         GLuint getID();
         GLuint shader_id;
     private:
+        // must initialize these before using!!!
         std::string vShader, fShader;
         GLuint shader_vp;
         GLuint shader_fp;
