@@ -1,26 +1,26 @@
 /*!  \brief  ProtoShader.cpp: class for managing shaders
-ProtoShader.cpp
-Protobyte Library v02
-
-Created by Ira on 7/23/13.
-Copyright (c) 2013 Ira Greenberg. All rights reserved.
-
-Library Usage:
-This work is licensed under the Creative Commons
-Attribution-NonCommercial-ShareAlike 3.0 Unported License.
-To view a copy of this license, visit
-http://creativecommons.org/licenses/by-nc-sa/3.0/
-or send a letter to Creative Commons,
-444 Castro Street, Suite 900,
-Mountain View, California, 94041, USA.
-
-This notice must be retained any source distribution.
-
-\ingroup common
-This class is templated to allow for varied single collection types
-This class is part of the group common (update)
-\sa NO LINK
-*/
+ ProtoShader.cpp
+ Protobyte Library v02
+ 
+ Created by Ira on 7/23/13.
+ Copyright (c) 2013 Ira Greenberg. All rights reserved.
+ 
+ Library Usage:
+ This work is licensed under the Creative Commons
+ Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+ To view a copy of this license, visit
+ http://creativecommons.org/licenses/by-nc-sa/3.0/
+ or send a letter to Creative Commons,
+ 444 Castro Street, Suite 900,
+ Mountain View, California, 94041, USA.
+ 
+ This notice must be retained any source distribution.
+ 
+ \ingroup common
+ This class is templated to allow for varied single collection types
+ This class is part of the group common (update)
+ \sa NO LINK
+ */
 
 
 #include "ProtoShader.h"
@@ -38,7 +38,8 @@ vShader(vShader), fShader(fShader){
 }
 
 void ProtoShader::init() {
-
+    
+    
 	// initialize glew for Windows
 #if defined(_WIN32) || defined(__linux__)
 	GLenum err = glewInit();
@@ -54,47 +55,41 @@ void ProtoShader::init() {
     std::string url = ProtoUtility::getBuildPath();
     std::string vShaderURL = url+"/resources/shaders/"+vShader;
     std::string fShaderURL = url+"/resources/shaders/"+fShader;
-    //std::cout << "vShaderURL = " << vShaderURL << std::endl;
-    //std::cout << "fShaderURL = " << fShaderURL << std::endl;
-    //std::string vShaderCodeStr = ProtoUtility::load(vShaderURL);
+    std::cout << "vShaderURL = " << vShaderURL << std::endl;
+    std::string vShaderCodeStr = ProtoUtility::load(vShaderURL);
 	std::string fShaderCodeStr = ProtoUtility::load(fShaderURL);
     
+    //        shader_vp = 0;
+    //        shader_fp = 0;
+    //        shader_id = 0;
     
-    std::string vShaderCodeStr = "#version 400 in vec3 VertexPosition; in vec3 VertexColor; out vec3 Color; void main() { Color = VertexColor; GL_Position = vec4(VertexPosition, 1.0); }";
-    
-	const GLchar* vShaderCode = vShaderCodeStr.c_str();
-	const GLchar* fShaderCode = fShaderCodeStr.c_str();
-	//std::cout << "vShaderCode = " << vShaderCode << std::endl;
-	//std::cout << "fShaderCode = " << fShaderCode << std::endl;
-    
-	if (vShaderCode == NULL || fShaderCode == NULL) {
-		std::cerr << "Either vertex shader or fragment shader file not found." << std::endl;
-		return;
-	}
+    const GLchar* vShaderCode = vShaderCodeStr.c_str();
+    const GLchar* fShaderCode = fShaderCodeStr.c_str();
     
     
-    const char* vShaderCode2 = "uniform mat4 u_mvpMatrix;attribute vec4 a_position;attribute vec4 a_color;varying vec4 v_color;void main(){   gl_Position = u_mvpMatrix * a_position;   v_color = a_color;}";
+    if (vShaderCode == NULL || fShaderCode == NULL) {
+        std::cerr << "Either vertex shader or fragment shader file not found." << std::endl;
+        return;
+    }
     
-    const char* fShaderCode2 = "varying vec4 v_color;void main() {	gl_FragColor = v_color;}";
-    
-
-	shader_vp = glCreateShader(GL_VERTEX_SHADER);
+    shader_vp = glCreateShader(GL_VERTEX_SHADER);
     if(0==shader_vp){
         std::cerr << "Error creating vertex shader"<< std::endl;
         return;
     }
     
-	shader_fp = glCreateShader(GL_FRAGMENT_SHADER);
+    shader_fp = glCreateShader(GL_FRAGMENT_SHADER);
     if(0==shader_fp){
         std::cerr << "Error creating fragment shader"<< std::endl;
         return;
     }
     
-    glShaderSource(shader_vp, 1, (const GLchar**)&vShaderCode2, 0);
-	glShaderSource(shader_fp, 1, (const GLchar**)&fShaderCode2, 0);
-
-	glCompileShader(shader_vp);
-	glCompileShader(shader_fp);
+    glShaderSource(shader_vp, 1, &vShaderCode, NULL);
+    glShaderSource(shader_fp, 1, &fShaderCode, NULL);
+    
+    
+    glCompileShader(shader_vp);
+    glCompileShader(shader_fp);
     
     //Check shader for errors
     GLint shaderCompiled = GL_FALSE;
@@ -106,7 +101,7 @@ void ProtoShader::init() {
         glDeleteShader( shader_vp );
         shader_vp = 0;
     }
-
+    
     glGetShaderiv( shader_fp, GL_COMPILE_STATUS, &shaderCompiled );
     if( shaderCompiled != GL_TRUE )
     {
@@ -115,35 +110,46 @@ void ProtoShader::init() {
         glDeleteShader( shader_fp );
         shader_fp = 0;
     }
-
     
     
-
-	shader_id = glCreateProgram();
-	glAttachShader(shader_id, shader_vp);
-	glAttachShader(shader_id, shader_fp);
-
-	glLinkProgram(shader_id);
-
+    shader_id = glCreateProgram();
+    
+    glAttachShader(shader_id, shader_vp);
+    glAttachShader(shader_id, shader_fp);
+    
+    glLinkProgram(shader_id);
+   // glUseProgram(shader_id);
+    
+    //Check for errors
+    GLint programSuccess = GL_TRUE;
+    glGetProgramiv(shader_id, GL_LINK_STATUS, &programSuccess );
+    if( programSuccess != GL_TRUE )
+    {
+        printf( "Error linking program %d!\n", shader_id);
+        //printProgramLog(shader_id);
+        glDeleteProgram(shader_id);
+        shader_id = 0;
+    }
+    
 }
 
 ProtoShader::~ProtoShader() {
-	glDetachShader(shader_id, shader_fp);
-	glDetachShader(shader_id, shader_vp);
-
-	glDeleteShader(shader_fp);
-	glDeleteShader(shader_vp);
-	glDeleteProgram(shader_id);
+    glDetachShader(shader_id, shader_fp);
+    glDetachShader(shader_id, shader_vp);
+    
+    glDeleteShader(shader_fp);
+    glDeleteShader(shader_vp);
+    glDeleteProgram(shader_id);
 }
 
 unsigned int ProtoShader::getID() {
-	return shader_id;
+    return shader_id;
 }
 
 void ProtoShader::bind() {
-	glUseProgram(shader_id);
+ glLinkProgram(shader_id);
 }
 
 void ProtoShader::unbind() {
-	glUseProgram(0);
+   glLinkProgram(0);
 }

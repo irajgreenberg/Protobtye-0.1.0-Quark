@@ -60,10 +60,10 @@ void ProtoPlasm::initSFMLInit(){
     // set framerate to refresh rate, ~60fps
     window->setVerticalSyncEnabled(true);
     
-    // set gl states
+// set gl states
     glClearColor(0, 0, 0, 1.0f);
     glShadeModel(GL_SMOOTH);
-    // enable specualrity on textures
+// enable specualrity on textures
     glLightModelf(GL_LIGHT_MODEL_COLOR_CONTROL,GL_SEPARATE_SPECULAR_COLOR);
     glEnable(GL_LIGHTING);
     glFrontFace(GL_CCW); // default
@@ -106,7 +106,7 @@ void ProtoPlasm::initSFMLInit(){
     
     // World manages lighting and views (cameras)
     // instantiate singleton world
-    world = std::shared_ptr<ProtoWorld>(new ProtoWorld(appWidth, appHeight));
+    world = std::unique_ptr<ProtoWorld>(new ProtoWorld(appWidth, appHeight));
     
     // set default single world view
     world->setWorldView(ProtoWorld::SINGLE_VIEW);
@@ -164,7 +164,7 @@ void ProtoPlasm::initSFMLInit(){
     // pass world to baseApp enabling user defined BaseApp derived class access
     // setWorld also initializes some baseApp states
     //std::cout << "world->fovAngle = " << world->fovAngle << std::endl;
-    baseApp->setWorld(world);
+    baseApp->setWorld(std::move(world));
     // std::cout << "baseApp->world->fovAngle = " << baseApp->world->fovAngle << std::endl;
     
     // Activate init function in user derived class.n.

@@ -55,7 +55,7 @@ namespace ijg {
         
     private:
         // only needed to be called by ProtoPlasm class - a friend
-        void setWorld(std::shared_ptr<ProtoWorld> world);
+        void setWorld(std::unique_ptr<ProtoWorld> world);
         void runWorld();
         // don't let users touch this after context is created
         void setWidth(int canvasWidth);
@@ -67,7 +67,7 @@ namespace ijg {
          **********     FIELDS     **********
          ***********************************/
         
-        std::shared_ptr<ProtoWorld> world;
+        std::unique_ptr<ProtoWorld> world;
         int appWidth;
         int appHeight;
         std::string appTitle;
