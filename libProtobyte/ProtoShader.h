@@ -57,6 +57,7 @@ namespace ijg {
         std::string vShader, fShader;
         GLuint shader_vp;
         GLuint shader_fp;
+        void printLog(GLuint program);
 
     };
 

@@ -16,7 +16,7 @@ int ProtoPlasm::frameRate = 0;
 
 
 ProtoPlasm::ProtoPlasm(ProtoBaseApp* baseApp):
-baseApp(baseApp), appWidth(1024), appHeight(764), appTitle("Protobyte App")
+baseApp(baseApp), appWidth(1600), appHeight(800), appTitle("Protobyte App")
 {
     // instantiate world
     //world = std::unique_ptr<ProtoWorld>(new ProtoWorld(appWidth, appHeight));
@@ -46,24 +46,42 @@ appWidth(appWidth), appHeight(appHeight), appTitle(appTitle), baseApp(baseApp){
 
 
 void ProtoPlasm::initSFMLInit(){
-    sf::ContextSettings settings;
-    settings.depthBits = 32;
-    settings.stencilBits = 8;
-    settings.antialiasingLevel = 8;
-    settings.majorVersion = 3;
-    settings.minorVersion = 0;
+    // Start GLFW setup
+    // for modern context handling
+    //glfwInit();
+    
+   
+    
+    
+    glfwSetErrorCallback(error_callback);
+    if (!glfwInit())
+        exit(EXIT_FAILURE);
+    
+//    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+//    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
+//    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+//    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    
+
+    
+    window = glfwCreateWindow(appWidth, appHeight, appTitle.c_str(), NULL, NULL);
     
     
     
-    // create window and GL context
-    window = new sf::Window(sf::VideoMode(appWidth, appHeight), appTitle, sf::Style::Default, settings);
-    // set framerate to refresh rate, ~60fps
-    window->setVerticalSyncEnabled(true);
+    if (!window)
+    {
+        glfwTerminate();
+        exit(EXIT_FAILURE);
+    }
+    glfwMakeContextCurrent(window);
+    glfwSetKeyCallback(window, key_callback);
+    // end GLW setup
     
-// set gl states
+    
+    // set gl states
     glClearColor(0, 0, 0, 1.0f);
     glShadeModel(GL_SMOOTH);
-// enable specualrity on textures
+    // enable specualrity on textures
     glLightModelf(GL_LIGHT_MODEL_COLOR_CONTROL,GL_SEPARATE_SPECULAR_COLOR);
     glEnable(GL_LIGHTING);
     glFrontFace(GL_CCW); // default
@@ -73,7 +91,7 @@ void ProtoPlasm::initSFMLInit(){
     glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
     //glShadeModel(GL_FLAT); // option
     glEnable(GL_COLOR_MATERIAL); // incorporates per vertex color with lights
-
+    
     // global ambinet unrelated to lights
     float globalAmbient[4] = {.2, .2, .2, 1};
     glLightModelfv(GL_LIGHT_MODEL_AMBIENT,  globalAmbient);
@@ -90,8 +108,8 @@ void ProtoPlasm::initSFMLInit(){
     
     //glEnable(GL_ALPHA_TEST);
     //glAlphaFunc(GL_GREATER,0.0f);
-
-   
+    
+    
     
     
     glEnable(GL_DEPTH_TEST);
@@ -101,7 +119,7 @@ void ProtoPlasm::initSFMLInit(){
     glClearStencil(0); // clear stencil buffer
     glClearDepth(1.0f); // 0 is near, 1 is far
     glDepthFunc(GL_LEQUAL);
-
+    
     
     
     // World manages lighting and views (cameras)
@@ -184,51 +202,15 @@ void ProtoPlasm::initSFMLRun(){
     // clear screen
     //glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
-    // run the SFML main loop
-    bool running = true;
     
-    sf::Clock clock;
-    
-    while (running)
+    while (!glfwWindowShouldClose(window))
     {
         /*
          TO DO – fix timing issues with control for users:
          From: http://stackoverflow.com/questions/2182675/how-do-you-make-sure-the-speed-of-opengl-animation-is-consistent-on-different-ma
-         This is the poor man's solution:
-         
-         FPS = 60.0;
-         while (game_loop) {
-         int t = getticks();
-         if ((t - t_prev) > 1000/FPS)
-         process_animation_tick();
-         t_prev = t;
-         }
-         
-         this is the better solution:
-         
-         GAME_SPEED = ...
-         while (game_loop) {
-         int t = getticks();
-         process_animation((t - t_prev)*GAME_SPEED/1000.0);
-         t_prev = t;
-         }
-         
-         
-         */
+*/
         
-        ++frameCount;
-        sf::Time elapsedT = clock.restart();
-        frameRate = 1.0/elapsedT.asSeconds();
-        //std::cout << "frameRate = "<< frameRate << std::endl;
         
-        sf::Time elapsed = clock.getElapsedTime();
-        if(frameCount%60==0){
-            //std::cout << "clock running at 60 fps"<< std::endl;
-        }
-        
-        //std::cout << " elapsed.asSeconds() = " <<  elapsed.asSeconds()<<std::endl;
-        
-
         
         
         // Activate derived user class implementation.
@@ -236,66 +218,19 @@ void ProtoPlasm::initSFMLRun(){
         baseApp->run();
         
         
-        // handle SFML events
-        sf::Event event;
-        while (window->pollEvent(event))
-        {
-            if (event.type == sf::Event::MouseButtonPressed)
-            {
-                if (event.mouseButton.button == sf::Mouse::Left) {
-//                    std::cout << "event.size = " << event.size.width << std::endl;
-//                    std::cout << "event.size = " << event.size.height << std::endl;
-//                    
-//                    std::cout << "event.mouseButton.x = " << event.mouseButton.x << std::endl;
-//                    std::cout << "event.mouseButton.y = " << event.mouseButton.y << std::endl;
-//                    
-                    // Activate derived user class implementation.
-                    baseApp->mousePressed();
-                }
-            }
-            
-            else if (event.type == sf::Event::MouseMoved)
-            {
-                baseApp->mouseMoved(event.mouseMove.x,event.mouseMove.y);
-            }
-            
-            else if (event.type == sf::Event::Closed)
-            {
-                // Activate derived user class implementation.
-                baseApp->onClosed();
-                
-                // end the program
-                running = false;
-            }
-            else if (event.type == sf::Event::Resized)
-            {
-                // adjust the viewport when the window is resized
-                //glViewport(0, 0, event.size.width/4.0, event.size.height/4.0);
-                //world.updateCanvasSize(event.size.width, event.size.height);
-                
-                //                    std::cout << event.size.width  << std::endl;
-                //                    std::cout << event.size.height  << std::endl;
-            }else if (event.type == sf::Event::KeyPressed)
-            {
-                // Activate derived user class implementation.
-                baseApp->keyPressed();
-                
-                if (event.key.code == sf::Keyboard::Q || event.key.code == sf::Keyboard::Escape) {
-                    
-                    running = false;
-                    window->close();
-                }
-            }
-        }
+        // handle GLFW events
         
         // clear the buffers
         //glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
         
         // end the current frame (internally swaps the front and back buffers)
-        window->display();
+        //window->display();
+        glfwSwapBuffers(window);
+        glfwPollEvents();
     }
     
-    
+    glfwDestroyWindow(window);
+    glfwTerminate();
 }
 

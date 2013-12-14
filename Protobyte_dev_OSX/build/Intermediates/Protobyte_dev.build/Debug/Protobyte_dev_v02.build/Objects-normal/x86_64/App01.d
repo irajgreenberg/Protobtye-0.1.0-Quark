@@ -67,6 +67,7 @@ dependencies: \
   /usr/local/include/SFML/Graphics/Text.hpp \
   /usr/local/include/SFML/OpenGL.hpp \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/ProtoPlasm.h \
+  /usr/local/include/GLFW/glfw3.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoDimension2.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoWorld.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoColor3.h \
@@ -103,4 +104,7 @@ dependencies: \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVerletSurface.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoImage.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVerletStick.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVerletBall.h
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVerletBall.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoGeosphere.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoCephalopod.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoMatrix3.h

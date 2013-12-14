@@ -101,7 +101,7 @@ void ProtoCamera::project(){
     // set the viewport
     // controls what part of window is painted to. Can be called multiple times
     // for split screen
-    glViewport(viewPort.x, viewPort.y, viewPort.w, viewPort.h);
+   //glViewport(viewPort.x, viewPort.y, viewPort.w, viewPort.h);
     
     // from http://nehe.gamedev.net/article/replacement_for_gluperspective/21002/
     // replaces gluPerspective(fovAngle, aspectRatio, nearClipPlane, farClipPlane);
@@ -113,8 +113,8 @@ void ProtoCamera::project(){
     glFrustum(-fw, fw, -fh, fh, nearClipPlane, farClipPlane);
     
     
-//glMatrixMode(GL_MODELVIEW);
-//glLoadIdentity();
+glMatrixMode(GL_MODELVIEW);
+glLoadIdentity();
 //    glTranslatef(-pos.x, -pos.y, -pos.z);
 //    glRotatef(-rot.x, 1, 0, 0);
 //    glRotatef(-rot.y, 0, 1, 0);

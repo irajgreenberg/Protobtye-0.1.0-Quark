@@ -16,12 +16,15 @@
 #include "ProtoVerletSurface.h"
 #include "ProtoImage.h"
 #include "ProtoShader.h"
+#include "ProtoGeoSphere.h"
+#include "ProtoCephalopod.h"
+#include "ProtoMatrix3.h"
 
 using namespace ijg;
 
 class App01 : public ProtoBaseApp {
 
-private:
+protected:
     std::unique_ptr<ProtoToroid> toroid2;
     std::unique_ptr<ProtoVerletSurface> verletSurf;
     std::unique_ptr<ProtoVerletCube> verletCube;
@@ -29,13 +32,22 @@ private:
     std::unique_ptr<ProtoVerletCube> verletCube3;
     std::unique_ptr<ProtoSphere> sphere;
     
+    std::unique_ptr<ProtoTube> tube;
+    std::unique_ptr<ProtoGeoSphere> icos;
     ProtoShader shader;
+    
+    // why can't this be private????????
+    std::vector< ProtoMatrix3<float> > frames; // frenet frames for tendril transformation
    
+    ProtoTube tube2;
+    ProtoCephalopod cephalopod;
     
     
     
 
 public:
+   
+    
     void init();
     void run();
     

@@ -55,13 +55,13 @@ void ProtoShader::init() {
     std::string url = ProtoUtility::getBuildPath();
     std::string vShaderURL = url+"/resources/shaders/"+vShader;
     std::string fShaderURL = url+"/resources/shaders/"+fShader;
-    std::cout << "vShaderURL = " << vShaderURL << std::endl;
+    //std::cout << "vShaderURL = " << vShaderURL << std::endl;
     std::string vShaderCodeStr = ProtoUtility::load(vShaderURL);
 	std::string fShaderCodeStr = ProtoUtility::load(fShaderURL);
     
-    //        shader_vp = 0;
-    //        shader_fp = 0;
-    //        shader_id = 0;
+        shader_vp = 0;
+        shader_fp = 0;
+        shader_id = 0;
     
     const GLchar* vShaderCode = vShaderCodeStr.c_str();
     const GLchar* fShaderCode = fShaderCodeStr.c_str();
@@ -118,19 +118,19 @@ void ProtoShader::init() {
     glAttachShader(shader_id, shader_fp);
     
     glLinkProgram(shader_id);
-   // glUseProgram(shader_id);
     
     //Check for errors
     GLint programSuccess = GL_TRUE;
     glGetProgramiv(shader_id, GL_LINK_STATUS, &programSuccess );
+    std::cout << "programSuccess = " << programSuccess << std::endl;
     if( programSuccess != GL_TRUE )
     {
         printf( "Error linking program %d!\n", shader_id);
-        //printProgramLog(shader_id);
+        printLog(shader_id);
         glDeleteProgram(shader_id);
         shader_id = 0;
     }
-    
+    //glUseProgram(shader_id);
 }
 
 ProtoShader::~ProtoShader() {
@@ -142,14 +142,23 @@ ProtoShader::~ProtoShader() {
     glDeleteProgram(shader_id);
 }
 
-unsigned int ProtoShader::getID() {
+void ProtoShader::printLog(GLuint program){
+    int maxLength=0;
+    int length=0;
+    glGetProgramiv(program,GL_INFO_LOG_LENGTH,&maxLength);
+    char* log = new char[maxLength];
+    glGetProgramInfoLog(program,maxLength,&length,log);
+    std::cout << "program log: " << log << std::endl;
+}
+
+GLuint ProtoShader::getID() {
     return shader_id;
 }
 
 void ProtoShader::bind() {
- glLinkProgram(shader_id);
+  glUseProgram(shader_id);
 }
 
 void ProtoShader::unbind() {
-   glLinkProgram(0);
+   glUseProgram(0);
 }

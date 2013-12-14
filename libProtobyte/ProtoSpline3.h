@@ -40,7 +40,7 @@ namespace ijg {
         ProtoSpline3();
 
         ProtoSpline3(const std::vector<Vec3f>& controlPts, int interpDetail, bool isCurveClosed, float smoothness);
-
+        
 
         /**
          * Set flag for Curve at Terminals to be continuous

@@ -38,6 +38,9 @@
 #ifndef PROTO_BASEAPP_H
 #define PROTO_BASEAPP_H
 
+#define PI ProtoMath::PI
+#define TWO_PI ProtoMath::TWO_PI
+
 #include <iostream>
 
 namespace ijg {

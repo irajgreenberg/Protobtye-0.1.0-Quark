@@ -82,12 +82,51 @@ void App01::init(){
     
     //ProtoSphere::ProtoSphere(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3f size,
     //const ProtoColor4f col4, const std::string& textureImageURL, float textureScale, int spines, int spineNodes) :
-    sphere = std::unique_ptr<ProtoSphere> (new ProtoSphere(Vec3f(0, 0, 0), Vec3f(0, ProtoMath::PI/3.0,0), Dim3f(50, 50, 50),ProtoColor4f(.9, .4, .7, 1), "rockWall.jpg", 1, 62, 62));
+    //glEnable(GL_F)
+    sphere = std::unique_ptr<ProtoSphere> (new ProtoSphere(Vec3f(0, 0, 0), Vec3f(0, ProtoMath::PI/3.0,0), Dim3f(20, 20, 20),ProtoColor4f(.9, .4, .7, 1), "rockWall.jpg", 1, 4, 4));
     sphere->setShininess(68);
+    std::cout << "sphere->getFaces().size() = " << sphere->getFaces().size() << std::endl;
     
     
-
+    
+   //const ProtoSpline3& path, float radius, int crossSectionDetail, bool isClosed
+    const int pathCount = 30;
+    std::vector<Vec3> vecs;
+    float _theta = 0.0;
+    float _radius = 5;
+    float h = 0;
+    for(int i=0; i<pathCount; ++i){
+        vecs.push_back(Vec3(cos(_theta)*_radius, sin(_theta)*_radius, h+=1.2));
+        _theta += ProtoMath::PI/9;
+        _radius -=.12;
+    }
+        //const std::vector<Vec3f>& controlPts, int interpDetail, bool isCurveClosed, float smoothness
+    ProtoSpline3 path(vecs, 3, 0, .5);
+   //const ProtoSpline3& path, float radius, int crossSectionDetail, bool isClosed
+    tube = std::unique_ptr<ProtoTube>(new ProtoTube(path, 2, 12, ProtoTransformFunction(ProtoTransformFunction::LINEAR_INVERSE), false));
+    
+    tube2 = ProtoTube(path, 2, 12, ProtoTransformFunction(ProtoTransformFunction::LINEAR_INVERSE), false);
+    
+    icos = std::unique_ptr<ProtoGeoSphere>(new ProtoGeoSphere(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(60, 60, 60), ProtoColor4f(ProtoMath::random(.7, 1.0), ProtoMath::random(.7, 1.0), ProtoMath::random(.7, 1.0), 1), 1, "shipPlate.jpg"));
    
+    icos->setShininess(98);
+    
+    std::vector<ProtoFace3> icosFaces = icos->getFaces();
+    //frames.clear();
+    for(size_t i=0; i<icosFaces.size(); ++i){
+        // calulate local frenet frame using face normal
+        Vec3 N = icosFaces.at(i).getNorm();
+        Vec3 v0 = *(icosFaces.at(i).getVert0_ptr()->getPos_ptr());
+        Vec3 v1 = *(icosFaces.at(i).getVert1_ptr()->getPos_ptr());
+        v1 -= v0;
+        Vec3 T = v1;
+        Vec3 B = cross(N, T);
+        frames.push_back(ProtoMatrix3<float>(N, T, B));
+    }
+    
+    
+    cephalopod = ProtoCephalopod(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(60, 60, 60),ProtoColor4f(.9, .4, .7, 1), 8);
+    
     
     
 }
@@ -95,6 +134,7 @@ void App01::init(){
 // event thread runs continuously
 //ProtoWorld draw independently
 void App01::run(){
+   
     // if(isClicked){
     //std::cout << "frameCount = " << frameCount << std::endl;
     //std::cout << "frameRate = " << frameRate << std::endl;
@@ -102,13 +142,14 @@ void App01::run(){
     
     
     //shader.bind();
-    shader.unbind();
+    //shader.unbind();
     // std::cout << "shader.getID() = " << shader.getID() << std::endl;
     //shader.bind();
     pushMatrix();
     translate(0, 0, -125);
     //glScalef(20, 20, 20);
-    rotate(x+=.5, 1+x*1.3, .75, .3);
+    //rotate(x+=.5, 1, 0, 0);
+    //rotate(-x, 0, 1, 0);
     //toroid2->textureOn();
     
     //toroid2->display();
@@ -116,7 +157,30 @@ void App01::run(){
     
     
     
-    glutSolidIcosahedron();
+    //glutSolidIcosahedron();
+    
+//    for(int i=0; i<frames.size(); i++){
+//            pushMatrix();
+//            Vec3 temp(1, 0, 0);
+//            temp = frames.at(i)*temp;
+//            translate(x2, y, z);
+//            //rotate(f*180/PI, 1, 0, 0);
+//            //rotate(q*180/PI, 0, 0, 1);
+//            tube->display();
+//            popMatrix();
+//            
+//            f+=PI/segs;
+//        }
+//        q+=TWO_PI/slices;
+//    }
+    
+    //icos->textureOn();
+    //icos->display();
+    
+    //tube2.display();
+    cephalopod.display();
+    
+    
     popMatrix();
 
     pushMatrix();
@@ -133,30 +197,34 @@ void App01::run(){
     verletCube->pulse();
     ProtoGeom3::renderMode modes[] = {SURFACE, SURFACE, WIREFRAME, SURFACE, SURFACE, POINTS};
     float pointSizes[6] = {.2, .8, 15.2, 3, 8, 2};
-    verletCube->display(modes, pointSizes);
-    verletCube->display(modes, pointSizes);
+   //verletCube->display(modes, pointSizes);
+    //verletCube->display(modes, pointSizes);
     
     
     
     verletCube2->textureOn();
     verletCube2->pulse();
-    verletCube2->display();
+    //verletCube2->display();
     
     verletCube3->textureOn();
     verletCube3->pulse();
-    verletCube3->display(POINTS, 3);
-    shader.unbind();
+    //verletCube3->display(POINTS, 3);
+    //shader.unbind();
     
     //sphere->textureOn();
+    glShadeModel(GL_FLAT);
     //sphere->display(SURFACE, .1);
-    glScalef(20, 20, 20);
+    glShadeModel(GL_SMOOTH);
+    //glScalef(20, 20, 20);
     
-    std::cout << "shader.getID() = " << shader.getID() << std::endl;
-    glUseProgram(shader.getID());
+    //std::cout << "shader.getID() = " << shader.getID() << std::endl;
+    //glUseProgram(shader.getID());
    // sphere->textureOn();
     //sphere->display(SURFACE, .1);
     //glutSolidTorus(12, 24, 32, 32);
-    shader.unbind();
+    //shader.unbind();
+    
+    
     popMatrix();
     
 

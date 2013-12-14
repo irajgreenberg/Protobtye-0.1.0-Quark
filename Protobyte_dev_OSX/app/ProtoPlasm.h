@@ -16,12 +16,40 @@
 #include <GL/glew.h>
 #endif
 
-#include <SFML/Window.hpp>
-#include <SFML/OpenGL.hpp>
+// from OF documentation
+// OSX link with " " instead of < > to avoid putting in defualt include path
+#if (_MSC_VER)
+#include <GLFW/glfw3.h>
+#else
+#include "GLFW/glfw3.h"
+#endif
+
 #include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
 #include "ProtoBaseApp.h"
 
+// use GL3 context (OpenGL 3.2-4.1)
+#define GLFW_INCLUDE_GLCOREARB
+
+// bring in GLU
+//#define GLFW_INCLUDE_GLU
+
+
+
 namespace ijg {
+    
+    
+    static void error_callback(int error, const char* description)
+    {
+        fputs(description, stderr);
+    }
+    static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
+    {
+        if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+            glfwSetWindowShouldClose(window, GL_TRUE);
+    }
+
     
     class ProtoPlasm {
         
@@ -33,7 +61,7 @@ namespace ijg {
         explicit ProtoPlasm(ProtoBaseApp* baseApp);
         ProtoPlasm(int appWidth, int appHeight, std::string appTitle, ProtoBaseApp* baseApp);
         
-       
+        
         
     private:
         
@@ -41,7 +69,8 @@ namespace ijg {
         void initSFMLRun();
         
         // cross-platform SFML Window
-        sf::Window* window;
+        //sf::Window* window;
+        GLFWwindow* window;
         
         // Master controller class, manages view, lighting and rendering
         std::unique_ptr<ProtoWorld> world;
@@ -54,8 +83,8 @@ namespace ijg {
         std::string appTitle;
     };
     
-    #define frameCount ProtoPlasm::frameCount
-    #define frameRate ProtoPlasm::frameRate
+#define frameCount ProtoPlasm::frameCount
+#define frameRate ProtoPlasm::frameRate
 }
 
 #endif /* defined(__Protobyte_dev_v02__ProtoPlasm__) */

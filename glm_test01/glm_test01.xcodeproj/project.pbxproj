@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AAE03D0184CE58600F9874D /* ProtoShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE03CE184CE58600F9874D /* ProtoShader.cpp */; };
+		2AAE03D3184CE5DB00F9874D /* ProtoUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE03D2184CE5DB00F9874D /* ProtoUtility.cpp */; };
+		2AAE03D6184CE6C200F9874D /* toon1.frag in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE03D4184CE6C200F9874D /* toon1.frag */; };
+		2AAE03D7184CE6C200F9874D /* toon1.vert in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE03D5184CE6C200F9874D /* toon1.vert */; };
+		2AAE03DB184CEBA400F9874D /* MyGeom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE03D9184CEBA400F9874D /* MyGeom.cpp */; };
+		72270CB7184ADA380005ACEF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72270CB6184ADA380005ACEF /* main.cpp */; };
+		72270CB9184ADA380005ACEF /* glm_test01.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72270CB8184ADA380005ACEF /* glm_test01.1 */; };
+		72270CC0184ADAC00005ACEF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72270CBF184ADAC00005ACEF /* OpenGL.framework */; };
+		72270CC2184ADAC60005ACEF /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72270CC1184ADAC60005ACEF /* IOKit.framework */; };
+		72270CC4184ADAD00005ACEF /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72270CC3184ADAD00005ACEF /* CoreVideo.framework */; };
+		72270CC6184ADAF50005ACEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72270CC5184ADAF50005ACEF /* Cocoa.framework */; };
+		72270CC8184ADB0B0005ACEF /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72270CC7184ADB0B0005ACEF /* libglfw3.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72270CB1184ADA380005ACEF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				72270CB9184ADA380005ACEF /* glm_test01.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2AAE03CE184CE58600F9874D /* ProtoShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProtoShader.cpp; sourceTree = "<group>"; };
+		2AAE03CF184CE58600F9874D /* ProtoShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtoShader.h; sourceTree = "<group>"; };
+		2AAE03D1184CE5A400F9874D /* ProtoUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtoUtility.h; sourceTree = "<group>"; };
+		2AAE03D2184CE5DB00F9874D /* ProtoUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProtoUtility.cpp; sourceTree = "<group>"; };
+		2AAE03D4184CE6C200F9874D /* toon1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = toon1.frag; path = Build/Products/Debug/resources/shaders/toon1.frag; sourceTree = "<group>"; };
+		2AAE03D5184CE6C200F9874D /* toon1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = toon1.vert; path = Build/Products/Debug/resources/shaders/toon1.vert; sourceTree = "<group>"; };
+		2AAE03D9184CEBA400F9874D /* MyGeom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyGeom.cpp; sourceTree = "<group>"; };
+		2AAE03DA184CEBA400F9874D /* MyGeom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGeom.h; sourceTree = "<group>"; };
+		72270CB3184ADA380005ACEF /* glm_test01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = glm_test01; sourceTree = BUILT_PRODUCTS_DIR; };
+		72270CB6184ADA380005ACEF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		72270CB8184ADA380005ACEF /* glm_test01.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = glm_test01.1; sourceTree = "<group>"; };
+		72270CBF184ADAC00005ACEF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		72270CC1184ADAC60005ACEF /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		72270CC3184ADAD00005ACEF /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		72270CC5184ADAF50005ACEF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		72270CC7184ADB0B0005ACEF /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = "../../glfw-3.0.3/build/src/libglfw3.a"; sourceTree = "<group>"; };
+		72385F63184BB84E0096B6FD /* ext.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ext.hpp; path = ../other_libs/glm/glm/ext.hpp; sourceTree = "<group>"; };
+		72385F64184BB84E0096B6FD /* glm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = glm.hpp; path = ../other_libs/glm/glm/glm.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72270CB0184ADA380005ACEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72270CC8184ADB0B0005ACEF /* libglfw3.a in Frameworks */,
+				72270CC6184ADAF50005ACEF /* Cocoa.framework in Frameworks */,
+				72270CC4184ADAD00005ACEF /* CoreVideo.framework in Frameworks */,
+				72270CC2184ADAC60005ACEF /* IOKit.framework in Frameworks */,
+				72270CC0184ADAC00005ACEF /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A0E70BF184CDD7A0034FB37 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				72385F64184BB84E0096B6FD /* glm.hpp */,
+				72270CC7184ADB0B0005ACEF /* libglfw3.a */,
+				72270CC5184ADAF50005ACEF /* Cocoa.framework */,
+				72270CC3184ADAD00005ACEF /* CoreVideo.framework */,
+				72270CC1184ADAC60005ACEF /* IOKit.framework */,
+				72270CBF184ADAC00005ACEF /* OpenGL.framework */,
+				72385F63184BB84E0096B6FD /* ext.hpp */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		2AAE03D8184CE6D800F9874D /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				2AAE03D5184CE6C200F9874D /* toon1.vert */,
+				2AAE03D4184CE6C200F9874D /* toon1.frag */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
+		72270CAA184ADA380005ACEF = {
+			isa = PBXGroup;
+			children = (
+				72270CB5184ADA380005ACEF /* glm_test01 */,
+				72270CB4184ADA380005ACEF /* Products */,
+				2A0E70BF184CDD7A0034FB37 /* libs */,
+				2AAE03D8184CE6D800F9874D /* shaders */,
+			);
+			sourceTree = "<group>";
+		};
+		72270CB4184ADA380005ACEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72270CB3184ADA380005ACEF /* glm_test01 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72270CB5184ADA380005ACEF /* glm_test01 */ = {
+			isa = PBXGroup;
+			children = (
+				2AAE03D2184CE5DB00F9874D /* ProtoUtility.cpp */,
+				2AAE03D1184CE5A400F9874D /* ProtoUtility.h */,
+				2AAE03CE184CE58600F9874D /* ProtoShader.cpp */,
+				2AAE03CF184CE58600F9874D /* ProtoShader.h */,
+				72270CB6184ADA380005ACEF /* main.cpp */,
+				72270CB8184ADA380005ACEF /* glm_test01.1 */,
+				2AAE03D9184CEBA400F9874D /* MyGeom.cpp */,
+				2AAE03DA184CEBA400F9874D /* MyGeom.h */,
+			);
+			path = glm_test01;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72270CB2184ADA380005ACEF /* glm_test01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72270CBC184ADA380005ACEF /* Build configuration list for PBXNativeTarget "glm_test01" */;
+			buildPhases = (
+				72270CAF184ADA380005ACEF /* Sources */,
+				72270CB0184ADA380005ACEF /* Frameworks */,
+				72270CB1184ADA380005ACEF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glm_test01;
+			productName = glm_test01;
+			productReference = 72270CB3184ADA380005ACEF /* glm_test01 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72270CAB184ADA380005ACEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ira Greenberg";
+			};
+			buildConfigurationList = 72270CAE184ADA380005ACEF /* Build configuration list for PBXProject "glm_test01" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 72270CAA184ADA380005ACEF;
+			productRefGroup = 72270CB4184ADA380005ACEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72270CB2184ADA380005ACEF /* glm_test01 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72270CAF184ADA380005ACEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AAE03D7184CE6C200F9874D /* toon1.vert in Sources */,
+				72270CB7184ADA380005ACEF /* main.cpp in Sources */,
+				2AAE03D6184CE6C200F9874D /* toon1.frag in Sources */,
+				2AAE03D3184CE5DB00F9874D /* ProtoUtility.cpp in Sources */,
+				2AAE03D0184CE58600F9874D /* ProtoShader.cpp in Sources */,
+				2AAE03DB184CEBA400F9874D /* MyGeom.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		72270CBA184ADA380005ACEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		72270CBB184ADA380005ACEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		72270CBD184ADA380005ACEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/other_libs/glfw-3.0.3/build/src",
+					"/Users/ira/Dropbox/ira_dev/glfw-3.0.3/build/src",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/ira/Dropbox/ira_dev/glfw-3.0.3/include /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/other_libs/glm \"$(SRCROOT)/../other_libs/glm\" \"$(SRCROOT)/../other_libs/glfw-3.0.3/include\"";
+			};
+			name = Debug;
+		};
+		72270CBE184ADA380005ACEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/other_libs/glfw-3.0.3/build/src",
+					"/Users/ira/Dropbox/ira_dev/glfw-3.0.3/build/src",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/ira/Dropbox/ira_dev/glfw-3.0.3/include /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/other_libs/glm \"$(SRCROOT)/../other_libs/glm\" \"$(SRCROOT)/../other_libs/glfw-3.0.3/include\"";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72270CAE184ADA380005ACEF /* Build configuration list for PBXProject "glm_test01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72270CBA184ADA380005ACEF /* Debug */,
+				72270CBB184ADA380005ACEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72270CBC184ADA380005ACEF /* Build configuration list for PBXNativeTarget "glm_test01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72270CBD184ADA380005ACEF /* Debug */,
+				72270CBE184ADA380005ACEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72270CAB184ADA380005ACEF /* Project object */;
+}

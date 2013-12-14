@@ -48,6 +48,7 @@ ProtoCurve3(controlPts, interpDetail, isCurveClosed), smoothness(smoothness) {
     init();
 }
 
+
 /**
  * Calculate the interpolated curve points populating the uniqueVerts array.
  */

@@ -1,0 +1,53 @@
+Tglm_test01
+v6
+r1
+cCheck dependencies
+cCompileC build/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000527942BC000000000000044C
+t1383678652
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000527942BC00000000000001DB
+t1383678652
+s475
+
+N/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp
+c00000000529BCF780000000000001328
+t1385942904
+s4904
+
+CBuild AST from /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies4ed5859cdd4cb841^64cc899cdd4cb841^---0#1#1#--18"Check dependencies36"E62C170E-8917-4594-BB85-762D07EC2E8C-
+
+CCompileC build/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s407690652.554804
+e407690653.090124
+r0
+xCompileC
+xbuild/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o
+x/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp:18:10: fatal error: 'GLFW/glfw3.h' file not found
+o#include "GLFW/glfw3.h"
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp165"CompileC build/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o glm_test01/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerb43d8e9cdd4cb841^2b12179ddd4cb841^-184"/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp:18:10: fatal error: 'GLFW/glfw3.h' file not found#include "GLFW/glfw3.h"         ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@29"'GLFW/glfw3.h' file not found-407690653#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@86"file:///Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp0000000000000000^17#9#17#9#328#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@86"file:///Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp0000000000000000^3135"CompileC build/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o glm_test01/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/glm_test01.build/Debug/glm_test01.build/glm_test01-generated-files.hmap -I/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/glm_test01.build/Debug/glm_test01.build/glm_test01-own-target-headers.hmap -I/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/glm_test01.build/Debug/glm_test01.build/glm_test01-all-target-headers.hmap -iquote /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/glm_test01.build/Debug/glm_test01.build/glm_test01-project-headers.hmap -iquote/Users/33993405/Dropbox/ira_dev/glfw-3.0.3/include -iquote/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/other_libs/glm -I/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/glm_test01.build/Debug/glm_test01.build/DerivedSources/x86_64 -I/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/glm_test01.build/Debug/glm_test01.build/DerivedSources -F/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/Debug -MMD -MT dependencies -MF /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.dia -c /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp -o /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o36"3A7B0E8D-8015-44AD-9360-BCAFDA3C39B1-
+b80993809-159B-42EA-BAC0-21F48ACD2A70
+
+CLd /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/build/Debug/glm_test01 normal x86_64
+r0
+

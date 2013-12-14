@@ -29,12 +29,22 @@
 
 
 namespace ijg {
+    
+    // forward declaration for non-member ops
+    template <class T> class ProtoMatrix3;
+    
+    /*****************************************************/
+    /*            Non-Member Ops & Functions             */
+    /*****************************************************/
+    template <typename T>
+    ProtoVector3<T> operator*(const ProtoMatrix3<T>& lhs, const ProtoVector3<T>& rhs); // mult M*V
 
     template <class T>
     class ProtoMatrix3 {
     public:
         ProtoMatrix3<T>();
         ProtoMatrix3<T>(float mat3[9]);
+        ProtoMatrix3<T>(const Vec3f& axis0, const Vec3f& axis1, const Vec3f& axis2);
         void rotate(float theta, const Vec3f& axis, Vec3f& v);
         Vec3f getRotate(float theta, const Vec3f& axis, const Vec3f& vec);
         void transpose();
@@ -61,6 +71,20 @@ namespace ijg {
         for (int i = 0; i < 9; i++) {
             this->mat3[i] = mat3[i];
         }
+    }
+    
+    template <class T>
+    inline ProtoMatrix3<T>::ProtoMatrix3(const Vec3f& axis0, const Vec3f& axis1, const Vec3f& axis2){
+        // treat as column major (axes along columns)
+         mat3[0]= axis0.x;
+         mat3[1]= axis1.x;
+         mat3[2]= axis2.x;
+         mat3[3]= axis0.y;
+         mat3[4]= axis1.y;
+         mat3[5]= axis2.y;
+         mat3[6]= axis0.z;
+         mat3[7]= axis1.z;
+         mat3[8]= axis2.z;
     }
     
     template <class T>
@@ -118,7 +142,19 @@ namespace ijg {
         return temp;
     }
 
+    /*****************************************************/
+    /*         Non-Member Function implementation        */
+    /*****************************************************/
     
+    // add vecs
+    template <typename T>
+    inline ProtoVector3<T> operator*(const ProtoMatrix3<T>& lhs, const ProtoVector3<T>& rhs){
+        float x = lhs.mat3[0]*rhs.x + lhs.mat3[1]*rhs.y + lhs.mat3[2]*rhs.z;
+        float y = lhs.mat3[3]*rhs.x + lhs.mat3[4]*rhs.y + lhs.mat3[5]*rhs.z;
+        float z = lhs.mat3[6]*rhs.x + lhs.mat3[7]*rhs.y + lhs.mat3[8]*rhs.z;
+        return ProtoVector3<T>(x, y, z);
+    }
+
     
     
 #define ProtoMatrix3f ProtoMatrix3<float>

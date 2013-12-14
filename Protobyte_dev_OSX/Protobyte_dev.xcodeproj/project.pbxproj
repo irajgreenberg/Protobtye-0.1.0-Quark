@@ -12,9 +12,9 @@
 		2A2D426B181599E900D5E907 /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2D4266181599E900D5E907 /* sfml-network.framework */; };
 		2A2D426C181599E900D5E907 /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2D4267181599E900D5E907 /* sfml-system.framework */; };
 		2A2D426D181599E900D5E907 /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2D4268181599E900D5E907 /* sfml-window.framework */; };
+		2A4977041857915E0076089C /* ProtoGeosphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4977021857915E0076089C /* ProtoGeosphere.cpp */; };
 		2A7CDB4118343996003E8FD3 /* ProtoImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A7CDB4018343996003E8FD3 /* ProtoImage.cpp */; };
 		2A820D28181714AC00AEEE95 /* ProtoBaseApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A820D24181714AC00AEEE95 /* ProtoBaseApp.cpp */; };
-		2A820D2D181714F300AEEE95 /* ProtoPlasm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A820D2B181714F300AEEE95 /* ProtoPlasm.cpp */; };
 		2A9EA5F51818332800168827 /* App01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A9EA5F31818332800168827 /* App01.cpp */; };
 		2AD37972182D52C600A4C541 /* ProtoAnimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3792C182D52C600A4C541 /* ProtoAnimator.cpp */; };
 		2AD37973182D52C600A4C541 /* ProtoBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3792E182D52C600A4C541 /* ProtoBlock.cpp */; };
@@ -39,15 +39,21 @@
 		2AD3798A182D52C600A4C541 /* ProtoVerletSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3796C182D52C600A4C541 /* ProtoVerletSurface.cpp */; };
 		2AD3798B182D52C600A4C541 /* ProtoVertex3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3796E182D52C600A4C541 /* ProtoVertex3.cpp */; };
 		2AD3798C182D52C600A4C541 /* ProtoWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37970182D52C600A4C541 /* ProtoWorld.cpp */; };
+		2AD8DB1E1857C70C00333FE3 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A497700185782B50076089C /* libglfw3.a */; };
 		2AFD5BDB183D36ED009110AB /* ProtoVerletDome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD5BDA183D36ED009110AB /* ProtoVerletDome.cpp */; };
+		72117E01185A5A2600B6CBD5 /* ProtoCephalopod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72117DFF185A5A2600B6CBD5 /* ProtoCephalopod.cpp */; };
 		72135A34183B021500B45E63 /* phong.frag in Sources */ = {isa = PBXBuildFile; fileRef = 72135A32183B021500B45E63 /* phong.frag */; };
 		72135A35183B021500B45E63 /* phong.vert in Sources */ = {isa = PBXBuildFile; fileRef = 72135A33183B021500B45E63 /* phong.vert */; };
+		72136E781848371B0063CDDA /* ProtoPlasm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72136E761848371B0063CDDA /* ProtoPlasm.cpp */; };
 		72275D1918464F15000519E9 /* toon1.frag in Sources */ = {isa = PBXBuildFile; fileRef = 72275D1718464F15000519E9 /* toon1.frag */; };
 		72275D1A18464F15000519E9 /* toon1.vert in Sources */ = {isa = PBXBuildFile; fileRef = 72275D1818464F15000519E9 /* toon1.vert */; };
 		722DB7761817D76200A5A716 /* ProtoMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 722DB7751817D76200A5A716 /* ProtoMain.cpp */; };
 		7241A87C17BD63A300DBF38C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7241A87B17BD63A300DBF38C /* OpenGL.framework */; };
 		7241A87E17BD63AA00DBF38C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7241A87D17BD63AA00DBF38C /* GLUT.framework */; };
 		724B59AB1831D1F90098E5A1 /* ProtoVerletCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */; };
+		72A307C51847FB8000B2C071 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A307C41847FB8000B2C071 /* IOKit.framework */; };
+		72A307C71847FB8900B2C071 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A307C61847FB8900B2C071 /* Cocoa.framework */; };
+		72A307C91847FBE700B2C071 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A307C81847FBE700B2C071 /* CoreVideo.framework */; };
 		72E372F91835A77F001AE1B8 /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E372F81835A77F001AE1B8 /* libfreeimage.a */; };
 /* End PBXBuildFile section */
 
@@ -57,12 +63,13 @@
 		2A2D4266181599E900D5E907 /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "/Library/Frameworks/sfml-network.framework"; sourceTree = "<absolute>"; };
 		2A2D4267181599E900D5E907 /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "/Library/Frameworks/sfml-system.framework"; sourceTree = "<absolute>"; };
 		2A2D4268181599E900D5E907 /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "/Library/Frameworks/sfml-window.framework"; sourceTree = "<absolute>"; };
+		2A497700185782B50076089C /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = "../other_libs/glfw-3.0.3/build/src/libglfw3.a"; sourceTree = "<group>"; };
+		2A4977021857915E0076089C /* ProtoGeosphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoGeosphere.cpp; path = ../libProtobyte/ProtoGeosphere.cpp; sourceTree = "<group>"; };
+		2A4977031857915E0076089C /* ProtoGeosphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoGeosphere.h; path = ../libProtobyte/ProtoGeosphere.h; sourceTree = "<group>"; };
 		2A7CDB3F18343996003E8FD3 /* ProtoImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoImage.h; path = ../libProtobyte/ProtoImage.h; sourceTree = "<group>"; };
 		2A7CDB4018343996003E8FD3 /* ProtoImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoImage.cpp; path = ../libProtobyte/ProtoImage.cpp; sourceTree = "<group>"; };
 		2A820D24181714AC00AEEE95 /* ProtoBaseApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoBaseApp.cpp; path = app/ProtoBaseApp.cpp; sourceTree = "<group>"; };
 		2A820D26181714AC00AEEE95 /* ProtoBaseApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoBaseApp.h; path = app/ProtoBaseApp.h; sourceTree = "<group>"; };
-		2A820D2B181714F300AEEE95 /* ProtoPlasm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoPlasm.cpp; path = app/ProtoPlasm.cpp; sourceTree = "<group>"; };
-		2A820D2C181714F300AEEE95 /* ProtoPlasm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoPlasm.h; path = app/ProtoPlasm.h; sourceTree = "<group>"; };
 		2A9EA5F31818332800168827 /* App01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = App01.cpp; path = src/App01.cpp; sourceTree = "<group>"; };
 		2A9EA5F41818332800168827 /* App01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = App01.h; path = src/App01.h; sourceTree = "<group>"; };
 		2AD3792C182D52C600A4C541 /* ProtoAnimator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoAnimator.cpp; path = ../libProtobyte/ProtoAnimator.cpp; sourceTree = "<group>"; };
@@ -131,8 +138,12 @@
 		2AD37971182D52C600A4C541 /* ProtoWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoWorld.h; path = ../libProtobyte/ProtoWorld.h; sourceTree = "<group>"; };
 		2AFD5BD9183D36ED009110AB /* ProtoVerletDome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVerletDome.h; path = ../libProtobyte/ProtoVerletDome.h; sourceTree = "<group>"; };
 		2AFD5BDA183D36ED009110AB /* ProtoVerletDome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoVerletDome.cpp; path = ../libProtobyte/ProtoVerletDome.cpp; sourceTree = "<group>"; };
+		72117DFF185A5A2600B6CBD5 /* ProtoCephalopod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoCephalopod.cpp; path = ../libProtobyte/ProtoCephalopod.cpp; sourceTree = "<group>"; };
+		72117E00185A5A2600B6CBD5 /* ProtoCephalopod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoCephalopod.h; path = ../libProtobyte/ProtoCephalopod.h; sourceTree = "<group>"; };
 		72135A32183B021500B45E63 /* phong.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = phong.frag; path = build/Products/Debug/resources/shaders/phong.frag; sourceTree = SOURCE_ROOT; };
 		72135A33183B021500B45E63 /* phong.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = phong.vert; path = build/Products/Debug/resources/shaders/phong.vert; sourceTree = SOURCE_ROOT; };
+		72136E761848371B0063CDDA /* ProtoPlasm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoPlasm.cpp; path = app/ProtoPlasm.cpp; sourceTree = "<group>"; };
+		72136E771848371B0063CDDA /* ProtoPlasm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoPlasm.h; path = app/ProtoPlasm.h; sourceTree = "<group>"; };
 		72198DDD17BBDD68005AE9DA /* Protobyte_dev_v02 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Protobyte_dev_v02; sourceTree = BUILT_PRODUCTS_DIR; };
 		72275D1718464F15000519E9 /* toon1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = toon1.frag; path = build/Products/Debug/resources/shaders/toon1.frag; sourceTree = SOURCE_ROOT; };
 		72275D1818464F15000519E9 /* toon1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = toon1.vert; path = build/Products/Debug/resources/shaders/toon1.vert; sourceTree = SOURCE_ROOT; };
@@ -141,6 +152,9 @@
 		7241A87D17BD63AA00DBF38C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
 		724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoVerletCube.cpp; path = ../libProtobyte/ProtoVerletCube.cpp; sourceTree = "<group>"; };
 		724B59AA1831D1F90098E5A1 /* ProtoVerletCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVerletCube.h; path = ../libProtobyte/ProtoVerletCube.h; sourceTree = "<group>"; };
+		72A307C41847FB8000B2C071 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		72A307C61847FB8900B2C071 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		72A307C81847FBE700B2C071 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		72E372F81835A77F001AE1B8 /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = ../other_libs/FreeImage/libfreeimage.a; sourceTree = "<group>"; };
 		72E372FA1835A799001AE1B8 /* FreeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FreeImage.h; path = ../other_libs/FreeImage/FreeImage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +164,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD8DB1E1857C70C00333FE3 /* libglfw3.a in Frameworks */,
+				72A307C91847FBE700B2C071 /* CoreVideo.framework in Frameworks */,
+				72A307C71847FB8900B2C071 /* Cocoa.framework in Frameworks */,
+				72A307C51847FB8000B2C071 /* IOKit.framework in Frameworks */,
 				72E372F91835A77F001AE1B8 /* libfreeimage.a in Frameworks */,
 				2A2D4269181599E900D5E907 /* sfml-audio.framework in Frameworks */,
 				2A2D426A181599E900D5E907 /* sfml-graphics.framework in Frameworks */,
@@ -200,6 +218,8 @@
 				2AD3793F182D52C600A4C541 /* ProtoGeom3.cpp */,
 				2AD37940182D52C600A4C541 /* ProtoGeom3.h */,
 				2AD37942182D52C600A4C541 /* ProtoGeomSet.h */,
+				2A4977021857915E0076089C /* ProtoGeosphere.cpp */,
+				2A4977031857915E0076089C /* ProtoGeosphere.h */,
 				2AD37943182D52C600A4C541 /* ProtoGLInfo.h */,
 				2A7CDB4018343996003E8FD3 /* ProtoImage.cpp */,
 				2A7CDB3F18343996003E8FD3 /* ProtoImage.h */,
@@ -232,10 +252,10 @@
 				2AD37960182D52C600A4C541 /* ProtoTuple3.h */,
 				2AD37961182D52C600A4C541 /* ProtoUtility.cpp */,
 				2AD37962182D52C600A4C541 /* ProtoUtility.h */,
+				2AD37964182D52C600A4C541 /* ProtoVector2.h */,
 				2AD37966182D52C600A4C541 /* ProtoVector3.h */,
 				2AD37967182D52C600A4C541 /* ProtoVector4.h */,
 				2AD37968182D52C600A4C541 /* ProtoVerletBall.cpp */,
-				2AD37964182D52C600A4C541 /* ProtoVector2.h */,
 				2AD37969182D52C600A4C541 /* ProtoVerletBall.h */,
 				724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */,
 				724B59AA1831D1F90098E5A1 /* ProtoVerletCube.h */,
@@ -249,6 +269,8 @@
 				2AD3796F182D52C600A4C541 /* ProtoVertex3.h */,
 				2AD37970182D52C600A4C541 /* ProtoWorld.cpp */,
 				2AD37971182D52C600A4C541 /* ProtoWorld.h */,
+				72117DFF185A5A2600B6CBD5 /* ProtoCephalopod.cpp */,
+				72117E00185A5A2600B6CBD5 /* ProtoCephalopod.h */,
 			);
 			name = libProtobyte;
 			sourceTree = "<group>";
@@ -265,6 +287,10 @@
 		72198DD517BBDD68005AE9DA = {
 			isa = PBXGroup;
 			children = (
+				2A497700185782B50076089C /* libglfw3.a */,
+				72A307C81847FBE700B2C071 /* CoreVideo.framework */,
+				72A307C61847FB8900B2C071 /* Cocoa.framework */,
+				72A307C41847FB8000B2C071 /* IOKit.framework */,
 				2A9EA5F31818332800168827 /* App01.cpp */,
 				2A9EA5F41818332800168827 /* App01.h */,
 				72C18D8E1817D280003263D2 /* App */,
@@ -304,8 +330,8 @@
 				722DB7751817D76200A5A716 /* ProtoMain.cpp */,
 				2A820D24181714AC00AEEE95 /* ProtoBaseApp.cpp */,
 				2A820D26181714AC00AEEE95 /* ProtoBaseApp.h */,
-				2A820D2B181714F300AEEE95 /* ProtoPlasm.cpp */,
-				2A820D2C181714F300AEEE95 /* ProtoPlasm.h */,
+				72136E761848371B0063CDDA /* ProtoPlasm.cpp */,
+				72136E771848371B0063CDDA /* ProtoPlasm.h */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -364,16 +390,18 @@
 				2AD37985182D52C600A4C541 /* ProtoTube.cpp in Sources */,
 				2AD3797F182D52C600A4C541 /* ProtoShape3.cpp in Sources */,
 				2AD37988182D52C600A4C541 /* ProtoVerletBall.cpp in Sources */,
+				2A4977041857915E0076089C /* ProtoGeosphere.cpp in Sources */,
 				2AD37976182D52C600A4C541 /* ProtoFace3.cpp in Sources */,
 				2AD3797E182D52C600A4C541 /* ProtoShader.cpp in Sources */,
 				2AD3798B182D52C600A4C541 /* ProtoVertex3.cpp in Sources */,
 				2AD37980182D52C600A4C541 /* ProtoSphere.cpp in Sources */,
 				2A820D28181714AC00AEEE95 /* ProtoBaseApp.cpp in Sources */,
 				2AD3798C182D52C600A4C541 /* ProtoWorld.cpp in Sources */,
+				72117E01185A5A2600B6CBD5 /* ProtoCephalopod.cpp in Sources */,
+				72136E781848371B0063CDDA /* ProtoPlasm.cpp in Sources */,
 				724B59AB1831D1F90098E5A1 /* ProtoVerletCube.cpp in Sources */,
 				2AD37984182D52C600A4C541 /* ProtoTransformFunction.cpp in Sources */,
 				2AD37982182D52C600A4C541 /* ProtoTexture.cpp in Sources */,
-				2A820D2D181714F300AEEE95 /* ProtoPlasm.cpp in Sources */,
 				72275D1A18464F15000519E9 /* toon1.vert in Sources */,
 				2AD37972182D52C600A4C541 /* ProtoAnimator.cpp in Sources */,
 				2AFD5BDB183D36ED009110AB /* ProtoVerletDome.cpp in Sources */,
@@ -534,6 +562,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/33993405/Dropbox/ira_dev/Protobyte\\ 0.1.0\\ (Quark)/other_libs/FreeImage",
+					"/Users/33993405/Dropbox/ira_dev/glfw-3.0.3/build/src",
+					"/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/other_libs/glfw-3.0.3/build/src",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -546,7 +576,7 @@
 				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "/usr/local/include/ /Users/33993405/Dropbox/ira_dev/Protobyte\\ 0.1.0\\ (Quark)/other_libs/FreeImage";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/include/ /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/other_libs/glfw-3.0.3/include/ /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/other_libs/glm/glm";
 			};
 			name = Debug;
 		};
@@ -564,6 +594,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/33993405/Dropbox/ira_dev/Protobyte\\ 0.1.0\\ (Quark)/other_libs/FreeImage",
+					"/Users/33993405/Dropbox/ira_dev/glfw-3.0.3/build/src",
+					"/Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/other_libs/glfw-3.0.3/build/src",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -576,7 +608,7 @@
 				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "/usr/local/include/ /Users/33993405/Dropbox/ira_dev/Protobyte\\ 0.1.0\\ (Quark)/other_libs/FreeImage";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/include/ /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/other_libs/glfw-3.0.3/include/ /Users/ira/Dropbox/ira_dev/Protobyte_0.1.0_quark/other_libs/glm/glm";
 			};
 			name = Release;
 		};

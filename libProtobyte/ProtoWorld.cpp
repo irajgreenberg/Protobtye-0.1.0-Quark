@@ -333,7 +333,7 @@ void ProtoWorld::run() {
     
     //std::cout << "geoms = " << &geoms << std::endl;
     
-   // glMatrixMode(GL_MODELVIEW);
+   //glMatrixMode(GL_MODELVIEW);
     // uncomment glLoadIdentity to allow rotated but not animated state
     // glLoadIdentity();
     // world rot speed
@@ -347,14 +347,17 @@ void ProtoWorld::run() {
             glPushMatrix();
         {
             if (cameras.size()==0){
+              
                 std::unique_ptr<ProtoCamera> camera1(new ProtoCamera());
                 add(std::move(camera1));
-                cameras.at(0)->setViewPort(0, 0, canvasWidth, canvasHeight);
+                cameras.at(0)->setViewPort(0, 0, canvasWidth, canvasHeight); // mpt really needed
                 cameras.at(0)->setProjection(fovAngle, canvasWidth/canvasHeight, nearClipPlane, farClipPlane);
                 cameras.at(0)->project();
                 
                 // FIX THIS EVENTUALLY - hard coded 0 instead of using activeCamera ***********************************
             } else {
+//                std::cout << "canvasWidth = " << canvasWidth << std::endl;
+//                std::cout << "canvasHeight = " << canvasHeight << std::endl;
                 cameras.at(0)->setViewPort(0, 0, canvasWidth, canvasHeight);
                 cameras.at(0)->project();
             }

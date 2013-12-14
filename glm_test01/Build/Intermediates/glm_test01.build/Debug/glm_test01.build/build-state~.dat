@@ -1,0 +1,165 @@
+Tglm_test01
+v6
+r1
+cCheck dependencies
+cCompileC Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Products/Debug/glm_test01 normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c000000005282527700000000000000AA
+t1384272503
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000052784A11000000000000044C
+t1383614993
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000052784A1100000000000001DB
+t1383614993
+s475
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c0000000052784A11000000000000253C
+t1383614993
+s9532
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c0000000052784A120000000000017D00
+t1383614994
+s97536
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework/IOKit
+c0000000052784A120000000000044270
+t1383614994
+s279152
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+c0000000052784A12000000000000BB7C
+t1383614994
+s47996
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/glm_test01.LinkFileList
+c00000000529AA3C5000000000000009A
+t1385866181
+s154
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o
+t1385866182
+s68968
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Products/Debug/glm_test01
+t2
+s0
+
+N/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp
+c00000000529AA2B80000000000000111
+t1385865912
+s273
+
+N/Users/33993405/Dropbox/ira_dev/glfw-3.0.3/build/src/libglfw3.a
+c000000005297625A0000000000025980
+t1385652826
+s153984
+
+CBuild AST from /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesbedebd45db4ab841^3142c045db4ab841^---0#1#1#--18"Check dependencies36"341DDE72-86CA-400D-BC76-EF958DF39EA9-
+
+CCompileC Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s407558981.752075
+e407558982.323761
+r1
+xCompileC
+xBuild/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o
+x/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp179"CompileC Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o glm_test01/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler74b2c045db4ab841^e7e35246db4ab841^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp0000000000000000^3282"CompileC Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o glm_test01/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/glm_test01-generated-files.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/glm_test01-own-target-headers.hmap -I/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/glm_test01-all-target-headers.hmap -iquote /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/glm_test01-project-headers.hmap -iquote/Users/33993405/Dropbox/ira_dev/glfw-3.0.3/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/DerivedSources/x86_64 -I/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/DerivedSources -F/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Products/Debug -MMD -MT dependencies -MF /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.dia -c /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/glm_test01/main.cpp -o /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o36"E9A73776-7DA2-4F03-BDB2-D9C386437166-
+b42B9622E-8B6E-45B6-A90F-357A1EA10326
+
+CLd /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Products/Debug/glm_test01 normal x86_64
+s407558982.325370
+e407558982.476312
+r1
+xLd
+x/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Products/Debug/glm_test01
+xnormal
+xx86_64
+d/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/glm_test01.LinkFileList
+d/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/main.o
+d/Users/33993405/Dropbox/ira_dev/glfw-3.0.3/build/src/libglfw3.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework/IOKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.A.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Link /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Products/Debug/glm_test0148"Ld Build/Products/Debug/glm_test01 normal x86_6458595346db4ab841^80f07946db4ab841^---0#0#1#--1230"Ld Build/Products/Debug/glm_test01 normal x86_64    cd /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01    setenv MACOSX_DEPLOYMENT_TARGET 10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Products/Debug -L/Users/33993405/Dropbox/ira_dev/glfw-3.0.3/build/src -F/Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Products/Debug -filelist /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/glm_test01.LinkFileList -mmacosx-version-min=10.9 -stdlib=libc++ -lglfw3 -framework Cocoa -framework CoreVideo -framework IOKit -framework OpenGL -Xlinker -dependency_info -Xlinker /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Intermediates/glm_test01.build/Debug/glm_test01.build/Objects-normal/x86_64/glm_test01_dependency_info.dat -o /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/glm_test01/Build/Products/Debug/glm_test0136"4CE066F7-5BB5-4643-B3A9-B059A2A8406F-
+b42B9622E-8B6E-45B6-A90F-357A1EA10326
+
