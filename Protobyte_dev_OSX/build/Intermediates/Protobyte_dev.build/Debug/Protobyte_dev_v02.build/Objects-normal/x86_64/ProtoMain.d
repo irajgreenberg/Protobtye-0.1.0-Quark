@@ -99,12 +99,6 @@ dependencies: \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoSphere.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoTube.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoTransformFunction.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/src/App01.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoVerletCube.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVerletSurface.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoImage.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVerletStick.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVerletBall.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoGeosphere.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/src/Cephalopod01.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoCephalopod.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoMatrix3.h
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoGeoSphere.h

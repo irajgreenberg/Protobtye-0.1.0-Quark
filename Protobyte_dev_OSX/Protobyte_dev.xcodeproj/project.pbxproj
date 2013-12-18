@@ -51,6 +51,7 @@
 		7241A87C17BD63A300DBF38C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7241A87B17BD63A300DBF38C /* OpenGL.framework */; };
 		7241A87E17BD63AA00DBF38C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7241A87D17BD63AA00DBF38C /* GLUT.framework */; };
 		724B59AB1831D1F90098E5A1 /* ProtoVerletCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */; };
+		725E8AE1185D00D4007B8781 /* Cephalopod01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 725E8ADF185D00D4007B8781 /* Cephalopod01.cpp */; };
 		72A307C51847FB8000B2C071 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A307C41847FB8000B2C071 /* IOKit.framework */; };
 		72A307C71847FB8900B2C071 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A307C61847FB8900B2C071 /* Cocoa.framework */; };
 		72A307C91847FBE700B2C071 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A307C81847FBE700B2C071 /* CoreVideo.framework */; };
@@ -152,6 +153,9 @@
 		7241A87D17BD63AA00DBF38C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
 		724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoVerletCube.cpp; path = ../libProtobyte/ProtoVerletCube.cpp; sourceTree = "<group>"; };
 		724B59AA1831D1F90098E5A1 /* ProtoVerletCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVerletCube.h; path = ../libProtobyte/ProtoVerletCube.h; sourceTree = "<group>"; };
+		725E8ADF185D00D4007B8781 /* Cephalopod01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cephalopod01.cpp; path = src/Cephalopod01.cpp; sourceTree = "<group>"; };
+		725E8AE0185D00D4007B8781 /* Cephalopod01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cephalopod01.h; path = src/Cephalopod01.h; sourceTree = "<group>"; };
+		725E8AE3185D05BC007B8781 /* ProtoMatrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoMatrix4.h; path = ../libProtobyte/ProtoMatrix4.h; sourceTree = "<group>"; };
 		72A307C41847FB8000B2C071 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		72A307C61847FB8900B2C071 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		72A307C81847FBE700B2C071 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -204,6 +208,8 @@
 				2AD37930182D52C600A4C541 /* ProtoBounds.h */,
 				2AD37931182D52C600A4C541 /* ProtoCamera.cpp */,
 				2AD37932182D52C600A4C541 /* ProtoCamera.h */,
+				72117DFF185A5A2600B6CBD5 /* ProtoCephalopod.cpp */,
+				72117E00185A5A2600B6CBD5 /* ProtoCephalopod.h */,
 				2AD37933182D52C600A4C541 /* ProtoColor3.h */,
 				2AD37934182D52C600A4C541 /* ProtoColor4.h */,
 				2AD37935182D52C600A4C541 /* ProtoConstants.h */,
@@ -229,6 +235,7 @@
 				2AD37947182D52C600A4C541 /* ProtoMath.h */,
 				2AD37948182D52C600A4C541 /* ProtoMatrix2.h */,
 				2AD37949182D52C600A4C541 /* ProtoMatrix3.h */,
+				725E8AE3185D05BC007B8781 /* ProtoMatrix4.h */,
 				2AD3794A182D52C600A4C541 /* ProtoPoint2.h */,
 				2AD3794B182D52C600A4C541 /* ProtoPoint3.h */,
 				2AD3794C182D52C600A4C541 /* ProtoProtoUtils.h */,
@@ -269,10 +276,19 @@
 				2AD3796F182D52C600A4C541 /* ProtoVertex3.h */,
 				2AD37970182D52C600A4C541 /* ProtoWorld.cpp */,
 				2AD37971182D52C600A4C541 /* ProtoWorld.h */,
-				72117DFF185A5A2600B6CBD5 /* ProtoCephalopod.cpp */,
-				72117E00185A5A2600B6CBD5 /* ProtoCephalopod.h */,
 			);
 			name = libProtobyte;
+			sourceTree = "<group>";
+		};
+		7201C1FE185CFCAD00873A04 /* myApps */ = {
+			isa = PBXGroup;
+			children = (
+				725E8ADF185D00D4007B8781 /* Cephalopod01.cpp */,
+				725E8AE0185D00D4007B8781 /* Cephalopod01.h */,
+				2A9EA5F31818332800168827 /* App01.cpp */,
+				2A9EA5F41818332800168827 /* App01.h */,
+			);
+			name = myApps;
 			sourceTree = "<group>";
 		};
 		72135A39183B181400B45E63 /* FreeImage */ = {
@@ -287,12 +303,10 @@
 		72198DD517BBDD68005AE9DA = {
 			isa = PBXGroup;
 			children = (
-				2A497700185782B50076089C /* libglfw3.a */,
+				7201C1FE185CFCAD00873A04 /* myApps */,
 				72A307C81847FBE700B2C071 /* CoreVideo.framework */,
 				72A307C61847FB8900B2C071 /* Cocoa.framework */,
 				72A307C41847FB8000B2C071 /* IOKit.framework */,
-				2A9EA5F31818332800168827 /* App01.cpp */,
-				2A9EA5F41818332800168827 /* App01.h */,
 				72C18D8E1817D280003263D2 /* App */,
 				2A990B82181835A3005DD10E /* libProtobyte */,
 				722DB7771817D90600A5A716 /* Other Libs */,
@@ -312,6 +326,7 @@
 		722DB7771817D90600A5A716 /* Other Libs */ = {
 			isa = PBXGroup;
 			children = (
+				2A497700185782B50076089C /* libglfw3.a */,
 				72135A39183B181400B45E63 /* FreeImage */,
 				2A2D4264181599E900D5E907 /* sfml-audio.framework */,
 				2A2D4265181599E900D5E907 /* sfml-graphics.framework */,
@@ -403,6 +418,7 @@
 				2AD37984182D52C600A4C541 /* ProtoTransformFunction.cpp in Sources */,
 				2AD37982182D52C600A4C541 /* ProtoTexture.cpp in Sources */,
 				72275D1A18464F15000519E9 /* toon1.vert in Sources */,
+				725E8AE1185D00D4007B8781 /* Cephalopod01.cpp in Sources */,
 				2AD37972182D52C600A4C541 /* ProtoAnimator.cpp in Sources */,
 				2AFD5BDB183D36ED009110AB /* ProtoVerletDome.cpp in Sources */,
 				2AD37975182D52C600A4C541 /* ProtoCurve3.cpp in Sources */,

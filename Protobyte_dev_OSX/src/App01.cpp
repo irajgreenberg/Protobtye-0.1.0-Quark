@@ -12,8 +12,10 @@
 
 using namespace ijg;
 
-float x = 0;
-float tx = 0;
+namespace {
+    float x = 0;
+    float tx = 0;
+}
 
 void App01::init(){
     

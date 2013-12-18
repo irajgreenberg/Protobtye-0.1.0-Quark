@@ -1,8 +1,8 @@
 dependencies: \
-  /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/libProtobyte/ProtoLight.cpp \
-  /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/libProtobyte/ProtoLight.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/libProtobyte/ProtoColor4.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/libProtobyte/ProtoVector3.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoLight.cpp \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoLight.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoColor4.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoVector3.h \
   /usr/local/include/SFML/OpenGL.hpp /usr/local/include/SFML/Config.hpp \
-  /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/libProtobyte/ProtoMath.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte\ 0.1.0\ (Quark)/libProtobyte/ProtoPoint3.h
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoMath.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoPoint3.h

@@ -45,7 +45,7 @@ ProtoTube::ProtoTube() {
 ProtoTube::ProtoTube(const ProtoSpline3& path, float radius, int crossSectionDetail, bool isClosed) :
 ProtoGeom3(Vec3f(0, 0, 0), Vec3f(0, 0, 0), ProtoDimension3f(1, 1, 1), ProtoColor4f(.5, .5, .5, 1.0)), path(path), radius(radius), crossSectionDetail(crossSectionDetail), isClosed(isClosed) {
 
-    std::cout << "ProtoTube CSTR 1" << std::endl;
+   // std::cout << "ProtoTube CSTR 1" << std::endl;
     // no transform function
     setIsTransformFunction(false);
     perturbation.x = perturbation.y = perturbation.z = 0.0;
@@ -72,7 +72,7 @@ ProtoGeom3(Vec3f(0, 0, 0), Vec3f(0, 0, 0), ProtoDimension3f(1, 1, 1), ProtoColor
 ProtoTube::ProtoTube(const ProtoSpline3& path, float radius, int crossSectionDetail, const ProtoTransformFunction& transFuncObj, bool isClosed) :
 ProtoGeom3(Vec3f(0, 0, 0), Vec3f(0, 0, 0), ProtoDimension3f(1, 1, 1), ProtoColor4f(.5, .5, .5, 1.0)), path(path), radius(radius), crossSectionDetail(crossSectionDetail), transFuncObj(transFuncObj), isClosed(isClosed) {
 
-    std::cout << "ProtoTube CSTR 2" << std::endl;
+    //std::cout << "ProtoTube CSTR 2" << std::endl;
     setIsTransformFunction(true);
     perturbation.x = perturbation.y = perturbation.z = 0.0;
 
@@ -301,7 +301,7 @@ ProtoTube::ProtoTube(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3f&
 }
 
 ProtoTube::~ProtoTube() {
-    std::cout << "in ProtoTube destructor" << std::endl;
+    //std::cout << "in ProtoTube destructor" << std::endl;
 }
 
 // overrides method in base class
