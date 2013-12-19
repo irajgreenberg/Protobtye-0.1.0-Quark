@@ -101,4 +101,7 @@ dependencies: \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoTube.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoTransformFunction.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoCephalopod.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoGeoSphere.h
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoGeoSphere.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoMatrix3.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoMatrix4.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVector4.h

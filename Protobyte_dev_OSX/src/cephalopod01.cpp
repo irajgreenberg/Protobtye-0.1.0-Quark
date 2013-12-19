@@ -29,6 +29,29 @@ void Cephalopod01::init(){
     light0->on();
     
     cephalopod = ProtoCephalopod(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(60, 60, 60),ProtoColor4f(.9, .4, .7, 1), 8);
+    
+    float vals3[] = {0, .1, .2, .3, .4, .5, .6, .7, .8};
+    ProtoMatrix3<float> mat01(vals3);
+    std::cout << "mat01.getRow(0) = " << mat01.getColumn(0) << std::endl;
+    std::cout << "mat01.getRow(1) = " << mat01.getRow(1) << std::endl;
+    std::cout << "mat01.getRow(2) = " << mat01.getRow(2) << std::endl;
+    std::cout << "mat01 = \n" << mat01 << std::endl;
+    
+    
+    float vals4[] = {0, 2.1, 2.2, .3, .4, 3.5, .6, .7, .8 , .9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5};
+    ProtoMatrix4<float> mat02(vals4);
+    std::cout << "mat02.getRow(0) = " << mat02.getRow(0) << std::endl;
+    std::cout << "mat02.getRow(1) = " << mat02.getRow(1) << std::endl;
+    std::cout << "mat02.getRow(2) = " << mat02.getRow(2) << std::endl;
+    std::cout << "mat02.getRow(3) = " << mat02.getRow(3) << std::endl;
+    std::cout << "mat02 = \n" << mat02 << std::endl;
+    
+    std::cout << "mat02.getColumn(0) = " << mat02.getColumn(0) << std::endl;
+    std::cout << "mat02.getColumn(1) = " << mat02.getColumn(1) << std::endl;
+    std::cout << "mat02.getColumn(2) = " << mat02.getColumn(2) << std::endl;
+    std::cout << "mat02.getColumn(3) = " << mat02.getColumn(3) << std::endl;
+    
+    std::cout << "mat01.getDeterminent = " << mat02.getDeterminent() << std::endl;
 
 }
 

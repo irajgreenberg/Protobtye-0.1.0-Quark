@@ -307,7 +307,7 @@
 				72A307C81847FBE700B2C071 /* CoreVideo.framework */,
 				72A307C61847FB8900B2C071 /* Cocoa.framework */,
 				72A307C41847FB8000B2C071 /* IOKit.framework */,
-				72C18D8E1817D280003263D2 /* App */,
+				72C18D8E1817D280003263D2 /* ProtoApp */,
 				2A990B82181835A3005DD10E /* libProtobyte */,
 				722DB7771817D90600A5A716 /* Other Libs */,
 				2A990B6618183599005DD10E /* Resources */,
@@ -339,7 +339,7 @@
 			name = "Other Libs";
 			sourceTree = "<group>";
 		};
-		72C18D8E1817D280003263D2 /* App */ = {
+		72C18D8E1817D280003263D2 /* ProtoApp */ = {
 			isa = PBXGroup;
 			children = (
 				722DB7751817D76200A5A716 /* ProtoMain.cpp */,
@@ -348,7 +348,7 @@
 				72136E761848371B0063CDDA /* ProtoPlasm.cpp */,
 				72136E771848371B0063CDDA /* ProtoPlasm.h */,
 			);
-			name = App;
+			name = ProtoApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -106,6 +106,10 @@ namespace ijg {
     class ProtoMatrix4 {
         
     public:
+        
+        template <class U>
+        friend std::ostream& operator<< (std::ostream& out, const ProtoMatrix4<U>& mat);
+        
         enum MajorOrder {
             ROW_MAJOR,
             COLUMN_MAJOR
@@ -116,6 +120,7 @@ namespace ijg {
         // array vals should be packed: xyzwxyzw... for M*V
         // transpose if you need xxxxyyyy... for V*M.
         ProtoMatrix4<T>();
+        ProtoMatrix4<T>(T m0, T m1, T m2, T m3, T m4, T m5, T m6, T m7, T m8, T m9, T m10, T m11, T m12, T m13, T m14, T m15, MajorOrder order=COLUMN_MAJOR);
         ProtoMatrix4<T>(T data[16], MajorOrder order=COLUMN_MAJOR);
         ProtoMatrix4<T>(T data[9], const ProtoVector4<T>& translation, MajorOrder order=COLUMN_MAJOR);
         ProtoMatrix4<T>(const ProtoMatrix3<T>&, const ProtoVector4<T>& translation, MajorOrder order=COLUMN_MAJOR);
@@ -129,12 +134,10 @@ namespace ijg {
         void identity();
         void transpose();
         T getDeterminent() const;
-        ProtoVector4<T>& getRow(int index) const;
-        ProtoVector4<T>& getColumn(int index) const;
+        ProtoVector4<T> getRow(int index) const;
+        ProtoVector4<T> getColumn(int index) const;
         void setRow(int index, const ProtoVector4<T>& row);
         void setColumn(int index, const ProtoVector4<T>& column);
-        
-        
         
         
         /*************************************************/
@@ -155,7 +158,7 @@ namespace ijg {
         float data2D[4][4];
         void init();
         void determinent();
-        T determ; // determinate
+        T determ; // determinent
         MajorOrder order;
         
     };
@@ -163,6 +166,16 @@ namespace ijg {
     /**************************************/
     /*       END Class Declaration        */
     /**************************************/
+    
+    template <class T>
+    inline std::ostream& operator<< (std::ostream& out, const ProtoMatrix4<T>& mat){
+        out << "| " << mat.data[0] << " " << mat.data[1] << " " << mat.data[2] << " " << mat.data[3] <<" | \n" <<
+        "| " << mat.data[4] << " " << mat.data[5] << " " << mat.data[6] << " " << mat.data[7] <<" | \n" <<
+        "| " << mat.data[8] << " " << mat.data[9] << " " << mat.data[10] << " " << mat.data[11] <<" | \n" <<
+        "| " << mat.data[12] << " " << mat.data[13] << " " << mat.data[14] << " " << mat.data[15] <<" | \n";
+        return out;
+    }
+
     
      /*************************************************/
     /*                  Constructors                  */
@@ -264,13 +277,24 @@ namespace ijg {
         init();
     }
     
+    template <class T>
+    inline ProtoMatrix4<T>::ProtoMatrix4(T m0, T m1, T m2, T m3, T m4, T m5, T m6, T m7, T m8, T m9, T m10, T m11, T m12, T m13, T m14, T m15, MajorOrder order):
+    order(order) {
+        data[0]=m0;  data[1]=m1;  data[2]=m2;  data[3]=m3;
+        data[4]=m4;  data[5]=m5;  data[6]=m6;  data[7]=m7;
+        data[8]=m8;  data[9]=m9;  data[10]=m10;  data[11]=m11;
+        data[12]=m12;  data[13]=m13;  data[14]=m14;  data[15]=m15;
+        
+        init();
+    }
+    
     // copy cstr
     template <class T>
     inline ProtoMatrix4<T>::ProtoMatrix4(const ProtoMatrix4<T>& mat){
         for(int i=0; i<16; ++i){
             data[i] = mat.data[i];
         }
-        T determ = mat.determ; // determinate
+        T determ = mat.determ; // determinent
         order = mat.order;
     }
     
@@ -281,7 +305,7 @@ namespace ijg {
             for(int i=0; i<16; ++i){
                 data[i] = mat.data[i];
             }
-            T determ = mat.determ; // determinate
+            T determ = mat.determ; // determinent
             order = mat.order;
         }
         return *this;
@@ -324,10 +348,10 @@ namespace ijg {
         ProtoMatrix3<T> mat3B(data[4], data[6], data[7], data[8], data[10], data[11], data[12], data[14], data[15]);
         ProtoMatrix3<T> mat3C(data[4], data[5], data[7], data[8], data[9], data[11], data[12], data[13], data[15]);
         ProtoMatrix3<T> mat3D(data[4], data[5], data[6], data[8], data[9], data[10], data[12], data[13], data[14]);
-        determ = data[0] * mat3A.determinate() -
-                 data[1] * mat3A.determinate() +
-                 data[2] * mat3A.determinate() -
-                 data[3] * mat3A.determinate();
+        determ = data[0] * mat3A.getDeterminent() -
+                 data[1] * mat3B.getDeterminent() +
+                 data[2] * mat3C.getDeterminent() -
+                 data[3] * mat3D.getDeterminent();
     }
     
     template <class T>
@@ -364,12 +388,12 @@ namespace ijg {
     }
     
     template <class T>
-    inline ProtoVector4<T> ProtoMatrix3<T>::getRow(int index) const {
+    inline ProtoVector4<T> ProtoMatrix4<T>::getRow(int index) const {
         return ProtoVector4<T>(data[index*4], data[index*4+1], data[index*4+2], data[index*4+3]);
     }
     
     template <class T>
-    inline ProtoVector4<T> ProtoMatrix3<T>::getColumn(int index) const {
+    inline ProtoVector4<T> ProtoMatrix4<T>::getColumn(int index) const {
         return ProtoVector4<T>(data[index+0], data[index+4], data[index+8], data[index+12]);
     }
     
@@ -507,9 +531,9 @@ namespace ijg {
     inline ProtoMatrix4<T> operator*(const ProtoMatrix4<T>& lhs, T s) {
         ProtoMatrix4<T> tempMat(T arr[16]);
         for(int i=0; i<16; ++i){
-            tempMt.arr[i] = lhs[i]*s;
+            tempMat.arr[i] = lhs[i]*s;
         }
-        return tempMt;
+        return tempMat;
     }
     
     // Sclr*M4

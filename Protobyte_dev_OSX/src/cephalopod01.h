@@ -12,6 +12,8 @@
 #include "ProtoBaseApp.h"
 #include <iostream>
 #include "ProtoCephalopod.h"
+#include "ProtoMatrix3.h"
+#include "ProtoMatrix4.h"
 
 
 using namespace ijg;

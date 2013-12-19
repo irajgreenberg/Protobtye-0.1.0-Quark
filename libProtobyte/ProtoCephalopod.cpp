@@ -44,7 +44,7 @@ ProtoShape3(pos, rot, size, col4), tentacleCount(tentacleCount)
 }
 
 void ProtoCephalopod::init(){
-    body = ProtoGeoSphere(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(60, 60, 60), ProtoColor4f(ProtoMath::random(.7, 1.0), ProtoMath::random(.7, 1.0), ProtoMath::random(.7, 1.0), 1), 1, "shipPlate.jpg");
+    body = ProtoGeoSphere(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(5, 5, 5), ProtoColor4f(ProtoMath::random(.7, 1.0), ProtoMath::random(.7, 1.0), ProtoMath::random(.7, 1.0), 1), 1, "shipPlate.jpg");
     
     for(size_t i=0; i<tentacleCount; ++i){
         const int pathCount = 30;
@@ -66,7 +66,7 @@ void ProtoCephalopod::init(){
 }
 
 void ProtoCephalopod::display(){
-    //body.display();
+    body.display();
     for(size_t i=0; i<tentacleCount; ++i){
         glPushMatrix();
         glTranslatef(offsets.at(i).x, offsets.at(i).y, offsets.at(i).z);
