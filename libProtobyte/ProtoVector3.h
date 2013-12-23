@@ -26,6 +26,7 @@
 #ifndef PROTO_VECTOR3_H
 #define PROTO_VECTOR3_H
 
+#include "ProtoCore.h"
 #include <SFML/OpenGL.hpp>
 #include <string.h>
 #include <iostream>
@@ -160,7 +161,7 @@ namespace ijg {
         T angleBetween(const ProtoVector3<T>& v) const;
         T dot(const ProtoVector3<T>& v) const;
         T dist(const ProtoVector3<T>& v) const;
-        ProtoVector3<T>& cross(const ProtoVector3<T>& v);
+        ProtoVector3<T> cross(const ProtoVector3<T>& v) const;
         ProtoVector3<T>& rotateX(T theta);
         ProtoVector3<T>& rotateY(T theta);
         ProtoVector3<T>& rotateZ(T theta);
@@ -431,13 +432,15 @@ namespace ijg {
         return x*v.x + y*v.y + z*v.z;
     }
     
+    // const version
     template <class T>
-    inline ProtoVector3<T>& ProtoVector3<T>::cross(const ProtoVector3<T>& v){
+    inline ProtoVector3<T> ProtoVector3<T>::cross(const ProtoVector3<T>& v) const{
         T cx = y * v.z - z * v.y;
         T cy = z * v.x - x * v.z;
         T cz = x * v.y - y * v.x;
         
-        return (*this)(cx, cy, cz);
+        ProtoVector3 temp(cx, cy, cz);
+        return temp;
     }
     
     template <class T>

@@ -22,6 +22,8 @@
 #include "../../libProtobyte/ProtoTube.h"
 #include "../../libProtobyte/ProtoLight.h"
 
+#include "ProtoCore.h"
+
 // preproc dir for relative resource loading
 // from http://stackoverflow.com/questions/143174/how-do-i-get-the-directory-that-a-program-is-running-from
 #include <stdio.h>  /* defines FILENAME_MAX */

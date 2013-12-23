@@ -29,13 +29,19 @@
 #define	PROTO_MATRIX3_H
 
 #include "ProtoVector3.h"
+#include <iomanip>
 #include <cassert>
 
 
 namespace ijg {
     
+    
+    
     // forward declaration for non-member ops
     template <class T> class ProtoMatrix3;
+    
+    typedef ProtoMatrix3<float> mat3f;
+    typedef ProtoMatrix3<float> mat3;
     
     /*****************************************************/
     /*            Non-Member Ops & Functions             */
@@ -118,7 +124,7 @@ namespace ijg {
         // array vals should be packed: xyzwxyzw... for M*V
         // transpose if you need xxxxyyyy... for V*M.
         ProtoMatrix3<T>();
-        ProtoMatrix3<T>(T m0, T m1, T m2, T m3, T m4, T m5, T m6, T m7, T m8, MajorOrder order=COLUMN_MAJOR);
+        ProtoMatrix3<T>(T d0, T d1, T d2, T d3, T d4, T d5, T d6, T d7, T d8, MajorOrder order=COLUMN_MAJOR);
         ProtoMatrix3<T>(T data[9], MajorOrder order=COLUMN_MAJOR);
         ProtoMatrix3<T>(const ProtoVector3<T>& row0, const ProtoVector3<T>& row1, const ProtoVector3<T>& row2, MajorOrder order=COLUMN_MAJOR);
         ProtoMatrix3<T>(const ProtoVector3<T> rows[3], MajorOrder order=COLUMN_MAJOR);
@@ -128,35 +134,35 @@ namespace ijg {
         ProtoMatrix3<T>(const ProtoMatrix3<T>& mat);
         ProtoMatrix3<T>& operator=(const ProtoMatrix3<T>& mat);
         
+        // gen matrix functions
         void identity();
         void transpose();
-        T getDeterminent() const;
+        T determinent() const;
         ProtoVector3<T> getRow(int index) const;
         ProtoVector3<T> getColumn(int index) const;
         void setRow(int index, const ProtoVector3<T>& row);
         void setColumn(int index, const ProtoVector3<T>& column);
+        
+        // transfomations
         ProtoVector3<T> getRotate(float theta, const ProtoVector3<T>& axis, const ProtoVector3<T>& vec);
     
         
         /*************************************************/
         /*            Member Ops & Functions             */
         /*************************************************/
-        ProtoMatrix3<T>& operator*=(const ProtoMatrix3<T>& m4);
+        ProtoMatrix3<T>& operator*=(const ProtoMatrix3<T>& m3);
         ProtoMatrix3<T>& operator*=(T s);
         ProtoMatrix3<T>& operator/=(T s);
-        ProtoMatrix3<T>& operator+=(const ProtoMatrix3<T>& m4);
-        ProtoMatrix3<T>& operator-=(const ProtoMatrix3<T>& m4);
+        ProtoMatrix3<T>& operator+=(const ProtoMatrix3<T>& m3);
+        ProtoMatrix3<T>& operator-=(const ProtoMatrix3<T>& m3);
         
         T& operator[](unsigned index);
+        const T& operator[](unsigned index) const;
         T&	operator() ( int r, int c );
         
         
     private:
         float data[9];
-        float data2D[3][3];
-        void init();
-        void determinent();
-        T determ; // determinent
         MajorOrder order;
         
     };
@@ -168,9 +174,11 @@ namespace ijg {
     
     template <class T>
     inline std::ostream& operator<< (std::ostream& out, const ProtoMatrix3<T>& mat){
-    out << "| " << mat.data[0] << " " << mat.data[1] << " " << mat.data[2] <<" | \n" <<
-                  "| " << mat.data[3] << " " << mat.data[4] << " " << mat.data[5] <<" | \n" <<
-                  "| " << mat.data[6] << " " << mat.data[7] << " " << mat.data[8] <<" | \n";
+    
+        out << std::setprecision( 4 ) <<
+                  std::fixed << std::setw(4) << "| " << mat.data[0] << "  " << mat.data[1] << "  " << mat.data[2] <<" | \n" <<
+                  std::fixed << std::setw(4) << "| " << mat.data[3] << "  " << mat.data[4] << "  " << mat.data[5] <<" | \n" <<
+                  std::fixed << std::setw(4) << "| " << mat.data[6] << "  " << mat.data[7] << "  " << mat.data[8] <<" | \n";
         return out;
     }
     
@@ -183,8 +191,6 @@ namespace ijg {
     inline ProtoMatrix3<T>::ProtoMatrix3() {
         // set default to identity
         identity();
-        
-        init();
     }
     
     template <class T>
@@ -194,8 +200,6 @@ namespace ijg {
         for(int i=0; i<9; ++i){
             this->data[i] = data[i]; // can I do this using default asignment op this.data = data without copying pointer or overloading =?
         }
-        
-        init();
     }
     
     template <class T>
@@ -204,8 +208,6 @@ namespace ijg {
         setRow(0, row0);
         setRow(1, row1);
         setRow(2, row2);
-        
-        init();
     }
     
     template <class T>
@@ -214,18 +216,14 @@ namespace ijg {
         setRow(0, rows[0]);
         setRow(1, rows[1]);
         setRow(2, rows[2]);
-        
-        init();
     }
     
     template <class T>
-    inline ProtoMatrix3<T>::ProtoMatrix3(T m0, T m1, T m2, T m3, T m4, T m5, T m6, T m7, T m8, MajorOrder order):
+    inline ProtoMatrix3<T>::ProtoMatrix3(T d0, T d1, T d2, T d3, T d4, T d5, T d6, T d7, T d8, MajorOrder order):
     order(order) {
-        data[0]=m0;  data[1]=m1;  data[2]=m2;
-        data[3]=m3;  data[4]=m4;  data[5]=m5;
-        data[6]=m6;  data[7]=m7;  data[8]=m8;
-        
-        init();
+        data[0]=d0;  data[1]=d1;  data[2]=d2;
+        data[3]=d3;  data[4]=d4;  data[5]=d5;
+        data[6]=d6;  data[7]=d7;  data[8]=d8;
     }
     
     // copy cstr
@@ -234,7 +232,6 @@ namespace ijg {
         for(int i=0; i<9; ++i){
             data[i] = mat.data[i];
         }
-        T determ = mat.determ; // determinent
         order = mat.order;
     }
     
@@ -245,7 +242,6 @@ namespace ijg {
             for(int i=0; i<9; ++i){
                 data[i] = mat.data[i];
             }
-            T determ = mat.determ; // determinent
             order = mat.order;
         }
         return *this;
@@ -260,11 +256,6 @@ namespace ijg {
     /*****************************************************/
     /*                  Member Functions                 */
     /*****************************************************/
-    
-    template <class T>
-    void ProtoMatrix3<T>::init(){
-        determinent();
-    }
     
     template <class T>
     inline void ProtoMatrix3<T>::transpose() {
@@ -282,27 +273,22 @@ namespace ijg {
     // Laplace expansion method
     // from http://www.mathsisfun.com/algebra/matrix-determinant.html
     template <class T>
-    inline void ProtoMatrix3<T>::determinent() {
-        determ = data[0]*(data[4]*data[8]-data[5]*data[7]) - data[1]*(data[3]*data[8]-data[5]*data[6]) + data[2]*(data[3]*data[7]-data[4]*data[6]);
+    inline T ProtoMatrix3<T>::determinent() const {
+        T d = data[0]*(data[4]*data[8]-data[5]*data[7]) - data[1]*(data[3]*data[8]-data[5]*data[6]) + data[2]*(data[3]*data[7]-data[4]*data[6]);
+        return d;
     }
     
     template <class T>
     inline void ProtoMatrix3<T>::identity() {
         // set 1's along diagonal
-        for (int i =0; i <16; i++) {
-            if (i % 5 == 0) {
+        for (int i =0; i <9; i++) {
+            if (i % 4 == 0) {
                 data[i] = 1;
             } else {
                 data[i] = 0;
             }
         }
     }
-    
-    template <class T>
-    inline T  ProtoMatrix3<T>::getDeterminent() const {
-        return determ;
-    }
-    
    
     template <class T>
     inline void ProtoMatrix3<T>::setRow(int index, const ProtoVector3<T>& row) {
@@ -366,31 +352,24 @@ namespace ijg {
     /*              Member Ops Implementation            */
     /*****************************************************/
     
+    //FIX
     template <typename T>
-    ProtoMatrix3<T>& ProtoMatrix3<T>::operator*=(const ProtoMatrix3<T>& m4){
+    ProtoMatrix3<T>& ProtoMatrix3<T>::operator*=(const ProtoMatrix3<T>& m3){
         
-        T temp[16];
-        temp[0] = *this[0]*m4[0] + *this[1]*m4[4] + *this[2]*m4[8] + *this[3]*m4[12];
-        temp[1] = *this[0]*m4[1] + *this[1]*m4[5] + *this[2]*m4[9] + *this[3]*m4[13];
-        temp[2] = *this[0]*m4[2] + *this[1]*m4[6] + *this[2]*m4[10] + *this[3]*m4[14];
-        temp[3] = *this[0]*m4[3] + *this[1]*m4[7] + *this[2]*m4[11] + *this[3]*m4[15];
+        T temp[9];
+        temp[0] = *this[0]*m3[0] + *this[1]*m3[3] + *this[2]*m3[6];
+        temp[1] = *this[0]*m3[1] + *this[1]*m3[4] + *this[2]*m3[7];
+        temp[2] = *this[0]*m3[2] + *this[1]*m3[5] + *this[2]*m3[8];
         
-        temp[4] = *this[4]*m4[0] + *this[5]*m4[4] + *this[6]*m4[8] + *this[7]*m4[12];
-        temp[5] = *this[4]*m4[1] + *this[5]*m4[5] + *this[6]*m4[9] + *this[7]*m4[13];
-        temp[6] = *this[4]*m4[2] + *this[5]*m4[6] + *this[6]*m4[10] + *this[7]*m4[14];
-        temp[7] = *this[4]*m4[3] + *this[5]*m4[7] + *this[6]*m4[11] + *this[7]*m4[15];
+        temp[3] = *this[3]*m3[0] + *this[4]*m3[3] + *this[5]*m3[6];
+        temp[4] = *this[3]*m3[1] + *this[4]*m3[4] + *this[5]*m3[7];
+        temp[5] = *this[3]*m3[2] + *this[4]*m3[5] + *this[5]*m3[8];
         
-        temp[8] = *this[8]*m4[0] + *this[9]*m4[4] + *this[10]*m4[8] + *this[11]*m4[12];
-        temp[9] = *this[8]*m4[1] + *this[9]*m4[5] + *this[10]*m4[9] + *this[11]*m4[13];
-        temp[10] = *this[8]*m4[2] + *this[9]*m4[6] + *this[10]*m4[10] + *this[11]*m4[14];
-        temp[11] = *this[8]*m4[3] + *this[9]*m4[7] + *this[10]*m4[11] + *this[11]*m4[15];
+        temp[6] = *this[6]*m3[0] + *this[7]*m3[3] + *this[8]*m3[6];
+        temp[7] = *this[6]*m3[1] + *this[7]*m3[4] + *this[8]*m3[7];
+        temp[8] = *this[6]*m3[2] + *this[7]*m3[5] + *this[8]*m3[8];
         
-        temp[12] = *this[12]*m4[0] + *this[13]*m4[4] + *this[14]*m4[8] + *this[15]*m4[12];
-        temp[13] = *this[12]*m4[1] + *this[13]*m4[5] + *this[14]*m4[9] + *this[15]*m4[13];
-        temp[14] = *this[12]*m4[2] + *this[13]*m4[6] + *this[14]*m4[10] + *this[15]*m4[14];
-        temp[15] = *this[12]*m4[3] + *this[13]*m4[7] + *this[14]*m4[11] + *this[15]*m4[15];
-        
-        for(int i=0; i<16; ++i){
+        for(int i=0; i<9; ++i){
             data[i] = temp[i];
         }
         return *this;
@@ -398,7 +377,7 @@ namespace ijg {
     
     template <typename T>
     ProtoMatrix3<T>& ProtoMatrix3<T>::operator*=(T s){
-        for(int i=0; i<16; ++i){
+        for(int i=0; i<9; ++i){
             data[i] *= s;
         }
         return *this;
@@ -407,38 +386,47 @@ namespace ijg {
     
     template <typename T>
     ProtoMatrix3<T>& ProtoMatrix3<T>::operator/=(T s){
-        for(int i=0; i<16; ++i){
+        for(int i=0; i<9; ++i){
             data[i] /= s;
         }
         return *this;
     }
     
     template <typename T>
-    ProtoMatrix3<T>& ProtoMatrix3<T>::operator+=(const ProtoMatrix3<T>& m4){
-        for(int i=0; i<16; ++i){
-            data[i] += m4[i];
+    ProtoMatrix3<T>& ProtoMatrix3<T>::operator+=(const ProtoMatrix3<T>& m3){
+        for(int i=0; i<9; ++i){
+            data[i] += m3[i];
         }
         return *this;
     }
     
     template <typename T>
-    ProtoMatrix3<T>& ProtoMatrix3<T>::operator-=(const ProtoMatrix3<T>& m4){
-        for(int i=0; i<16; ++i){
-            data[i] -= m4[i];
+    ProtoMatrix3<T>& ProtoMatrix3<T>::operator-=(const ProtoMatrix3<T>& m3){
+        for(int i=0; i<9; ++i){
+            data[i] -= m3[i];
         }
         return *this;
     }
     
     template <typename T>
     inline T& ProtoMatrix3<T>::operator[](unsigned index){
-        assert( index >= 0 && index <= 15 );
+        assert( index >= 0 && index <= 8 );
         return data[index];
     }
     
+    // const
+    template <typename T>
+    inline const T& ProtoMatrix3<T>::operator[](unsigned index) const{
+        assert( index >= 0 && index <= 8 );
+        return data[index];
+    }
+    
+    // expects two ints between 0-2
     template <typename T>
     T&	ProtoMatrix3<T>::operator() ( int r, int c ){
-        int index = r*4+c;
-        assert( index >= 0 && index <= 15 );
+        assert( r >= 0 && r <= 2  && c >= 0 && c <= 2 );
+        int index = r*3+c;
+        assert( index >= 0 && index <= 8 );
         return *this[index];
     }
     
@@ -455,9 +443,9 @@ namespace ijg {
     // returns V3
     template <typename T>
     inline ProtoVector3<T> operator*(const ProtoMatrix3<T>& lhs, const ProtoVector3<T>& rhs){
-        T x = lhs[0]*rhs.x + lhs[1]*rhs.y + lhs[2]*rhs.z + lhs[3];
-        T y = lhs[4]*rhs.x + lhs[5]*rhs.y + lhs[6]*rhs.z + lhs[7];
-        T z = lhs[8]*rhs.x + lhs[9]*rhs.y + lhs[10]*rhs.z + lhs[11];
+        T x = lhs[0]*rhs.x + lhs[1]*rhs.y + lhs[2]*rhs.z;
+        T y = lhs[3]*rhs.x + lhs[4]*rhs.y + lhs[5]*rhs.z;
+        T z = lhs[6]*rhs.x + lhs[7]*rhs.y + lhs[8]*rhs.z;
         return ProtoVector3<T>(x, y, z);
     }
     
@@ -472,22 +460,24 @@ namespace ijg {
     // return M4
     template <typename T>
     inline ProtoMatrix3<T> operator*(const ProtoMatrix3<T>& lhs, const ProtoMatrix3<T>& rhs) {
-        ProtoMatrix3<T> tempMat(T arr[9]);
+        ProtoMatrix3<T> tempMat3();
+        int index = 0;
         for(int i=0; i<3; ++i){
             for(int j=0; j<3; ++j){
-               //FIX tempMat.arr[i*3+j] = lhs[3*i]*rhs[j] + lhs[3*i+1]*rhs[j+4] + lhs[3*i+2]*rhs[j+8] + lhs[3*i+3]*rhs[j+12];
+                index = i*3+j;
+               tempMat3.data[index] = lhs[3*i]*rhs[j] + lhs[3*i+1]*rhs[j+3] + lhs[3*i+2]*rhs[j+6];
             }
         }
-        return tempMat;
+        return tempMat3;
     }
     
     // M4*Sclr
     // return M4
     template <typename T>
     inline ProtoMatrix3<T> operator*(const ProtoMatrix3<T>& lhs, T s) {
-        ProtoMatrix3<T> tempMat(T arr[9]);
+        ProtoMatrix3<T> tempMat();
         for(int i=0; i<9; ++i){
-            tempMat.arr[i] = lhs[i]*s;
+            tempMat.data[i] = lhs[i]*s;
         }
         return tempMat;
     }
@@ -503,9 +493,9 @@ namespace ijg {
     // return M4
     template <typename T>
     inline ProtoMatrix3<T> operator+(const ProtoMatrix3<T>& lhs, const ProtoMatrix3<T>& rhs){
-        ProtoMatrix3<T> tempMat(T arr[9]);
+        ProtoMatrix3<T> tempMat();
         for(int i=0; i<9; ++i){
-            tempMat.arr[i] = lhs[i]+rhs[i];
+            tempMat.data[i] = lhs[i]+rhs[i];
         }
         return tempMat;
     }
@@ -514,9 +504,9 @@ namespace ijg {
     // return M4
     template <typename T>
     inline ProtoMatrix3<T> operator-(const ProtoMatrix3<T>& lhs, const ProtoMatrix3<T>& rhs){
-        ProtoMatrix3<T> tempMat(T arr[9]);
+        ProtoMatrix3<T> tempMat();
         for(int i=0; i<9; ++i){
-            tempMat.arr[i] = lhs[i]-rhs[i];
+            tempMat.data[i] = lhs[i]-rhs[i];
         }
         return tempMat;
     }
@@ -525,9 +515,9 @@ namespace ijg {
     // return M4
     template <typename T>
     inline ProtoMatrix3<T> operator+(const ProtoMatrix3<T>& lhs, T s){
-        ProtoMatrix3<T> tempMat(T arr[16]);
-        for(int i=0; i<16; ++i){
-            tempMat.arr[i] = lhs[i]+s;
+        ProtoMatrix3<T> tempMat();
+        for(int i=0; i<9; ++i){
+            tempMat.data[i] = lhs[i]+s;
         }
         return tempMat;
     }

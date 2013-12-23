@@ -74,6 +74,7 @@ dependencies: \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoCamera.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoMath.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVector3.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/ProtoCore.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoPoint3.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoLight.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoColor4.h \
@@ -84,11 +85,14 @@ dependencies: \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoFace3.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVertex3.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoTuple2.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoMatrix3.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoTuple3.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoDimension3.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoTexture.h \
   /usr/local/include/FreeImage.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoShape3.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoMatrix4.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVector4.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoGeomSet.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVector2.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoPoint2.h \
@@ -101,7 +105,4 @@ dependencies: \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoTransformFunction.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/src/Cephalopod01.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoCephalopod.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoGeoSphere.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoMatrix3.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoMatrix4.h \
-  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoVector4.h
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/Protobyte_dev_OSX/app/../../libProtobyte/ProtoGeoSphere.h

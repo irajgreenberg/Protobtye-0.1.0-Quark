@@ -44,7 +44,21 @@ ProtoShape3(pos, rot, size, col4), tentacleCount(tentacleCount)
 }
 
 void ProtoCephalopod::init(){
-    body = ProtoGeoSphere(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(5, 5, 5), ProtoColor4f(ProtoMath::random(.7, 1.0), ProtoMath::random(.7, 1.0), ProtoMath::random(.7, 1.0), 1), 1, "shipPlate.jpg");
+     body = std::unique_ptr<ProtoGeoSphere>(new ProtoGeoSphere(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(5, 5, 5), ProtoColor4f(ProtoMath::random(.7, 1.0), ProtoMath::random(.7, 1.0), ProtoMath::random(.7, 1.0), 1), 1, "shipPlate.jpg"));
+    
+    std::vector<ProtoFace3> faces =  body->getFaces();
+//    trace("size = ", faces.size());
+//    for(int i=0; i<faces.size(); ++i){
+//        trace("faces.at(i).getVert0_ptr()->pos = ", faces.at(i).getVert0_ptr()->pos);
+//    }
+//    std::cout << faces.at(1).getNorm() << std::endl;
+//    std::cout << "frame = \n" << faces.at(1).getTNBFrame() << std::endl;
+//    std::cout << "faces.at(1).getTangent() = " << faces.at(1).getTangent() << std::endl;
+//    std::cout << "faces.at(1).getNorm() = " << faces.at(1).getNorm() << std::endl;
+//    std::cout << "faces.at(1).getBiNorm() = " << faces.at(1).getBiNorm() << std::endl;
+//    trace("faces.at(1) binormal = " , faces.at(1).getBiNorm());
+//    trace("faces.at(1) centroid = " , faces.at(1).getCentroid());
+    
     
     for(size_t i=0; i<tentacleCount; ++i){
         const int pathCount = 30;
@@ -53,7 +67,7 @@ void ProtoCephalopod::init(){
         float _radius = 5;
         float h = 0;
         for(int j=0; j<pathCount; ++j){
-            vecs.push_back(Vec3(cos(_theta)*_radius, sin(_theta)*_radius, h+=1.2));
+            vecs.push_back(Vec3(h+=1.2, cos(_theta)*_radius, sin(_theta)*_radius));
             _theta += ProtoMath::PI/9;
             _radius -=.12;
         }
@@ -61,12 +75,15 @@ void ProtoCephalopod::init(){
         ProtoSpline3 path(vecs, 3, 0, .5);
         //const ProtoSpline3& path, float radius, int crossSectionDetail, bool isClosed
         tentacles.push_back(ProtoTube(path, 2, 12, ProtoTransformFunction(ProtoTransformFunction::LINEAR_INVERSE), false));
+        ProtoMatrix4f mat4(faces.at(i).getTNBFrame(), Vec4(faces.at(i).getCentroid(), 1));
+        //trace("mat4", mat4);
         offsets.push_back(Vec3(ProtoMath::random(-30, 30), ProtoMath::random(-30, 30), 0));
+        //offsets.push_back(Vec3());
     }
 }
 
 void ProtoCephalopod::display(){
-    body.display();
+    body->display();
     for(size_t i=0; i<tentacleCount; ++i){
         glPushMatrix();
         glTranslatef(offsets.at(i).x, offsets.at(i).y, offsets.at(i).z);

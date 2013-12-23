@@ -96,13 +96,6 @@ void ProtoFace3::calcNorm() {
     norm.normalize();
 }
 
-const Vec3f& ProtoFace3::getNorm() const {
-    return norm;
-}
-
-const Vec3f& ProtoFace3::getCentroid() const {
-    return centroid;
-}
 
 const ProtoVertex3* ProtoFace3::operator[](int index) {
     switch (index) {

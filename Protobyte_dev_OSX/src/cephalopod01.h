@@ -14,6 +14,7 @@
 #include "ProtoCephalopod.h"
 #include "ProtoMatrix3.h"
 #include "ProtoMatrix4.h"
+#include "ProtoToroid.h"
 
 
 using namespace ijg;
@@ -21,7 +22,7 @@ using namespace ijg;
 class Cephalopod01 : public ProtoBaseApp {
 
 protected:
-    ProtoCephalopod cephalopod;
+    ProtoCephalopod* cephalopod;
 public:
    
     

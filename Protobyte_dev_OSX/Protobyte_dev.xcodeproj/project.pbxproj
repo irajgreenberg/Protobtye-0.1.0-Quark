@@ -15,7 +15,6 @@
 		2A4977041857915E0076089C /* ProtoGeosphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4977021857915E0076089C /* ProtoGeosphere.cpp */; };
 		2A7CDB4118343996003E8FD3 /* ProtoImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A7CDB4018343996003E8FD3 /* ProtoImage.cpp */; };
 		2A820D28181714AC00AEEE95 /* ProtoBaseApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A820D24181714AC00AEEE95 /* ProtoBaseApp.cpp */; };
-		2A9EA5F51818332800168827 /* App01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A9EA5F31818332800168827 /* App01.cpp */; };
 		2AD37972182D52C600A4C541 /* ProtoAnimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3792C182D52C600A4C541 /* ProtoAnimator.cpp */; };
 		2AD37973182D52C600A4C541 /* ProtoBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3792E182D52C600A4C541 /* ProtoBlock.cpp */; };
 		2AD37974182D52C600A4C541 /* ProtoCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37931182D52C600A4C541 /* ProtoCamera.cpp */; };
@@ -71,8 +70,6 @@
 		2A7CDB4018343996003E8FD3 /* ProtoImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoImage.cpp; path = ../libProtobyte/ProtoImage.cpp; sourceTree = "<group>"; };
 		2A820D24181714AC00AEEE95 /* ProtoBaseApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoBaseApp.cpp; path = app/ProtoBaseApp.cpp; sourceTree = "<group>"; };
 		2A820D26181714AC00AEEE95 /* ProtoBaseApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoBaseApp.h; path = app/ProtoBaseApp.h; sourceTree = "<group>"; };
-		2A9EA5F31818332800168827 /* App01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = App01.cpp; path = src/App01.cpp; sourceTree = "<group>"; };
-		2A9EA5F41818332800168827 /* App01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = App01.h; path = src/App01.h; sourceTree = "<group>"; };
 		2AD3792C182D52C600A4C541 /* ProtoAnimator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoAnimator.cpp; path = ../libProtobyte/ProtoAnimator.cpp; sourceTree = "<group>"; };
 		2AD3792D182D52C600A4C541 /* ProtoAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoAnimator.h; path = ../libProtobyte/ProtoAnimator.h; sourceTree = "<group>"; };
 		2AD3792E182D52C600A4C541 /* ProtoBlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoBlock.cpp; path = ../libProtobyte/ProtoBlock.cpp; sourceTree = "<group>"; };
@@ -151,6 +148,7 @@
 		722DB7751817D76200A5A716 /* ProtoMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoMain.cpp; path = app/ProtoMain.cpp; sourceTree = "<group>"; };
 		7241A87B17BD63A300DBF38C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		7241A87D17BD63AA00DBF38C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
+		7247667C18674C9A00031A0F /* ProtoCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoCore.h; path = app/ProtoCore.h; sourceTree = "<group>"; };
 		724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoVerletCube.cpp; path = ../libProtobyte/ProtoVerletCube.cpp; sourceTree = "<group>"; };
 		724B59AA1831D1F90098E5A1 /* ProtoVerletCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVerletCube.h; path = ../libProtobyte/ProtoVerletCube.h; sourceTree = "<group>"; };
 		725E8ADF185D00D4007B8781 /* Cephalopod01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cephalopod01.cpp; path = src/Cephalopod01.cpp; sourceTree = "<group>"; };
@@ -285,8 +283,6 @@
 			children = (
 				725E8ADF185D00D4007B8781 /* Cephalopod01.cpp */,
 				725E8AE0185D00D4007B8781 /* Cephalopod01.h */,
-				2A9EA5F31818332800168827 /* App01.cpp */,
-				2A9EA5F41818332800168827 /* App01.h */,
 			);
 			name = myApps;
 			sourceTree = "<group>";
@@ -342,6 +338,7 @@
 		72C18D8E1817D280003263D2 /* ProtoApp */ = {
 			isa = PBXGroup;
 			children = (
+				7247667C18674C9A00031A0F /* ProtoCore.h */,
 				722DB7751817D76200A5A716 /* ProtoMain.cpp */,
 				2A820D24181714AC00AEEE95 /* ProtoBaseApp.cpp */,
 				2A820D26181714AC00AEEE95 /* ProtoBaseApp.h */,
@@ -426,7 +423,6 @@
 				72275D1918464F15000519E9 /* toon1.frag in Sources */,
 				2AD37989182D52C600A4C541 /* ProtoVerletStick.cpp in Sources */,
 				2AD37979182D52C600A4C541 /* ProtoGeom3.cpp in Sources */,
-				2A9EA5F51818332800168827 /* App01.cpp in Sources */,
 				2AD37983182D52C600A4C541 /* ProtoToroid.cpp in Sources */,
 				2AD37974182D52C600A4C541 /* ProtoCamera.cpp in Sources */,
 				2AD37977182D52C600A4C541 /* ProtoFrenetFrame.cpp in Sources */,

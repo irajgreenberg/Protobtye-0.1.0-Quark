@@ -27,6 +27,7 @@
 #include <iostream>
 #include "ProtoShape3.h"
 #include "ProtoGeoSphere.h"
+
 #include "ProtoTube.h"
 
 namespace ijg {
@@ -42,9 +43,12 @@ namespace ijg {
         const std::vector<ProtoTube>& getTentacles() const;
         void display();
         
+        
+        const ProtoGeoSphere& getBody() const;
+        
     private:
         int tentacleCount;
-        ProtoGeoSphere body;
+        std::unique_ptr<ProtoGeoSphere> body;
         std::vector<ProtoTube> tentacles;
         std::vector<Vec3> offsets; // testing only
         void init();
@@ -54,6 +58,10 @@ namespace ijg {
     inline const std::vector<ProtoTube>& ProtoCephalopod::getTentacles() const
     {
         return tentacles;
+    }
+    
+    inline const ProtoGeoSphere& ProtoCephalopod::getBody() const{
+        return *body;
     }
 }
 

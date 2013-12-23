@@ -34,39 +34,45 @@
 
 #include <SFML/OpenGL.hpp>
 #include <vector>
-#include "ProtoVector3.h"
 #include "ProtoVertex3.h"
+#include "ProtoMatrix3.h"
 #include <cmath>
 #include <iostream>
 
 namespace ijg {
-
+    
     class ProtoFace3 {
     private:
         //ProtoVector3 vecs[3];
         //Vec3f v0, v1, v2;
-         ProtoVertex3 vecs[3];
+        ProtoVertex3 vecs[3];
         //ProtoVertex3 v0, v1, v2;
         //ProtoVertex3 *v0_p, *v1_p, *v2_p;
-       Vec3f norm, centroid;
-
-        void init();
-
+        Vec3f norm, centroid, biNorm, tangent;
         
-
-
+        void init();
+        
     public:
         friend std::ostream& operator<<(std::ostream& output, const ProtoFace3& face3);
-
+        
         //ProtoFace3(ProtoVertex3& v0, ProtoVertex3& v1, ProtoVertex3& v2);
         ProtoFace3(ProtoVertex3* v0_p, ProtoVertex3* v1_p, ProtoVertex3* v2_p);
         void display();
-
-        const Vec3f& getNorm() const;
-        const Vec3f& getCentroid() const;
         
-
-
+        Vec3f& getNorm();
+        Vec3f& getCentroid();
+        
+        Vec3f getBiNorm();
+        Vec3f getTangent();
+        
+        
+        const Vec3f& getNorm() const ;
+        //        const Vec3f& getBiNorm() const ;
+        //        const Vec3f& getTangent() const ;
+        const Vec3f& getCentroid() const ;
+        mat3 getTNBFrame();
+        
+        
         //const ProtoVertex3& operator[](int index);
         const ProtoVertex3* operator[](int index);
         
@@ -78,8 +84,65 @@ namespace ijg {
         
         void calcNorm();
         void calcCentroid();
-
+        
     };
+    
+    
+    // const versions
+    inline const Vec3f& ProtoFace3::getNorm() const{
+        return norm;
+    }
+    
+    inline const Vec3f& ProtoFace3::getCentroid() const {
+        return centroid;
+    }
+    
+    //    inline const Vec3f& ProtoFace3::getBiNorm() const{
+    //        Vec3 B = norm.cross(getTangent());
+    //        return B;
+    //    }
+    //
+    //    inline const Vec3f& ProtoFace3::getTangent() const{
+    //        std::cout<< "v2_p->pos = " << v2_p->pos << std::endl;
+    //        std::cout<< "v1_p->pos = " << v1_p->pos << std::endl;
+    //
+    //        Vec3 T = (v1_p->pos - v0_p->pos);
+    //        return T;
+    //    }
+    
+    // non const versions
+    inline Vec3f& ProtoFace3::getNorm(){
+        return norm;
+    }
+    
+    inline Vec3f& ProtoFace3::getCentroid() {
+        return centroid;
+    }
+    
+    inline Vec3f ProtoFace3::getBiNorm(){
+        Vec3 N = getNorm();
+        Vec3 T = getTangent();
+        //N.normalize();
+        Vec3 B = N.cross(T);
+        trace("B = ", B);
+        return B;
+    }
+    
+    // returns normalized face edge as tangent
+    inline Vec3f ProtoFace3::getTangent(){
+        Vec3 T = v1_p->pos - v0_p->pos;
+        T.normalize();
+        return T;
+    }
+    
+    inline mat3 ProtoFace3::getTNBFrame(){
+        // this can be MUCH more efficient
+        Vec3 N = getNorm();
+        Vec3 T = getTangent();
+        //N.normalize();
+        Vec3 B = N.cross(T);
+        return mat3(T, N, B);
+    }
     
     inline ProtoVertex3* ProtoFace3::getVert0_ptr(){
         return v0_p;

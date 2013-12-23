@@ -116,6 +116,9 @@ namespace ijg {
         /*****************************************************/
         /*                    Constructors                   */
         /*****************************************************/
+        ProtoVector4(T x, T y, T z, T w);
+        ProtoVector4(ProtoVector3<T> vec3, T w);
+        // chaos enriched
         ProtoVector4(RandFlag randFlagVal=EXPLICIT);
         ProtoVector4(T xMax, T yMax, T zMax, T wMax, RandFlag randFlagVal=EXPLICIT);
         ProtoVector4(T xMin, T xMax, T yMin, T yMax, T zMin, T zMax, T wMin, T wMax);
@@ -176,6 +179,16 @@ namespace ijg {
     /*****************************************************/
     /*                    Constructors                   */
     /*****************************************************/
+    template <class T>
+    inline ProtoVector4<T>::ProtoVector4(T x, T y, T z, T w):
+    x(x), y(y), z(z), w(w){
+    }
+    
+    template <class T>
+    inline ProtoVector4<T>::ProtoVector4(ProtoVector3<T> vec3, T w):
+    x(vec3.x), y(vec3.y), z(vec3.z), w(w){
+    }
+    
     // optional randomization
     template <class T>
     inline ProtoVector4<T>::ProtoVector4(RandFlag randFlagVal) {

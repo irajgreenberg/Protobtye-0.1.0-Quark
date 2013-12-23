@@ -153,6 +153,9 @@ namespace ijg {
         virtual void rotate(const Vec3f& r);
         virtual void scale(const ProtoDimension3f& s);
         
+        virtual void transform(const ProtoMatrix4f& mat4);
+        
+        
         // vertex arrays are implemented by default
         virtual void display(renderMode render = SURFACE, float pointSize = .5f);
         

@@ -413,6 +413,10 @@ void ProtoGeom3::scale(const ProtoDimension3f& s) {
 	size += s;
 }
 
+void ProtoGeom3::transform(const ProtoMatrix4f& mat4){
+    // to do. question: tranform primitives or vecs?
+}
+
 // this needs to be TOTALLY reworked (binary implementation as well!!!)
 
 //void ProtoGeom3::exportSTL() {

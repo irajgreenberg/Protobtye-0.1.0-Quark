@@ -25,12 +25,15 @@
 #define	PROTO_SHAPE3_H
 
 #include <iostream>
-//#include <algorithm>  
+//#include <algorithm>
+#include "ProtoCore.h"
 #include <vector>
 #include "ProtoMath.h"
 #include "ProtoVector3.h"
 #include "ProtoDimension3.h"
 #include "ProtoColor4.h"
+#include "ProtoMatrix3.h"
+#include "ProtoMatrix4.h"
 
 namespace ijg {
 
