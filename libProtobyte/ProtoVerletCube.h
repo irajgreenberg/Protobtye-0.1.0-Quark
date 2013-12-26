@@ -49,10 +49,10 @@ namespace ijg {
         void pulse(float amp = 1, float freq = Math::PI/180.0);
         void pulse(float amps[6], float freq[6]);
         
-        void display(ProtoGeom3::renderMode mode=ProtoVerletSurface::SURFACE, float pointSize = .5);
-        void display(ProtoGeom3::renderMode mode0, ProtoGeom3::renderMode mode1, ProtoGeom3::renderMode mode2, ProtoGeom3::renderMode mode3, ProtoGeom3::renderMode mode4, ProtoGeom3::renderMode mode5, float pointSize = .5);
-        void display(ProtoGeom3::renderMode modes[6], float pointSize = .5);
-        void display(ProtoGeom3::renderMode modes[6], float pointSizes[6]);
+        void display(RenderMode mode=SURFACE, float pointSize = .5);
+        void display(RenderMode mode0, RenderMode mode1, RenderMode mode2, RenderMode mode3, RenderMode mode4, RenderMode mode5, float pointSize = .5);
+        void display(RenderMode modes[6], float pointSize = .5);
+        void display(RenderMode modes[6], float pointSizes[6]);
         
         
         void textureOn();

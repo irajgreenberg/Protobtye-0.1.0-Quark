@@ -30,6 +30,10 @@
 
 namespace ijg {
 
+    // forward declare & create namespace safe shortname
+    class ProtoVertex3;
+    typedef ProtoVertex3 Vertex3;
+    
     class ProtoVertex3 {
     public:
         friend std::ostream& operator<<(std::ostream& output, const ProtoVertex3& vertex);

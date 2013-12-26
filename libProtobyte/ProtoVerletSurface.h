@@ -32,6 +32,9 @@
 namespace ijg {
     
     
+    // forward declare & create namespace safe shortname
+    class ProtoVerletSurface;
+    typedef ProtoVerletSurface VerletSurface;
     
     class ProtoVerletSurface : public ProtoGeom3 {
         

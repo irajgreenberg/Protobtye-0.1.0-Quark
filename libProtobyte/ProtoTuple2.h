@@ -71,6 +71,7 @@ namespace ijg {
     #define ProtoTuple2b ProtoTuple2<unsigned char>
 
     #define Tup2i ProtoTuple2<int>
+    #define Tup2 ProtoTuple2<float> // most common usage
     #define Tup2f ProtoTuple2<float>
     #define Tup2d ProtoTuple2<double>
 

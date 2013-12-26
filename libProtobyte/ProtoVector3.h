@@ -39,8 +39,14 @@
 
 namespace ijg {
     
-    // forward declaration for non-member ops
+    // forward declaration and namespace safe short names
     template <class T> class ProtoVector3;
+    typedef ProtoVector3<float> Vec3f;
+    typedef Vec3f Vec3; // most common usage
+    typedef ProtoVector3<double> Vec3d;
+    typedef ProtoVector3<int> Vec3i;
+    typedef ProtoVector3<long> Vec3L;
+    typedef ProtoVector3<short> Vec3s;
     
     /*****************************************************/
     /*            Non-Member Ops & Functions             */
@@ -651,10 +657,10 @@ namespace ijg {
 #define ProtoVector3d ProtoVector3<double>
 #define ProtoVec3f ProtoVector3<float>
 #define ProtoVec3d ProtoVector3<double>
-#define Vec3 ProtoVector3<float> // common use
-#define Vec3f ProtoVector3<float>
-#define Vec3d ProtoVector3<double>
+//#define Vec3 ProtoVector3<float> // most common use
+//#define Vec3f ProtoVector3<float>
+//#define Vec3d ProtoVector3<double>
     
-    }  // END ijg namespace
-    
+}  // END ijg namespace
+
 #endif // PROTO_VECTOR3_H

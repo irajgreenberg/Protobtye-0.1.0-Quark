@@ -29,8 +29,9 @@
 
 namespace ijg {
 
-    // forward declaration
+    // forward declare & create namespace safe shortname;
     class ProtoVerletBall;
+    typedef ProtoVerletBall VerletBall;
 
     // overloaded non-member ops
     Vec3f operator+(const ProtoVerletBall& lhs, const ProtoVerletBall& rhs);

@@ -28,6 +28,10 @@
 
 namespace ijg {
 
+    // forward declare & create namespace safe shortname
+    class ProtoToroid;
+    typedef ProtoToroid Toroid;
+    
     class ProtoToroid : public ProtoGeom3 {
     public:
 

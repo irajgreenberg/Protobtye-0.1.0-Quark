@@ -17,6 +17,11 @@
 
 namespace ijg {
 
+    // forward declare & create namespace safe shortname
+    class ProtoTube;
+    typedef ProtoTube Tube;
+    
+    
     class ProtoTube : public ProtoGeom3 {
     public:
 

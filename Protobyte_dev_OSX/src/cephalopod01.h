@@ -12,6 +12,8 @@
 #include "ProtoBaseApp.h"
 #include <iostream>
 #include "ProtoCephalopod.h"
+#include "ProtoGeoSphere.h"
+#include "ProtoCylinder.h"
 #include "ProtoMatrix3.h"
 #include "ProtoMatrix4.h"
 #include "ProtoToroid.h"
@@ -22,7 +24,14 @@ using namespace ijg;
 class Cephalopod01 : public ProtoBaseApp {
 
 protected:
-    ProtoCephalopod* cephalopod;
+    Cephalopod* cephalopod;
+    std::vector<ProtoCylinder> cylinders;
+    ProtoGeoSphere geoSphere;
+    
+    Vec3 centroid;
+    Mat3 frame;
+    
+    Toroid toroid;
 public:
    
     

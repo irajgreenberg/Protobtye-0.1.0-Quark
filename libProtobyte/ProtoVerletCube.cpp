@@ -170,13 +170,13 @@ void ProtoVerletCube::pulse(float amps[6], float freq[6]){
 
 
 
-void ProtoVerletCube::display(ProtoGeom3::renderMode mode, float pointSize){
+void ProtoVerletCube::display(RenderMode mode, float pointSize){
     for(int i=0; i<6; ++i) {
         verletSurfs[i]->display(mode, pointSize);
     }
 }
 
-void ProtoVerletCube::display(ProtoGeom3::renderMode mode0, ProtoGeom3::renderMode mode1, ProtoGeom3::renderMode mode2, ProtoGeom3::renderMode mode3, ProtoGeom3::renderMode mode4, ProtoGeom3::renderMode mode5, float pointSize){
+void ProtoVerletCube::display(RenderMode mode0, RenderMode mode1, RenderMode mode2, RenderMode mode3, RenderMode mode4, RenderMode mode5, float pointSize){
     verletSurfs[0]->display(mode0, pointSize);
     verletSurfs[1]->display(mode1, pointSize);
     verletSurfs[2]->display(mode2, pointSize);
@@ -185,13 +185,13 @@ void ProtoVerletCube::display(ProtoGeom3::renderMode mode0, ProtoGeom3::renderMo
     verletSurfs[5]->display(mode5, pointSize);
 }
 
-void ProtoVerletCube::display(ProtoGeom3::renderMode modes[6], float pointSize){
+void ProtoVerletCube::display(RenderMode modes[6], float pointSize){
     for(int i=0; i<6; ++i) {
         verletSurfs[i]->display(modes[i], pointSize);
     }
 }
 
-void ProtoVerletCube::display(ProtoGeom3::renderMode modes[6], float pointSizes[6]){
+void ProtoVerletCube::display(RenderMode modes[6], float pointSizes[6]){
     for(int i=0; i<6; ++i) {
         verletSurfs[i]->display(modes[i], pointSizes[i]);
     }

@@ -1,4 +1,4 @@
-/*!  \brief  ProtoCore.h: (add brief description)
+/*!  \brief  ProtoCore.h: Core Universal Functionality
  ProtoCore.h
  Protobyte Library v02
  
@@ -25,10 +25,9 @@
 #define Protobyte_dev_ProtoCore_h
 
 #include <iostream>
+#include "ProtoVector3.h"
 
 namespace ijg {
-    
-   
     
     template <typename T>
     void print(T t){

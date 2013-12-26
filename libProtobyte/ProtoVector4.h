@@ -35,8 +35,15 @@
 
 namespace ijg {
     
-    // forward declaration for non-member ops
+    // forward declaration and namespace safe short names
     template <class T> class ProtoVector4;
+    typedef ProtoVector4<float> Vec4f;
+    typedef Vec4f Vec4; // most common usage
+    typedef ProtoVector4<double> Vec4d;
+    typedef ProtoVector4<int> Vec4i;
+    typedef ProtoVector4<long> Vec4L;
+    typedef ProtoVector4<short> Vec4s;
+
     
     /*****************************************************/
     /*            Non-Member Ops & Functions             */
@@ -116,7 +123,6 @@ namespace ijg {
         /*****************************************************/
         /*                    Constructors                   */
         /*****************************************************/
-        ProtoVector4(T x, T y, T z, T w);
         ProtoVector4(ProtoVector3<T> vec3, T w);
         // chaos enriched
         ProtoVector4(RandFlag randFlagVal=EXPLICIT);
@@ -179,11 +185,6 @@ namespace ijg {
     /*****************************************************/
     /*                    Constructors                   */
     /*****************************************************/
-    template <class T>
-    inline ProtoVector4<T>::ProtoVector4(T x, T y, T z, T w):
-    x(x), y(y), z(z), w(w){
-    }
-    
     template <class T>
     inline ProtoVector4<T>::ProtoVector4(ProtoVector3<T> vec3, T w):
     x(vec3.x), y(vec3.y), z(vec3.z), w(w){
@@ -668,13 +669,13 @@ namespace ijg {
     
     
     // Type name convenience macros
-#define ProtoVector4f ProtoVector4<float>
-#define ProtoVector4d ProtoVector4<double>
-#define ProtoVec4f ProtoVector4<float>
-#define ProtoVec4d ProtoVector4<double>
-#define Vec4 ProtoVector4<float> // common use
-#define Vec4f ProtoVector4<float>
-#define Vec4d ProtoVector4<double>
+//#define ProtoVector4f ProtoVector4<float>
+//#define ProtoVector4d ProtoVector4<double>
+//#define ProtoVec4f ProtoVector4<float>
+//#define ProtoVec4d ProtoVector4<double>
+//#define Vec4 ProtoVector4<float> // common use
+//#define Vec4f ProtoVector4<float>
+//#define Vec4d ProtoVector4<double>
     
     }  // END ijg namespace
     

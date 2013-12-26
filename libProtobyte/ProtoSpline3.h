@@ -33,6 +33,11 @@
  */
 
 namespace ijg {
+    
+    // forward declare & create namespace safe shortname
+    class ProtoSpline3;
+    typedef ProtoSpline3 Spline3;
+    
 
     class ProtoSpline3 : public ProtoCurve3 {
     public:

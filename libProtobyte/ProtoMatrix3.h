@@ -36,12 +36,11 @@
 namespace ijg {
     
     
-    
     // forward declaration for non-member ops
     template <class T> class ProtoMatrix3;
     
-    typedef ProtoMatrix3<float> mat3f;
-    typedef ProtoMatrix3<float> mat3;
+    typedef ProtoMatrix3<float> Mat3f;
+    typedef ProtoMatrix3<float> Mat3; // most common form
     
     /*****************************************************/
     /*            Non-Member Ops & Functions             */
@@ -546,7 +545,6 @@ namespace ijg {
     /**********************/
     /*         END        */
     /**********************/
-    
     
     
     

@@ -42,6 +42,13 @@ namespace ijg {
         
         friend std::ostream& operator<<(std::ostream& out, const ProtoShape3& shape);
         
+        enum RenderMode {
+            POINTS,
+            WIREFRAME, // begin at 0
+            SURFACE
+        };
+
+        
         /*!
          * Default Constructor */
         ProtoShape3();

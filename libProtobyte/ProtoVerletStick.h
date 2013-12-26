@@ -29,6 +29,10 @@
 
 namespace ijg {
     
+    // forward declare & create namespace safe shortname
+    class ProtoVerletStick;
+    typedef ProtoVerletStick VerletStick;
+    
     class ProtoVerletStick {
     private:
         std::shared_ptr<ProtoVerletBall> b1, b2;

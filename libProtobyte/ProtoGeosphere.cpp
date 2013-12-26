@@ -61,6 +61,7 @@ void ProtoGeoSphere::calcVerts() {
      11,  x= 0.000, y= 0.000, z=-1.000
      */
     
+    
     verts.push_back(ProtoVertex3(Vec3f(0.000*size.w, 0.000*size.h, 1.000*size.d), ProtoColor4f(col4.getR(), col4.getG(), col4.getB(), col4.getA()), ProtoTuple2f(0.000, 0.000)));
     verts.push_back(ProtoVertex3(Vec3f(0.894*size.w, 0.000*size.h, 0.447*size.d), ProtoColor4f(col4.getR(), col4.getG(), col4.getB(), col4.getA()), ProtoTuple2f(0.894, 0.000)));
     verts.push_back(ProtoVertex3(Vec3f(0.276*size.w, 0.851*size.h, 0.447*size.d), ProtoColor4f(col4.getR(), col4.getG(), col4.getB(), col4.getA()), ProtoTuple2f(0.276, 0.851)));
@@ -81,16 +82,16 @@ void ProtoGeoSphere::calcInds() {
      inds.push_back(ProtoTuple3i(0,3,4));
      inds.push_back(ProtoTuple3i(0,4,5));
      inds.push_back(ProtoTuple3i(0,5,1));
-     inds.push_back(ProtoTuple3i(11,6,7));
-     inds.push_back(ProtoTuple3i(11,7,8));
-     inds.push_back(ProtoTuple3i(11,8,9));
-     inds.push_back(ProtoTuple3i(11,9,10));
-     inds.push_back(ProtoTuple3i(11,10,6));
-     inds.push_back(ProtoTuple3i(1,2,6));
-     inds.push_back(ProtoTuple3i(2,3,7));
-     inds.push_back(ProtoTuple3i(3,4,8));
-     inds.push_back(ProtoTuple3i(4,5,9));
-     inds.push_back(ProtoTuple3i(5,1,10));
+     inds.push_back(ProtoTuple3i(7,6,11));
+     inds.push_back(ProtoTuple3i(8,7,11));
+     inds.push_back(ProtoTuple3i(9,8,11));
+     inds.push_back(ProtoTuple3i(10,9,11));
+     inds.push_back(ProtoTuple3i(6,10,11));
+     inds.push_back(ProtoTuple3i(6,2,1));
+     inds.push_back(ProtoTuple3i(7,3,2));
+     inds.push_back(ProtoTuple3i(8,4,3));
+     inds.push_back(ProtoTuple3i(9,5,4));
+     inds.push_back(ProtoTuple3i(10,1,5));
      inds.push_back(ProtoTuple3i(6,7,2));
      inds.push_back(ProtoTuple3i(7,8,3));
      inds.push_back(ProtoTuple3i(8,9,4));

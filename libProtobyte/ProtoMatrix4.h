@@ -149,7 +149,8 @@ namespace ijg {
         ProtoMatrix4<T>& operator+=(const ProtoMatrix4<T>& m4);
         ProtoMatrix4<T>& operator-=(const ProtoMatrix4<T>& m4);
         
-        T& operator[](unsigned index) const;
+        T& operator[](unsigned index);
+        const T& operator[](unsigned index) const;
         T& operator() ( int r, int c ) const;
         
         
@@ -201,21 +202,21 @@ namespace ijg {
         this->data[0] = data[0];
         this->data[1] = data[1];
         this->data[2] = data[2];
-        this->data[3] = 0;
+        this->data[3] = translation.x;
         // row 2
         this->data[4] = data[3];
         this->data[5] = data[4];
         this->data[6] = data[5];
-        this->data[7] = 0;
+        this->data[7] = translation.y;
         // row 3
         this->data[8] = data[6];
         this->data[9] = data[7];
         this->data[10] = data[8];
-        this->data[11] = 0;
+        this->data[11] = translation.z;
         // row 4
-        this->data[12] = translation.x;
-        this->data[13] = translation.y;
-        this->data[14] = translation.z;
+        this->data[12] = 0;
+        this->data[13] = 0;
+        this->data[14] = 0;
         this->data[15] = translation.w;
     }
     
@@ -227,21 +228,21 @@ namespace ijg {
         data[0] = mat3[0];
         data[1] = mat3[1];
         data[2] = mat3[2];
-        data[3] = 0;
+        data[3] = translation.x;
         // row 2
         data[4] = mat3[3];
         data[5] = mat3[4];
         data[6] = mat3[5];
-        data[7] = 0;
+        data[7] = translation.y;
         // row 3
         data[8] = mat3[6];
         data[9] = mat3[7];
         data[10] = mat3[8];
-        data[11] = 0;
+        data[11] = translation.z;
         // row 4
-        data[12] = translation.x;
-        data[13] = translation.y;
-        data[14] = translation.z;
+        data[12] = 0;
+        data[13] = 0;
+        data[14] = 0;
         data[15] = translation.w;
     }
     
@@ -448,7 +449,14 @@ namespace ijg {
     }
 
     template <typename T>
-    inline T& ProtoMatrix4<T>::operator[](unsigned index) const{
+    inline T& ProtoMatrix4<T>::operator[](unsigned index){
+        assert( index >= 0 && index <= 15 );
+        return data[index];
+    }
+    
+    // const template <typename T>
+    template <typename T>
+    inline const T& ProtoMatrix4<T>::operator[](unsigned index) const{
         assert( index >= 0 && index <= 15 );
         return data[index];
     }
@@ -474,9 +482,14 @@ namespace ijg {
     // returns V3
     template <typename T>
     inline ProtoVector3<T> operator*(const ProtoMatrix4<T>& lhs, const ProtoVector4<T>& rhs){
-        T x = lhs[0]*rhs.x + lhs[1]*rhs.y + lhs[2]*rhs.z + lhs[3];
-        T y = lhs[4]*rhs.x + lhs[5]*rhs.y + lhs[6]*rhs.z + lhs[7];
-        T z = lhs[8]*rhs.x + lhs[9]*rhs.y + lhs[10]*rhs.z + lhs[11];
+//        T x = lhs[0]*rhs.x + lhs[1]*rhs.y + lhs[2]*rhs.z + lhs[3];
+//        T y = lhs[4]*rhs.x + lhs[5]*rhs.y + lhs[6]*rhs.z + lhs[7];
+//        T z = lhs[8]*rhs.x + lhs[9]*rhs.y + lhs[10]*rhs.z + lhs[11];
+        
+        T x = lhs[0]*rhs.x + lhs[4]*rhs.y + lhs[8]*rhs.z + lhs[3];
+        T y = lhs[1]*rhs.x + lhs[5]*rhs.y + lhs[9]*rhs.z + lhs[7];
+        T z = lhs[2]*rhs.x + lhs[6]*rhs.y + lhs[10]*rhs.z + lhs[11];
+
         return ProtoVector3<T>(x, y, z);
     }
     

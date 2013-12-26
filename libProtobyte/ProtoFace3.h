@@ -70,7 +70,7 @@ namespace ijg {
         //        const Vec3f& getBiNorm() const ;
         //        const Vec3f& getTangent() const ;
         const Vec3f& getCentroid() const ;
-        mat3 getTNBFrame();
+        Mat3 getTNBFrame();
         
         
         //const ProtoVertex3& operator[](int index);
@@ -124,7 +124,7 @@ namespace ijg {
         Vec3 T = getTangent();
         //N.normalize();
         Vec3 B = N.cross(T);
-        trace("B = ", B);
+        //trace("B = ", B);
         return B;
     }
     
@@ -135,13 +135,12 @@ namespace ijg {
         return T;
     }
     
-    inline mat3 ProtoFace3::getTNBFrame(){
+    inline Mat3 ProtoFace3::getTNBFrame(){
         // this can be MUCH more efficient
         Vec3 N = getNorm();
         Vec3 T = getTangent();
-        //N.normalize();
         Vec3 B = N.cross(T);
-        return mat3(T, N, B);
+        return Mat3(T, N, B);
     }
     
     inline ProtoVertex3* ProtoFace3::getVert0_ptr(){

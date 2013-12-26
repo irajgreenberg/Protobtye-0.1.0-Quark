@@ -31,6 +31,10 @@ Protobyte Library v02
 #include "ProtoFrenetFrame.h"
 
 namespace ijg {
+    
+    // forward declare & create namespace safe shortname
+    class ProtoCurve3;
+    typedef ProtoCurve3 Curve3;
 
     class ProtoCurve3 {
     protected:

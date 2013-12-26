@@ -47,6 +47,7 @@
 
 namespace ijg {
     
+    
     class ProtoBaseApp {
         
         // enable Protoplasm private access
@@ -160,6 +161,7 @@ namespace ijg {
         
         
     };
+
 #define POINTS ProtoGeom3::POINTS
 #define WIREFRAME ProtoGeom3::WIREFRAME
 #define SURFACE ProtoGeom3::SURFACE

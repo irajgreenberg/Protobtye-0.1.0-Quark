@@ -295,7 +295,7 @@ void ProtoGeom3::fillDisplayLists() {
 /* NOTE:: Drawing will/MAY eventually get delegated to a
  world type class, to enable aggregate face sorting and
  and primitive processing*/
-void ProtoGeom3::display(renderMode render, float pointSize) {
+void ProtoGeom3::display(RenderMode render, float pointSize) {
     
     if(isTextureEnabled) {
          glEnable(GL_TEXTURE_2D);
@@ -334,18 +334,18 @@ void ProtoGeom3::display(renderMode render, float pointSize) {
             //glPolygonMode(GL_FRONT, GL_FILL);
             break;
 	}
-	// hackity-hack - fix eventually
-	//static float rx = .02;
-	//static float ry = .03;
-	//static float rz = .04;
-	//glPushMatrix();
-	//glLoadIdentity();
+	//  hackity-hack - fix eventually
+	//  static float rx = .02;
+	//  static float ry = .03;
+	//  static float rz = .04;
+	//  glPushMatrix();
+	//  glLoadIdentity();
     
     //	glTranslatef(pos.x, pos.y, pos.z);
     //	glRotatef(rot.x, 1, 0, 0); // x-axis
     //	glRotatef(rot.y, 0, 1, 0); // y-axis
     //	glRotatef(rot.z, 0, 0, 1); // z-axis
-	//glScalef(size.w, size.h, size.d);
+	//  glScalef(size.w, size.h, size.d);
     
     
     
@@ -413,8 +413,30 @@ void ProtoGeom3::scale(const ProtoDimension3f& s) {
 	size += s;
 }
 
+// transform VBO primitives using glBufferSubData
 void ProtoGeom3::transform(const ProtoMatrix4f& mat4){
-    // to do. question: tranform primitives or vecs?
+    glBindBuffer(GL_ARRAY_BUFFER, vboID);
+    for (int i = 0; i < interleavedPrims.size(); i += 12) {// transform verts
+        Vec4 v4(interleavedPrims.at(i), interleavedPrims.at(i+1), interleavedPrims.at(i+2), 1);
+        Vec3 v3  = mat4*v4;
+        interleavedPrims.at(i) = v3.x;
+        interleavedPrims.at(i+1) = v3.y;
+        interleavedPrims.at(i+2) = v3.z;
+        
+        // transform vnorms
+        // there's a better way to transform v norms (so fix it eventually!)
+        ProtoMatrix4f m = mat4;
+        m.transpose();
+        Vec4 v4n(interleavedPrims.at(i+3), interleavedPrims.at(i+4), interleavedPrims.at(i+5), 1);
+        Vec3 v3n = m*v4n;
+        interleavedPrims.at(i+3) = v3n.x;
+        interleavedPrims.at(i+4) = v3n.y;
+        interleavedPrims.at(i+5) = v3n.z;
+        
+    }
+    int vertsDataSize = sizeof (float) *interleavedPrims.size();
+    glBufferSubData(GL_ARRAY_BUFFER, 0, vertsDataSize, &interleavedPrims[0]); // upload the data
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
 
 // this needs to be TOTALLY reworked (binary implementation as well!!!)

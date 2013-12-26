@@ -37,6 +37,7 @@
 #include <iostream>
 #include <vector>
 #include "ProtoVector3.h"
+#include "ProtoVector4.h"
 #include "ProtoFace3.h"
 #include "ProtoTuple3.h"
 #include "ProtoDimension3.h"
@@ -119,12 +120,12 @@ namespace ijg {
         
         
     public:
-        
-        enum renderMode {
-            POINTS,
-            WIREFRAME, // begin at 0
-            SURFACE
-        };
+//        
+//        enum renderMode {
+//            POINTS,
+//            WIREFRAME, // begin at 0
+//            SURFACE
+//        };
         
         ProtoGeom3();
         
@@ -157,7 +158,7 @@ namespace ijg {
         
         
         // vertex arrays are implemented by default
-        virtual void display(renderMode render = SURFACE, float pointSize = .5f);
+        virtual void display(RenderMode render = SURFACE, float pointSize = .5f);
         
         // setters/getters
         virtual void setPosition(const Vec3f& pos);
@@ -301,4 +302,5 @@ namespace ijg {
 
     
 }
+#define Geom3 ProtoGeom3
 #endif /* defined(PROTO_GEOM3_H) */

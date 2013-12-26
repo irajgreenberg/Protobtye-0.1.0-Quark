@@ -27,6 +27,8 @@
 
 #include "ProtoGeom3.h"
 
+
+
 namespace ijg {
     
     class ProtoGeoSphere : public ProtoGeom3 {
@@ -41,6 +43,7 @@ namespace ijg {
         // get/sets inlined below class
         void setSubdivisionLevel(int subdivisionLevel);
         int getSubdivisionLevel() const;
+        
         
     private:
         int subdivisionLevel;
@@ -58,8 +61,11 @@ namespace ijg {
     inline int ProtoGeoSphere::getSubdivisionLevel() const{
         return subdivisionLevel;
     }
+    
+   
+    typedef ProtoGeoSphere GeoSphere;
+    
 }
-
 
 #endif	// PROTO_GEOSPHERE_H
 

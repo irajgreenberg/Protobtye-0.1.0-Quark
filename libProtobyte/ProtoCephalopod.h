@@ -26,11 +26,15 @@
 
 #include <iostream>
 #include "ProtoShape3.h"
+#include "ProtoGeom3.h"
 #include "ProtoGeoSphere.h"
 
 #include "ProtoTube.h"
 
 namespace ijg {
+    
+    class ProtoCephalopod;
+    typedef ProtoCephalopod Cephalopod;
     
     class ProtoCephalopod: public ProtoShape3{
         
@@ -44,11 +48,11 @@ namespace ijg {
         void display();
         
         
-        const ProtoGeoSphere& getBody() const;
+        const GeoSphere& getBody() const;
         
     private:
         int tentacleCount;
-        std::unique_ptr<ProtoGeoSphere> body;
+        std::unique_ptr<GeoSphere> body;
         std::vector<ProtoTube> tentacles;
         std::vector<Vec3> offsets; // testing only
         void init();
