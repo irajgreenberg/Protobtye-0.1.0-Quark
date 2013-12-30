@@ -42,10 +42,10 @@ using namespace ijg;
 ProtoVerletStick::ProtoVerletStick() {
 }
 
-ProtoVerletStick::ProtoVerletStick(std::shared_ptr<ProtoVerletBall> _b1, std::shared_ptr<ProtoVerletBall> _b2, float tension, Tup2f elasticity): b1(_b1), b2(_b2), tension(tension), elasticity(elasticity)
+ProtoVerletStick::ProtoVerletStick(std::shared_ptr<VerletBall> b1, std::shared_ptr<VerletBall> b2, float tension, Tup2f elasticity): b1(b1), b2(b2), tension(tension), elasticity(elasticity)
 {
     //std::cout << "b2->getPos_ptr() =   " <<  *b2->getPos_ptr()  << std::endl;
-vecOrig = *b2->getPos_ptr() - *b1->getPos_ptr();
+    vecOrig = *(b2->getPos_ptr()) - *(b1->getPos_ptr());
     len = b2->getPos_ptr()->dist(*b1->getPos_ptr());
 }
 
@@ -54,23 +54,26 @@ vecOrig = *b2->getPos_ptr() - *b1->getPos_ptr();
 void ProtoVerletStick::constrainLen() {
     
     // get balls moving
-//
+    //
     
     
     // iteratively stablize system
     for (int i = 0; i < 1; i++) {
         Vec3f delta = *b2->getPos_ptr() - *b1->getPos_ptr();
-//        std::cout << "b1->pos = " << b1->pos << std::endl;
-//        std::cout << "b2->pos = " << b2->pos << std::endl;
-//        std::cout << "delta = " << delta << std::endl;
-//        std::cout << "deltaLength = " << delta.mag() << std::endl;
+        //        std::cout << "b1->pos = " << b1->pos << std::endl;
+        //        std::cout << "b2->pos = " << b2->pos << std::endl;
+        //        std::cout << "delta = " << delta << std::endl;
+        //        std::cout << "deltaLength = " << delta.mag() << std::endl;
         float deltaLength = delta.mag();
         
         float difference = ((deltaLength - len) / deltaLength);
         //std::cout << "difference = " << difference << std::endl;
         
-        *b1->getPos_ptr() += delta * elasticity.elem0 * tension * difference;
-        *b2->getPos_ptr() -= delta * elasticity.elem1 * tension * difference;
+        //trace("delta * elasticity.elem0 * tension * difference = ", delta * elasticity.elem0 * tension * difference);
+        //trace("delta * elasticity.elem1 * tension * difference = ", delta * elasticity.elem1 * tension * difference);
+        
+        *b1->pos_ptr += delta * elasticity.elem0 * tension * difference;
+        *b2->pos_ptr -= delta * elasticity.elem1 * tension * difference;
     }
     
 }

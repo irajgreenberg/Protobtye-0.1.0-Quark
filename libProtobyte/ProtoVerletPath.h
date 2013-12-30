@@ -26,6 +26,7 @@
 
 #include <iostream>
 #include "ProtoCore.h"
+#include "ProtoSpline3.h"
 #include "ProtoVerletStick.h"
 
 namespace ijg {
@@ -43,7 +44,6 @@ namespace ijg {
             LEFT,
             RIGHT,
             CENTER,
-            LEFT_RIGHT,
             ENDS,
             RANDOM,
             ALTERNATING,
@@ -53,13 +53,19 @@ namespace ijg {
         
         
         ProtoVerletPath();
-        ProtoVerletPath(const std::vector<Vec3>& vecs, float tension, AnchorMode anchorMode=LEFT);
-        ProtoVerletPath(const std::vector<Vec3>& vecs, float tensionMin, float tensionMax, AnchorMode anchorMode=LEFT);
-        ProtoVerletPath(const std::vector<Vec3>& vecs, const Tup2& edgeTensions, AnchorMode anchorMode=LEFT);
+        ProtoVerletPath(float tension, AnchorMode anchorMode); // no coords
+        
+        ProtoVerletPath(const Spline3& spline, float tension, AnchorMode anchorMode=LEFT); // Spline3
+        
+        ProtoVerletPath(const Spline3& spline, float tensionMin, float tensionMax, AnchorMode anchorMode=LEFT); // Spline3
+        
+        ProtoVerletPath(const Spline3& spline, const Tup2& edgeTensions, AnchorMode anchorMode=LEFT); // Spline3
         ~ProtoVerletPath();
         
         
+        
         std::vector<Vec3>& getPath();
+        
         float getTension(); // get single tension for entire path
         void setTension(float tension); // set single tension for entire path
         float getTension(int node); // get tension for individual node on path
@@ -71,16 +77,31 @@ namespace ijg {
         AnchorMode getAnchorMode();
         void setAnchorMode(const AnchorMode& anchorMode);
         
+        void setVecs(std::vector<Vec3> vecs);
+        
+        // Start Verlet Integration
+        void run();
+        void push(const Vec3& nudge);
+        
     private:
+        Spline3 spline;
+        
         std::vector<Vec3> vecs;
         float tension; // tension for entire path
+        float tensionMin, tensionMax; // tension for entire path
         Tup2 edgeTensions; // tensions at path ends
         std::vector<float> tensions; // all tensions along path
         AnchorMode anchorMode;
         
         // implementation guts
-        std::vector<VerletBall> balls;
-        std::vector<VerletStick> sticks;
+        // don't leave these shared - unnecessary and inefficient
+        // Possible fix use unique or raw and make all control through sticks
+        
+        // hope this can work
+        std::vector<std::shared_ptr<ProtoVerletBall>> balls;
+        std::vector<std::unique_ptr<ProtoVerletStick>> sticks;
+        
+        void init();
     
     };
     

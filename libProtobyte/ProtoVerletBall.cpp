@@ -1,4 +1,3 @@
-
 /*!  \brief  ProtoVerletBall.h: Verlet Ball implementation
  Protobyte Library v02
  

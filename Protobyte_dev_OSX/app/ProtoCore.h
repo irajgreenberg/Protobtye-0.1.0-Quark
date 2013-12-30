@@ -26,8 +26,10 @@
 
 #include <iostream>
 #include "ProtoVector3.h"
+#include "ProtoMath.h"
 
 namespace ijg {
+
     
     template <typename T>
     void print(T t){

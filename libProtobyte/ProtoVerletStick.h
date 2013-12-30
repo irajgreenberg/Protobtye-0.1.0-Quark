@@ -22,7 +22,7 @@
  */
 
 #ifndef PROTO_VERLETSTICK_H
-#define	PROTO_VERLETSTICK_H
+#define PROTO_VERLETSTICK_H
 
 #include "ProtoVerletBall.h"
 #include "ProtoTuple2.h"
@@ -35,7 +35,7 @@ namespace ijg {
     
     class ProtoVerletStick {
     private:
-        std::shared_ptr<ProtoVerletBall> b1, b2;
+        std::shared_ptr<VerletBall> b1, b2;
         float tension;
         Vec3f vecOrig;
         float len;
@@ -48,23 +48,23 @@ namespace ijg {
         
         // constructors
         ProtoVerletStick();
-        ProtoVerletStick(std::shared_ptr<ProtoVerletBall> _b1, std::shared_ptr<ProtoVerletBall> _b2, float tension, Tup2f elasticity = Tup2f(.5, .5));
+        ProtoVerletStick(std::shared_ptr<VerletBall> _b1, std::shared_ptr<VerletBall> _b2, float tension, Tup2f elasticity = Tup2f(.5, .5));
         
         void nudgeB1(const Vec3f& val);
         void nudgeB2(const Vec3f& val);
         void constrainLen();
         void display();
         
-        ProtoVerletBall& getB1();
-        ProtoVerletBall& getB2() const;
+        VerletBall& getB1();
+        VerletBall& getB2() const;
         
     };
     
-    inline ProtoVerletBall& ProtoVerletStick::getB1() {
+    inline VerletBall& ProtoVerletStick::getB1() {
         return *b1;
     }
     
-    inline ProtoVerletBall& ProtoVerletStick::getB2() const {
+    inline VerletBall& ProtoVerletStick::getB2() const {
         return *b2;
     }
     
@@ -80,5 +80,4 @@ namespace ijg {
     
 }
 
-#endif	/* PROTO_VERLETSTICK_H */
-
+#endif        /* PROTO_VERLETSTICK_H */

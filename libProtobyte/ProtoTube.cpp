@@ -13,7 +13,6 @@
 
 namespace ijg {
 
-    float breathTheta = 0.0;
 
     std::ostream& operator<<(std::ostream& out, const ProtoTube& tube) {
         out << "\n\tpos = " << tube.pos << "\n" << ""
@@ -55,14 +54,6 @@ ProtoGeom3(Vec3f(0, 0, 0), Vec3f(0, 0, 0), ProtoDimension3f(1, 1, 1), ProtoColor
         col4s.push_back(col4);
     }
 
-
-
-
-
-
-    // set default live states on
-//    setIsSlithering(1);
-//    setIsBreathing(1);
     init();
 }
 
@@ -80,9 +71,6 @@ ProtoGeom3(Vec3f(0, 0, 0), Vec3f(0, 0, 0), ProtoDimension3f(1, 1, 1), ProtoColor
         radii.push_back(radius);
         col4s.push_back(col4);
     }
-    // set default live states on
-//    setIsSlithering(1);
-//    setIsBreathing(1);
     init();
 }
 
@@ -99,9 +87,6 @@ ProtoGeom3(Vec3f(0, 0, 0), Vec3f(0, 0, 0), ProtoDimension3f(1, 1, 1), ProtoColor
         //radii.push_back(radius);
         col4s.push_back(col4);
     }
-    // set default live states on
-//    setIsSlithering(1);
-//    setIsBreathing(1);
     init();
 }
 
@@ -119,9 +104,6 @@ ProtoGeom3(Vec3f(0, 0, 0), Vec3f(0, 0, 0), ProtoDimension3f(1, 1, 1), ProtoColor
     for (int i = 0; i < path.getVertsLength(); i++) {
         col4s.push_back(col4);
     }
-    // set default live states on
-//    setIsSlithering(1);
-//    setIsBreathing(1);
     init();
 }
 
@@ -139,9 +121,6 @@ ProtoGeom3(Vec3f(0, 0, 0), Vec3f(0, 0, 0), ProtoDimension3f(1, 1, 1), col4s), pa
     for (int i = 0; i < path.getVertsLength(); i++) {
         radii.push_back(radius);
     }
-    // set default live states on
-//    setIsSlithering(1);
-//    setIsBreathing(1);
     init();
 }
 
@@ -158,9 +137,6 @@ ProtoGeom3(Vec3f(0, 0, 0), Vec3f(0, 0, 0), ProtoDimension3f(1, 1, 1), col4s), pa
     for (int i = 0; i < path.getVertsLength(); i++) {
         radii.push_back(radius);
     }
-    // set default live states on
-//    setIsSlithering(1);
-//    setIsBreathing(1);
     init();
 }
 
@@ -174,10 +150,6 @@ ProtoGeom3(Vec3f(0, 0, 0), Vec3f(0, 0, 0), ProtoDimension3f(1, 1, 1), col4s), pa
     // no transform function
     setIsTransformFunction(false);
     perturbation.x = perturbation.y = perturbation.z = 0.0;
-
-    // set default live states on
-//    setIsSlithering(1);
-//    setIsBreathing(1);
     init();
 }
 
@@ -196,9 +168,6 @@ ProtoGeom3(pos, rot, size, col4), path(path), radius(radius), crossSectionDetail
         radii.push_back(radius);
         col4s.push_back(col4);
     }
-    // set default live states on
-//    setIsSlithering(1);
-//    setIsBreathing(1);
     init();
 }
 
@@ -216,9 +185,6 @@ ProtoGeom3(pos, rot, size, col4), path(path), radii(radii), crossSectionDetail(c
     for (int i = 0; i < path.getVertsLength(); i++) {
         col4s.push_back(col4);
     }
-    // set default live states on
-//    setIsSlithering(1);
-//    setIsBreathing(1);
     init();
 }
 
@@ -237,9 +203,6 @@ ProtoGeom3(pos, rot, size, col4s), path(path), radius(radius), crossSectionDetai
     for (int i = 0; i < path.getVertsLength(); i++) {
         radii.push_back(radius);
     }
-    // set default live states on
-//    setIsSlithering(1);
-//    setIsBreathing(1);
     init();
 }
 
@@ -256,10 +219,6 @@ ProtoGeom3(pos, rot, size, col4s), path(path), radii(radii), crossSectionDetail(
     // no transform function
     setIsTransformFunction(false);
     perturbation.x = perturbation.y = perturbation.z = 0.0;
-
-    // set default live states on
-//    setIsSlithering(1);
-//    setIsBreathing(1);
     init();
 }
 
@@ -268,7 +227,7 @@ ProtoGeom3(pos, rot, size, col4s), path(path), radii(radii), crossSectionDetail(
  * All with TransformFunction obj*/
 ProtoTube::ProtoTube(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3f& size, const ProtoColor4f& col4, const ProtoSpline3& path, float radius, int crossSectionDetail, const ProtoTransformFunction& transFuncObj, bool isClosed) : ProtoGeom3(pos, rot, size, col4), path(path), radius(radius), crossSectionDetail(crossSectionDetail), transFuncObj(transFuncObj), isClosed(isClosed) {
 
-    std::cout << "ProtoTube CSTR 12" << std::endl;
+    // std::cout << "ProtoTube CSTR 12" << std::endl;
     setIsTransformFunction(true);
     perturbation.x = perturbation.y = perturbation.z = 0.0;
 
@@ -276,9 +235,6 @@ ProtoTube::ProtoTube(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3f&
         radii.push_back(radius);
         col4s.push_back(col4);
     }
-    // set default live states on
-    //setIsSlithering(1);
-    //setIsBreathing(1);
     init();
 }
 
@@ -294,10 +250,20 @@ ProtoTube::ProtoTube(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3f&
     for (int i = 0; i < path.getVertsLength(); i++) {
         radii.push_back(radius);
     }
-    // set default live states on
-   // setIsSlithering(1);
-   // setIsBreathing(1);
     init();
+}
+
+/*!
+ * Constructor 14 added 12/27/13
+ * all with varied color and TransformFunction obj */
+ProtoTube::ProtoTube(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3f& size, const ProtoColor4f& col4, const ProtoSpline3& path, std::vector<float>& radii, int crossSectionDetail, const ProtoTransformFunction& transFuncObj, bool isClosed){
+    
+    std::cout << "ProtoTube CSTR 14" << std::endl;
+    setIsTransformFunction(true);
+    perturbation.x = perturbation.y = perturbation.z = 0.0;
+
+    init();
+
 }
 
 ProtoTube::~ProtoTube() {
@@ -474,57 +440,6 @@ void ProtoTube::calcVerts() {
         crossSectionCentroids.at(i) = Vec3f(cx, cy, cz);
 
     }
-
-
-    // setup VerletSystem. Perhaps this should be st via a flag to avoid wasted memory use
-    //    verletSys = VerletSys(crossSectionCentroids, .5);
-    //    verletSys.start();
-    //    verletSys.nudge(Vec3f(ProtoMath::random(-.002, .002), 0, 0), 10);
-
-
-    // TESTING ONLY !!!!!
-    /*vBalls.reserve(4);
-    vSticks.reserve(6);
-    // testingVerts.reserve(frenetFrameLength);
-    //for (int i = 0; i < 100; i++) {
-    vBalls.push_back(Vec3f(.1, .1, 0));
-    vBalls.push_back(Vec3f(-.1, .1, 0));
-    vBalls.push_back(Vec3f(-.1, -.1, 0));
-    vBalls.push_back(Vec3f(.1, -.1, 0));
-    //}
-
-    vSticks.push_back(VerletStick(&vBalls[0], &vBalls[1], .01));
-    vSticks.push_back(VerletStick(&vBalls[1], &vBalls[2], .01));
-    vSticks.push_back(VerletStick(&vBalls[2], &vBalls[3], .01));
-    vSticks.push_back(VerletStick(&vBalls[3], &vBalls[0], .01));
-    vSticks.push_back(VerletStick(&vBalls[0], &vBalls[2], .01));
-    vSticks.push_back(VerletStick(&vBalls[1], &vBalls[3], .01));
-    vBalls.at(0).pos += Vec3f(.0005, .0005, .0005);*/
-
-    //    vbs[0] = VerletBall(Vec3f(.1, .1, 0));
-    //    vbs[1] = VerletBall(Vec3f(-.1, .1, 0));
-    //    vbs[2] = VerletBall(Vec3f(-.1, -.1, 0));
-    //    vbs[3] = VerletBall(Vec3f(.1, -.1, 0));
-    //
-    //
-    //    vss[0] = VerletStick(&vbs[0], &vbs[1], .01);
-    //    vss[1] = VerletStick(&vbs[1], &vbs[2], .01);
-    //    vss[2] = VerletStick(&vbs[2], &vbs[3], .01);
-    //    vss[3] = VerletStick(&vbs[3], &vbs[0], .01);
-    //    vss[4] = VerletStick(&vbs[0], &vbs[2], .01);
-    //    vss[5] = VerletStick(&vbs[1], &vbs[3], .01);
-    //    vbs[0].pos += .001;
-
-    //const std::vector<Vec3f>& vecs, float tension
-//    vSpine = VerletSpine(vProtoSplineVecs, .1, VerletSpine::BOTH);
-//    for (int i = 1; i < vProtoSplineVecs.size() - 1; ++i) {
-//        if (i % 12 == 0) {
-//            vSpine.nudge(Vec3f(ProtoMath::random(-.02, .02), ProtoMath::random(-.02, .02), ProtoMath::random(-.02, .02)), i);
-//        }
-//    }
-
-    //vSpine.start();
-    
 }
 
 void ProtoTube::calcInds() {
@@ -579,9 +494,6 @@ void ProtoTube::calcInds() {
         }
     }
 }
-
-// Example that animates FPO data
-// uses: glBindBuffer(data), glBufferSubData(), glBindBuffer(0)
 
 void ProtoTube::rotateY() {
 //    glBindBuffer(GL_ARRAY_BUFFER, vboID);

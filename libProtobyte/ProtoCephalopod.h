@@ -21,15 +21,16 @@
  \sa NO LINK
  */
 
-#ifndef Protobyte_dev_ProtoCephalopod_cpp
-#define Protobyte_dev_ProtoCephalopod_cpp
+#ifndef PROTO_CEPHALOPOD_H
+#define PROTO_CEPHALOPOD_H
 
 #include <iostream>
 #include "ProtoShape3.h"
 #include "ProtoGeom3.h"
 #include "ProtoGeoSphere.h"
-
-#include "ProtoTube.h"
+//#include "ProtoTube.h"
+#include "ProtoTentacle.h"
+#include "ProtoVerletPath.h"
 
 namespace ijg {
     
@@ -44,7 +45,7 @@ namespace ijg {
                         const ProtoColor4f& col4, int tentacleCount=8);
         ~ProtoCephalopod();
         
-        const std::vector<ProtoTube>& getTentacles() const;
+        //const std::vector<ProtoTentacle>& getTentacles() const;
         void display();
         
         
@@ -52,21 +53,24 @@ namespace ijg {
         
     private:
         int tentacleCount;
+        // need to be pointers
         std::unique_ptr<GeoSphere> body;
-        std::vector<ProtoTube> tentacles;
+        std::vector<std::unique_ptr<ProtoTentacle> > tentacles;
+        
         std::vector<Vec3> offsets; // testing only
+        //std::vector<VerletPath> verletPaths;
         void init();
         
     };
     
-    inline const std::vector<ProtoTube>& ProtoCephalopod::getTentacles() const
-    {
-        return tentacles;
-    }
+//    inline const std::vector<ProtoTentacle>& ProtoCephalopod::getTentacles() const
+//    {
+//        return tentacles;
+//    }
     
     inline const ProtoGeoSphere& ProtoCephalopod::getBody() const{
         return *body;
     }
 }
 
-#endif // Protobyte_dev_ProtoCephalopod_cpp
+#endif // PROTO_CEPHALOPOD_H

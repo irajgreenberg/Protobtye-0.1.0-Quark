@@ -12,6 +12,7 @@
 #include <iostream>
 #include "ProtoGeom3.h"
 #include "ProtoSpline3.h"
+#include "ProtoVerletPath.h"
 #include "ProtoTransformFunction.h"
 
 
@@ -27,27 +28,6 @@ namespace ijg {
 
         friend std::ostream& operator<<(std::ostream& out, const ProtoTube& tube);
 
-        // enables varying ProtoTube radii values
-        
-//        enum TransformFunction {
-//            LINEAR,
-//            LINEAR_INVERSE,
-//            SINUSOIDAL,
-//            SINUSOIDAL_2,
-//            SINUSOIDAL_3,
-//            SINUSOIDAL_4,
-//            SINUSOIDAL_5,
-//            SINUSOIDAL_RAND_5,
-//            SINUSOIDAL_RAND_10,
-//            SINUSOIDAL_RAND_15,
-//            SINUSOIDAL_RAND_20,
-//            SINUSOIDAL_RAND_25,
-//            SINUSOIDAL_RAND_30,
-//            SINUSOIDAL_RAND_35,
-//            SINUSOIDAL_RAND_40
-//        };
-
-        
         /*!
          * Constructor */
         ProtoTube();
@@ -118,17 +98,16 @@ namespace ijg {
          * Constructor 
          * All with varied thickness and color */
         ProtoTube(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3f& size, const std::vector<ProtoColor4f>& col4s, const ProtoSpline3& path, std::vector<float>& radii, int crossSectionDetail, bool isClosed = true);
-
-
+        
+        
+        // added 12/27/13
+        ProtoTube(const Vec3f& pos, const Vec3f& rot, const ProtoDimension3f& size, const ProtoColor4f& col4, const ProtoSpline3& path, std::vector<float>& radii, int crossSectionDetail, const ProtoTransformFunction& transFuncObj, bool isClosed = true);
 
         ~ProtoTube();
 
-
-
-
         /*! overrides base class virtual functions
          */
-        void calcVerts();
+        virtual void calcVerts();
 
         /*! overrides base class virtual functions
          */
@@ -156,22 +135,9 @@ namespace ijg {
         void setPerturbation(const Vec3f& perturbation);
         Vec3f getPerturbation() const;
         void rotateY();
-        //void breath();
-        //void wave();
-        void verlet();
-        //void live();
         const std::vector<ProtoFrenetFrame>& getFrenetFrames() const;
 
-        // for live states
-//        void setIsSlithering(bool isSlithering);
-//        bool getIsSlithering() const;
-//        void setIsBreathing(bool isBreathing);
-//        bool getIsBreathing() const;
-
-
-        
-
-    private:
+    protected:
         ProtoSpline3 path;
         float radius;
         std::vector<float> radii;
@@ -187,24 +153,6 @@ namespace ijg {
         //VerletSpine vSpine;
         // local frames of reference
         std::vector<ProtoFrenetFrame> ff;
-
-        // for Verlet Integration - NEED to fix this eventually
-        // for now using individual sticks and balls
-        //VerletSys verletSys;
-        //        std::vector<VerletBall> vBalls;
-        //        std::vector<VerletStick> vSticks;
-        //        std::vector<Vec3f> testingVerts;
-
-        //        VerletBall vbs[4];
-        //        VerletStick vss[6];
-
-        //std::vector<Vec3f> testingVerts;
-
-        // live states NOTE - maybe move to derived arthropod class
-        //bool isBreathing, isSlithering;
-        
-        // wings
-       // std::vector<EllipticalWing> wings;
 
     };
 
@@ -287,23 +235,6 @@ namespace ijg {
     inline const std::vector<ProtoFrenetFrame>& ProtoTube::getFrenetFrames() const {
         return ff;
     }
-
-//    inline void ProtoTube::setIsSlithering(bool isSlithering) {
-//        this->isSlithering = isSlithering;
-//    }
-//
-//    inline bool ProtoTube::getIsSlithering() const {
-//        return isSlithering;
-//    }
-//
-//    inline void ProtoTube::setIsBreathing(bool isBreathing) {
-//        this->isBreathing = isBreathing;
-//    }
-//
-//    inline bool ProtoTube::getIsBreathing() const {
-//        return isBreathing;
-//    }
-
 }
 
 

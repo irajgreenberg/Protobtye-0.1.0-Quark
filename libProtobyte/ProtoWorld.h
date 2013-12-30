@@ -54,6 +54,11 @@
 
 namespace ijg {
     
+    // forward declare & create namespace safe shortname
+    class ProtoWorld;
+    typedef ProtoWorld World;
+    
+    
     /*******************************************************************
     *** global convenience functions enabling procedural convenience ***
     ********************************************************************/

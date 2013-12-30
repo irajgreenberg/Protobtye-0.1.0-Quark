@@ -23,5 +23,8 @@ dependencies: \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoSpline3.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoCurve3.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoFrenetFrame.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoVerletPath.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoVerletStick.h \
+  /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoVerletBall.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoTransformFunction.h \
   /Users/33993405/Dropbox/ira_dev/Protobyte_0.1.0_quark/libProtobyte/ProtoBlock.h

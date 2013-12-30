@@ -25,11 +25,16 @@
 #ifndef PROTO_MATH_H
 #define	PROTO_MATH_H
 
+#include <cmath>
 #include <ctime>
 #include <cstdlib>
 
 namespace ijg {
     
+    
+    // forward declaration and namespace safe short names
+    class ProtoMath;
+    typedef ProtoMath Math;
     
     class ProtoMath {
     private:

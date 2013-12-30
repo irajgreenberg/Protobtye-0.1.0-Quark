@@ -35,11 +35,9 @@
 		2AD37986182D52C600A4C541 /* ProtoUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37961182D52C600A4C541 /* ProtoUtility.cpp */; };
 		2AD37988182D52C600A4C541 /* ProtoVerletBall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37968182D52C600A4C541 /* ProtoVerletBall.cpp */; };
 		2AD37989182D52C600A4C541 /* ProtoVerletStick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3796A182D52C600A4C541 /* ProtoVerletStick.cpp */; };
-		2AD3798A182D52C600A4C541 /* ProtoVerletSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3796C182D52C600A4C541 /* ProtoVerletSurface.cpp */; };
 		2AD3798B182D52C600A4C541 /* ProtoVertex3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3796E182D52C600A4C541 /* ProtoVertex3.cpp */; };
 		2AD3798C182D52C600A4C541 /* ProtoWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AD37970182D52C600A4C541 /* ProtoWorld.cpp */; };
 		2AD8DB1E1857C70C00333FE3 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A497700185782B50076089C /* libglfw3.a */; };
-		2AFD5BDB183D36ED009110AB /* ProtoVerletDome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD5BDA183D36ED009110AB /* ProtoVerletDome.cpp */; };
 		72117E01185A5A2600B6CBD5 /* ProtoCephalopod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72117DFF185A5A2600B6CBD5 /* ProtoCephalopod.cpp */; };
 		72135A34183B021500B45E63 /* phong.frag in Sources */ = {isa = PBXBuildFile; fileRef = 72135A32183B021500B45E63 /* phong.frag */; };
 		72135A35183B021500B45E63 /* phong.vert in Sources */ = {isa = PBXBuildFile; fileRef = 72135A33183B021500B45E63 /* phong.vert */; };
@@ -49,11 +47,13 @@
 		722DB7761817D76200A5A716 /* ProtoMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 722DB7751817D76200A5A716 /* ProtoMain.cpp */; };
 		7241A87C17BD63A300DBF38C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7241A87B17BD63A300DBF38C /* OpenGL.framework */; };
 		7241A87E17BD63AA00DBF38C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7241A87D17BD63AA00DBF38C /* GLUT.framework */; };
-		724B59AB1831D1F90098E5A1 /* ProtoVerletCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */; };
+		725D7E12186DED8C003718E6 /* ProtoTentacle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 725D7E10186DED8C003718E6 /* ProtoTentacle.cpp */; };
 		725E8AE1185D00D4007B8781 /* Cephalopod01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 725E8ADF185D00D4007B8781 /* Cephalopod01.cpp */; };
 		72A307C51847FB8000B2C071 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A307C41847FB8000B2C071 /* IOKit.framework */; };
 		72A307C71847FB8900B2C071 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A307C61847FB8900B2C071 /* Cocoa.framework */; };
 		72A307C91847FBE700B2C071 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A307C81847FBE700B2C071 /* CoreVideo.framework */; };
+		72B6FD48187099FF00257104 /* ProtoVerletCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B6FD3E187099FF00257104 /* ProtoVerletCube.cpp */; };
+		72B6FD4A187099FF00257104 /* ProtoVerletSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B6FD42187099FF00257104 /* ProtoVerletSurface.cpp */; };
 		72D54D4E18690969009C5A27 /* ProtoCylinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72D54D4C18690969009C5A27 /* ProtoCylinder.cpp */; };
 		72E372F91835A77F001AE1B8 /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E372F81835A77F001AE1B8 /* libfreeimage.a */; };
 		72EC28BB186C96970097955A /* ProtoVerletPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72EC28B9186C96970097955A /* ProtoVerletPath.cpp */; };
@@ -130,14 +130,10 @@
 		2AD37969182D52C600A4C541 /* ProtoVerletBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVerletBall.h; path = ../libProtobyte/ProtoVerletBall.h; sourceTree = "<group>"; };
 		2AD3796A182D52C600A4C541 /* ProtoVerletStick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoVerletStick.cpp; path = ../libProtobyte/ProtoVerletStick.cpp; sourceTree = "<group>"; };
 		2AD3796B182D52C600A4C541 /* ProtoVerletStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVerletStick.h; path = ../libProtobyte/ProtoVerletStick.h; sourceTree = "<group>"; };
-		2AD3796C182D52C600A4C541 /* ProtoVerletSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoVerletSurface.cpp; path = ../libProtobyte/ProtoVerletSurface.cpp; sourceTree = "<group>"; };
-		2AD3796D182D52C600A4C541 /* ProtoVerletSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVerletSurface.h; path = ../libProtobyte/ProtoVerletSurface.h; sourceTree = "<group>"; };
 		2AD3796E182D52C600A4C541 /* ProtoVertex3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoVertex3.cpp; path = ../libProtobyte/ProtoVertex3.cpp; sourceTree = "<group>"; };
 		2AD3796F182D52C600A4C541 /* ProtoVertex3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVertex3.h; path = ../libProtobyte/ProtoVertex3.h; sourceTree = "<group>"; };
 		2AD37970182D52C600A4C541 /* ProtoWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoWorld.cpp; path = ../libProtobyte/ProtoWorld.cpp; sourceTree = "<group>"; };
 		2AD37971182D52C600A4C541 /* ProtoWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoWorld.h; path = ../libProtobyte/ProtoWorld.h; sourceTree = "<group>"; };
-		2AFD5BD9183D36ED009110AB /* ProtoVerletDome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVerletDome.h; path = ../libProtobyte/ProtoVerletDome.h; sourceTree = "<group>"; };
-		2AFD5BDA183D36ED009110AB /* ProtoVerletDome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoVerletDome.cpp; path = ../libProtobyte/ProtoVerletDome.cpp; sourceTree = "<group>"; };
 		72117DFF185A5A2600B6CBD5 /* ProtoCephalopod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoCephalopod.cpp; path = ../libProtobyte/ProtoCephalopod.cpp; sourceTree = "<group>"; };
 		72117E00185A5A2600B6CBD5 /* ProtoCephalopod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoCephalopod.h; path = ../libProtobyte/ProtoCephalopod.h; sourceTree = "<group>"; };
 		72135A32183B021500B45E63 /* phong.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = phong.frag; path = build/Products/Debug/resources/shaders/phong.frag; sourceTree = SOURCE_ROOT; };
@@ -151,14 +147,18 @@
 		7241A87B17BD63A300DBF38C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		7241A87D17BD63AA00DBF38C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
 		7247667C18674C9A00031A0F /* ProtoCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoCore.h; path = app/ProtoCore.h; sourceTree = "<group>"; };
-		724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoVerletCube.cpp; path = ../libProtobyte/ProtoVerletCube.cpp; sourceTree = "<group>"; };
-		724B59AA1831D1F90098E5A1 /* ProtoVerletCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVerletCube.h; path = ../libProtobyte/ProtoVerletCube.h; sourceTree = "<group>"; };
+		725D7E10186DED8C003718E6 /* ProtoTentacle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoTentacle.cpp; path = ../libProtobyte/ProtoTentacle.cpp; sourceTree = "<group>"; };
+		725D7E11186DED8C003718E6 /* ProtoTentacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoTentacle.h; path = ../libProtobyte/ProtoTentacle.h; sourceTree = "<group>"; };
 		725E8ADF185D00D4007B8781 /* Cephalopod01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cephalopod01.cpp; path = src/Cephalopod01.cpp; sourceTree = "<group>"; };
 		725E8AE0185D00D4007B8781 /* Cephalopod01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cephalopod01.h; path = src/Cephalopod01.h; sourceTree = "<group>"; };
 		725E8AE3185D05BC007B8781 /* ProtoMatrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoMatrix4.h; path = ../libProtobyte/ProtoMatrix4.h; sourceTree = "<group>"; };
 		72A307C41847FB8000B2C071 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		72A307C61847FB8900B2C071 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		72A307C81847FBE700B2C071 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		72B6FD3E187099FF00257104 /* ProtoVerletCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoVerletCube.cpp; path = ../libProtobyte/ProtoVerletCube.cpp; sourceTree = "<group>"; };
+		72B6FD3F187099FF00257104 /* ProtoVerletCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVerletCube.h; path = ../libProtobyte/ProtoVerletCube.h; sourceTree = "<group>"; };
+		72B6FD42187099FF00257104 /* ProtoVerletSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoVerletSurface.cpp; path = ../libProtobyte/ProtoVerletSurface.cpp; sourceTree = "<group>"; };
+		72B6FD43187099FF00257104 /* ProtoVerletSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoVerletSurface.h; path = ../libProtobyte/ProtoVerletSurface.h; sourceTree = "<group>"; };
 		72D54D4C18690969009C5A27 /* ProtoCylinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProtoCylinder.cpp; path = ../libProtobyte/ProtoCylinder.cpp; sourceTree = "<group>"; };
 		72D54D4D18690969009C5A27 /* ProtoCylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtoCylinder.h; path = ../libProtobyte/ProtoCylinder.h; sourceTree = "<group>"; };
 		72E372F81835A77F001AE1B8 /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = ../other_libs/FreeImage/libfreeimage.a; sourceTree = "<group>"; };
@@ -253,6 +253,8 @@
 				2AD37954182D52C600A4C541 /* ProtoSphere.h */,
 				2AD37955182D52C600A4C541 /* ProtoSpline3.cpp */,
 				2AD37956182D52C600A4C541 /* ProtoSpline3.h */,
+				725D7E10186DED8C003718E6 /* ProtoTentacle.cpp */,
+				725D7E11186DED8C003718E6 /* ProtoTentacle.h */,
 				2AD37957182D52C600A4C541 /* ProtoTexture.cpp */,
 				2AD37958182D52C600A4C541 /* ProtoTexture.h */,
 				2AD37959182D52C600A4C541 /* ProtoToroid.cpp */,
@@ -270,16 +272,14 @@
 				2AD37967182D52C600A4C541 /* ProtoVector4.h */,
 				2AD37968182D52C600A4C541 /* ProtoVerletBall.cpp */,
 				2AD37969182D52C600A4C541 /* ProtoVerletBall.h */,
-				724B59A91831D1F90098E5A1 /* ProtoVerletCube.cpp */,
-				724B59AA1831D1F90098E5A1 /* ProtoVerletCube.h */,
-				2AFD5BDA183D36ED009110AB /* ProtoVerletDome.cpp */,
-				2AFD5BD9183D36ED009110AB /* ProtoVerletDome.h */,
+				72B6FD3E187099FF00257104 /* ProtoVerletCube.cpp */,
+				72B6FD3F187099FF00257104 /* ProtoVerletCube.h */,
 				72EC28B9186C96970097955A /* ProtoVerletPath.cpp */,
 				72EC28BA186C96970097955A /* ProtoVerletPath.h */,
 				2AD3796A182D52C600A4C541 /* ProtoVerletStick.cpp */,
 				2AD3796B182D52C600A4C541 /* ProtoVerletStick.h */,
-				2AD3796C182D52C600A4C541 /* ProtoVerletSurface.cpp */,
-				2AD3796D182D52C600A4C541 /* ProtoVerletSurface.h */,
+				72B6FD42187099FF00257104 /* ProtoVerletSurface.cpp */,
+				72B6FD43187099FF00257104 /* ProtoVerletSurface.h */,
 				2AD3796E182D52C600A4C541 /* ProtoVertex3.cpp */,
 				2AD3796F182D52C600A4C541 /* ProtoVertex3.h */,
 				2AD37970182D52C600A4C541 /* ProtoWorld.cpp */,
@@ -423,13 +423,12 @@
 				2AD3798C182D52C600A4C541 /* ProtoWorld.cpp in Sources */,
 				72117E01185A5A2600B6CBD5 /* ProtoCephalopod.cpp in Sources */,
 				72136E781848371B0063CDDA /* ProtoPlasm.cpp in Sources */,
-				724B59AB1831D1F90098E5A1 /* ProtoVerletCube.cpp in Sources */,
 				2AD37984182D52C600A4C541 /* ProtoTransformFunction.cpp in Sources */,
 				2AD37982182D52C600A4C541 /* ProtoTexture.cpp in Sources */,
 				72275D1A18464F15000519E9 /* toon1.vert in Sources */,
 				725E8AE1185D00D4007B8781 /* Cephalopod01.cpp in Sources */,
 				2AD37972182D52C600A4C541 /* ProtoAnimator.cpp in Sources */,
-				2AFD5BDB183D36ED009110AB /* ProtoVerletDome.cpp in Sources */,
+				725D7E12186DED8C003718E6 /* ProtoTentacle.cpp in Sources */,
 				2AD37975182D52C600A4C541 /* ProtoCurve3.cpp in Sources */,
 				72135A35183B021500B45E63 /* phong.vert in Sources */,
 				72275D1918464F15000519E9 /* toon1.frag in Sources */,
@@ -442,10 +441,11 @@
 				2AD3797B182D52C600A4C541 /* ProtoLight.cpp in Sources */,
 				2A7CDB4118343996003E8FD3 /* ProtoImage.cpp in Sources */,
 				2AD37981182D52C600A4C541 /* ProtoSpline3.cpp in Sources */,
-				2AD3798A182D52C600A4C541 /* ProtoVerletSurface.cpp in Sources */,
+				72B6FD48187099FF00257104 /* ProtoVerletCube.cpp in Sources */,
 				2AD3797C182D52C600A4C541 /* ProtoMath.cpp in Sources */,
 				2AD37973182D52C600A4C541 /* ProtoBlock.cpp in Sources */,
 				722DB7761817D76200A5A716 /* ProtoMain.cpp in Sources */,
+				72B6FD4A187099FF00257104 /* ProtoVerletSurface.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
