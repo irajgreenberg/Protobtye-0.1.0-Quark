@@ -144,9 +144,16 @@ namespace ijg {
         float getWaveSpeed() const;
         float getWaveFrequency() const;
         
+        // *****hack for waving FIX PLEASE****
+        int waveDirectionID;
+        void setWaveDirectionID(int id){
+            waveDirectionID = id;
+        }
+        
         
     private:
         Spline3 spine;
+        std::vector<float> vertexDataCopy;
         
         float waveSpeed;
         float waveFrequency;
@@ -162,6 +169,7 @@ namespace ijg {
         float waveTheta;
         
     };
+    
     
     inline void ProtoTentacle::setWaveSpeed(float waveSpeed){
         this->waveSpeed = waveSpeed;

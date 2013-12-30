@@ -31,7 +31,7 @@
 
 
 namespace ijg {
-
+    
     
     std::ostream& operator<<(std::ostream& out, const ProtoTentacle& tentacle) {
         out << "\n\tpos = " << tentacle.pos << "\n" << ""
@@ -51,6 +51,16 @@ namespace ijg {
 }
 
 using namespace ijg;
+
+
+
+// this is nasty fix eventually
+namespace {
+    std::vector<float> waveRadiusVals;
+    std::vector<float> waveThetas;
+    std::vector<float> waveFreqs;
+    
+}
 
 // default cstr
 
@@ -176,8 +186,14 @@ void ProtoTentacle::init(){
     // get Tube internal Spline3 path
     spine = getPath();
     //balls.clear();
+    float freqMax = Math::random(3000, 5000);
+    float radiusMax = Math::random(.05, .1);
     for(size_t i=0; i<spine.getVerts().size(); ++i){
         balls.push_back(std::shared_ptr<VerletBall>(new VerletBall(&spine.getVerts().at(i))));
+        
+        waveRadiusVals.push_back(i*radiusMax); // HACK --fix
+        waveFreqs.push_back(Math::PI/freqMax/*Math::random(Math::PI/1440.0, Math::PI/360.0)*/); // HACK --fix
+        waveThetas.push_back(0); // HACK --fix
     }
     //sticks.clear();
     for(size_t i=1; i<balls.size(); ++i){
@@ -188,7 +204,6 @@ void ProtoTentacle::init(){
         }
         waveTheta = 0;
     }
-
 
 }
 
@@ -216,7 +231,7 @@ void ProtoTentacle::transform(const ProtoMatrix4f& mat4){
     int vertsDataSize = sizeof (float) *interleavedPrims.size();
     glBufferSubData(GL_ARRAY_BUFFER, 0, vertsDataSize, &interleavedPrims[0]); // upload the data
     glBindBuffer(GL_ARRAY_BUFFER, 0);
-
+    
     // transform spine
     //std::vector<Vec3> tempVecs = spine.getVerts(); //local copy
     for(size_t i=0; i<balls.size(); ++i){
@@ -235,11 +250,17 @@ void ProtoTentacle::transform(const ProtoMatrix4f& mat4){
     
     // move end
     //*balls.at(balls.size()-1)->pos_ptr += Vec3f(4.02, 4.03, 4.04);
+    
+    vertexDataCopy = interleavedPrims;
 }
 
 
 void ProtoTentacle::wave(){
-
+    
+    /*********************************************************
+     VERLET PATH
+     *********************************************************/
+    // verleting verlet spine
     balls.at(balls.size()-1)->pos_ptr->y += cos(waveTheta)*.02;
     waveTheta += Math::PI/720;
     
@@ -252,35 +273,100 @@ void ProtoTentacle::wave(){
     for(size_t i=0; i<balls.size(); ++i){
         balls.at(i)->verlet2();
     }
-
+    /******************************
+     END VERLET PATH
+     *****************************/
+    
+    
+    
+    
+    
     // ok below here - simply transforms all Tentacle vertices on GPU
     // spin test of tendrils
-//    glBindBuffer(GL_ARRAY_BUFFER, vboID);
-//    float t = Math::PI / 360.0;
-//    for (int i = 0; i < interleavedPrims.size(); i += 12) {
-//        float x = 0;
-//        float y = 0;
-//        float z = 0;
-//        float nx = 0;
-//        float ny = 0;
-//        float nz = 0;
-//        
-//        //verts
-//        z = cos(t) * interleavedPrims.at(i + 2) - sin(t) * interleavedPrims.at(i);
-//        x = sin(t) * interleavedPrims.at(i + 2) + cos(t) * interleavedPrims.at(i);
-//        interleavedPrims.at(i + 2) = z;
-//        interleavedPrims.at(i) = x;
-//        
-//        //vnorms
-//        nz = cos(t) * interleavedPrims.at(i + 5) - sin(t) * interleavedPrims.at(i + 3);
-//        nx = sin(t) * interleavedPrims.at(i + 5) + cos(t) * interleavedPrims.at(i + 3);
-//        interleavedPrims.at(i + 5) = nz;
-//        interleavedPrims.at(i + 3) = nx;
-//        
-//    }
-//    int vertsDataSize = sizeof (float) *interleavedPrims.size();
-//    // upload the data
-//    glBufferSubData(GL_ARRAY_BUFFER, 0, vertsDataSize, &interleavedPrims[0]);
-//    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    //    glBindBuffer(GL_ARRAY_BUFFER, vboID);
+    //    float t = Math::PI / 360.0;
+    //    for (int i = 0; i < interleavedPrims.size(); i += 12) {
+    //        float x = 0;
+    //        float y = 0;
+    //        float z = 0;
+    //        float nx = 0;
+    //        float ny = 0;
+    //        float nz = 0;
+    //
+    //        //verts
+    //        z = cos(t) * interleavedPrims.at(i + 2) - sin(t) * interleavedPrims.at(i);
+    //        x = sin(t) * interleavedPrims.at(i + 2) + cos(t) * interleavedPrims.at(i);
+    //        interleavedPrims.at(i + 2) = z;
+    //        interleavedPrims.at(i) = x;
+    //
+    //        //vnorms
+    //        nz = cos(t) * interleavedPrims.at(i + 5) - sin(t) * interleavedPrims.at(i + 3);
+    //        nx = sin(t) * interleavedPrims.at(i + 5) + cos(t) * interleavedPrims.at(i + 3);
+    //        interleavedPrims.at(i + 5) = nz;
+    //        interleavedPrims.at(i + 3) = nx;
+    //
+    //    }
+    //    int vertsDataSize = sizeof (float) *interleavedPrims.size();
+    //    // upload the data
+    //    glBufferSubData(GL_ARRAY_BUFFER, 0, vertsDataSize, &interleavedPrims[0]);
+    //    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    
+    int spineSegments = interleavedPrims.size()/12/crossSectionDetail;
+    int stride = 12;
+    int crossSection = crossSectionDetail;
+    
+    // waving test
+    static float waveTheta = 0;
+    static float waveRadius = 1.85;
+    // wave test of tendrils
+    glBindBuffer(GL_ARRAY_BUFFER, vboID);
+    float t = Math::PI / 360.0;
+    float y = 0;
+    float ny = 0;
+    int cntr = 0;
+
+    for (int i = 0; i < spineSegments; ++i) {
+        for (int j = 0; j < crossSection; ++j) {
+            for (int k = 0; k < stride; ++k) {
+                if (k==1){
+                    switch(waveDirectionID){
+                        case 0:
+                            y = vertexDataCopy.at(cntr) + cos( waveThetas.at(i))*waveRadiusVals.at(i);
+                            ny = vertexDataCopy.at(cntr+3) + cos( waveThetas.at(i))*waveRadiusVals.at(i);
+                            break;
+                        case 1:
+                            y = vertexDataCopy.at(cntr) + sin( waveThetas.at(i))*waveRadiusVals.at(i);
+                            ny = vertexDataCopy.at(cntr+3) + sin( waveThetas.at(i))*waveRadiusVals.at(i);
+                            break;
+                        case 2:
+                            y = vertexDataCopy.at(cntr) - cos( waveThetas.at(i))*waveRadiusVals.at(i);
+                            ny = vertexDataCopy.at(cntr+3) - cos( waveThetas.at(i))*waveRadiusVals.at(i);
+                            break;
+                        case 3:
+                            y = vertexDataCopy.at(cntr) - sin( waveThetas.at(i))*waveRadiusVals.at(i);
+                            ny = vertexDataCopy.at(cntr+3) - sin( waveThetas.at(i))*waveRadiusVals.at(i);
+                            break;
+                    }
+                    interleavedPrims.at(cntr) = y;
+                    //interleavedPrims.at(cntr+3) = ny;
+                }
+                
+                //vnorms
+                //ny = vertexDataCopy.at(i + 4) + cos(waveTheta)*waveRadius;
+                //interleavedPrims.at(i + 4) = ny;
+                cntr++;
+            }
+        }
+        //waveRadius += .002;
+        waveThetas.at(i) += waveFreqs.at(i);
+    }
+    
+    //waveRadius += .0005;
+    waveTheta += Math::PI/1440;
+    
+    int vertsDataSize = sizeof (float) *interleavedPrims.size();
+    // upload the data
+    glBufferSubData(GL_ARRAY_BUFFER, 0, vertsDataSize, &interleavedPrims[0]);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
     
 }

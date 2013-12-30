@@ -49,8 +49,8 @@ ProtoShape3(pos, rot, size, col4), tentacleCount(tentacleCount)
 
 
 void ProtoCephalopod::init(){
-    
-    body = std::unique_ptr<ProtoGeoSphere>(new ProtoGeoSphere(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(7, 7, 7), Col4f(1.0, .3, .05, 1.0), 1, "leather2.jpg"));
+
+    body = std::unique_ptr<ProtoGeoSphere>(new ProtoGeoSphere(Vec3f(0,0,0), Vec3f(0,0,0), Dim3f(4.5, 4.5, 4.5), Col4f(.9, .2, .2, .75), 1, "shipPlate.jpg"));
     faces = body->getFaces();
     
     for(size_t i=0; i<faces.size(); ++i){
@@ -61,14 +61,15 @@ void ProtoCephalopod::init(){
         float _radius = .2;
         float h = 0;
         for(int j=0; j<pathCount; ++j){
-            vecs.push_back(Vec3(sin(_theta)*_radius, h+=1.2, cos(_theta)*_radius));
+            vecs.push_back(Vec3(sin(_theta)*_radius, h+=.75, cos(_theta)*_radius));
             _theta += ProtoMath::PI/9;
             _radius -=.12;
         }
-        ProtoSpline3 path(vecs, 3, 0, .5);
+        ProtoSpline3 path(vecs, 4, 0, .5);
         
-        std::unique_ptr<ProtoTentacle> tentacle(new ProtoTentacle(Vec3(), Vec3(), Dim3f(), Col4f(.75, .2, .2, .25), path, 1.6, 16, ProtoTransformFunction(ProtoTransformFunction::LINEAR_INVERSE), false));
-        
+        std::unique_ptr<ProtoTentacle> tentacle(new ProtoTentacle(Vec3(), Vec3(), Dim3f(), Col4f(1, .2, .2, .9), path, 1.6, 16, ProtoTransformFunction(ProtoTransformFunction::LINEAR_INVERSE), false));
+        // ***** VERY UGLY HACK - FIX PLEASE *****
+        tentacle->setWaveDirectionID(static_cast<int>(Math::random(4)));
         
         ProtoMatrix4f mat4(faces.at(i).getTNBFrame(), Vec4((faces.at(i).getCentroid()*.75f), 1));
         tentacle->transform(mat4);
@@ -78,14 +79,14 @@ void ProtoCephalopod::init(){
 
 void ProtoCephalopod::display(){
     
-    glShadeModel(GL_FLAT);
+    //glShadeModel(GL_FLAT);
     //body->textureOn();
     body->display(SURFACE);
     glShadeModel(GL_SMOOTH);
     // for(size_t i=0; i<2; ++i){
     for(size_t i=0; i<faces.size(); ++i){
         tentacles.at(i)->wave();
-        tentacles.at(i)->display(WIREFRAME);
+        tentacles.at(i)->display(SURFACE);
     }
     
 }
