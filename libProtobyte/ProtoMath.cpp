@@ -25,16 +25,8 @@
 
 using namespace ijg;
 
-// visual studio woudln't initialize const floats in header like xcode
-const double ProtoMath::PI = 3.14159265358979;
-const double ProtoMath::HALF_PI = 1.5707963267949;
-const double ProtoMath::H_PI = 1.5707963267949; // alt name to HALF_PI
-const double ProtoMath::QUARTER_PI = 0.785398163397448;
-const double ProtoMath::Q_PI = 0.785398163397448; // alt name to QUARTER_PI
-const double ProtoMath::TWO_PI = 6.28318530717958;
-const double ProtoMath::DOUBLE_PI = 6.28318530717958; // alt name to TWO_PI
-const double ProtoMath::THREE_PI = 9.42477796077;
-const double ProtoMath::TRI_PI = 9.42477796077; // alt name to THREE_PI
+
+
 
 
 
